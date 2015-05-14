@@ -24,19 +24,19 @@ Partial Class MDI
     Private Sub InitializeComponent()
         Me.MenuStrip1 = New System.Windows.Forms.MenuStrip()
         Me.CourseToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.NewToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.OpenToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.NewToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ViewToolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem()
         Me.DeleteToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.StudentToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AddToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.DeleteToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.EditToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ViewToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.DeleteToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.ExamToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MarksToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.EditToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.ViewToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ViewToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ViewToolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem()
         Me.HelpToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AboutToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -48,7 +48,7 @@ Partial Class MDI
         Me.MenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CourseToolStripMenuItem, Me.StudentToolStripMenuItem, Me.ExamToolStripMenuItem, Me.HelpToolStripMenuItem, Me.ExitToolStripMenuItem})
         Me.MenuStrip1.Location = New System.Drawing.Point(0, 0)
         Me.MenuStrip1.Name = "MenuStrip1"
-        Me.MenuStrip1.Size = New System.Drawing.Size(1028, 24)
+        Me.MenuStrip1.Size = New System.Drawing.Size(1020, 24)
         Me.MenuStrip1.TabIndex = 0
         Me.MenuStrip1.Text = "MenuStrip1"
         '
@@ -59,17 +59,23 @@ Partial Class MDI
         Me.CourseToolStripMenuItem.Size = New System.Drawing.Size(56, 20)
         Me.CourseToolStripMenuItem.Text = "Course"
         '
+        'OpenToolStripMenuItem
+        '
+        Me.OpenToolStripMenuItem.Name = "OpenToolStripMenuItem"
+        Me.OpenToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.OpenToolStripMenuItem.Text = "&Add "
+        '
         'NewToolStripMenuItem
         '
         Me.NewToolStripMenuItem.Name = "NewToolStripMenuItem"
         Me.NewToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.NewToolStripMenuItem.Text = "&Edit "
         '
-        'OpenToolStripMenuItem
+        'ViewToolStripMenuItem2
         '
-        Me.OpenToolStripMenuItem.Name = "OpenToolStripMenuItem"
-        Me.OpenToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
-        Me.OpenToolStripMenuItem.Text = "&Add "
+        Me.ViewToolStripMenuItem2.Name = "ViewToolStripMenuItem2"
+        Me.ViewToolStripMenuItem2.Size = New System.Drawing.Size(152, 22)
+        Me.ViewToolStripMenuItem2.Text = "&View"
         '
         'DeleteToolStripMenuItem
         '
@@ -90,17 +96,23 @@ Partial Class MDI
         Me.AddToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.AddToolStripMenuItem.Text = "&Add"
         '
-        'DeleteToolStripMenuItem1
-        '
-        Me.DeleteToolStripMenuItem1.Name = "DeleteToolStripMenuItem1"
-        Me.DeleteToolStripMenuItem1.Size = New System.Drawing.Size(152, 22)
-        Me.DeleteToolStripMenuItem1.Text = "&Delete"
-        '
         'EditToolStripMenuItem
         '
         Me.EditToolStripMenuItem.Name = "EditToolStripMenuItem"
         Me.EditToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.EditToolStripMenuItem.Text = "&Edit"
+        '
+        'ViewToolStripMenuItem1
+        '
+        Me.ViewToolStripMenuItem1.Name = "ViewToolStripMenuItem1"
+        Me.ViewToolStripMenuItem1.Size = New System.Drawing.Size(152, 22)
+        Me.ViewToolStripMenuItem1.Text = "&View"
+        '
+        'DeleteToolStripMenuItem1
+        '
+        Me.DeleteToolStripMenuItem1.Name = "DeleteToolStripMenuItem1"
+        Me.DeleteToolStripMenuItem1.Size = New System.Drawing.Size(152, 22)
+        Me.DeleteToolStripMenuItem1.Text = "&Delete"
         '
         'ExamToolStripMenuItem
         '
@@ -112,32 +124,20 @@ Partial Class MDI
         'MarksToolStripMenuItem
         '
         Me.MarksToolStripMenuItem.Name = "MarksToolStripMenuItem"
-        Me.MarksToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.MarksToolStripMenuItem.Size = New System.Drawing.Size(99, 22)
         Me.MarksToolStripMenuItem.Text = "&Add"
         '
         'EditToolStripMenuItem1
         '
         Me.EditToolStripMenuItem1.Name = "EditToolStripMenuItem1"
-        Me.EditToolStripMenuItem1.Size = New System.Drawing.Size(152, 22)
+        Me.EditToolStripMenuItem1.Size = New System.Drawing.Size(99, 22)
         Me.EditToolStripMenuItem1.Text = "&Edit"
         '
         'ViewToolStripMenuItem
         '
         Me.ViewToolStripMenuItem.Name = "ViewToolStripMenuItem"
-        Me.ViewToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.ViewToolStripMenuItem.Size = New System.Drawing.Size(99, 22)
         Me.ViewToolStripMenuItem.Text = "&View"
-        '
-        'ViewToolStripMenuItem1
-        '
-        Me.ViewToolStripMenuItem1.Name = "ViewToolStripMenuItem1"
-        Me.ViewToolStripMenuItem1.Size = New System.Drawing.Size(152, 22)
-        Me.ViewToolStripMenuItem1.Text = "&View"
-        '
-        'ViewToolStripMenuItem2
-        '
-        Me.ViewToolStripMenuItem2.Name = "ViewToolStripMenuItem2"
-        Me.ViewToolStripMenuItem2.Size = New System.Drawing.Size(152, 22)
-        Me.ViewToolStripMenuItem2.Text = "&View"
         '
         'HelpToolStripMenuItem
         '
@@ -149,7 +149,7 @@ Partial Class MDI
         'AboutToolStripMenuItem
         '
         Me.AboutToolStripMenuItem.Name = "AboutToolStripMenuItem"
-        Me.AboutToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.AboutToolStripMenuItem.Size = New System.Drawing.Size(107, 22)
         Me.AboutToolStripMenuItem.Text = "&About"
         '
         'ExitToolStripMenuItem
@@ -162,7 +162,7 @@ Partial Class MDI
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1028, 750)
+        Me.ClientSize = New System.Drawing.Size(1020, 742)
         Me.Controls.Add(Me.MenuStrip1)
         Me.IsMdiContainer = True
         Me.MainMenuStrip = Me.MenuStrip1
