@@ -72,6 +72,12 @@
     <Import Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Addmission_Form.Designer.vb">
+      <DependentUpon>Addmission_Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Addmission_Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="conn.vb" />
     <Compile Include="course.Designer.vb">
       <DependentUpon>course.vb</DependentUpon>
@@ -115,6 +121,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Addmission_Form.resx">
+      <DependentUpon>Addmission_Form.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="course.resx">
       <DependentUpon>course.vb</DependentUpon>
     </EmbeddedResource>

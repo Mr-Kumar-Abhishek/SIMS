@@ -94,7 +94,7 @@ Partial Class MDI
         '
         Me.AddToolStripMenuItem.Name = "AddToolStripMenuItem"
         Me.AddToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
-        Me.AddToolStripMenuItem.Text = "&Add"
+        Me.AddToolStripMenuItem.Text = "&Admission"
         '
         'EditToolStripMenuItem
         '
