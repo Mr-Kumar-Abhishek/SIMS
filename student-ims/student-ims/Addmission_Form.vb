@@ -43,8 +43,7 @@ Public Class Addmission_Form
     End Sub
 
     Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
-        Me.Width = 785
-        Me.Height = 650
+
     End Sub
 
 
