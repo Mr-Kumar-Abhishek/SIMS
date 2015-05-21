@@ -59,13 +59,16 @@ Public Class Addmission_Form
         Me.Height = Panel1.Height
         Me.BackColor = Color.Beige
         GroupBox1.Hide()
+        cn = c.getcon()
         If Not cn.State = ConnectionState.Open Then
-            cn = c.getcon()
+            cn.Open()
         End If
-        'cm = New OleDbCommand("select coursename from course", cn)
-        da = New OleDbDataAdapter("select coursename from course", cn)
-        da.Fill(ds, "course")
-
+        cm = New OleDbCommand("select coursename from course", cn)
+        dr = cm.ExecuteReader
+        While (dr.Read)
+            ComboBox2.Items.Add(dr.GetValue(0))
+        End While
+        cn.Close()
     End Sub
 
 
