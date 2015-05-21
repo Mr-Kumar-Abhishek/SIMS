@@ -44,6 +44,10 @@ Public Class Addmission_Form
 
     Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
 
+        If Not cn.State = ConnectionState.Open Then
+            cn.Open()
+        End If
+        cm = New OleDbCommand("insert into student values('" + TextBox1.Text + "', '" + TextBox8.Text + "', '" + +TextBox3.Text + "', '" + ComboBox2.SelectedItem + "', '" + TextBox7.Text + "'", cn)
     End Sub
 
 
