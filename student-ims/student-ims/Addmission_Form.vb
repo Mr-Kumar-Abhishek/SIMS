@@ -7,27 +7,27 @@ Public Class Addmission_Form
     Dim dr As OleDbDataReader
     Dim da As OleDbDataAdapter
     Dim ds As DataSet
-    Private Sub TextBox5_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles TextBox5.Click
+    Private Sub TextBox5_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles dob.Click
         MonthCalendar1.Show()
     End Sub
 
-    Private Sub TextBox10_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles TextBox10.Click
+    Private Sub TextBox10_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles stdate.Click
         MonthCalendar2.Show()
     End Sub
 
-    Private Sub TextBox11_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles TextBox11.Click
+    Private Sub TextBox11_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles endate.Click
         MonthCalendar3.Show()
     End Sub
     Private Sub MonthCalendar1_DateChanged(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DateRangeEventArgs) Handles MonthCalendar1.DateChanged
-        TextBox5.Text = MonthCalendar1.SelectionStart.Date
+        dob.Text = MonthCalendar1.SelectionStart.Date
     End Sub
 
     Private Sub MonthCalendar2_DateChanged(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DateRangeEventArgs) Handles MonthCalendar2.DateChanged
-        TextBox10.Text = MonthCalendar2.SelectionStart.Date
+        stdate.Text = MonthCalendar2.SelectionStart.Date
     End Sub
 
     Private Sub MonthCalendar3_DateChanged(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DateRangeEventArgs) Handles MonthCalendar3.DateChanged
-        TextBox11.Text = MonthCalendar3.SelectionStart.Date
+        endate.Text = MonthCalendar3.SelectionStart.Date
     End Sub
 
     Private Sub MonthCalendar1_MouseLeave(ByVal sender As Object, ByVal e As System.EventArgs) Handles MonthCalendar1.MouseLeave
@@ -42,12 +42,12 @@ Public Class Addmission_Form
         MonthCalendar3.Hide()
     End Sub
 
-    Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
+    Private Sub ok_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ok.Click
 
         If Not cn.State = ConnectionState.Open Then
             cn.Open()
         End If
-        cm = New OleDbCommand("insert into student values('" + TextBox1.Text + "', '" + TextBox8.Text + "', '" + +TextBox3.Text + "', '" + ComboBox2.SelectedItem + "', '" + TextBox7.Text + "'", cn)
+        cm = New OleDbCommand("insert into student values('" + stdcode.Text + "', '" + crc.Text + "', '" + +add.Text + "', '" + course.SelectedItem + "', '" + qual.Text + "'", cn)
     End Sub
 
 
@@ -69,10 +69,8 @@ Public Class Addmission_Form
         cm = New OleDbCommand("select coursename from course", cn)
         dr = cm.ExecuteReader
         While (dr.Read)
-            ComboBox2.Items.Add(dr.GetValue(0))
+            course.Items.Add(dr.GetValue(0))
         End While
         cn.Close()
     End Sub
-
-
 End Class

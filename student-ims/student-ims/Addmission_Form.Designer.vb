@@ -26,36 +26,36 @@ Partial Class Addmission_Form
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.MonthCalendar3 = New System.Windows.Forms.MonthCalendar()
         Me.MonthCalendar2 = New System.Windows.Forms.MonthCalendar()
-        Me.Button3 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
-        Me.ListBox1 = New System.Windows.Forms.ListBox()
+        Me.cancel = New System.Windows.Forms.Button()
+        Me.ok = New System.Windows.Forms.Button()
+        Me.modbox = New System.Windows.Forms.ListBox()
         Me.Label13 = New System.Windows.Forms.Label()
-        Me.TextBox11 = New System.Windows.Forms.TextBox()
+        Me.endate = New System.Windows.Forms.TextBox()
         Me.Label12 = New System.Windows.Forms.Label()
-        Me.TextBox10 = New System.Windows.Forms.TextBox()
+        Me.stdate = New System.Windows.Forms.TextBox()
         Me.Label11 = New System.Windows.Forms.Label()
-        Me.TextBox9 = New System.Windows.Forms.TextBox()
+        Me.crf = New System.Windows.Forms.TextBox()
         Me.Label10 = New System.Windows.Forms.Label()
-        Me.TextBox8 = New System.Windows.Forms.TextBox()
+        Me.crc = New System.Windows.Forms.TextBox()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
+        Me.gender = New System.Windows.Forms.ComboBox()
+        Me.tele = New System.Windows.Forms.TextBox()
         Me.Label6 = New System.Windows.Forms.Label()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.TextBox5 = New System.Windows.Forms.TextBox()
+        Me.add = New System.Windows.Forms.TextBox()
+        Me.dob = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.stdname = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.TextBox7 = New System.Windows.Forms.TextBox()
+        Me.stdcode = New System.Windows.Forms.TextBox()
+        Me.qual = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.ComboBox2 = New System.Windows.Forms.ComboBox()
+        Me.course = New System.Windows.Forms.ComboBox()
         Me.GroupBox1.SuspendLayout()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
@@ -71,17 +71,17 @@ Partial Class Addmission_Form
         '
         Me.GroupBox1.Controls.Add(Me.MonthCalendar3)
         Me.GroupBox1.Controls.Add(Me.MonthCalendar2)
-        Me.GroupBox1.Controls.Add(Me.Button3)
-        Me.GroupBox1.Controls.Add(Me.Button2)
-        Me.GroupBox1.Controls.Add(Me.ListBox1)
+        Me.GroupBox1.Controls.Add(Me.cancel)
+        Me.GroupBox1.Controls.Add(Me.ok)
+        Me.GroupBox1.Controls.Add(Me.modbox)
         Me.GroupBox1.Controls.Add(Me.Label13)
-        Me.GroupBox1.Controls.Add(Me.TextBox11)
+        Me.GroupBox1.Controls.Add(Me.endate)
         Me.GroupBox1.Controls.Add(Me.Label12)
-        Me.GroupBox1.Controls.Add(Me.TextBox10)
+        Me.GroupBox1.Controls.Add(Me.stdate)
         Me.GroupBox1.Controls.Add(Me.Label11)
-        Me.GroupBox1.Controls.Add(Me.TextBox9)
+        Me.GroupBox1.Controls.Add(Me.crf)
         Me.GroupBox1.Controls.Add(Me.Label10)
-        Me.GroupBox1.Controls.Add(Me.TextBox8)
+        Me.GroupBox1.Controls.Add(Me.crc)
         Me.GroupBox1.Controls.Add(Me.Label9)
         Me.GroupBox1.Font = New System.Drawing.Font("Segoe Script", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox1.Location = New System.Drawing.Point(12, 410)
@@ -101,37 +101,37 @@ Partial Class Addmission_Form
         '
         'MonthCalendar2
         '
-        Me.MonthCalendar2.Location = New System.Drawing.Point(59, -5)
+        Me.MonthCalendar2.Location = New System.Drawing.Point(74, -91)
         Me.MonthCalendar2.Name = "MonthCalendar2"
         Me.MonthCalendar2.TabIndex = 12
         Me.MonthCalendar2.Visible = False
         '
-        'Button3
+        'cancel
         '
-        Me.Button3.Location = New System.Drawing.Point(341, 177)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(75, 23)
-        Me.Button3.TabIndex = 11
-        Me.Button3.Text = "Cancel"
-        Me.Button3.UseVisualStyleBackColor = True
+        Me.cancel.Location = New System.Drawing.Point(341, 177)
+        Me.cancel.Name = "cancel"
+        Me.cancel.Size = New System.Drawing.Size(75, 23)
+        Me.cancel.TabIndex = 11
+        Me.cancel.Text = "Cancel"
+        Me.cancel.UseVisualStyleBackColor = True
         '
-        'Button2
+        'ok
         '
-        Me.Button2.Location = New System.Drawing.Point(192, 177)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(75, 23)
-        Me.Button2.TabIndex = 10
-        Me.Button2.Text = "OK"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.ok.Location = New System.Drawing.Point(192, 177)
+        Me.ok.Name = "ok"
+        Me.ok.Size = New System.Drawing.Size(75, 23)
+        Me.ok.TabIndex = 10
+        Me.ok.Text = "OK"
+        Me.ok.UseVisualStyleBackColor = True
         '
-        'ListBox1
+        'modbox
         '
-        Me.ListBox1.FormattingEnabled = True
-        Me.ListBox1.ItemHeight = 20
-        Me.ListBox1.Location = New System.Drawing.Point(573, 76)
-        Me.ListBox1.Name = "ListBox1"
-        Me.ListBox1.Size = New System.Drawing.Size(120, 124)
-        Me.ListBox1.TabIndex = 9
+        Me.modbox.FormattingEnabled = True
+        Me.modbox.ItemHeight = 20
+        Me.modbox.Location = New System.Drawing.Point(573, 76)
+        Me.modbox.Name = "modbox"
+        Me.modbox.Size = New System.Drawing.Size(120, 124)
+        Me.modbox.TabIndex = 9
         '
         'Label13
         '
@@ -142,30 +142,30 @@ Partial Class Addmission_Form
         Me.Label13.TabIndex = 8
         Me.Label13.Text = "Module Details"
         '
-        'TextBox11
+        'endate
         '
-        Me.TextBox11.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox11.Location = New System.Drawing.Point(422, 113)
-        Me.TextBox11.Name = "TextBox11"
-        Me.TextBox11.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox11.TabIndex = 7
+        Me.endate.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.endate.Location = New System.Drawing.Point(422, 125)
+        Me.endate.Name = "endate"
+        Me.endate.Size = New System.Drawing.Size(100, 20)
+        Me.endate.TabIndex = 7
         '
         'Label12
         '
         Me.Label12.AutoSize = True
-        Me.Label12.Location = New System.Drawing.Point(308, 113)
+        Me.Label12.Location = New System.Drawing.Point(308, 125)
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(108, 20)
         Me.Label12.TabIndex = 6
         Me.Label12.Text = "Ending Date :"
         '
-        'TextBox10
+        'stdate
         '
-        Me.TextBox10.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox10.Location = New System.Drawing.Point(137, 113)
-        Me.TextBox10.Name = "TextBox10"
-        Me.TextBox10.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox10.TabIndex = 5
+        Me.stdate.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.stdate.Location = New System.Drawing.Point(137, 113)
+        Me.stdate.Name = "stdate"
+        Me.stdate.Size = New System.Drawing.Size(100, 20)
+        Me.stdate.TabIndex = 5
         '
         'Label11
         '
@@ -176,30 +176,30 @@ Partial Class Addmission_Form
         Me.Label11.TabIndex = 4
         Me.Label11.Text = "Starting Date :"
         '
-        'TextBox9
+        'crf
         '
-        Me.TextBox9.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox9.Location = New System.Drawing.Point(422, 58)
-        Me.TextBox9.Name = "TextBox9"
-        Me.TextBox9.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox9.TabIndex = 3
+        Me.crf.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.crf.Location = New System.Drawing.Point(422, 58)
+        Me.crf.Name = "crf"
+        Me.crf.Size = New System.Drawing.Size(100, 20)
+        Me.crf.TabIndex = 3
         '
         'Label10
         '
         Me.Label10.AutoSize = True
-        Me.Label10.Location = New System.Drawing.Point(309, 51)
+        Me.Label10.Location = New System.Drawing.Point(308, 58)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(96, 20)
         Me.Label10.TabIndex = 2
         Me.Label10.Text = "Course Fees :"
         '
-        'TextBox8
+        'crc
         '
-        Me.TextBox8.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox8.Location = New System.Drawing.Point(137, 51)
-        Me.TextBox8.Name = "TextBox8"
-        Me.TextBox8.Size = New System.Drawing.Size(109, 20)
-        Me.TextBox8.TabIndex = 1
+        Me.crc.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.crc.Location = New System.Drawing.Point(137, 51)
+        Me.crc.Name = "crc"
+        Me.crc.Size = New System.Drawing.Size(109, 20)
+        Me.crc.TabIndex = 1
         '
         'Label9
         '
@@ -220,21 +220,21 @@ Partial Class Addmission_Form
         Me.Label5.TabIndex = 8
         Me.Label5.Text = "Gender :"
         '
-        'ComboBox1
+        'gender
         '
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Items.AddRange(New Object() {"male", "female"})
-        Me.ComboBox1.Location = New System.Drawing.Point(155, 70)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(136, 21)
-        Me.ComboBox1.TabIndex = 9
+        Me.gender.FormattingEnabled = True
+        Me.gender.Items.AddRange(New Object() {"male", "female"})
+        Me.gender.Location = New System.Drawing.Point(155, 70)
+        Me.gender.Name = "gender"
+        Me.gender.Size = New System.Drawing.Size(136, 21)
+        Me.gender.TabIndex = 9
         '
-        'TextBox4
+        'tele
         '
-        Me.TextBox4.Location = New System.Drawing.Point(527, 71)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(187, 20)
-        Me.TextBox4.TabIndex = 7
+        Me.tele.Location = New System.Drawing.Point(527, 71)
+        Me.tele.Name = "tele"
+        Me.tele.Size = New System.Drawing.Size(187, 20)
+        Me.tele.TabIndex = 7
         '
         'Label6
         '
@@ -246,20 +246,20 @@ Partial Class Addmission_Form
         Me.Label6.TabIndex = 10
         Me.Label6.Text = "Date of Birth :"
         '
-        'TextBox3
+        'add
         '
-        Me.TextBox3.Location = New System.Drawing.Point(155, 118)
-        Me.TextBox3.Multiline = True
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(136, 57)
-        Me.TextBox3.TabIndex = 5
+        Me.add.Location = New System.Drawing.Point(155, 118)
+        Me.add.Multiline = True
+        Me.add.Name = "add"
+        Me.add.Size = New System.Drawing.Size(136, 57)
+        Me.add.TabIndex = 5
         '
-        'TextBox5
+        'dob
         '
-        Me.TextBox5.Location = New System.Drawing.Point(527, 118)
-        Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(136, 20)
-        Me.TextBox5.TabIndex = 11
+        Me.dob.Location = New System.Drawing.Point(527, 118)
+        Me.dob.Name = "dob"
+        Me.dob.Size = New System.Drawing.Size(136, 20)
+        Me.dob.TabIndex = 11
         '
         'Label3
         '
@@ -281,12 +281,12 @@ Partial Class Addmission_Form
         Me.Label7.TabIndex = 13
         Me.Label7.Text = "Course :"
         '
-        'TextBox2
+        'stdname
         '
-        Me.TextBox2.Location = New System.Drawing.Point(527, 12)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(205, 20)
-        Me.TextBox2.TabIndex = 3
+        Me.stdname.Location = New System.Drawing.Point(527, 12)
+        Me.stdname.Name = "stdname"
+        Me.stdname.Size = New System.Drawing.Size(205, 20)
+        Me.stdname.TabIndex = 3
         '
         'Label2
         '
@@ -308,19 +308,19 @@ Partial Class Addmission_Form
         Me.Label8.TabIndex = 15
         Me.Label8.Text = "Qualification :"
         '
-        'TextBox1
+        'stdcode
         '
-        Me.TextBox1.Location = New System.Drawing.Point(155, 21)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(136, 20)
-        Me.TextBox1.TabIndex = 1
+        Me.stdcode.Location = New System.Drawing.Point(155, 21)
+        Me.stdcode.Name = "stdcode"
+        Me.stdcode.Size = New System.Drawing.Size(136, 20)
+        Me.stdcode.TabIndex = 1
         '
-        'TextBox7
+        'qual
         '
-        Me.TextBox7.Location = New System.Drawing.Point(155, 217)
-        Me.TextBox7.Name = "TextBox7"
-        Me.TextBox7.Size = New System.Drawing.Size(136, 20)
-        Me.TextBox7.TabIndex = 16
+        Me.qual.Location = New System.Drawing.Point(155, 217)
+        Me.qual.Name = "qual"
+        Me.qual.Size = New System.Drawing.Size(136, 20)
+        Me.qual.TabIndex = 16
         '
         'Label1
         '
@@ -354,36 +354,36 @@ Partial Class Addmission_Form
         '
         'Panel1
         '
-        Me.Panel1.Controls.Add(Me.ComboBox2)
+        Me.Panel1.Controls.Add(Me.course)
         Me.Panel1.Controls.Add(Me.Label4)
         Me.Panel1.Controls.Add(Me.Button1)
         Me.Panel1.Controls.Add(Me.MonthCalendar1)
         Me.Panel1.Controls.Add(Me.Label1)
-        Me.Panel1.Controls.Add(Me.TextBox7)
-        Me.Panel1.Controls.Add(Me.TextBox1)
+        Me.Panel1.Controls.Add(Me.qual)
+        Me.Panel1.Controls.Add(Me.stdcode)
         Me.Panel1.Controls.Add(Me.Label8)
         Me.Panel1.Controls.Add(Me.Label2)
-        Me.Panel1.Controls.Add(Me.TextBox2)
+        Me.Panel1.Controls.Add(Me.stdname)
         Me.Panel1.Controls.Add(Me.Label7)
         Me.Panel1.Controls.Add(Me.Label3)
-        Me.Panel1.Controls.Add(Me.TextBox5)
-        Me.Panel1.Controls.Add(Me.TextBox3)
+        Me.Panel1.Controls.Add(Me.dob)
+        Me.Panel1.Controls.Add(Me.add)
         Me.Panel1.Controls.Add(Me.Label6)
-        Me.Panel1.Controls.Add(Me.TextBox4)
-        Me.Panel1.Controls.Add(Me.ComboBox1)
+        Me.Panel1.Controls.Add(Me.tele)
+        Me.Panel1.Controls.Add(Me.gender)
         Me.Panel1.Controls.Add(Me.Label5)
         Me.Panel1.Location = New System.Drawing.Point(16, 12)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(760, 381)
         Me.Panel1.TabIndex = 18
         '
-        'ComboBox2
+        'course
         '
-        Me.ComboBox2.FormattingEnabled = True
-        Me.ComboBox2.Location = New System.Drawing.Point(527, 198)
-        Me.ComboBox2.Name = "ComboBox2"
-        Me.ComboBox2.Size = New System.Drawing.Size(205, 21)
-        Me.ComboBox2.TabIndex = 18
+        Me.course.FormattingEnabled = True
+        Me.course.Location = New System.Drawing.Point(527, 198)
+        Me.course.Name = "course"
+        Me.course.Size = New System.Drawing.Size(205, 21)
+        Me.course.TabIndex = 18
         '
         'Addmission_Form
         '
@@ -406,35 +406,35 @@ Partial Class Addmission_Form
     Friend WithEvents MonthCalendar1 As System.Windows.Forms.MonthCalendar
     Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
     Friend WithEvents Label5 As System.Windows.Forms.Label
-    Friend WithEvents ComboBox1 As System.Windows.Forms.ComboBox
-    Friend WithEvents TextBox4 As System.Windows.Forms.TextBox
+    Friend WithEvents gender As System.Windows.Forms.ComboBox
+    Friend WithEvents tele As System.Windows.Forms.TextBox
     Friend WithEvents Label6 As System.Windows.Forms.Label
-    Friend WithEvents TextBox3 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox5 As System.Windows.Forms.TextBox
+    Friend WithEvents add As System.Windows.Forms.TextBox
+    Friend WithEvents dob As System.Windows.Forms.TextBox
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents Label7 As System.Windows.Forms.Label
-    Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
+    Friend WithEvents stdname As System.Windows.Forms.TextBox
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents Label8 As System.Windows.Forms.Label
-    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox7 As System.Windows.Forms.TextBox
+    Friend WithEvents stdcode As System.Windows.Forms.TextBox
+    Friend WithEvents qual As System.Windows.Forms.TextBox
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents Label4 As System.Windows.Forms.Label
     Friend WithEvents Panel1 As System.Windows.Forms.Panel
-    Friend WithEvents TextBox11 As System.Windows.Forms.TextBox
+    Friend WithEvents endate As System.Windows.Forms.TextBox
     Friend WithEvents Label12 As System.Windows.Forms.Label
-    Friend WithEvents TextBox10 As System.Windows.Forms.TextBox
+    Friend WithEvents stdate As System.Windows.Forms.TextBox
     Friend WithEvents Label11 As System.Windows.Forms.Label
-    Friend WithEvents TextBox9 As System.Windows.Forms.TextBox
+    Friend WithEvents crf As System.Windows.Forms.TextBox
     Friend WithEvents Label10 As System.Windows.Forms.Label
-    Friend WithEvents TextBox8 As System.Windows.Forms.TextBox
+    Friend WithEvents crc As System.Windows.Forms.TextBox
     Friend WithEvents Label9 As System.Windows.Forms.Label
     Friend WithEvents MonthCalendar3 As System.Windows.Forms.MonthCalendar
     Friend WithEvents MonthCalendar2 As System.Windows.Forms.MonthCalendar
-    Friend WithEvents Button3 As System.Windows.Forms.Button
-    Friend WithEvents Button2 As System.Windows.Forms.Button
-    Friend WithEvents ListBox1 As System.Windows.Forms.ListBox
+    Friend WithEvents cancel As System.Windows.Forms.Button
+    Friend WithEvents ok As System.Windows.Forms.Button
+    Friend WithEvents modbox As System.Windows.Forms.ListBox
     Friend WithEvents Label13 As System.Windows.Forms.Label
-    Friend WithEvents ComboBox2 As System.Windows.Forms.ComboBox
+    Friend WithEvents course As System.Windows.Forms.ComboBox
 End Class
