@@ -77,6 +77,7 @@ Public Class Addmission_Form
     End Sub
 
     Private Sub course_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles course.SelectedIndexChanged
+        modbox.Items.Clear()
         If Not cn.State = ConnectionState.Open Then
             cn.Open()
         End If
