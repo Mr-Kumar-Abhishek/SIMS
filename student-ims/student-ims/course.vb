@@ -57,8 +57,4 @@ Public Class course
         End If
         cn.Close()
     End Sub
-
-    Private Sub cancel_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cancel.Click
-
-    End Sub
 End Class

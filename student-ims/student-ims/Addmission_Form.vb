@@ -93,4 +93,8 @@ Public Class Addmission_Form
         End While
         cn.Close()
     End Sub
+
+    Private Sub cancel_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cancel.Click
+        Me.Close()
+    End Sub
 End Class
