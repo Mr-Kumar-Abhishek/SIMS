@@ -62,7 +62,7 @@ Partial Class Addmission_Form
         '
         'MonthCalendar1
         '
-        Me.MonthCalendar1.Location = New System.Drawing.Point(522, 224)
+        Me.MonthCalendar1.Location = New System.Drawing.Point(522, 147)
         Me.MonthCalendar1.Name = "MonthCalendar1"
         Me.MonthCalendar1.TabIndex = 12
         Me.MonthCalendar1.Visible = False
@@ -94,7 +94,7 @@ Partial Class Addmission_Form
         '
         'MonthCalendar3
         '
-        Me.MonthCalendar3.Location = New System.Drawing.Point(407, 145)
+        Me.MonthCalendar3.Location = New System.Drawing.Point(406, 158)
         Me.MonthCalendar3.Name = "MonthCalendar3"
         Me.MonthCalendar3.TabIndex = 13
         Me.MonthCalendar3.Visible = False
@@ -195,6 +195,7 @@ Partial Class Addmission_Form
         '
         'crc
         '
+        Me.crc.Enabled = False
         Me.crc.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.crc.Location = New System.Drawing.Point(137, 58)
         Me.crc.Name = "crc"
@@ -285,7 +286,7 @@ Partial Class Addmission_Form
         '
         Me.stdname.Location = New System.Drawing.Point(527, 12)
         Me.stdname.Name = "stdname"
-        Me.stdname.Size = New System.Drawing.Size(205, 20)
+        Me.stdname.Size = New System.Drawing.Size(187, 20)
         Me.stdname.TabIndex = 3
         '
         'Label2

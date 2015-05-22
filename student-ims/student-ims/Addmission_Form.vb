@@ -75,4 +75,16 @@ Public Class Addmission_Form
         End While
         cn.Close()
     End Sub
+
+    Private Sub course_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles course.SelectedIndexChanged
+        If Not cn.State = ConnectionState.Open Then
+            cn.Open()
+        End If
+        cm = New OleDbCommand("select coursecode from course where coursename = '" + course.SelectedItem + "'", cn)
+        dr = cm.ExecuteReader
+        While (dr.Read)
+            crc.Text = dr.GetValue(0)
+        End While
+        cn.Close()
+    End Sub
 End Class
