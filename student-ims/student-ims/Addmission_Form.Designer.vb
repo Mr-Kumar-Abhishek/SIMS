@@ -101,7 +101,7 @@ Partial Class Addmission_Form
         '
         'MonthCalendar2
         '
-        Me.MonthCalendar2.Location = New System.Drawing.Point(57, 152)
+        Me.MonthCalendar2.Location = New System.Drawing.Point(183, 13)
         Me.MonthCalendar2.Name = "MonthCalendar2"
         Me.MonthCalendar2.TabIndex = 12
         Me.MonthCalendar2.Visible = False
@@ -162,7 +162,7 @@ Partial Class Addmission_Form
         'stdate
         '
         Me.stdate.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.stdate.Location = New System.Drawing.Point(137, 113)
+        Me.stdate.Location = New System.Drawing.Point(137, 125)
         Me.stdate.Name = "stdate"
         Me.stdate.Size = New System.Drawing.Size(100, 20)
         Me.stdate.TabIndex = 5
@@ -170,7 +170,7 @@ Partial Class Addmission_Form
         'Label11
         '
         Me.Label11.AutoSize = True
-        Me.Label11.Location = New System.Drawing.Point(10, 113)
+        Me.Label11.Location = New System.Drawing.Point(6, 125)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(113, 20)
         Me.Label11.TabIndex = 4
@@ -196,7 +196,7 @@ Partial Class Addmission_Form
         'crc
         '
         Me.crc.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.crc.Location = New System.Drawing.Point(137, 51)
+        Me.crc.Location = New System.Drawing.Point(137, 58)
         Me.crc.Name = "crc"
         Me.crc.Size = New System.Drawing.Size(109, 20)
         Me.crc.TabIndex = 1
@@ -204,7 +204,7 @@ Partial Class Addmission_Form
         'Label9
         '
         Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(10, 51)
+        Me.Label9.Location = New System.Drawing.Point(10, 58)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(104, 20)
         Me.Label9.TabIndex = 0
