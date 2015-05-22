@@ -43,11 +43,10 @@ Public Class Addmission_Form
     End Sub
 
     Private Sub ok_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ok.Click
-
         If Not cn.State = ConnectionState.Open Then
             cn.Open()
         End If
-        cm = New OleDbCommand("insert into student values('" + stdcode.Text + "', '" + crc.Text + "', '" + +add.Text + "', '" + course.SelectedItem + "', '" + qual.Text + "'", cn)
+        cm = New OleDbCommand("insert into student values('" + stdcode.Text + "' ,'" + stdname.Text + "', '" + gender.SelectedItem + "', '" + tele.Text + "', '" + add.Text + "', '" + dob.Text + "', '" + qual.Text + "', '" + crc.Text + "', '" + stdate.Text + "', '" + endate.Text + "'", cn)
     End Sub
 
 
