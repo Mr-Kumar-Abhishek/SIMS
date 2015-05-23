@@ -394,6 +394,7 @@ Partial Class Addmission_Form
         Me.ClientSize = New System.Drawing.Size(783, 742)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.GroupBox1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "Addmission_Form"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Addmission_Form"
