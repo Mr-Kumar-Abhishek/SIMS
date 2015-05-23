@@ -7,6 +7,7 @@ Public Class Addmission_Form
     Dim dr As OleDbDataReader
     Dim da As OleDbDataAdapter
     Dim ds As DataSet
+    Dim chk As String
     Private Sub TextBox5_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles dob.Click
         MonthCalendar1.Show()
     End Sub
@@ -46,6 +47,12 @@ Public Class Addmission_Form
         If Not cn.State = ConnectionState.Open Then
             cn.Open()
         End If
+        cm = New OleDbCommand("select moduleid, user from stmod where user = '" + stdcode.Text + "')", cn)
+        dr = cm.ExecuteReader
+        While (dr.Read)
+            chk = dr.GetValue(0)
+        End While
+        MsgBox(chk)
         cm = New OleDbCommand("insert into student values('" + stdcode.Text + "', '" + stdname.Text + "', '" + gender.SelectedItem + "', '" + tele.Text + "', '" + add.Text + "', '" + dob.Text + "', '" + qual.Text + "', '" + crc.Text + "', '" + stdate.Text + "', '" + endate.Text + "', 'comming soon')", cn)
         cm.ExecuteNonQuery()
         'cm = New OleDbCommand("insert into stmod values('some id', '" + stdcode.Text + "')", cn)
