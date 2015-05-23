@@ -47,12 +47,13 @@ Public Class Addmission_Form
         If Not cn.State = ConnectionState.Open Then
             cn.Open()
         End If
-        cm = New OleDbCommand("select moduleid, user from stmod where user = '" + stdcode.Text + "')", cn)
-        dr = cm.ExecuteReader
-        While (dr.Read)
-            chk = dr.GetValue(0)
-        End While
-        MsgBox(chk)
+        cm = New OleDbCommand("select user from stmod where user = '" + stdcode.Text + "')", cn)
+        chk = CInt(cm.ExecuteScalar)
+        If (chk > 0) Then
+            MsgBox("record already exits")
+        Else
+            MsgBox("record doesn't exits")
+        End If
         cm = New OleDbCommand("insert into student values('" + stdcode.Text + "', '" + stdname.Text + "', '" + gender.SelectedItem + "', '" + tele.Text + "', '" + add.Text + "', '" + dob.Text + "', '" + qual.Text + "', '" + crc.Text + "', '" + stdate.Text + "', '" + endate.Text + "', 'comming soon')", cn)
         cm.ExecuteNonQuery()
         'cm = New OleDbCommand("insert into stmod values('some id', '" + stdcode.Text + "')", cn)
@@ -107,7 +108,4 @@ Public Class Addmission_Form
         Me.Close()
     End Sub
 
-    Private Sub GroupBox1_Enter(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles GroupBox1.Enter
-
-    End Sub
 End Class
