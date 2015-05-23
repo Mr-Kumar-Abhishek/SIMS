@@ -65,6 +65,7 @@ Public Class Addmission_Form
         Me.Height = Panel1.Height
         Me.BackColor = Color.Beige
         GroupBox1.Hide()
+        modbox.SelectionMode = SelectionMode.MultiSimple
         cn = c.getcon()
         If Not cn.State = ConnectionState.Open Then
             cn.Open()
@@ -97,5 +98,9 @@ Public Class Addmission_Form
 
     Private Sub cancel_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cancel.Click
         Me.Close()
+    End Sub
+
+    Private Sub GroupBox1_Enter(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles GroupBox1.Enter
+
     End Sub
 End Class

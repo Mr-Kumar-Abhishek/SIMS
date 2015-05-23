@@ -62,7 +62,7 @@ Partial Class Addmission_Form
         '
         'MonthCalendar1
         '
-        Me.MonthCalendar1.Location = New System.Drawing.Point(522, 147)
+        Me.MonthCalendar1.Location = New System.Drawing.Point(524, 147)
         Me.MonthCalendar1.Name = "MonthCalendar1"
         Me.MonthCalendar1.TabIndex = 12
         Me.MonthCalendar1.Visible = False
@@ -383,7 +383,7 @@ Partial Class Addmission_Form
         Me.course.FormattingEnabled = True
         Me.course.Location = New System.Drawing.Point(527, 198)
         Me.course.Name = "course"
-        Me.course.Size = New System.Drawing.Size(205, 21)
+        Me.course.Size = New System.Drawing.Size(187, 21)
         Me.course.TabIndex = 18
         '
         'Addmission_Form
