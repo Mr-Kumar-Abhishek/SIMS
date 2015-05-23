@@ -52,7 +52,7 @@ Public Class Addmission_Form
         'While (dr.Read)
         'chk = dr.GetValue(0)
         'End While
-        MsgBox(chk)
+        'MsgBox(chk)
         cm = New OleDbCommand("insert into student values('" + stdcode.Text + "', '" + stdname.Text + "', '" + gender.SelectedItem + "', '" + tele.Text + "', '" + add.Text + "', '" + dob.Text + "', '" + qual.Text + "', '" + crc.Text + "', '" + stdate.Text + "', '" + endate.Text + "', 'comming soon')", cn)
         cm.ExecuteNonQuery()
         'cm = New OleDbCommand("insert into stmod values('some id', '" + stdcode.Text + "')", cn)
