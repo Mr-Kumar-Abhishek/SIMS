@@ -128,6 +128,7 @@ Partial Class Addmission_Form
         '
         Me.modbox.FormattingEnabled = True
         Me.modbox.ItemHeight = 20
+        Me.modbox.Items.AddRange(New Object() {" "})
         Me.modbox.Location = New System.Drawing.Point(573, 76)
         Me.modbox.Name = "modbox"
         Me.modbox.Size = New System.Drawing.Size(120, 124)
