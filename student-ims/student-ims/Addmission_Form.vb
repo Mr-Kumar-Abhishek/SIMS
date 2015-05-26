@@ -7,7 +7,7 @@ Public Class Addmission_Form
     Dim dr As OleDbDataReader
     Dim da As OleDbDataAdapter
     Dim ds As DataSet
-    Dim chk As Integer
+    Dim itemnum As Integer
     Private Sub TextBox5_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles dob.Click
         MonthCalendar1.Show()
     End Sub
@@ -50,15 +50,22 @@ Public Class Addmission_Form
 
         cm = New OleDbCommand("select user from stmod where user = '" + stdcode.Text + "'", cn)
         'cm = New OleDbCommand("select user from stmod where user = '" + stdcode.Text + "' and moduleid = '" + modbox.SelectedItems.IndexOf(i) + "')", cn)
+        itemnum = modbox.SelectedItems.Count
+        'For index As Integer = 1 To itemnum
+        'cm = New OleDbCommand("select user from stmod where user = '" + stdcode.Text + "' and moduleid = '" +modbox.SelectedItems
+        'Next
 
-        dr = cm.ExecuteReader
-        If dr.HasRows Then
-            MsgBox("sorry the value already exits")
-        Else
-            MsgBox("values doesn't exist")
-        End If
-        cm = New OleDbCommand("insert into student values('" + stdcode.Text + "', '" + stdname.Text + "', '" + gender.SelectedItem + "', '" + tele.Text + "', '" + add.Text + "', '" + dob.Text + "', '" + qual.Text + "', '" + crc.Text + "', '" + stdate.Text + "', '" + endate.Text + "', 'comming soon')", cn)
-        cm.ExecuteNonQuery()
+        For Each item As Integer In modbox.SelectedIndices
+            cm = New OleDbCommand("select user from stmod where user = '" + CDbl(stdcode.Text) + "' and moduleid = '" + modbox.SelectedItems.IndexOf(item) + "')", cn)
+            dr = cm.ExecuteReader
+            If dr.HasRows Then
+                MsgBox("sorry the value already exits")
+            Else
+                MsgBox("values doesn't exist")
+            End If
+        Next
+        'cm = New OleDbCommand("insert into student values('" + stdcode.Text + "', '" + stdname.Text + "', '" + gender.SelectedItem + "', '" + tele.Text + "', '" + add.Text + "', '" + dob.Text + "', '" + qual.Text + "', '" + crc.Text + "', '" + stdate.Text + "', '" + endate.Text + "', 'comming soon')", cn)
+        'cm.ExecuteNonQuery()
         'cm = New OleDbCommand("insert into stmod values('some id', '" + stdcode.Text + "')", cn)
         MsgBox("hopefully data is inserted")
         cn.Close()
