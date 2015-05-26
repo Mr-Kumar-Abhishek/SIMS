@@ -25,6 +25,7 @@ Partial Class Addmission_Form
         Me.MonthCalendar1 = New System.Windows.Forms.MonthCalendar()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.MonthCalendar3 = New System.Windows.Forms.MonthCalendar()
+        Me.MonthCalendar2 = New System.Windows.Forms.MonthCalendar()
         Me.cancel = New System.Windows.Forms.Button()
         Me.ok = New System.Windows.Forms.Button()
         Me.modbox = New System.Windows.Forms.ListBox()
@@ -37,7 +38,6 @@ Partial Class Addmission_Form
         Me.Label10 = New System.Windows.Forms.Label()
         Me.crc = New System.Windows.Forms.TextBox()
         Me.Label9 = New System.Windows.Forms.Label()
-        Me.MonthCalendar2 = New System.Windows.Forms.MonthCalendar()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.gender = New System.Windows.Forms.ComboBox()
         Me.tele = New System.Windows.Forms.TextBox()
@@ -98,6 +98,13 @@ Partial Class Addmission_Form
         Me.MonthCalendar3.Name = "MonthCalendar3"
         Me.MonthCalendar3.TabIndex = 13
         Me.MonthCalendar3.Visible = False
+        '
+        'MonthCalendar2
+        '
+        Me.MonthCalendar2.Location = New System.Drawing.Point(93, 146)
+        Me.MonthCalendar2.Name = "MonthCalendar2"
+        Me.MonthCalendar2.TabIndex = 12
+        Me.MonthCalendar2.Visible = False
         '
         'cancel
         '
@@ -204,13 +211,6 @@ Partial Class Addmission_Form
         Me.Label9.Size = New System.Drawing.Size(104, 20)
         Me.Label9.TabIndex = 0
         Me.Label9.Text = "Course Code :"
-        '
-        'MonthCalendar2
-        '
-        Me.MonthCalendar2.Location = New System.Drawing.Point(93, 146)
-        Me.MonthCalendar2.Name = "MonthCalendar2"
-        Me.MonthCalendar2.TabIndex = 12
-        Me.MonthCalendar2.Visible = False
         '
         'Label5
         '

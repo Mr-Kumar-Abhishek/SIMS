@@ -7,7 +7,7 @@ Public Class Addmission_Form
     Dim dr As OleDbDataReader
     Dim da As OleDbDataAdapter
     Dim ds As DataSet
-    Dim chk As String
+    Dim chk As Integer
     Private Sub TextBox5_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles dob.Click
         MonthCalendar1.Show()
     End Sub
@@ -47,7 +47,10 @@ Public Class Addmission_Form
         If Not cn.State = ConnectionState.Open Then
             cn.Open()
         End If
-        cm = New OleDbCommand("select user from stmod where user = '" + stdcode.Text + "')", cn)
+
+
+        'cm = New OleDbCommand("select user from stmod where user = '" + stdcode.Text + "' and moduleid = '" + modbox.SelectedItems.IndexOf(i) + "')", cn)
+
         chk = CInt(cm.ExecuteScalar)
         If (chk > 0) Then
             MsgBox("record already exits")
@@ -108,4 +111,7 @@ Public Class Addmission_Form
         Me.Close()
     End Sub
 
+    Private Sub modbox_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles modbox.SelectedIndexChanged
+
+    End Sub
 End Class
