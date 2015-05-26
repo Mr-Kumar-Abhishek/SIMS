@@ -51,11 +51,11 @@ Public Class Addmission_Form
         cm = New OleDbCommand("select user from stmod where user = '" + stdcode.Text + "'", cn)
         'cm = New OleDbCommand("select user from stmod where user = '" + stdcode.Text + "' and moduleid = '" + modbox.SelectedItems.IndexOf(i) + "')", cn)
 
-        chk = CInt(cm.ExecuteScalar)
-        If (chk > 0) Then
-            MsgBox("record already exits")
+        dr = cm.ExecuteReader
+        If dr.HasRows Then
+            MsgBox("sorry the value already exits")
         Else
-            MsgBox("record doesn't exits")
+            MsgBox("values doesn't exist")
         End If
         cm = New OleDbCommand("insert into student values('" + stdcode.Text + "', '" + stdname.Text + "', '" + gender.SelectedItem + "', '" + tele.Text + "', '" + add.Text + "', '" + dob.Text + "', '" + qual.Text + "', '" + crc.Text + "', '" + stdate.Text + "', '" + endate.Text + "', 'comming soon')", cn)
         cm.ExecuteNonQuery()
