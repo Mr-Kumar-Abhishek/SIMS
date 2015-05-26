@@ -48,7 +48,7 @@ Public Class Addmission_Form
             cn.Open()
         End If
 
-
+        cm = New OleDbCommand("select user from stmod where user = '" + stdcode.Text + "'", cn)
         'cm = New OleDbCommand("select user from stmod where user = '" + stdcode.Text + "' and moduleid = '" + modbox.SelectedItems.IndexOf(i) + "')", cn)
 
         chk = CInt(cm.ExecuteScalar)
