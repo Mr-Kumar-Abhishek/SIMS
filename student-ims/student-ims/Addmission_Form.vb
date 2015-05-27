@@ -54,7 +54,7 @@ Public Class Addmission_Form
 
         itemnum = modbox.SelectedItems.Count
         For index As Integer = 1 To itemnum
-            cm = New OleDbCommand("select user from stmod where user = '" + stdcode.Text + "' and moduleid = '" + modbox.SelectedItems.IndexOf(index) + "')", cn)
+            cm = New OleDbCommand("insert into stmod values('" + stdcode.Text + "', '" + modbox.SelectedItems.IndexOf(index) + "')", cn)
             cm.ExecuteNonQuery()
         Next
 
