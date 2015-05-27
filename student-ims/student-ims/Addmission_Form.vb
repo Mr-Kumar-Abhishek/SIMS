@@ -8,6 +8,7 @@ Public Class Addmission_Form
     Dim da As OleDbDataAdapter
     Dim ds As DataSet
     Dim itemnum As Integer
+    'Dim p As Double
     Private Sub TextBox5_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles dob.Click
         MonthCalendar1.Show()
     End Sub
@@ -53,10 +54,16 @@ Public Class Addmission_Form
         'skipping to insertion and hoping for the best
 
         itemnum = modbox.SelectedItems.Count
-        For index As Integer = 1 To itemnum
-            cm = New OleDbCommand("insert into stmod values('" + stdcode.Text + "', '" + modbox.SelectedItems.IndexOf(index) + "')", cn)
-            cm.ExecuteNonQuery()
-        Next
+        ' p = CDbl(stdcode.Text)
+        'If Double.TryParse(stdcode.Text, p) Then
+        ''For index As Integer = 1 To itemnum
+        cm = New OleDbCommand("insert into stmod values('" + stdcode.Text + "', '" + modbox.SelectedItems.IndexOf(index) + "')", cn)
+        cm.ExecuteNonQuery()
+        'Next
+        'Else
+        'MsgBox("Something is empty")
+        'End If
+
 
         'For Each item As Integer In modbox.SelectedIndices
         'cm = New OleDbCommand("select user from stmod where user = '" + CDbl(stdcode.Text) + "' and moduleid = '" + modbox.SelectedItems.IndexOf(item) + "')", cn)
