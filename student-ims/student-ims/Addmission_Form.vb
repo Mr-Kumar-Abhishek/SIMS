@@ -47,13 +47,16 @@ Public Class Addmission_Form
         If Not cn.State = ConnectionState.Open Then
             cn.Open()
         End If
-
-        cm = New OleDbCommand("select user from stmod where user = '" + stdcode.Text + "'", cn)
+        'below codes are for if check of previous records ----
+        'cm = New OleDbCommand("select user from stmod where user = '" + stdcode.Text + "'", cn)
         'cm = New OleDbCommand("select user from stmod where user = '" + stdcode.Text + "' and moduleid = '" + modbox.SelectedItems.IndexOf(i) + "')", cn)
+        'skipping to insertion and hoping for the best
+
         itemnum = modbox.SelectedItems.Count
-        'For index As Integer = 1 To itemnum
-        'cm = New OleDbCommand("select user from stmod where user = '" + stdcode.Text + "' and moduleid = '" +modbox.SelectedItems
-        'Next
+        For index As Integer = 1 To itemnum
+            cm = New OleDbCommand("select user from stmod where user = '" + stdcode.Text + "' and moduleid = '" + modbox.SelectedItems.IndexOf(index) + "')", cn)
+            cm.ExecuteNonQuery()
+        Next
 
         For Each item As Integer In modbox.SelectedIndices
             cm = New OleDbCommand("select user from stmod where user = '" + CDbl(stdcode.Text) + "' and moduleid = '" + modbox.SelectedItems.IndexOf(item) + "')", cn)
