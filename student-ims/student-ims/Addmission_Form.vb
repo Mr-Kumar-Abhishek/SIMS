@@ -78,19 +78,19 @@ Public Class Addmission_Form
         'cm.ExecuteNonQuery()
         'cm = New OleDbCommand("insert into stmod values('some id', '" + stdcode.Text + "')", cn)
         'MsgBox("hopefully data is inserted")
-        If modbox.Items.Count > 0 Then
+        ' If modbox.Items.Count > 0 Then
 
-            For Me.i = 0 To i < modbox.Items.Count Step 1
-                ' if modbox.Items[i].Selected then
-                ' p = modbox.Items[i].Text
-                'End If
-                p = modbox.SelectedItems.indexof[i]
+        'For Me.i = 0 To i < modbox.Items.Count Step 1
+        ' if modbox.Items[i].Selected then
+        ' p = modbox.Items[i].Text
+        'End If
+        ' p = modbox.SelectedItems.indexof[i]
 
 
 
-            Next
+        ' Next
 
-        End If
+        ' End If
 
 
 
@@ -136,6 +136,8 @@ Public Class Addmission_Form
         dr = cm.ExecuteReader
         While (dr.Read)
             modbox.Items.Add(dr.GetValue(0))
+            modbox.SelectionMode = SelectionMode.One
+
         End While
         cn.Close()
     End Sub
@@ -144,7 +146,8 @@ Public Class Addmission_Form
         Me.Close()
     End Sub
 
-    Private Sub modbox_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles modbox.SelectedIndexChanged
-
+   
+    Private Sub modbox_SelectedIndexChanged_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles modbox.SelectedIndexChanged
+        ListBox1.Items.Add(modbox.SelectedItem)
     End Sub
 End Class
