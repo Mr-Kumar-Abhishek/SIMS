@@ -7,8 +7,8 @@ Public Class Addmission_Form
     Dim dr As OleDbDataReader
     Dim da As OleDbDataAdapter
     Dim ds As DataSet
-    Dim itemnum As Integer
-    'Dim p As Double
+    Dim i As Integer
+    Dim p As String
     Private Sub TextBox5_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles dob.Click
         MonthCalendar1.Show()
     End Sub
@@ -53,12 +53,12 @@ Public Class Addmission_Form
         'cm = New OleDbCommand("select user from stmod where user = '" + stdcode.Text + "' and moduleid = '" + modbox.SelectedItems.IndexOf(i) + "')", cn)
         'skipping to insertion and hoping for the best
 
-        itemnum = modbox.SelectedItems.Count
+        'itemnum = modbox.SelectedItems.Count
         ' p = CDbl(stdcode.Text)
         'If Double.TryParse(stdcode.Text, p) Then
         ''For index As Integer = 1 To itemnum
-        cm = New OleDbCommand("insert into stmod values('" + stdcode.Text + "', '" + modbox.SelectedItems.IndexOf(index) + "')", cn)
-        cm.ExecuteNonQuery()
+        'cm = New OleDbCommand("insert into stmod values('" + stdcode.Text + "', '" + modbox.SelectedItems.IndexOf(index) + "')", cn)
+        'cm.ExecuteNonQuery()
         'Next
         'Else
         'MsgBox("Something is empty")
@@ -77,7 +77,23 @@ Public Class Addmission_Form
         'cm = New OleDbCommand("insert into student values('" + stdcode.Text + "', '" + stdname.Text + "', '" + gender.SelectedItem + "', '" + tele.Text + "', '" + add.Text + "', '" + dob.Text + "', '" + qual.Text + "', '" + crc.Text + "', '" + stdate.Text + "', '" + endate.Text + "', 'comming soon')", cn)
         'cm.ExecuteNonQuery()
         'cm = New OleDbCommand("insert into stmod values('some id', '" + stdcode.Text + "')", cn)
-        MsgBox("hopefully data is inserted")
+        'MsgBox("hopefully data is inserted")
+        If modbox.Items.Count > 0 Then
+
+            For Me.i = 0 To i < modbox.Items.Count Step 1
+                ' if modbox.Items[i].Selected then
+                ' p = modbox.Items[i].Text
+                'End If
+                p = modbox.SelectedItems.indexof[i]
+
+
+
+            Next
+
+        End If
+
+
+
         cn.Close()
 
     End Sub
