@@ -57,6 +57,7 @@ Partial Class Addmission_Form
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.course = New System.Windows.Forms.ComboBox()
+        Me.Label14 = New System.Windows.Forms.Label()
         Me.GroupBox1.SuspendLayout()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
@@ -70,6 +71,7 @@ Partial Class Addmission_Form
         '
         'GroupBox1
         '
+        Me.GroupBox1.Controls.Add(Me.Label14)
         Me.GroupBox1.Controls.Add(Me.modbox)
         Me.GroupBox1.Controls.Add(Me.ListBox1)
         Me.GroupBox1.Controls.Add(Me.cancel)
@@ -107,9 +109,9 @@ Partial Class Addmission_Form
         Me.ListBox1.FormattingEnabled = True
         Me.ListBox1.ItemHeight = 20
         Me.ListBox1.Items.AddRange(New Object() {" "})
-        Me.ListBox1.Location = New System.Drawing.Point(632, 115)
+        Me.ListBox1.Location = New System.Drawing.Point(632, 95)
         Me.ListBox1.Name = "ListBox1"
-        Me.ListBox1.Size = New System.Drawing.Size(120, 64)
+        Me.ListBox1.Size = New System.Drawing.Size(120, 84)
         Me.ListBox1.TabIndex = 12
         '
         'cancel
@@ -399,6 +401,15 @@ Partial Class Addmission_Form
         Me.course.Size = New System.Drawing.Size(187, 21)
         Me.course.TabIndex = 18
         '
+        'Label14
+        '
+        Me.Label14.AutoSize = True
+        Me.Label14.Location = New System.Drawing.Point(628, 58)
+        Me.Label14.Name = "Label14"
+        Me.Label14.Size = New System.Drawing.Size(121, 20)
+        Me.Label14.TabIndex = 14
+        Me.Label14.Text = "Module Selected"
+        '
         'Addmission_Form
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -452,4 +463,5 @@ Partial Class Addmission_Form
     Friend WithEvents course As System.Windows.Forms.ComboBox
     Friend WithEvents ListBox1 As System.Windows.Forms.ListBox
     Friend WithEvents modbox As System.Windows.Forms.ListBox
+    Friend WithEvents Label14 As System.Windows.Forms.Label
 End Class
