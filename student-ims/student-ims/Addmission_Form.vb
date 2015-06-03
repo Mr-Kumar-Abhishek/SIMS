@@ -9,6 +9,7 @@ Public Class Addmission_Form
     Dim ds As DataSet
     Dim i As Integer
     Dim p As String
+    Dim itemnum As Integer
     Private Sub TextBox5_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles dob.Click
         MonthCalendar1.Show()
     End Sub
@@ -63,7 +64,12 @@ Public Class Addmission_Form
         'Else
         'MsgBox("Something is empty")
         'End If
+        itemnum = ListBox1.Items.Count
 
+        For index As Integer = 1 To itemnum Step 1
+            cm = New OleDbCommand("insert into stmod values('" + index + "', '" + stdcode.Text + "')", cn)
+            cm.ExecuteNonQuery()
+        Next
 
         'For Each item As Integer In modbox.SelectedIndices
         'cm = New OleDbCommand("select user from stmod where user = '" + CDbl(stdcode.Text) + "' and moduleid = '" + modbox.SelectedItems.IndexOf(item) + "')", cn)
