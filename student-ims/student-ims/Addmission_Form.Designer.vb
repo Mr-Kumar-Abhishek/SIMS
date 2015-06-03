@@ -215,14 +215,14 @@ Partial Class Addmission_Form
         '
         'MonthCalendar3
         '
-        Me.MonthCalendar3.Location = New System.Drawing.Point(313, 125)
+        Me.MonthCalendar3.Location = New System.Drawing.Point(333, 146)
         Me.MonthCalendar3.Name = "MonthCalendar3"
         Me.MonthCalendar3.TabIndex = 13
         Me.MonthCalendar3.Visible = False
         '
         'MonthCalendar2
         '
-        Me.MonthCalendar2.Location = New System.Drawing.Point(68, 125)
+        Me.MonthCalendar2.Location = New System.Drawing.Point(88, 146)
         Me.MonthCalendar2.Name = "MonthCalendar2"
         Me.MonthCalendar2.TabIndex = 12
         Me.MonthCalendar2.Visible = False
