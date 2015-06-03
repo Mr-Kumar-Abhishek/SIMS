@@ -71,7 +71,9 @@ Partial Class Addmission_Form
         '
         'GroupBox1
         '
+        Me.GroupBox1.Controls.Add(Me.MonthCalendar2)
         Me.GroupBox1.Controls.Add(Me.Label14)
+        Me.GroupBox1.Controls.Add(Me.MonthCalendar3)
         Me.GroupBox1.Controls.Add(Me.modbox)
         Me.GroupBox1.Controls.Add(Me.ListBox1)
         Me.GroupBox1.Controls.Add(Me.cancel)
@@ -212,14 +214,14 @@ Partial Class Addmission_Form
         '
         'MonthCalendar3
         '
-        Me.MonthCalendar3.Location = New System.Drawing.Point(451, 257)
+        Me.MonthCalendar3.Location = New System.Drawing.Point(313, 125)
         Me.MonthCalendar3.Name = "MonthCalendar3"
         Me.MonthCalendar3.TabIndex = 13
         Me.MonthCalendar3.Visible = False
         '
         'MonthCalendar2
         '
-        Me.MonthCalendar2.Location = New System.Drawing.Point(64, 257)
+        Me.MonthCalendar2.Location = New System.Drawing.Point(68, 125)
         Me.MonthCalendar2.Name = "MonthCalendar2"
         Me.MonthCalendar2.TabIndex = 12
         Me.MonthCalendar2.Visible = False
@@ -368,8 +370,6 @@ Partial Class Addmission_Form
         '
         'Panel1
         '
-        Me.Panel1.Controls.Add(Me.MonthCalendar2)
-        Me.Panel1.Controls.Add(Me.MonthCalendar3)
         Me.Panel1.Controls.Add(Me.MonthCalendar1)
         Me.Panel1.Controls.Add(Me.course)
         Me.Panel1.Controls.Add(Me.Label4)
