@@ -150,4 +150,5 @@ Public Class Addmission_Form
     Private Sub modbox_SelectedIndexChanged_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles modbox.SelectedIndexChanged
         ListBox1.Items.Add(modbox.SelectedItem)
     End Sub
+
 End Class

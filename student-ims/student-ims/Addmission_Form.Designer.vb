@@ -24,8 +24,8 @@ Partial Class Addmission_Form
     Private Sub InitializeComponent()
         Me.MonthCalendar1 = New System.Windows.Forms.MonthCalendar()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.MonthCalendar3 = New System.Windows.Forms.MonthCalendar()
-        Me.MonthCalendar2 = New System.Windows.Forms.MonthCalendar()
+        Me.modbox = New System.Windows.Forms.ListBox()
+        Me.ListBox1 = New System.Windows.Forms.ListBox()
         Me.cancel = New System.Windows.Forms.Button()
         Me.ok = New System.Windows.Forms.Button()
         Me.Label13 = New System.Windows.Forms.Label()
@@ -37,6 +37,8 @@ Partial Class Addmission_Form
         Me.Label10 = New System.Windows.Forms.Label()
         Me.crc = New System.Windows.Forms.TextBox()
         Me.Label9 = New System.Windows.Forms.Label()
+        Me.MonthCalendar3 = New System.Windows.Forms.MonthCalendar()
+        Me.MonthCalendar2 = New System.Windows.Forms.MonthCalendar()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.gender = New System.Windows.Forms.ComboBox()
         Me.tele = New System.Windows.Forms.TextBox()
@@ -55,8 +57,6 @@ Partial Class Addmission_Form
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.course = New System.Windows.Forms.ComboBox()
-        Me.ListBox1 = New System.Windows.Forms.ListBox()
-        Me.modbox = New System.Windows.Forms.ListBox()
         Me.GroupBox1.SuspendLayout()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
@@ -92,19 +92,25 @@ Partial Class Addmission_Form
         Me.GroupBox1.Text = "Course Details"
         Me.GroupBox1.Visible = False
         '
-        'MonthCalendar3
+        'modbox
         '
-        Me.MonthCalendar3.Location = New System.Drawing.Point(451, 257)
-        Me.MonthCalendar3.Name = "MonthCalendar3"
-        Me.MonthCalendar3.TabIndex = 13
-        Me.MonthCalendar3.Visible = False
+        Me.modbox.FormattingEnabled = True
+        Me.modbox.ItemHeight = 20
+        Me.modbox.Items.AddRange(New Object() {" "})
+        Me.modbox.Location = New System.Drawing.Point(490, 95)
+        Me.modbox.Name = "modbox"
+        Me.modbox.Size = New System.Drawing.Size(120, 84)
+        Me.modbox.TabIndex = 13
         '
-        'MonthCalendar2
+        'ListBox1
         '
-        Me.MonthCalendar2.Location = New System.Drawing.Point(64, 257)
-        Me.MonthCalendar2.Name = "MonthCalendar2"
-        Me.MonthCalendar2.TabIndex = 12
-        Me.MonthCalendar2.Visible = False
+        Me.ListBox1.FormattingEnabled = True
+        Me.ListBox1.ItemHeight = 20
+        Me.ListBox1.Items.AddRange(New Object() {" "})
+        Me.ListBox1.Location = New System.Drawing.Point(632, 115)
+        Me.ListBox1.Name = "ListBox1"
+        Me.ListBox1.Size = New System.Drawing.Size(120, 64)
+        Me.ListBox1.TabIndex = 12
         '
         'cancel
         '
@@ -127,7 +133,7 @@ Partial Class Addmission_Form
         'Label13
         '
         Me.Label13.AutoSize = True
-        Me.Label13.Location = New System.Drawing.Point(569, 51)
+        Me.Label13.Location = New System.Drawing.Point(486, 58)
         Me.Label13.Name = "Label13"
         Me.Label13.Size = New System.Drawing.Size(113, 20)
         Me.Label13.TabIndex = 8
@@ -136,7 +142,7 @@ Partial Class Addmission_Form
         'endate
         '
         Me.endate.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.endate.Location = New System.Drawing.Point(422, 125)
+        Me.endate.Location = New System.Drawing.Point(375, 125)
         Me.endate.Name = "endate"
         Me.endate.Size = New System.Drawing.Size(100, 20)
         Me.endate.TabIndex = 7
@@ -144,7 +150,7 @@ Partial Class Addmission_Form
         'Label12
         '
         Me.Label12.AutoSize = True
-        Me.Label12.Location = New System.Drawing.Point(308, 125)
+        Me.Label12.Location = New System.Drawing.Point(252, 125)
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(108, 20)
         Me.Label12.TabIndex = 6
@@ -170,7 +176,7 @@ Partial Class Addmission_Form
         'crf
         '
         Me.crf.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.crf.Location = New System.Drawing.Point(422, 58)
+        Me.crf.Location = New System.Drawing.Point(375, 58)
         Me.crf.Name = "crf"
         Me.crf.Size = New System.Drawing.Size(100, 20)
         Me.crf.TabIndex = 3
@@ -178,7 +184,7 @@ Partial Class Addmission_Form
         'Label10
         '
         Me.Label10.AutoSize = True
-        Me.Label10.Location = New System.Drawing.Point(308, 58)
+        Me.Label10.Location = New System.Drawing.Point(252, 58)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(96, 20)
         Me.Label10.TabIndex = 2
@@ -201,6 +207,20 @@ Partial Class Addmission_Form
         Me.Label9.Size = New System.Drawing.Size(104, 20)
         Me.Label9.TabIndex = 0
         Me.Label9.Text = "Course Code :"
+        '
+        'MonthCalendar3
+        '
+        Me.MonthCalendar3.Location = New System.Drawing.Point(451, 257)
+        Me.MonthCalendar3.Name = "MonthCalendar3"
+        Me.MonthCalendar3.TabIndex = 13
+        Me.MonthCalendar3.Visible = False
+        '
+        'MonthCalendar2
+        '
+        Me.MonthCalendar2.Location = New System.Drawing.Point(64, 257)
+        Me.MonthCalendar2.Name = "MonthCalendar2"
+        Me.MonthCalendar2.TabIndex = 12
+        Me.MonthCalendar2.Visible = False
         '
         'Label5
         '
@@ -378,24 +398,6 @@ Partial Class Addmission_Form
         Me.course.Name = "course"
         Me.course.Size = New System.Drawing.Size(187, 21)
         Me.course.TabIndex = 18
-        '
-        'ListBox1
-        '
-        Me.ListBox1.FormattingEnabled = True
-        Me.ListBox1.ItemHeight = 20
-        Me.ListBox1.Location = New System.Drawing.Point(422, 151)
-        Me.ListBox1.Name = "ListBox1"
-        Me.ListBox1.Size = New System.Drawing.Size(120, 64)
-        Me.ListBox1.TabIndex = 12
-        '
-        'modbox
-        '
-        Me.modbox.FormattingEnabled = True
-        Me.modbox.ItemHeight = 20
-        Me.modbox.Location = New System.Drawing.Point(573, 95)
-        Me.modbox.Name = "modbox"
-        Me.modbox.Size = New System.Drawing.Size(120, 84)
-        Me.modbox.TabIndex = 13
         '
         'Addmission_Form
         '
