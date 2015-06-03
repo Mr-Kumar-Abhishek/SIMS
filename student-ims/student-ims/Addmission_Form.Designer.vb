@@ -110,7 +110,6 @@ Partial Class Addmission_Form
         '
         Me.ListBox1.FormattingEnabled = True
         Me.ListBox1.ItemHeight = 20
-        Me.ListBox1.Items.AddRange(New Object() {" "})
         Me.ListBox1.Location = New System.Drawing.Point(632, 95)
         Me.ListBox1.Name = "ListBox1"
         Me.ListBox1.Size = New System.Drawing.Size(120, 84)

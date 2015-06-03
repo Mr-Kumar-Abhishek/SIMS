@@ -110,6 +110,7 @@ Public Class Addmission_Form
         Me.BackColor = Color.Beige
         GroupBox1.Hide()
         modbox.SelectionMode = SelectionMode.MultiSimple
+        ListBox1.Items.Clear()
         cn = c.getcon()
         If Not cn.State = ConnectionState.Open Then
             cn.Open()
