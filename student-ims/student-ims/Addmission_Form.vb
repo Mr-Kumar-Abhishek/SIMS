@@ -155,4 +155,9 @@ Public Class Addmission_Form
     Private Sub clrlist_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles clrlist.Click
         ListBox1.Items.Clear()
     End Sub
+
+    Private Sub ListBox1_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ListBox1.SelectedIndexChanged
+        ListBox1.Items.Remove(ListBox1.SelectedItem)
+    End Sub
+
 End Class
