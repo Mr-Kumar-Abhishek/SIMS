@@ -152,4 +152,7 @@ Public Class Addmission_Form
         ListBox1.Items.Add(modbox.SelectedItem)
     End Sub
 
+    Private Sub clrlist_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles clrlist.Click
+        ListBox1.Items.Clear()
+    End Sub
 End Class
