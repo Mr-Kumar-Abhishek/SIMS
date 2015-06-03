@@ -58,6 +58,7 @@ Partial Class Addmission_Form
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.course = New System.Windows.Forms.ComboBox()
         Me.Label14 = New System.Windows.Forms.Label()
+        Me.clrlist = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
@@ -71,6 +72,7 @@ Partial Class Addmission_Form
         '
         'GroupBox1
         '
+        Me.GroupBox1.Controls.Add(Me.clrlist)
         Me.GroupBox1.Controls.Add(Me.MonthCalendar2)
         Me.GroupBox1.Controls.Add(Me.Label14)
         Me.GroupBox1.Controls.Add(Me.MonthCalendar3)
@@ -409,6 +411,15 @@ Partial Class Addmission_Form
         Me.Label14.TabIndex = 14
         Me.Label14.Text = "Module Selected"
         '
+        'clrlist
+        '
+        Me.clrlist.Location = New System.Drawing.Point(645, 200)
+        Me.clrlist.Name = "clrlist"
+        Me.clrlist.Size = New System.Drawing.Size(104, 27)
+        Me.clrlist.TabIndex = 15
+        Me.clrlist.Text = "clear"
+        Me.clrlist.UseVisualStyleBackColor = True
+        '
         'Addmission_Form
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -463,4 +474,5 @@ Partial Class Addmission_Form
     Friend WithEvents ListBox1 As System.Windows.Forms.ListBox
     Friend WithEvents modbox As System.Windows.Forms.ListBox
     Friend WithEvents Label14 As System.Windows.Forms.Label
+    Friend WithEvents clrlist As System.Windows.Forms.Button
 End Class
