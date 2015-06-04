@@ -16,6 +16,7 @@ Public Class Addmission_Form
 
     Private Sub TextBox10_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles stdate.Click
         MonthCalendar2.Show()
+
     End Sub
 
     Private Sub TextBox11_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles endate.Click
@@ -66,9 +67,13 @@ Public Class Addmission_Form
         'End If
         itemnum = ListBox1.Items.Count
 
-        For index As Integer = 1 To itemnum Step 1
-            cm = New OleDbCommand("insert into stmod values('" + index + "', '" + stdcode.Text + "')", cn)
+
+        For index As Integer = 0 To itemnum - 1 Step 1
+
+            cm = New OleDbCommand("insert into stmod values('" + ListBox1.SelectedItem + "', '" + stdcode.Text + "')", cn)
             cm.ExecuteNonQuery()
+            ListBox1.SelectedIndex = ListBox1.SelectedIndex + 1
+
         Next
 
         'For Each item As Integer In modbox.SelectedIndices
@@ -111,6 +116,7 @@ Public Class Addmission_Form
     End Sub
 
     Private Sub Addmission_Form_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+
         Me.Width = Panel1.Width
         Me.Height = Panel1.Height
         Me.BackColor = Color.Beige
@@ -126,6 +132,10 @@ Public Class Addmission_Form
         While (dr.Read)
             course.Items.Add(dr.GetValue(0))
         End While
+
+
+
+
         cn.Close()
     End Sub
 
@@ -154,16 +164,18 @@ Public Class Addmission_Form
     End Sub
 
    
-    Private Sub modbox_SelectedIndexChanged_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles modbox.SelectedIndexChanged
+    Private Sub modbox_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles modbox.SelectedIndexChanged
         ListBox1.Items.Add(modbox.SelectedItem)
+
     End Sub
 
     Private Sub clrlist_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles clrlist.Click
         ListBox1.Items.Clear()
     End Sub
 
-    Private Sub ListBox1_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ListBox1.SelectedIndexChanged
-        ListBox1.Items.Remove(ListBox1.SelectedItem)
-    End Sub
+  
 
+    Private Sub Panel1_Paint(ByVal sender As System.Object, ByVal e As System.Windows.Forms.PaintEventArgs) Handles Panel1.Paint
+
+    End Sub
 End Class
