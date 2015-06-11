@@ -149,7 +149,7 @@ Partial Class stu_edit
         '
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Segoe Script", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(23, 514)
+        Me.Label7.Location = New System.Drawing.Point(562, 294)
         Me.Label7.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(102, 20)
@@ -160,7 +160,7 @@ Partial Class stu_edit
         '
         Me.Label8.AutoSize = True
         Me.Label8.Font = New System.Drawing.Font("Segoe Script", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(562, 318)
+        Me.Label8.Location = New System.Drawing.Point(11, 343)
         Me.Label8.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(76, 20)
@@ -179,7 +179,7 @@ Partial Class stu_edit
         Me.TextBox2.Location = New System.Drawing.Point(164, 234)
         Me.TextBox2.Multiline = True
         Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(270, 254)
+        Me.TextBox2.Size = New System.Drawing.Size(270, 65)
         Me.TextBox2.TabIndex = 9
         '
         'TextBox3
@@ -207,14 +207,14 @@ Partial Class stu_edit
         '
         Me.ListBox1.FormattingEnabled = True
         Me.ListBox1.ItemHeight = 20
-        Me.ListBox1.Location = New System.Drawing.Point(715, 318)
+        Me.ListBox1.Location = New System.Drawing.Point(164, 343)
         Me.ListBox1.Name = "ListBox1"
         Me.ListBox1.Size = New System.Drawing.Size(270, 44)
         Me.ListBox1.TabIndex = 13
         '
         'TextBox6
         '
-        Me.TextBox6.Location = New System.Drawing.Point(164, 508)
+        Me.TextBox6.Location = New System.Drawing.Point(715, 294)
         Me.TextBox6.Name = "TextBox6"
         Me.TextBox6.Size = New System.Drawing.Size(270, 28)
         Me.TextBox6.TabIndex = 14
@@ -229,7 +229,7 @@ Partial Class stu_edit
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(750, 508)
+        Me.Button1.Location = New System.Drawing.Point(735, 426)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(207, 23)
         Me.Button1.TabIndex = 16
@@ -238,7 +238,7 @@ Partial Class stu_edit
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(715, 401)
+        Me.Button2.Location = New System.Drawing.Point(164, 426)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(134, 23)
         Me.Button2.TabIndex = 17
@@ -247,7 +247,7 @@ Partial Class stu_edit
         '
         'Button3
         '
-        Me.Button3.Location = New System.Drawing.Point(861, 401)
+        Me.Button3.Location = New System.Drawing.Point(310, 426)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(134, 23)
         Me.Button3.TabIndex = 18
@@ -257,7 +257,7 @@ Partial Class stu_edit
         'ComboBox2
         '
         Me.ComboBox2.FormattingEnabled = True
-        Me.ComboBox2.Location = New System.Drawing.Point(715, 447)
+        Me.ComboBox2.Location = New System.Drawing.Point(715, 359)
         Me.ComboBox2.Name = "ComboBox2"
         Me.ComboBox2.Size = New System.Drawing.Size(270, 28)
         Me.ComboBox2.TabIndex = 19
@@ -266,7 +266,7 @@ Partial Class stu_edit
         '
         Me.Label9.AutoSize = True
         Me.Label9.Font = New System.Drawing.Font("Segoe Script", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label9.Location = New System.Drawing.Point(565, 450)
+        Me.Label9.Location = New System.Drawing.Point(562, 362)
         Me.Label9.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label9.Name = "Label9"
         Me.Label9.Size = New System.Drawing.Size(87, 20)
@@ -278,7 +278,7 @@ Partial Class stu_edit
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.PapayaWhip
-        Me.ClientSize = New System.Drawing.Size(1028, 750)
+        Me.ClientSize = New System.Drawing.Size(1028, 600)
         Me.Controls.Add(Me.GroupBox1)
         Me.Font = New System.Drawing.Font("Segoe Script", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
