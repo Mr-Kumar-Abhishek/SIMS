@@ -345,7 +345,7 @@ Partial Class stu_edit
         Me.GroupBox2.Controls.Add(Me.Label10)
         Me.GroupBox2.Location = New System.Drawing.Point(13, 375)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(1003, 344)
+        Me.GroupBox2.Size = New System.Drawing.Size(1003, 250)
         Me.GroupBox2.TabIndex = 1
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Course Details"
@@ -403,16 +403,16 @@ Partial Class stu_edit
         Me.Label14.Location = New System.Drawing.Point(854, 38)
         Me.Label14.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(17, 20)
+        Me.Label14.Size = New System.Drawing.Size(111, 20)
         Me.Label14.TabIndex = 21
-        Me.Label14.Text = "S"
+        Me.Label14.Text = "Module details"
         '
         'stu_edit
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.PapayaWhip
-        Me.ClientSize = New System.Drawing.Size(1028, 750)
+        Me.ClientSize = New System.Drawing.Size(1027, 644)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
         Me.Font = New System.Drawing.Font("Segoe Script", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
