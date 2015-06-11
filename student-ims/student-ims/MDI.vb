@@ -15,4 +15,8 @@
     Private Sub AddToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles AddToolStripMenuItem.Click
         Addmission_Form.Show()
     End Sub
+
+    Private Sub EditToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles EditToolStripMenuItem.Click
+        stu_edit.Show()
+    End Sub
 End Class

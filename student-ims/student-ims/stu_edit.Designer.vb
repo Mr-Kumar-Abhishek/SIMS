@@ -403,9 +403,9 @@ Partial Class stu_edit
         Me.Label14.Location = New System.Drawing.Point(854, 38)
         Me.Label14.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(113, 20)
+        Me.Label14.Size = New System.Drawing.Size(17, 20)
         Me.Label14.TabIndex = 21
-        Me.Label14.Text = "Module Details"
+        Me.Label14.Text = "S"
         '
         'stu_edit
         '
