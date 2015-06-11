@@ -64,6 +64,7 @@ Partial Class Stu_view
         Me.GroupBox1.Controls.Add(Me.Label3)
         Me.GroupBox1.Controls.Add(Me.Label2)
         Me.GroupBox1.Controls.Add(Me.Label1)
+        Me.GroupBox1.Font = New System.Drawing.Font("Segoe Script", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox1.Location = New System.Drawing.Point(13, 11)
         Me.GroupBox1.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.GroupBox1.Name = "GroupBox1"
@@ -75,6 +76,7 @@ Partial Class Stu_view
         '
         'Button3
         '
+        Me.Button3.Font = New System.Drawing.Font("Segoe Script", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button3.Location = New System.Drawing.Point(769, 269)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(134, 23)
@@ -87,43 +89,44 @@ Partial Class Stu_view
         Me.ComboBox1.FormattingEnabled = True
         Me.ComboBox1.Location = New System.Drawing.Point(158, 81)
         Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(270, 21)
+        Me.ComboBox1.Size = New System.Drawing.Size(270, 28)
         Me.ComboBox1.TabIndex = 15
         '
         'TextBox6
         '
         Me.TextBox6.Location = New System.Drawing.Point(158, 216)
         Me.TextBox6.Name = "TextBox6"
-        Me.TextBox6.Size = New System.Drawing.Size(270, 20)
+        Me.TextBox6.Size = New System.Drawing.Size(270, 28)
         Me.TextBox6.TabIndex = 14
         '
         'ListBox1
         '
         Me.ListBox1.FormattingEnabled = True
+        Me.ListBox1.ItemHeight = 20
         Me.ListBox1.Location = New System.Drawing.Point(709, 193)
         Me.ListBox1.Name = "ListBox1"
-        Me.ListBox1.Size = New System.Drawing.Size(270, 43)
+        Me.ListBox1.Size = New System.Drawing.Size(270, 44)
         Me.ListBox1.TabIndex = 13
         '
         'TextBox5
         '
         Me.TextBox5.Location = New System.Drawing.Point(709, 129)
         Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(270, 20)
+        Me.TextBox5.Size = New System.Drawing.Size(270, 28)
         Me.TextBox5.TabIndex = 12
         '
         'TextBox4
         '
         Me.TextBox4.Location = New System.Drawing.Point(709, 81)
         Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(270, 20)
+        Me.TextBox4.Size = New System.Drawing.Size(270, 28)
         Me.TextBox4.TabIndex = 11
         '
         'TextBox3
         '
         Me.TextBox3.Location = New System.Drawing.Point(709, 38)
         Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(270, 20)
+        Me.TextBox3.Size = New System.Drawing.Size(270, 28)
         Me.TextBox3.TabIndex = 10
         '
         'TextBox2
@@ -138,7 +141,7 @@ Partial Class Stu_view
         '
         Me.TextBox1.Location = New System.Drawing.Point(158, 38)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(270, 20)
+        Me.TextBox1.Size = New System.Drawing.Size(270, 28)
         Me.TextBox1.TabIndex = 8
         '
         'Label8
@@ -231,6 +234,7 @@ Partial Class Stu_view
         '
         'Button1
         '
+        Me.Button1.Font = New System.Drawing.Font("Segoe Script", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button1.Location = New System.Drawing.Point(194, 269)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(134, 23)
