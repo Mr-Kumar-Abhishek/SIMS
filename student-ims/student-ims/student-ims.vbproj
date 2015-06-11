@@ -125,6 +125,12 @@
     <Compile Include="stu_edit.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Stu_view.Designer.vb">
+      <DependentUpon>Stu_view.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Stu_view.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Addmission_Form.resx">
@@ -150,6 +156,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="stu_edit.resx">
       <DependentUpon>stu_edit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Stu_view.resx">
+      <DependentUpon>Stu_view.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
