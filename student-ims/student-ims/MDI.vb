@@ -19,4 +19,8 @@
     Private Sub EditToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles EditToolStripMenuItem.Click
         stu_edit.Show()
     End Sub
+
+    Private Sub ViewToolStripMenuItem1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ViewToolStripMenuItem1.Click
+        Stu_view.Show()
+    End Sub
 End Class
