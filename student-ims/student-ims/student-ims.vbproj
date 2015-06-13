@@ -119,6 +119,12 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="stu_del.Designer.vb">
+      <DependentUpon>stu_del.vb</DependentUpon>
+    </Compile>
+    <Compile Include="stu_del.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="stu_edit.Designer.vb">
       <DependentUpon>stu_edit.vb</DependentUpon>
     </Compile>
@@ -153,6 +159,9 @@
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="stu_del.resx">
+      <DependentUpon>stu_del.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="stu_edit.resx">
       <DependentUpon>stu_edit.vb</DependentUpon>
