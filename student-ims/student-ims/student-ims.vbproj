@@ -85,6 +85,12 @@
     <Compile Include="course.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Edit_modulo.Designer.vb">
+      <DependentUpon>Edit_modulo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Edit_modulo.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Form1.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -144,6 +150,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="course.resx">
       <DependentUpon>course.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Edit_modulo.resx">
+      <DependentUpon>Edit_modulo.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
