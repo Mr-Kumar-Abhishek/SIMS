@@ -312,6 +312,7 @@ Partial Class Stu_view
         '
         'TextBox10
         '
+        Me.TextBox10.Enabled = False
         Me.TextBox10.Location = New System.Drawing.Point(582, 145)
         Me.TextBox10.Name = "TextBox10"
         Me.TextBox10.Size = New System.Drawing.Size(228, 28)
@@ -319,6 +320,7 @@ Partial Class Stu_view
         '
         'TextBox9
         '
+        Me.TextBox9.Enabled = False
         Me.TextBox9.Location = New System.Drawing.Point(582, 87)
         Me.TextBox9.Name = "TextBox9"
         Me.TextBox9.Size = New System.Drawing.Size(228, 28)
@@ -326,6 +328,7 @@ Partial Class Stu_view
         '
         'TextBox8
         '
+        Me.TextBox8.Enabled = False
         Me.TextBox8.Location = New System.Drawing.Point(185, 142)
         Me.TextBox8.Name = "TextBox8"
         Me.TextBox8.Size = New System.Drawing.Size(228, 28)
@@ -333,6 +336,7 @@ Partial Class Stu_view
         '
         'TextBox7
         '
+        Me.TextBox7.Enabled = False
         Me.TextBox7.Location = New System.Drawing.Point(185, 87)
         Me.TextBox7.Name = "TextBox7"
         Me.TextBox7.Size = New System.Drawing.Size(228, 28)
