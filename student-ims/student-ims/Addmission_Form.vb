@@ -65,16 +65,16 @@ Public Class Addmission_Form
         'Else
         'MsgBox("Something is empty")
         'End If
-        itemnum = ListBox1.Items.Count
+        ' itemnum = ListBox1.Items.Count
 
 
-        For index As Integer = 0 To itemnum - 1 Step 1
+        'For index As Integer = 0 To itemnum - 1 Step 1
 
-            cm = New OleDbCommand("insert into stmod values('" + ListBox1.SelectedItem + "', '" + stdcode.Text + "')", cn)
-            cm.ExecuteNonQuery()
-            ListBox1.SelectedIndex = ListBox1.SelectedIndex + 1
+        'cm = New OleDbCommand("insert into stmod values('" + ListBox1.SelectedItem + "', '" + stdcode.Text + "')", cn)
+        'cm.ExecuteNonQuery()
+        'ListBox1.SelectedIndex = ListBox1.SelectedIndex + 1
 
-        Next
+        'Next
 
         'For Each item As Integer In modbox.SelectedIndices
         'cm = New OleDbCommand("select user from stmod where user = '" + CDbl(stdcode.Text) + "' and moduleid = '" + modbox.SelectedItems.IndexOf(item) + "')", cn)
