@@ -54,7 +54,7 @@ Partial Class Addmission_Form
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.course = New System.Windows.Forms.ComboBox()
-        Me.CheckedListBox1 = New System.Windows.Forms.CheckedListBox()
+        Me.modbox = New System.Windows.Forms.CheckedListBox()
         Me.Label13 = New System.Windows.Forms.Label()
         Me.GroupBox1.SuspendLayout()
         Me.Panel1.SuspendLayout()
@@ -62,7 +62,7 @@ Partial Class Addmission_Form
         '
         'MonthCalendar1
         '
-        Me.MonthCalendar1.Location = New System.Drawing.Point(524, 147)
+        Me.MonthCalendar1.Location = New System.Drawing.Point(296, 41)
         Me.MonthCalendar1.Name = "MonthCalendar1"
         Me.MonthCalendar1.TabIndex = 12
         Me.MonthCalendar1.Visible = False
@@ -70,7 +70,7 @@ Partial Class Addmission_Form
         'GroupBox1
         '
         Me.GroupBox1.Controls.Add(Me.Label13)
-        Me.GroupBox1.Controls.Add(Me.CheckedListBox1)
+        Me.GroupBox1.Controls.Add(Me.modbox)
         Me.GroupBox1.Controls.Add(Me.MonthCalendar2)
         Me.GroupBox1.Controls.Add(Me.MonthCalendar3)
         Me.GroupBox1.Controls.Add(Me.cancel)
@@ -368,13 +368,13 @@ Partial Class Addmission_Form
         Me.course.Size = New System.Drawing.Size(187, 21)
         Me.course.TabIndex = 18
         '
-        'CheckedListBox1
+        'modbox
         '
-        Me.CheckedListBox1.FormattingEnabled = True
-        Me.CheckedListBox1.Location = New System.Drawing.Point(558, 47)
-        Me.CheckedListBox1.Name = "CheckedListBox1"
-        Me.CheckedListBox1.Size = New System.Drawing.Size(184, 165)
-        Me.CheckedListBox1.TabIndex = 14
+        Me.modbox.FormattingEnabled = True
+        Me.modbox.Location = New System.Drawing.Point(558, 47)
+        Me.modbox.Name = "modbox"
+        Me.modbox.Size = New System.Drawing.Size(184, 165)
+        Me.modbox.TabIndex = 14
         '
         'Label13
         '
@@ -435,5 +435,5 @@ Partial Class Addmission_Form
     Friend WithEvents ok As System.Windows.Forms.Button
     Friend WithEvents course As System.Windows.Forms.ComboBox
     Friend WithEvents Label13 As System.Windows.Forms.Label
-    Friend WithEvents CheckedListBox1 As System.Windows.Forms.CheckedListBox
+    Friend WithEvents modbox As System.Windows.Forms.CheckedListBox
 End Class
