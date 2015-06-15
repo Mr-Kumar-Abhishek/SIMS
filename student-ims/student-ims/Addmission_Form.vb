@@ -102,6 +102,7 @@ Public Class Addmission_Form
         For Each itemchecked In modbox.CheckedItems
             cm = New OleDbCommand("insert into stmod values('" + itemchecked.ToString + "', '" + stdcode.Text + "')", cn)
             cm.ExecuteNonQuery()
+            MsgBox("inserted")
         Next
 
         cn.Close()
