@@ -96,14 +96,13 @@ Public Class Addmission_Form
         ' p = modbox.Items[i].Text
         'End If
         ' p = modbox.SelectedItems.indexof[i]
-
-
-
         ' Next
-
         ' End If
-
-
+        Dim itemchecked As Object
+        For Each itemchecked In modbox.CheckedItems
+            cm = New OleDbCommand("insert into stmod values('" + itemchecked.ToString + "', '" + stdcode.Text + "')", cn)
+            cm.ExecuteNonQuery()
+        Next
 
         cn.Close()
 
