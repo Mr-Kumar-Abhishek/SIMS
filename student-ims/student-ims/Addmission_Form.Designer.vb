@@ -54,6 +54,8 @@ Partial Class Addmission_Form
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.course = New System.Windows.Forms.ComboBox()
+        Me.CheckedListBox1 = New System.Windows.Forms.CheckedListBox()
+        Me.Label13 = New System.Windows.Forms.Label()
         Me.GroupBox1.SuspendLayout()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
@@ -67,6 +69,8 @@ Partial Class Addmission_Form
         '
         'GroupBox1
         '
+        Me.GroupBox1.Controls.Add(Me.Label13)
+        Me.GroupBox1.Controls.Add(Me.CheckedListBox1)
         Me.GroupBox1.Controls.Add(Me.MonthCalendar2)
         Me.GroupBox1.Controls.Add(Me.MonthCalendar3)
         Me.GroupBox1.Controls.Add(Me.cancel)
@@ -97,7 +101,7 @@ Partial Class Addmission_Form
         '
         'MonthCalendar3
         '
-        Me.MonthCalendar3.Location = New System.Drawing.Point(105, -49)
+        Me.MonthCalendar3.Location = New System.Drawing.Point(285, 154)
         Me.MonthCalendar3.Name = "MonthCalendar3"
         Me.MonthCalendar3.TabIndex = 13
         Me.MonthCalendar3.Visible = False
@@ -364,6 +368,23 @@ Partial Class Addmission_Form
         Me.course.Size = New System.Drawing.Size(187, 21)
         Me.course.TabIndex = 18
         '
+        'CheckedListBox1
+        '
+        Me.CheckedListBox1.FormattingEnabled = True
+        Me.CheckedListBox1.Location = New System.Drawing.Point(558, 47)
+        Me.CheckedListBox1.Name = "CheckedListBox1"
+        Me.CheckedListBox1.Size = New System.Drawing.Size(184, 165)
+        Me.CheckedListBox1.TabIndex = 14
+        '
+        'Label13
+        '
+        Me.Label13.AutoSize = True
+        Me.Label13.Location = New System.Drawing.Point(578, 24)
+        Me.Label13.Name = "Label13"
+        Me.Label13.Size = New System.Drawing.Size(110, 20)
+        Me.Label13.TabIndex = 15
+        Me.Label13.Text = "Select Modules"
+        '
         'Addmission_Form
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -413,4 +434,6 @@ Partial Class Addmission_Form
     Friend WithEvents cancel As System.Windows.Forms.Button
     Friend WithEvents ok As System.Windows.Forms.Button
     Friend WithEvents course As System.Windows.Forms.ComboBox
+    Friend WithEvents Label13 As System.Windows.Forms.Label
+    Friend WithEvents CheckedListBox1 As System.Windows.Forms.CheckedListBox
 End Class
