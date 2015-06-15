@@ -164,12 +164,12 @@ Public Class Addmission_Form
     End Sub
 
    
-    Private Sub modbox_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles modbox.SelectedIndexChanged
+    Private Sub modbox_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs)
         ListBox1.Items.Add(modbox.SelectedItem)
 
     End Sub
 
-    Private Sub clrlist_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles clrlist.Click
+    Private Sub clrlist_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
         ListBox1.Items.Clear()
     End Sub
 

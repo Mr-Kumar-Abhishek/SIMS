@@ -24,15 +24,10 @@ Partial Class Addmission_Form
     Private Sub InitializeComponent()
         Me.MonthCalendar1 = New System.Windows.Forms.MonthCalendar()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.clrlist = New System.Windows.Forms.Button()
         Me.MonthCalendar2 = New System.Windows.Forms.MonthCalendar()
-        Me.Label14 = New System.Windows.Forms.Label()
         Me.MonthCalendar3 = New System.Windows.Forms.MonthCalendar()
-        Me.modbox = New System.Windows.Forms.ListBox()
-        Me.ListBox1 = New System.Windows.Forms.ListBox()
         Me.cancel = New System.Windows.Forms.Button()
         Me.ok = New System.Windows.Forms.Button()
-        Me.Label13 = New System.Windows.Forms.Label()
         Me.endate = New System.Windows.Forms.TextBox()
         Me.Label12 = New System.Windows.Forms.Label()
         Me.stdate = New System.Windows.Forms.TextBox()
@@ -72,15 +67,10 @@ Partial Class Addmission_Form
         '
         'GroupBox1
         '
-        Me.GroupBox1.Controls.Add(Me.clrlist)
         Me.GroupBox1.Controls.Add(Me.MonthCalendar2)
-        Me.GroupBox1.Controls.Add(Me.Label14)
         Me.GroupBox1.Controls.Add(Me.MonthCalendar3)
-        Me.GroupBox1.Controls.Add(Me.modbox)
-        Me.GroupBox1.Controls.Add(Me.ListBox1)
         Me.GroupBox1.Controls.Add(Me.cancel)
         Me.GroupBox1.Controls.Add(Me.ok)
-        Me.GroupBox1.Controls.Add(Me.Label13)
         Me.GroupBox1.Controls.Add(Me.endate)
         Me.GroupBox1.Controls.Add(Me.Label12)
         Me.GroupBox1.Controls.Add(Me.stdate)
@@ -98,15 +88,6 @@ Partial Class Addmission_Form
         Me.GroupBox1.Text = "Course Details"
         Me.GroupBox1.Visible = False
         '
-        'clrlist
-        '
-        Me.clrlist.Location = New System.Drawing.Point(645, 200)
-        Me.clrlist.Name = "clrlist"
-        Me.clrlist.Size = New System.Drawing.Size(104, 27)
-        Me.clrlist.TabIndex = 15
-        Me.clrlist.Text = "clear"
-        Me.clrlist.UseVisualStyleBackColor = True
-        '
         'MonthCalendar2
         '
         Me.MonthCalendar2.Location = New System.Drawing.Point(31, 146)
@@ -114,40 +95,12 @@ Partial Class Addmission_Form
         Me.MonthCalendar2.TabIndex = 12
         Me.MonthCalendar2.Visible = False
         '
-        'Label14
-        '
-        Me.Label14.AutoSize = True
-        Me.Label14.Location = New System.Drawing.Point(628, 24)
-        Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(121, 20)
-        Me.Label14.TabIndex = 14
-        Me.Label14.Text = "Module Selected"
-        '
         'MonthCalendar3
         '
         Me.MonthCalendar3.Location = New System.Drawing.Point(105, -49)
         Me.MonthCalendar3.Name = "MonthCalendar3"
         Me.MonthCalendar3.TabIndex = 13
         Me.MonthCalendar3.Visible = False
-        '
-        'modbox
-        '
-        Me.modbox.FormattingEnabled = True
-        Me.modbox.ItemHeight = 20
-        Me.modbox.Items.AddRange(New Object() {" "})
-        Me.modbox.Location = New System.Drawing.Point(490, 55)
-        Me.modbox.Name = "modbox"
-        Me.modbox.Size = New System.Drawing.Size(120, 124)
-        Me.modbox.TabIndex = 13
-        '
-        'ListBox1
-        '
-        Me.ListBox1.FormattingEnabled = True
-        Me.ListBox1.ItemHeight = 20
-        Me.ListBox1.Location = New System.Drawing.Point(632, 55)
-        Me.ListBox1.Name = "ListBox1"
-        Me.ListBox1.Size = New System.Drawing.Size(120, 124)
-        Me.ListBox1.TabIndex = 12
         '
         'cancel
         '
@@ -166,15 +119,6 @@ Partial Class Addmission_Form
         Me.ok.TabIndex = 10
         Me.ok.Text = "OK"
         Me.ok.UseVisualStyleBackColor = True
-        '
-        'Label13
-        '
-        Me.Label13.AutoSize = True
-        Me.Label13.Location = New System.Drawing.Point(497, 24)
-        Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(113, 20)
-        Me.Label13.TabIndex = 8
-        Me.Label13.Text = "Module Details"
         '
         'endate
         '
@@ -468,10 +412,5 @@ Partial Class Addmission_Form
     Friend WithEvents MonthCalendar2 As System.Windows.Forms.MonthCalendar
     Friend WithEvents cancel As System.Windows.Forms.Button
     Friend WithEvents ok As System.Windows.Forms.Button
-    Friend WithEvents Label13 As System.Windows.Forms.Label
     Friend WithEvents course As System.Windows.Forms.ComboBox
-    Friend WithEvents ListBox1 As System.Windows.Forms.ListBox
-    Friend WithEvents modbox As System.Windows.Forms.ListBox
-    Friend WithEvents Label14 As System.Windows.Forms.Label
-    Friend WithEvents clrlist As System.Windows.Forms.Button
 End Class
