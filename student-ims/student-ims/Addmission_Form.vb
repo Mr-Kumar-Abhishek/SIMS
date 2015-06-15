@@ -122,7 +122,7 @@ Public Class Addmission_Form
         Me.BackColor = Color.Beige
         GroupBox1.Hide()
         modbox.SelectionMode = SelectionMode.MultiSimple
-        ListBox1.Items.Clear()
+        'ListBox1.Items.Clear()
         cn = c.getcon()
         If Not cn.State = ConnectionState.Open Then
             cn.Open()
@@ -165,12 +165,12 @@ Public Class Addmission_Form
 
    
     Private Sub modbox_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs)
-        ListBox1.Items.Add(modbox.SelectedItem)
+        'ListBox1.Items.Add(modbox.SelectedItem)
 
     End Sub
 
     Private Sub clrlist_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
-        ListBox1.Items.Clear()
+        'ListBox1.Items.Clear()
     End Sub
 
   
