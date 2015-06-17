@@ -24,6 +24,8 @@ Partial Class Addmission_Form
     Private Sub InitializeComponent()
         Me.MonthCalendar1 = New System.Windows.Forms.MonthCalendar()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.Label13 = New System.Windows.Forms.Label()
+        Me.modbox = New System.Windows.Forms.CheckedListBox()
         Me.MonthCalendar2 = New System.Windows.Forms.MonthCalendar()
         Me.MonthCalendar3 = New System.Windows.Forms.MonthCalendar()
         Me.cancel = New System.Windows.Forms.Button()
@@ -54,15 +56,13 @@ Partial Class Addmission_Form
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.course = New System.Windows.Forms.ComboBox()
-        Me.modbox = New System.Windows.Forms.CheckedListBox()
-        Me.Label13 = New System.Windows.Forms.Label()
         Me.GroupBox1.SuspendLayout()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
         'MonthCalendar1
         '
-        Me.MonthCalendar1.Location = New System.Drawing.Point(296, 41)
+        Me.MonthCalendar1.Location = New System.Drawing.Point(491, 136)
         Me.MonthCalendar1.Name = "MonthCalendar1"
         Me.MonthCalendar1.TabIndex = 12
         Me.MonthCalendar1.Visible = False
@@ -70,7 +70,6 @@ Partial Class Addmission_Form
         'GroupBox1
         '
         Me.GroupBox1.Controls.Add(Me.Label13)
-        Me.GroupBox1.Controls.Add(Me.modbox)
         Me.GroupBox1.Controls.Add(Me.MonthCalendar2)
         Me.GroupBox1.Controls.Add(Me.MonthCalendar3)
         Me.GroupBox1.Controls.Add(Me.cancel)
@@ -83,6 +82,7 @@ Partial Class Addmission_Form
         Me.GroupBox1.Controls.Add(Me.Label10)
         Me.GroupBox1.Controls.Add(Me.crc)
         Me.GroupBox1.Controls.Add(Me.Label9)
+        Me.GroupBox1.Controls.Add(Me.modbox)
         Me.GroupBox1.Font = New System.Drawing.Font("Segoe Script", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox1.Location = New System.Drawing.Point(12, 410)
         Me.GroupBox1.Name = "GroupBox1"
@@ -92,16 +92,33 @@ Partial Class Addmission_Form
         Me.GroupBox1.Text = "Course Details"
         Me.GroupBox1.Visible = False
         '
+        'Label13
+        '
+        Me.Label13.AutoSize = True
+        Me.Label13.Location = New System.Drawing.Point(578, 24)
+        Me.Label13.Name = "Label13"
+        Me.Label13.Size = New System.Drawing.Size(110, 20)
+        Me.Label13.TabIndex = 15
+        Me.Label13.Text = "Select Modules"
+        '
+        'modbox
+        '
+        Me.modbox.FormattingEnabled = True
+        Me.modbox.Location = New System.Drawing.Point(558, 47)
+        Me.modbox.Name = "modbox"
+        Me.modbox.Size = New System.Drawing.Size(184, 165)
+        Me.modbox.TabIndex = 14
+        '
         'MonthCalendar2
         '
-        Me.MonthCalendar2.Location = New System.Drawing.Point(78, -17)
+        Me.MonthCalendar2.Location = New System.Drawing.Point(46, 146)
         Me.MonthCalendar2.Name = "MonthCalendar2"
         Me.MonthCalendar2.TabIndex = 12
         Me.MonthCalendar2.Visible = False
         '
         'MonthCalendar3
         '
-        Me.MonthCalendar3.Location = New System.Drawing.Point(375, 158)
+        Me.MonthCalendar3.Location = New System.Drawing.Point(359, 146)
         Me.MonthCalendar3.Name = "MonthCalendar3"
         Me.MonthCalendar3.TabIndex = 13
         Me.MonthCalendar3.Visible = False
@@ -367,23 +384,6 @@ Partial Class Addmission_Form
         Me.course.Name = "course"
         Me.course.Size = New System.Drawing.Size(187, 21)
         Me.course.TabIndex = 18
-        '
-        'modbox
-        '
-        Me.modbox.FormattingEnabled = True
-        Me.modbox.Location = New System.Drawing.Point(558, 47)
-        Me.modbox.Name = "modbox"
-        Me.modbox.Size = New System.Drawing.Size(184, 165)
-        Me.modbox.TabIndex = 14
-        '
-        'Label13
-        '
-        Me.Label13.AutoSize = True
-        Me.Label13.Location = New System.Drawing.Point(578, 24)
-        Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(110, 20)
-        Me.Label13.TabIndex = 15
-        Me.Label13.Text = "Select Modules"
         '
         'Addmission_Form
         '
