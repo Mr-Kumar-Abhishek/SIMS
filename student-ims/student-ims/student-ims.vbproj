@@ -78,6 +78,12 @@
     <Compile Include="Addmission_Form.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Certificate Form.Designer.vb">
+      <DependentUpon>Certificate Form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Certificate Form.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="conn.vb" />
     <Compile Include="course.Designer.vb">
       <DependentUpon>course.vb</DependentUpon>
@@ -96,6 +102,12 @@
     </Compile>
     <Compile Include="Form1.Designer.vb">
       <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Marks Details.Designer.vb">
+      <DependentUpon>Marks Details.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Marks Details.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="MDI.Designer.vb">
@@ -125,6 +137,12 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="Payment Details.Designer.vb">
+      <DependentUpon>Payment Details.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Payment Details.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="stu_del.Designer.vb">
       <DependentUpon>stu_del.vb</DependentUpon>
     </Compile>
@@ -148,6 +166,9 @@
     <EmbeddedResource Include="Addmission_Form.resx">
       <DependentUpon>Addmission_Form.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Certificate Form.resx">
+      <DependentUpon>Certificate Form.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="course.resx">
       <DependentUpon>course.vb</DependentUpon>
     </EmbeddedResource>
@@ -156,6 +177,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Marks Details.resx">
+      <DependentUpon>Marks Details.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MDI.resx">
       <DependentUpon>MDI.vb</DependentUpon>
@@ -168,6 +192,9 @@
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Payment Details.resx">
+      <DependentUpon>Payment Details.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="stu_del.resx">
       <DependentUpon>stu_del.vb</DependentUpon>
