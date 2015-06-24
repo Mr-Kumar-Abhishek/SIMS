@@ -28,7 +28,6 @@ Partial Class Addmission_Form
         Me.cancel = New System.Windows.Forms.Button()
         Me.MonthCalendar2 = New System.Windows.Forms.MonthCalendar()
         Me.ok = New System.Windows.Forms.Button()
-        Me.modbox = New System.Windows.Forms.ListBox()
         Me.Label13 = New System.Windows.Forms.Label()
         Me.endate = New System.Windows.Forms.TextBox()
         Me.Label12 = New System.Windows.Forms.Label()
@@ -56,6 +55,7 @@ Partial Class Addmission_Form
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.course = New System.Windows.Forms.ComboBox()
+        Me.modbox = New System.Windows.Forms.CheckedListBox()
         Me.GroupBox1.SuspendLayout()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
@@ -70,10 +70,10 @@ Partial Class Addmission_Form
         'GroupBox1
         '
         Me.GroupBox1.Controls.Add(Me.MonthCalendar3)
+        Me.GroupBox1.Controls.Add(Me.modbox)
         Me.GroupBox1.Controls.Add(Me.cancel)
         Me.GroupBox1.Controls.Add(Me.MonthCalendar2)
         Me.GroupBox1.Controls.Add(Me.ok)
-        Me.GroupBox1.Controls.Add(Me.modbox)
         Me.GroupBox1.Controls.Add(Me.Label13)
         Me.GroupBox1.Controls.Add(Me.endate)
         Me.GroupBox1.Controls.Add(Me.Label12)
@@ -94,7 +94,7 @@ Partial Class Addmission_Form
         '
         'MonthCalendar3
         '
-        Me.MonthCalendar3.Location = New System.Drawing.Point(422, 158)
+        Me.MonthCalendar3.Location = New System.Drawing.Point(313, 152)
         Me.MonthCalendar3.Name = "MonthCalendar3"
         Me.MonthCalendar3.TabIndex = 13
         Me.MonthCalendar3.Visible = False
@@ -123,16 +123,6 @@ Partial Class Addmission_Form
         Me.ok.TabIndex = 10
         Me.ok.Text = "OK"
         Me.ok.UseVisualStyleBackColor = True
-        '
-        'modbox
-        '
-        Me.modbox.FormattingEnabled = True
-        Me.modbox.ItemHeight = 20
-        Me.modbox.Items.AddRange(New Object() {" "})
-        Me.modbox.Location = New System.Drawing.Point(573, 76)
-        Me.modbox.Name = "modbox"
-        Me.modbox.Size = New System.Drawing.Size(120, 124)
-        Me.modbox.TabIndex = 9
         '
         'Label13
         '
@@ -387,6 +377,14 @@ Partial Class Addmission_Form
         Me.course.Size = New System.Drawing.Size(187, 21)
         Me.course.TabIndex = 18
         '
+        'modbox
+        '
+        Me.modbox.FormattingEnabled = True
+        Me.modbox.Location = New System.Drawing.Point(573, 91)
+        Me.modbox.Name = "modbox"
+        Me.modbox.Size = New System.Drawing.Size(145, 142)
+        Me.modbox.TabIndex = 14
+        '
         'Addmission_Form
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -436,7 +434,7 @@ Partial Class Addmission_Form
     Friend WithEvents MonthCalendar2 As System.Windows.Forms.MonthCalendar
     Friend WithEvents cancel As System.Windows.Forms.Button
     Friend WithEvents ok As System.Windows.Forms.Button
-    Friend WithEvents modbox As System.Windows.Forms.ListBox
     Friend WithEvents Label13 As System.Windows.Forms.Label
     Friend WithEvents course As System.Windows.Forms.ComboBox
+    Friend WithEvents modbox As System.Windows.Forms.CheckedListBox
 End Class
