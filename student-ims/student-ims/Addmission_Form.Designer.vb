@@ -25,6 +25,7 @@ Partial Class Addmission_Form
         Me.MonthCalendar1 = New System.Windows.Forms.MonthCalendar()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.MonthCalendar3 = New System.Windows.Forms.MonthCalendar()
+        Me.modbox = New System.Windows.Forms.CheckedListBox()
         Me.cancel = New System.Windows.Forms.Button()
         Me.MonthCalendar2 = New System.Windows.Forms.MonthCalendar()
         Me.ok = New System.Windows.Forms.Button()
@@ -55,7 +56,6 @@ Partial Class Addmission_Form
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.course = New System.Windows.Forms.ComboBox()
-        Me.modbox = New System.Windows.Forms.CheckedListBox()
         Me.GroupBox1.SuspendLayout()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
@@ -94,10 +94,18 @@ Partial Class Addmission_Form
         '
         'MonthCalendar3
         '
-        Me.MonthCalendar3.Location = New System.Drawing.Point(313, 152)
+        Me.MonthCalendar3.Location = New System.Drawing.Point(341, 158)
         Me.MonthCalendar3.Name = "MonthCalendar3"
         Me.MonthCalendar3.TabIndex = 13
         Me.MonthCalendar3.Visible = False
+        '
+        'modbox
+        '
+        Me.modbox.FormattingEnabled = True
+        Me.modbox.Location = New System.Drawing.Point(573, 58)
+        Me.modbox.Name = "modbox"
+        Me.modbox.Size = New System.Drawing.Size(145, 142)
+        Me.modbox.TabIndex = 14
         '
         'cancel
         '
@@ -127,7 +135,7 @@ Partial Class Addmission_Form
         'Label13
         '
         Me.Label13.AutoSize = True
-        Me.Label13.Location = New System.Drawing.Point(569, 51)
+        Me.Label13.Location = New System.Drawing.Point(569, 24)
         Me.Label13.Name = "Label13"
         Me.Label13.Size = New System.Drawing.Size(113, 20)
         Me.Label13.TabIndex = 8
@@ -376,14 +384,6 @@ Partial Class Addmission_Form
         Me.course.Name = "course"
         Me.course.Size = New System.Drawing.Size(187, 21)
         Me.course.TabIndex = 18
-        '
-        'modbox
-        '
-        Me.modbox.FormattingEnabled = True
-        Me.modbox.Location = New System.Drawing.Point(573, 91)
-        Me.modbox.Name = "modbox"
-        Me.modbox.Size = New System.Drawing.Size(145, 142)
-        Me.modbox.TabIndex = 14
         '
         'Addmission_Form
         '
