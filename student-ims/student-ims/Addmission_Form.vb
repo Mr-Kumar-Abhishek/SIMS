@@ -47,9 +47,12 @@ Public Class Addmission_Form
         If Not cn.State = ConnectionState.Open Then
             cn.Open()
         End If
-        cm = New OleDbCommand("insert into student values('" + stdcode.Text + "', '" + stdname.Text + "', '" + gender.SelectedItem + "', '" + tele.Text + "', '" + add.Text + "', '" + dob.Text + "', '" + qual.Text + "', '" + crc.Text + "', '" + stdate.Text + "', '" + endate.Text + "', 'comming soon')", cn)
-        cm.ExecuteNonQuery()
-        MsgBox("hopefully data is inserted")
+        Dim itemchecked As Object
+        For Each itemchecked In modbox.CheckedItems
+            cm = New OleDbCommand("insert into stmod values('" + itemchecked.ToString + "', '" + stdcode.Text + "')", cn)
+            cm.ExecuteNonQuery()
+            MsgBox("inserted")
+        Next
         cn.Close()
     End Sub
 
