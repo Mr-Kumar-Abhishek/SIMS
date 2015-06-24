@@ -47,18 +47,10 @@ Public Class Addmission_Form
         If Not cn.State = ConnectionState.Open Then
             cn.Open()
         End If
-        'cm = New OleDbCommand("select moduleid, user from stmod where user = '" + stdcode.Text + "')", cn)
-        'dr = cm.ExecuteReader
-        'While (dr.Read)
-        'chk = dr.GetValue(0)
-        'End While
-        'MsgBox(chk)
         cm = New OleDbCommand("insert into student values('" + stdcode.Text + "', '" + stdname.Text + "', '" + gender.SelectedItem + "', '" + tele.Text + "', '" + add.Text + "', '" + dob.Text + "', '" + qual.Text + "', '" + crc.Text + "', '" + stdate.Text + "', '" + endate.Text + "', 'comming soon')", cn)
         cm.ExecuteNonQuery()
-        'cm = New OleDbCommand("insert into stmod values('some id', '" + stdcode.Text + "')", cn)
         MsgBox("hopefully data is inserted")
         cn.Close()
-
     End Sub
 
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
@@ -104,17 +96,5 @@ Public Class Addmission_Form
 
     Private Sub cancel_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cancel.Click
         Me.Close()
-    End Sub
-
-    Private Sub GroupBox1_Enter(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles GroupBox1.Enter
-
-    End Sub
-
-    Private Sub modbox_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs)
-
-    End Sub
-
-    Private Sub modbox_SelectedIndexChanged_1(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles modbox.SelectedIndexChanged
-
     End Sub
 End Class
