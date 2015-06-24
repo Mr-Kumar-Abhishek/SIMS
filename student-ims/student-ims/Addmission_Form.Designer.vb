@@ -55,14 +55,14 @@ Partial Class Addmission_Form
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.course = New System.Windows.Forms.ComboBox()
+        Me.coursedp = New System.Windows.Forms.ComboBox()
         Me.GroupBox1.SuspendLayout()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
         'MonthCalendar1
         '
-        Me.MonthCalendar1.Location = New System.Drawing.Point(505, 183)
+        Me.MonthCalendar1.Location = New System.Drawing.Point(515, 251)
         Me.MonthCalendar1.Name = "MonthCalendar1"
         Me.MonthCalendar1.TabIndex = 12
         Me.MonthCalendar1.Visible = False
@@ -355,7 +355,7 @@ Partial Class Addmission_Form
         'Panel1
         '
         Me.Panel1.Controls.Add(Me.MonthCalendar1)
-        Me.Panel1.Controls.Add(Me.course)
+        Me.Panel1.Controls.Add(Me.coursedp)
         Me.Panel1.Controls.Add(Me.Label4)
         Me.Panel1.Controls.Add(Me.Button1)
         Me.Panel1.Controls.Add(Me.Label1)
@@ -377,13 +377,13 @@ Partial Class Addmission_Form
         Me.Panel1.Size = New System.Drawing.Size(760, 381)
         Me.Panel1.TabIndex = 18
         '
-        'course
+        'coursedp
         '
-        Me.course.FormattingEnabled = True
-        Me.course.Location = New System.Drawing.Point(527, 198)
-        Me.course.Name = "course"
-        Me.course.Size = New System.Drawing.Size(187, 21)
-        Me.course.TabIndex = 18
+        Me.coursedp.FormattingEnabled = True
+        Me.coursedp.Location = New System.Drawing.Point(527, 198)
+        Me.coursedp.Name = "coursedp"
+        Me.coursedp.Size = New System.Drawing.Size(187, 21)
+        Me.coursedp.TabIndex = 18
         '
         'Addmission_Form
         '
@@ -435,6 +435,6 @@ Partial Class Addmission_Form
     Friend WithEvents cancel As System.Windows.Forms.Button
     Friend WithEvents ok As System.Windows.Forms.Button
     Friend WithEvents Label13 As System.Windows.Forms.Label
-    Friend WithEvents course As System.Windows.Forms.ComboBox
+    Friend WithEvents coursedp As System.Windows.Forms.ComboBox
     Friend WithEvents modbox As System.Windows.Forms.CheckedListBox
 End Class

@@ -11,6 +11,21 @@ Public Class Addmission_Form
     Private Sub TextBox5_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles dob.Click
         MonthCalendar1.Show()
     End Sub
+    Private Sub cleaning()
+        stdcode.clear()
+        stdname.clear()
+        gender.Text = ""
+        tele.clear()
+        add.clear()
+        dob.clear()
+        qual.clear()
+        coursedp.Text = ""
+        crc.clear()
+        crf.clear()
+        stdate.clear()
+        endate.clear()
+        modbox.Items.Clear()
+    End Sub
 
     Private Sub TextBox10_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles stdate.Click
         MonthCalendar2.Show()
@@ -53,6 +68,8 @@ Public Class Addmission_Form
             cm.ExecuteNonQuery()
         Next
         cn.Close()
+        MsgBox("Data has been added succesfully")
+        cleaning()
     End Sub
 
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
@@ -73,17 +90,17 @@ Public Class Addmission_Form
         cm = New OleDbCommand("select coursename from course", cn)
         dr = cm.ExecuteReader
         While (dr.Read)
-            course.Items.Add(dr.GetValue(0))
+            coursedp.Items.Add(dr.GetValue(0))
         End While
         cn.Close()
     End Sub
 
-    Private Sub course_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles course.SelectedIndexChanged
+    Private Sub course_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles coursedp.SelectedIndexChanged
         modbox.Items.Clear()
         If Not cn.State = ConnectionState.Open Then
             cn.Open()
         End If
-        cm = New OleDbCommand("select coursecode from course where coursename = '" + course.SelectedItem + "'", cn)
+        cm = New OleDbCommand("select coursecode from course where coursename = '" + coursedp.SelectedItem + "'", cn)
         dr = cm.ExecuteReader
         While (dr.Read)
             crc.Text = dr.GetValue(0)
