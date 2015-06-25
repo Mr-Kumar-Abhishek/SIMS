@@ -22,7 +22,7 @@ Partial Class Certificate_Form
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.stname = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
@@ -38,13 +38,13 @@ Partial Class Certificate_Form
         Me.ComboBox2 = New System.Windows.Forms.ComboBox()
         Me.SuspendLayout()
         '
-        'TextBox2
+        'stname
         '
-        Me.TextBox2.Enabled = False
-        Me.TextBox2.Location = New System.Drawing.Point(397, 32)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(226, 20)
-        Me.TextBox2.TabIndex = 10
+        Me.stname.Enabled = False
+        Me.stname.Location = New System.Drawing.Point(397, 32)
+        Me.stname.Name = "stname"
+        Me.stname.Size = New System.Drawing.Size(226, 20)
+        Me.stname.TabIndex = 10
         '
         'Label3
         '
@@ -180,7 +180,7 @@ Partial Class Certificate_Form
         Me.Controls.Add(Me.TextBox5)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Label4)
-        Me.Controls.Add(Me.TextBox2)
+        Me.Controls.Add(Me.stname)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
@@ -190,7 +190,7 @@ Partial Class Certificate_Form
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
+    Friend WithEvents stname As System.Windows.Forms.TextBox
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents Label1 As System.Windows.Forms.Label
