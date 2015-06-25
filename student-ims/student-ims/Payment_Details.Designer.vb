@@ -24,7 +24,7 @@ Partial Class Payment_Details
     Private Sub InitializeComponent()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.crc = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.stname = New System.Windows.Forms.TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
@@ -62,12 +62,12 @@ Partial Class Payment_Details
         Me.Label2.TabIndex = 2
         Me.Label2.Text = "Course Code :"
         '
-        'TextBox2
+        'crc
         '
-        Me.TextBox2.Location = New System.Drawing.Point(623, 36)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(136, 20)
-        Me.TextBox2.TabIndex = 3
+        Me.crc.Location = New System.Drawing.Point(623, 36)
+        Me.crc.Name = "crc"
+        Me.crc.Size = New System.Drawing.Size(136, 20)
+        Me.crc.TabIndex = 3
         '
         'Label3
         '
@@ -203,7 +203,7 @@ Partial Class Payment_Details
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(789, 389)
+        Me.ClientSize = New System.Drawing.Size(789, 395)
         Me.Controls.Add(Me.stcode)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
@@ -219,7 +219,7 @@ Partial Class Payment_Details
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.stname)
         Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.TextBox2)
+        Me.Controls.Add(Me.crc)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Name = "Payment_Details"
@@ -231,7 +231,7 @@ Partial Class Payment_Details
     End Sub
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents Label2 As System.Windows.Forms.Label
-    Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
+    Friend WithEvents crc As System.Windows.Forms.TextBox
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents stname As System.Windows.Forms.TextBox
     Friend WithEvents Label4 As System.Windows.Forms.Label
