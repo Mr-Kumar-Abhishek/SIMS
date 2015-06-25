@@ -35,4 +35,8 @@
     Private Sub MarksToolStripMenuItem1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MarksToolStripMenuItem1.Click
         Marks_Details.Show()
     End Sub
+
+    Private Sub CertificatesToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles CertificatesToolStripMenuItem.Click
+        Certificate_Form.Show()
+    End Sub
 End Class
