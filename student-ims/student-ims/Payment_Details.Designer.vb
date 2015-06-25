@@ -29,7 +29,7 @@ Partial Class Payment_Details
         Me.stname = New System.Windows.Forms.TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
+        Me.tfees = New System.Windows.Forms.TextBox()
         Me.TextBox5 = New System.Windows.Forms.TextBox()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
@@ -106,12 +106,12 @@ Partial Class Payment_Details
         Me.Label5.TabIndex = 7
         Me.Label5.Text = "Total Course Fees :"
         '
-        'TextBox4
+        'tfees
         '
-        Me.TextBox4.Location = New System.Drawing.Point(168, 176)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(136, 20)
-        Me.TextBox4.TabIndex = 8
+        Me.tfees.Location = New System.Drawing.Point(168, 176)
+        Me.tfees.Name = "tfees"
+        Me.tfees.Size = New System.Drawing.Size(136, 20)
+        Me.tfees.TabIndex = 8
         '
         'TextBox5
         '
@@ -214,7 +214,7 @@ Partial Class Payment_Details
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.TextBox5)
-        Me.Controls.Add(Me.TextBox4)
+        Me.Controls.Add(Me.tfees)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.stname)
@@ -236,7 +236,7 @@ Partial Class Payment_Details
     Friend WithEvents stname As System.Windows.Forms.TextBox
     Friend WithEvents Label4 As System.Windows.Forms.Label
     Friend WithEvents Label5 As System.Windows.Forms.Label
-    Friend WithEvents TextBox4 As System.Windows.Forms.TextBox
+    Friend WithEvents tfees As System.Windows.Forms.TextBox
     Friend WithEvents TextBox5 As System.Windows.Forms.TextBox
     Friend WithEvents Label6 As System.Windows.Forms.Label
     Friend WithEvents Label7 As System.Windows.Forms.Label

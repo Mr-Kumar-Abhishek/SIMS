@@ -35,6 +35,11 @@ Public Class Payment_Details
         While (dr.Read)
             crc.Text = dr.GetValue(0)
         End While
+        cm = New OleDbCommand("select totalfees from course where coursecode = '" + crc.Text + "'", cn)
+        dr = cm.ExecuteReader
+        While (dr.Read)
+            tfees.Text = dr.GetValue(0)
+        End While
         cn.Close()
     End Sub
 
