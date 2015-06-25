@@ -142,6 +142,7 @@ Partial Class Certificate_Form
         '
         'ListBox1
         '
+        Me.ListBox1.Enabled = False
         Me.ListBox1.FormattingEnabled = True
         Me.ListBox1.Location = New System.Drawing.Point(397, 110)
         Me.ListBox1.Name = "ListBox1"
