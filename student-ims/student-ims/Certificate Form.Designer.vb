@@ -33,7 +33,7 @@ Partial Class Certificate_Form
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
-        Me.ListBox1 = New System.Windows.Forms.ListBox()
+        Me.modbox = New System.Windows.Forms.ListBox()
         Me.stcode = New System.Windows.Forms.ComboBox()
         Me.crc = New System.Windows.Forms.TextBox()
         Me.SuspendLayout()
@@ -140,14 +140,14 @@ Partial Class Certificate_Form
         Me.Button2.Text = "Cancel"
         Me.Button2.UseVisualStyleBackColor = True
         '
-        'ListBox1
+        'modbox
         '
-        Me.ListBox1.Enabled = False
-        Me.ListBox1.FormattingEnabled = True
-        Me.ListBox1.Location = New System.Drawing.Point(397, 110)
-        Me.ListBox1.Name = "ListBox1"
-        Me.ListBox1.Size = New System.Drawing.Size(211, 43)
-        Me.ListBox1.TabIndex = 20
+        Me.modbox.Enabled = False
+        Me.modbox.FormattingEnabled = True
+        Me.modbox.Location = New System.Drawing.Point(397, 110)
+        Me.modbox.Name = "modbox"
+        Me.modbox.Size = New System.Drawing.Size(211, 43)
+        Me.modbox.TabIndex = 20
         '
         'stcode
         '
@@ -171,7 +171,7 @@ Partial Class Certificate_Form
         Me.ClientSize = New System.Drawing.Size(635, 468)
         Me.Controls.Add(Me.crc)
         Me.Controls.Add(Me.stcode)
-        Me.Controls.Add(Me.ListBox1)
+        Me.Controls.Add(Me.modbox)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.TextBox6)
@@ -200,7 +200,7 @@ Partial Class Certificate_Form
     Friend WithEvents Label6 As System.Windows.Forms.Label
     Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents Button2 As System.Windows.Forms.Button
-    Friend WithEvents ListBox1 As System.Windows.Forms.ListBox
+    Friend WithEvents modbox As System.Windows.Forms.ListBox
     Friend WithEvents stcode As System.Windows.Forms.ComboBox
     Friend WithEvents crc As System.Windows.Forms.TextBox
 End Class

@@ -34,11 +34,15 @@ Public Class Certificate_Form
         While (dr.Read)
             stname.Text = dr.GetValue(0)
         End While
-
         cm = New OleDbCommand("select coursecode from student where user = '" + stcode.Text + "'", cn)
         dr = cm.ExecuteReader
         While (dr.Read)
             crc.Text = dr.GetValue(0)
+        End While
+        cm = New OleDbCommand("select moduleid from stmod where user = '" + stcode.Text + "'", cn)
+        dr = cm.ExecuteReader
+        While (dr.Read)
+            modbox.Items.Add(dr.GetValue(0))
         End While
         cn.Close()
     End Sub
