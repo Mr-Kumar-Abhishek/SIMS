@@ -26,7 +26,7 @@ Partial Class Payment_Details
         Me.Label2 = New System.Windows.Forms.Label()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
+        Me.stname = New System.Windows.Forms.TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.TextBox4 = New System.Windows.Forms.TextBox()
@@ -39,7 +39,7 @@ Partial Class Payment_Details
         Me.TextBox8 = New System.Windows.Forms.TextBox()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.stcode = New System.Windows.Forms.ComboBox()
         Me.SuspendLayout()
         '
         'Label1
@@ -79,12 +79,12 @@ Partial Class Payment_Details
         Me.Label3.TabIndex = 4
         Me.Label3.Text = "Student Name :"
         '
-        'TextBox3
+        'stname
         '
-        Me.TextBox3.Location = New System.Drawing.Point(163, 107)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(213, 20)
-        Me.TextBox3.TabIndex = 5
+        Me.stname.Location = New System.Drawing.Point(163, 107)
+        Me.stname.Name = "stname"
+        Me.stname.Size = New System.Drawing.Size(213, 20)
+        Me.stname.TabIndex = 5
         '
         'Label4
         '
@@ -191,20 +191,20 @@ Partial Class Payment_Details
         Me.Button2.Text = "Cancel"
         Me.Button2.UseVisualStyleBackColor = True
         '
-        'ComboBox1
+        'stcode
         '
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(163, 35)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(213, 21)
-        Me.ComboBox1.TabIndex = 18
+        Me.stcode.FormattingEnabled = True
+        Me.stcode.Location = New System.Drawing.Point(163, 35)
+        Me.stcode.Name = "stcode"
+        Me.stcode.Size = New System.Drawing.Size(213, 21)
+        Me.stcode.TabIndex = 18
         '
         'Payment_Details
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(789, 389)
-        Me.Controls.Add(Me.ComboBox1)
+        Me.Controls.Add(Me.stcode)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.TextBox8)
@@ -217,7 +217,7 @@ Partial Class Payment_Details
         Me.Controls.Add(Me.TextBox4)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Label4)
-        Me.Controls.Add(Me.TextBox3)
+        Me.Controls.Add(Me.stname)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.TextBox2)
         Me.Controls.Add(Me.Label2)
@@ -233,7 +233,7 @@ Partial Class Payment_Details
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
     Friend WithEvents Label3 As System.Windows.Forms.Label
-    Friend WithEvents TextBox3 As System.Windows.Forms.TextBox
+    Friend WithEvents stname As System.Windows.Forms.TextBox
     Friend WithEvents Label4 As System.Windows.Forms.Label
     Friend WithEvents Label5 As System.Windows.Forms.Label
     Friend WithEvents TextBox4 As System.Windows.Forms.TextBox
@@ -246,5 +246,5 @@ Partial Class Payment_Details
     Friend WithEvents TextBox8 As System.Windows.Forms.TextBox
     Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents Button2 As System.Windows.Forms.Button
-    Friend WithEvents ComboBox1 As System.Windows.Forms.ComboBox
+    Friend WithEvents stcode As System.Windows.Forms.ComboBox
 End Class
