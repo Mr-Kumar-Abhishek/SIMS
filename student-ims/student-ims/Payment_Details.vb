@@ -45,6 +45,11 @@ Public Class Payment_Details
         While (dr.Read)
             dep.Text = dr.GetValue(0)
         End While
+        cm = New OleDbCommand("select paydate from stpay where user = '" + stcode.Text + "'", cn)
+        dr = cm.ExecuteReader
+        While (dr.Read)
+            dop.Text = dr.GetValue(0)
+        End While
         cn.Close()
     End Sub
 

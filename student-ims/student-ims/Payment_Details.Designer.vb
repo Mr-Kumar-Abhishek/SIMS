@@ -34,7 +34,7 @@ Partial Class Payment_Details
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
-        Me.TextBox6 = New System.Windows.Forms.TextBox()
+        Me.dop = New System.Windows.Forms.TextBox()
         Me.TextBox7 = New System.Windows.Forms.TextBox()
         Me.TextBox8 = New System.Windows.Forms.TextBox()
         Me.Button1 = New System.Windows.Forms.Button()
@@ -150,12 +150,12 @@ Partial Class Payment_Details
         Me.Label8.TabIndex = 12
         Me.Label8.Text = "Amount :"
         '
-        'TextBox6
+        'dop
         '
-        Me.TextBox6.Location = New System.Drawing.Point(623, 176)
-        Me.TextBox6.Name = "TextBox6"
-        Me.TextBox6.Size = New System.Drawing.Size(136, 20)
-        Me.TextBox6.TabIndex = 13
+        Me.dop.Location = New System.Drawing.Point(623, 176)
+        Me.dop.Name = "dop"
+        Me.dop.Size = New System.Drawing.Size(136, 20)
+        Me.dop.TabIndex = 13
         '
         'TextBox7
         '
@@ -209,7 +209,7 @@ Partial Class Payment_Details
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.TextBox8)
         Me.Controls.Add(Me.TextBox7)
-        Me.Controls.Add(Me.TextBox6)
+        Me.Controls.Add(Me.dop)
         Me.Controls.Add(Me.Label8)
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.Label6)
@@ -241,7 +241,7 @@ Partial Class Payment_Details
     Friend WithEvents Label6 As System.Windows.Forms.Label
     Friend WithEvents Label7 As System.Windows.Forms.Label
     Friend WithEvents Label8 As System.Windows.Forms.Label
-    Friend WithEvents TextBox6 As System.Windows.Forms.TextBox
+    Friend WithEvents dop As System.Windows.Forms.TextBox
     Friend WithEvents TextBox7 As System.Windows.Forms.TextBox
     Friend WithEvents TextBox8 As System.Windows.Forms.TextBox
     Friend WithEvents Button1 As System.Windows.Forms.Button
