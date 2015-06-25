@@ -29,6 +29,12 @@ Public Class Marks_Details
         While (dr.Read)
             stname.Text = dr.GetValue(0)
         End While
+        cm = New OleDbCommand("select coursecode from student where user = '" + stcode.Text + "'", cn)
+        dr = cm.ExecuteReader
+        crc.Text = ""
+        While (dr.Read)
+            crc.Text = dr.GetValue(0)
+        End While
         cn.Close()
     End Sub
 

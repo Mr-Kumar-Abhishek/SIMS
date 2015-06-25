@@ -25,7 +25,7 @@ Partial Class Marks_Details
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
+        Me.crc = New System.Windows.Forms.TextBox()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.stname = New System.Windows.Forms.TextBox()
@@ -63,12 +63,12 @@ Partial Class Marks_Details
         Me.Label3.TabIndex = 2
         Me.Label3.Text = "Course Code :"
         '
-        'TextBox3
+        'crc
         '
-        Me.TextBox3.Location = New System.Drawing.Point(177, 153)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox3.TabIndex = 5
+        Me.crc.Location = New System.Drawing.Point(177, 153)
+        Me.crc.Name = "crc"
+        Me.crc.Size = New System.Drawing.Size(100, 20)
+        Me.crc.TabIndex = 5
         '
         'Button1
         '
@@ -111,7 +111,7 @@ Partial Class Marks_Details
         Me.Controls.Add(Me.stcode)
         Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.TextBox3)
+        Me.Controls.Add(Me.crc)
         Me.Controls.Add(Me.stname)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
@@ -126,7 +126,7 @@ Partial Class Marks_Details
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents Label3 As System.Windows.Forms.Label
-    Friend WithEvents TextBox3 As System.Windows.Forms.TextBox
+    Friend WithEvents crc As System.Windows.Forms.TextBox
     Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents DataGridView1 As System.Windows.Forms.DataGridView
     Friend WithEvents stname As System.Windows.Forms.TextBox
