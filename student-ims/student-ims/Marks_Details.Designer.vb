@@ -25,11 +25,11 @@ Partial Class Marks_Details
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.TextBox3 = New System.Windows.Forms.TextBox()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.stcode = New System.Windows.Forms.ComboBox()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -63,20 +63,6 @@ Partial Class Marks_Details
         Me.Label3.TabIndex = 2
         Me.Label3.Text = "Course Code :"
         '
-        'TextBox1
-        '
-        Me.TextBox1.Location = New System.Drawing.Point(177, 84)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox1.TabIndex = 3
-        '
-        'TextBox2
-        '
-        Me.TextBox2.Location = New System.Drawing.Point(177, 22)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(270, 20)
-        Me.TextBox2.TabIndex = 4
-        '
         'TextBox3
         '
         Me.TextBox3.Location = New System.Drawing.Point(177, 153)
@@ -102,16 +88,31 @@ Partial Class Marks_Details
         Me.DataGridView1.Size = New System.Drawing.Size(240, 150)
         Me.DataGridView1.TabIndex = 7
         '
+        'TextBox2
+        '
+        Me.TextBox2.Location = New System.Drawing.Point(177, 22)
+        Me.TextBox2.Name = "TextBox2"
+        Me.TextBox2.Size = New System.Drawing.Size(270, 20)
+        Me.TextBox2.TabIndex = 4
+        '
+        'stcode
+        '
+        Me.stcode.FormattingEnabled = True
+        Me.stcode.Location = New System.Drawing.Point(177, 85)
+        Me.stcode.Name = "stcode"
+        Me.stcode.Size = New System.Drawing.Size(196, 21)
+        Me.stcode.TabIndex = 8
+        '
         'Marks_Details
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(646, 301)
+        Me.Controls.Add(Me.stcode)
         Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.TextBox3)
         Me.Controls.Add(Me.TextBox2)
-        Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
@@ -125,9 +126,9 @@ Partial Class Marks_Details
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents Label3 As System.Windows.Forms.Label
-    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
     Friend WithEvents TextBox3 As System.Windows.Forms.TextBox
     Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents DataGridView1 As System.Windows.Forms.DataGridView
+    Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
+    Friend WithEvents stcode As System.Windows.Forms.ComboBox
 End Class
