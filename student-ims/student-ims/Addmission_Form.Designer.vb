@@ -62,7 +62,7 @@ Partial Class Addmission_Form
         '
         'MonthCalendar1
         '
-        Me.MonthCalendar1.Location = New System.Drawing.Point(515, 251)
+        Me.MonthCalendar1.Location = New System.Drawing.Point(491, 130)
         Me.MonthCalendar1.Name = "MonthCalendar1"
         Me.MonthCalendar1.TabIndex = 12
         Me.MonthCalendar1.Visible = False
@@ -86,7 +86,7 @@ Partial Class Addmission_Form
         Me.GroupBox1.Font = New System.Drawing.Font("Segoe Script", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox1.Location = New System.Drawing.Point(12, 410)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(758, 320)
+        Me.GroupBox1.Size = New System.Drawing.Size(758, 345)
         Me.GroupBox1.TabIndex = 19
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Course Details"

@@ -75,7 +75,7 @@ Public Class Addmission_Form
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
         GroupBox1.Show()
         Me.Width = 785
-        Me.Height = 650
+        Me.Height = 700
     End Sub
 
     Private Sub Addmission_Form_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
