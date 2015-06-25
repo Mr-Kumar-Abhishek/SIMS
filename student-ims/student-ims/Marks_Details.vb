@@ -8,6 +8,9 @@ Public Class Marks_Details
     Dim ds As DataSet
     Private Sub Marks_Details_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         cn = c.getcon()
+        If Not cn.State = ConnectionState.Open Then
+            cn.Open()
+        End If
         cm = New OleDbCommand("select user from student'", cn)
         dr = cm.ExecuteReader
         While (dr.Read)
@@ -17,6 +20,28 @@ Public Class Marks_Details
     End Sub
 
     Private Sub stcode_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles stcode.SelectedIndexChanged
+        If Not cn.State = ConnectionState.Open Then
+            cn.Open()
+        End If
+        cm = New OleDbCommand("select sname from student where user='" + stcode.Text + "'", cn)
+        dr = cm.ExecuteReader
+        stname.Text = ""
+        While (dr.Read)
+            stname.Text = dr.GetValue(0)
+        End While
+        cn.Close()
+    End Sub
 
+    Private Sub stcode_TextChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles stcode.TextChanged
+        If Not cn.State = ConnectionState.Open Then
+            cn.Open()
+        End If
+        cm = New OleDbCommand("select sname from student where user='" + stcode.Text + "'", cn)
+        dr = cm.ExecuteReader
+        stname.Text = ""
+        While (dr.Read)
+            stname.Text = dr.GetValue(0)
+        End While
+        cn.Close()
     End Sub
 End Class
