@@ -29,11 +29,12 @@ Public Class Certificate_Form
         If Not cn.State = ConnectionState.Open Then
             cn.Open()
         End If
-        cm = New OleDbCommand("select coursecode from student where user = '" + stcode.Text + "'", cn)
+        cm = New OleDbCommand("select sname from student where user = '" + stcode.Text + "'", cn)
         dr = cm.ExecuteReader
         While (dr.Read)
             stname.Text = dr.GetValue(0)
         End While
+
         cn.Close()
     End Sub
 End Class
