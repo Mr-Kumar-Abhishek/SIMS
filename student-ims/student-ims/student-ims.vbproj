@@ -104,10 +104,10 @@
       <DependentUpon>Form1.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Marks Details.Designer.vb">
-      <DependentUpon>Marks Details.vb</DependentUpon>
+    <Compile Include="Marks_Details.Designer.vb">
+      <DependentUpon>Marks_Details.vb</DependentUpon>
     </Compile>
-    <Compile Include="Marks Details.vb">
+    <Compile Include="Marks_Details.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="MDI.Designer.vb">
@@ -137,10 +137,10 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <Compile Include="Payment Details.Designer.vb">
-      <DependentUpon>Payment Details.vb</DependentUpon>
+    <Compile Include="Payment_Details.Designer.vb">
+      <DependentUpon>Payment_Details.vb</DependentUpon>
     </Compile>
-    <Compile Include="Payment Details.vb">
+    <Compile Include="Payment_Details.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="stu_del.Designer.vb">
@@ -178,8 +178,8 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Marks Details.resx">
-      <DependentUpon>Marks Details.vb</DependentUpon>
+    <EmbeddedResource Include="Marks_Details.resx">
+      <DependentUpon>Marks_Details.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MDI.resx">
       <DependentUpon>MDI.vb</DependentUpon>
@@ -193,8 +193,8 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="Payment Details.resx">
-      <DependentUpon>Payment Details.vb</DependentUpon>
+    <EmbeddedResource Include="Payment_Details.resx">
+      <DependentUpon>Payment_Details.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="stu_del.resx">
       <DependentUpon>stu_del.vb</DependentUpon>

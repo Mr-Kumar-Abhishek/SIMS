@@ -27,4 +27,12 @@
     Private Sub EditToolStripMenuItem2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles EditToolStripMenuItem2.Click
         Edit_modulo.Show()
     End Sub
+
+    Private Sub PaymentsToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PaymentsToolStripMenuItem.Click
+        Payment_Details.Show()
+    End Sub
+
+    Private Sub MarksToolStripMenuItem1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MarksToolStripMenuItem1.Click
+        Marks_Details.Show()
+    End Sub
 End Class
