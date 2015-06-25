@@ -35,7 +35,7 @@ Partial Class Certificate_Form
         Me.Button2 = New System.Windows.Forms.Button()
         Me.ListBox1 = New System.Windows.Forms.ListBox()
         Me.stcode = New System.Windows.Forms.ComboBox()
-        Me.ComboBox2 = New System.Windows.Forms.ComboBox()
+        Me.crc = New System.Windows.Forms.TextBox()
         Me.SuspendLayout()
         '
         'stname
@@ -157,20 +157,19 @@ Partial Class Certificate_Form
         Me.stcode.Size = New System.Drawing.Size(100, 21)
         Me.stcode.TabIndex = 21
         '
-        'ComboBox2
+        'crc
         '
-        Me.ComboBox2.FormattingEnabled = True
-        Me.ComboBox2.Location = New System.Drawing.Point(145, 109)
-        Me.ComboBox2.Name = "ComboBox2"
-        Me.ComboBox2.Size = New System.Drawing.Size(100, 21)
-        Me.ComboBox2.TabIndex = 22
+        Me.crc.Location = New System.Drawing.Point(145, 109)
+        Me.crc.Name = "crc"
+        Me.crc.Size = New System.Drawing.Size(100, 20)
+        Me.crc.TabIndex = 22
         '
         'Certificate_Form
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(635, 468)
-        Me.Controls.Add(Me.ComboBox2)
+        Me.Controls.Add(Me.crc)
         Me.Controls.Add(Me.stcode)
         Me.Controls.Add(Me.ListBox1)
         Me.Controls.Add(Me.Button2)
@@ -203,5 +202,5 @@ Partial Class Certificate_Form
     Friend WithEvents Button2 As System.Windows.Forms.Button
     Friend WithEvents ListBox1 As System.Windows.Forms.ListBox
     Friend WithEvents stcode As System.Windows.Forms.ComboBox
-    Friend WithEvents ComboBox2 As System.Windows.Forms.ComboBox
+    Friend WithEvents crc As System.Windows.Forms.TextBox
 End Class
