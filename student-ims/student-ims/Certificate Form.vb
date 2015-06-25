@@ -9,6 +9,7 @@ Public Class Certificate_Form
     Dim ds As DataSet
 
     Private Sub Certificate_Form_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+        c.getcon()
         If Not cn.State = ConnectionState.Open Then
             cn.Open()
         End If
@@ -17,5 +18,6 @@ Public Class Certificate_Form
         While (dr.Read)
             stcode.Items.Add(dr.GetValue(0))
         End While
+        cn.Close()
     End Sub
 End Class
