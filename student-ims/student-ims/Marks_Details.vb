@@ -5,6 +5,8 @@ Public Class Marks_Details
     Dim cm As OleDbCommand
     Dim dr As OleDbDataReader
     Dim ds As DataSet
+    Dim list As DataTable
+    Dim da As OleDbDataAdapter
 
     Private Sub Marks_Details_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         cn = c.getcon()
@@ -17,6 +19,7 @@ Public Class Marks_Details
             stcode.Items.Add(dr.GetValue(0))
         End While
         dr.Close()
+
         Dim da As New OleDbDataAdapter(cm)
         Dim list As New DataTable
         da.Fill(list)
