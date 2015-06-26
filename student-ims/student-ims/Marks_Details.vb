@@ -4,8 +4,8 @@ Public Class Marks_Details
     Dim cn As OleDbConnection
     Dim cm As OleDbCommand
     Dim dr As OleDbDataReader
-    Dim da As OleDbDataAdapter
     Dim ds As DataSet
+
     Private Sub Marks_Details_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         cn = c.getcon()
         If Not cn.State = ConnectionState.Open Then
@@ -16,8 +16,14 @@ Public Class Marks_Details
         While (dr.Read)
             stcode.Items.Add(dr.GetValue(0))
         End While
+        dr.Close()
+        Dim da As New OleDbDataAdapter(cm)
+        Dim list As New DataTable
+        da.Fill(list)
+        DataGridView1.DataSource = list
         cn.Close()
     End Sub
+
 
     Private Sub stcode_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles stcode.SelectedIndexChanged
         If Not cn.State = ConnectionState.Open Then
