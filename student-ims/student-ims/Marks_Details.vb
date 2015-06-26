@@ -19,7 +19,6 @@ Public Class Marks_Details
             stcode.Items.Add(dr.GetValue(0))
         End While
         dr.Close()
-
         Dim da As New OleDbDataAdapter(cm)
         Dim list As New DataTable
         da.Fill(list)
