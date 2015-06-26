@@ -19,10 +19,6 @@ Public Class Marks_Details
             stcode.Items.Add(dr.GetValue(0))
         End While
         dr.Close()
-        Dim da As New OleDbDataAdapter(cm)
-        Dim list As New DataTable
-        da.Fill(list)
-        DataGridView1.DataSource = list
         cn.Close()
     End Sub
 
@@ -43,6 +39,12 @@ Public Class Marks_Details
         While (dr.Read)
             crc.Text = dr.GetValue(0)
         End While
+        dr.Close()
+        cm = New OleDbCommand("select moduleid,marks from marks where user = '" + stcode.Text + "'", cn)
+        Dim da As New OleDbDataAdapter(cm)
+        Dim list As New DataTable
+        da.Fill(list)
+        DataGridView1.DataSource = list
         cn.Close()
     End Sub
 
