@@ -63,7 +63,8 @@ Public Class Certificate_Form
         Dim textline As String
         textline = "NAME: " & stname.Text
         graph.DrawString(textline, myfont, XBrushes.Black, New XRect(50, 245, pdfPage.Width.Point, pdfPage.Height.Point), XStringFormats.TopLeft)       '//width from left 50 pixels, height from top 245 pixels
-
+        textline = "Roll No." & stcode.Text
+        graph.DrawString(textline, myfont, XBrushes.Black, New XRect(50, 350, pdfPage.Width.Point, pdfPage.Height.Point), XStringFormats.TopLeft)       '//width from left 50 pixels, height from top 245 pixels
         'graph.DrawString("sname :", myfont, XBrushes.Black, New XRect(120, 245, pdfPage.Width.Point, pdfPage.Height.Point), XStringFormats.TopLeft)       '//width from left 120 pixels, height from top 245 pixels
         Dim path As String
         path = Application.StartupPath & "/name.pdf"
