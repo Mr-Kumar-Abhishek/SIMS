@@ -1,4 +1,9 @@
 ﻿Imports System.Data.OleDb
+Imports PdfSharp
+Imports PdfSharp.Drawing
+Imports PdfSharp.Pdf
+Imports System.Diagnostics
+Imports PdfSharp.Drawing.Layout
 
 Public Class Certificate_Form
     Dim c As New conn
@@ -45,5 +50,18 @@ Public Class Certificate_Form
             modbox.Items.Add(dr.GetValue(0))
         End While
         cn.Close()
+    End Sub
+
+    Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
+        Dim pdf As PdfDocument = New PdfDocument
+        Dim pdfPage As PdfPage = pdf.AddPage
+        Dim graph As XGraphics = XGraphics.FromPdfPage(pdfPage)
+        Dim myfont As XFont = New XFont("Verdana", 15, XFontStyle.Bold)  '//you can set any font size, and style
+        pdf.Info.Title = " It is the Title of the PDF "
+        graph.DrawString("NAME :", myfont, XBrushes.Black, New XRect(50, 245, pdfPage.Width.Point, pdfPage.Height.Point), XStringFormats.TopLeft)       '//width from left 50 pixels, height from top 245 pixels
+        graph.DrawString("sname :", myfont, XBrushes.Black, New XRect(120, 245, pdfPage.Width.Point, pdfPage.Height.Point), XStringFormats.TopLeft)       '//width from left 120 pixels, height from top 245 pixels
+        Dim path As String
+        path = Application.StartupPath & "/name.pdf"
+        pdf.Save(path)
     End Sub
 End Class
