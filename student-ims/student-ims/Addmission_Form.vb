@@ -107,6 +107,11 @@ Public Class Addmission_Form
         While (dr.Read)
             crc.Text = dr.GetValue(0)
         End While
+        cm = New OleDbCommand("select totalfees from course where coursename = '" + coursedp.SelectedItem + "'", cn)
+        dr = cm.ExecuteReader
+        While (dr.Read)
+            crf.Text = dr.GetValue(0)
+        End While
         cm = New OleDbCommand("select moduleid from modulo where coursecode = '" + crc.Text + "'", cn)
         dr = cm.ExecuteReader
         While (dr.Read)
