@@ -79,6 +79,11 @@ Public Class Payment_Details
         Dim remin As Integer
         remin = totamt - deposit
         amtrmn.Text = remin
+        cm = New OleDbCommand("select cashmemo from stpay where user = '" + stcode.Text + "'", cn)
+        dr = cm.ExecuteReader
+        While (dr.Read)
+            cmn.Text = dr.GetValue(0)
+        End While
         cn.Close()
     End Sub
 
