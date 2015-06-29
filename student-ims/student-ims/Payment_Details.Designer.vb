@@ -82,7 +82,7 @@ Partial Class Payment_Details
         '
         'stname
         '
-        Me.stname.Location = New System.Drawing.Point(163, 107)
+        Me.stname.Location = New System.Drawing.Point(215, 107)
         Me.stname.Name = "stname"
         Me.stname.Size = New System.Drawing.Size(213, 20)
         Me.stname.TabIndex = 5
@@ -109,7 +109,7 @@ Partial Class Payment_Details
         '
         'tfees
         '
-        Me.tfees.Location = New System.Drawing.Point(168, 176)
+        Me.tfees.Location = New System.Drawing.Point(215, 176)
         Me.tfees.Name = "tfees"
         Me.tfees.Size = New System.Drawing.Size(136, 20)
         Me.tfees.TabIndex = 8
@@ -137,9 +137,9 @@ Partial Class Payment_Details
         Me.Label7.Font = New System.Drawing.Font("Segoe Script", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label7.Location = New System.Drawing.Point(27, 252)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(122, 20)
+        Me.Label7.Size = New System.Drawing.Size(156, 20)
         Me.Label7.TabIndex = 11
-        Me.Label7.Text = "Cash Memo No. :"
+        Me.Label7.Text = "Last Cash Memo No. :"
         '
         'Label8
         '
@@ -160,7 +160,7 @@ Partial Class Payment_Details
         '
         'cmn
         '
-        Me.cmn.Location = New System.Drawing.Point(163, 252)
+        Me.cmn.Location = New System.Drawing.Point(215, 252)
         Me.cmn.Name = "cmn"
         Me.cmn.Size = New System.Drawing.Size(136, 20)
         Me.cmn.TabIndex = 14
@@ -195,7 +195,7 @@ Partial Class Payment_Details
         'stcode
         '
         Me.stcode.FormattingEnabled = True
-        Me.stcode.Location = New System.Drawing.Point(163, 35)
+        Me.stcode.Location = New System.Drawing.Point(215, 36)
         Me.stcode.Name = "stcode"
         Me.stcode.Size = New System.Drawing.Size(213, 21)
         Me.stcode.TabIndex = 18

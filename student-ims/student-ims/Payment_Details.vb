@@ -74,6 +74,11 @@ Public Class Payment_Details
             deposit = deposit + CInt(dr.GetValue(0))
         End While
         dep.Text = deposit
+        Dim totamt As Integer
+        totamt = CInt(tfees.Text)
+        Dim remin As Integer
+        remin = totamt - deposit
+        amtrmn.Text = remin
         cn.Close()
     End Sub
 
