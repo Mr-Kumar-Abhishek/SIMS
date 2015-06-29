@@ -66,6 +66,14 @@ Public Class Payment_Details
         While (dr.Read)
             tfees.Text = dr.GetValue(0)
         End While
+        'this will calculate the total fees deposited
+        cm = New OleDbCommand("select amount from stpay where user = '" + stcode.Text + "'", cn)
+        dr = cm.ExecuteReader
+        Dim deposit As Integer
+        While (dr.Read)
+            deposit = deposit + CInt(dr.GetValue(0))
+        End While
+        dep.Text = deposit
         cn.Close()
     End Sub
 
