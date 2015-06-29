@@ -56,7 +56,7 @@ Partial Class Payment_Details
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Segoe Script", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(481, 36)
+        Me.Label2.Location = New System.Drawing.Point(453, 36)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(104, 20)
         Me.Label2.TabIndex = 2
@@ -90,7 +90,7 @@ Partial Class Payment_Details
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Segoe Script", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(481, 107)
+        Me.Label4.Location = New System.Drawing.Point(449, 107)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(87, 20)
         Me.Label4.TabIndex = 6
@@ -124,11 +124,11 @@ Partial Class Payment_Details
         '
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Segoe Script", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(481, 176)
+        Me.Label6.Location = New System.Drawing.Point(449, 176)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(136, 20)
+        Me.Label6.Size = New System.Drawing.Size(168, 20)
         Me.Label6.TabIndex = 10
-        Me.Label6.Text = "Date of Payment :"
+        Me.Label6.Text = "Last date of Payment :"
         '
         'Label7
         '
@@ -144,7 +144,7 @@ Partial Class Payment_Details
         '
         Me.Label8.AutoSize = True
         Me.Label8.Font = New System.Drawing.Font("Segoe Script", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(481, 252)
+        Me.Label8.Location = New System.Drawing.Point(449, 252)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(76, 20)
         Me.Label8.TabIndex = 12
