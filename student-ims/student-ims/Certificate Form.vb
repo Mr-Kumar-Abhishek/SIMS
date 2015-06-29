@@ -69,5 +69,6 @@ Public Class Certificate_Form
         Dim path As String
         path = Application.StartupPath & "/name.pdf"
         pdf.Save(path)
+        Process.Start(path)
     End Sub
 End Class
