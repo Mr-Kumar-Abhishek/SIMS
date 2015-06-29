@@ -6,8 +6,19 @@ Public Class Payment_Details
     Dim dr As OleDbDataReader
     Dim da As OleDbDataAdapter
     Dim ds As DataSet
+    Private Sub clearing()
+        crc.Text = ""
+        stname.Text = ""
+        stcode.Text = ""
+        tfees.Text = ""
+        cmn.Text = ""
+        dep.Text = ""
+        dop.Text = ""
+        amtrmn.Text = ""
+    End Sub
     Private Sub Payment_Details_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         Me.BackColor = Color.Beige
+        clearing()
         cn = c.getcon()
         If Not cn.State = ConnectionState.Open Then
             cn.Open()
@@ -55,5 +66,9 @@ Public Class Payment_Details
 
     Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
         Me.Hide()
+    End Sub
+
+    Private Sub Payment_Details_Shown(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Shown
+        clearing()
     End Sub
 End Class

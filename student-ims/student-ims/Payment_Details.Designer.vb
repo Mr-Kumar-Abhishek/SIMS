@@ -35,8 +35,8 @@ Partial Class Payment_Details
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.dop = New System.Windows.Forms.TextBox()
-        Me.TextBox7 = New System.Windows.Forms.TextBox()
-        Me.TextBox8 = New System.Windows.Forms.TextBox()
+        Me.cmn = New System.Windows.Forms.TextBox()
+        Me.amtrmn = New System.Windows.Forms.TextBox()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.stcode = New System.Windows.Forms.ComboBox()
@@ -157,19 +157,19 @@ Partial Class Payment_Details
         Me.dop.Size = New System.Drawing.Size(136, 20)
         Me.dop.TabIndex = 13
         '
-        'TextBox7
+        'cmn
         '
-        Me.TextBox7.Location = New System.Drawing.Point(163, 252)
-        Me.TextBox7.Name = "TextBox7"
-        Me.TextBox7.Size = New System.Drawing.Size(136, 20)
-        Me.TextBox7.TabIndex = 14
+        Me.cmn.Location = New System.Drawing.Point(163, 252)
+        Me.cmn.Name = "cmn"
+        Me.cmn.Size = New System.Drawing.Size(136, 20)
+        Me.cmn.TabIndex = 14
         '
-        'TextBox8
+        'amtrmn
         '
-        Me.TextBox8.Location = New System.Drawing.Point(623, 252)
-        Me.TextBox8.Name = "TextBox8"
-        Me.TextBox8.Size = New System.Drawing.Size(136, 20)
-        Me.TextBox8.TabIndex = 15
+        Me.amtrmn.Location = New System.Drawing.Point(623, 252)
+        Me.amtrmn.Name = "amtrmn"
+        Me.amtrmn.Size = New System.Drawing.Size(136, 20)
+        Me.amtrmn.TabIndex = 15
         '
         'Button1
         '
@@ -207,8 +207,8 @@ Partial Class Payment_Details
         Me.Controls.Add(Me.stcode)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.TextBox8)
-        Me.Controls.Add(Me.TextBox7)
+        Me.Controls.Add(Me.amtrmn)
+        Me.Controls.Add(Me.cmn)
         Me.Controls.Add(Me.dop)
         Me.Controls.Add(Me.Label8)
         Me.Controls.Add(Me.Label7)
@@ -242,8 +242,8 @@ Partial Class Payment_Details
     Friend WithEvents Label7 As System.Windows.Forms.Label
     Friend WithEvents Label8 As System.Windows.Forms.Label
     Friend WithEvents dop As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox7 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox8 As System.Windows.Forms.TextBox
+    Friend WithEvents cmn As System.Windows.Forms.TextBox
+    Friend WithEvents amtrmn As System.Windows.Forms.TextBox
     Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents Button2 As System.Windows.Forms.Button
     Friend WithEvents stcode As System.Windows.Forms.ComboBox
