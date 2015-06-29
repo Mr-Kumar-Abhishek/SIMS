@@ -40,6 +40,7 @@ Partial Class Payment_Details
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.stcode = New System.Windows.Forms.ComboBox()
+        Me.Button3 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Label1
@@ -146,9 +147,9 @@ Partial Class Payment_Details
         Me.Label8.Font = New System.Drawing.Font("Segoe Script", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label8.Location = New System.Drawing.Point(449, 252)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(76, 20)
+        Me.Label8.Size = New System.Drawing.Size(104, 20)
         Me.Label8.TabIndex = 12
-        Me.Label8.Text = "Amount :"
+        Me.Label8.Text = "Amount  Left"
         '
         'dop
         '
@@ -199,11 +200,21 @@ Partial Class Payment_Details
         Me.stcode.Size = New System.Drawing.Size(213, 21)
         Me.stcode.TabIndex = 18
         '
+        'Button3
+        '
+        Me.Button3.Location = New System.Drawing.Point(649, 290)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(86, 23)
+        Me.Button3.TabIndex = 19
+        Me.Button3.Text = "Add Amount"
+        Me.Button3.UseVisualStyleBackColor = True
+        '
         'Payment_Details
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(789, 395)
+        Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.stcode)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
@@ -247,4 +258,5 @@ Partial Class Payment_Details
     Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents Button2 As System.Windows.Forms.Button
     Friend WithEvents stcode As System.Windows.Forms.ComboBox
+    Friend WithEvents Button3 As System.Windows.Forms.Button
 End Class
