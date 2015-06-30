@@ -29,7 +29,7 @@ Partial Class stu_edit
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button1 = New System.Windows.Forms.Button()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.gender = New System.Windows.Forms.ComboBox()
         Me.TextBox6 = New System.Windows.Forms.TextBox()
         Me.ListBox1 = New System.Windows.Forms.ListBox()
         Me.TextBox5 = New System.Windows.Forms.TextBox()
@@ -68,7 +68,7 @@ Partial Class stu_edit
         Me.GroupBox1.Controls.Add(Me.Button3)
         Me.GroupBox1.Controls.Add(Me.Button2)
         Me.GroupBox1.Controls.Add(Me.Button1)
-        Me.GroupBox1.Controls.Add(Me.ComboBox1)
+        Me.GroupBox1.Controls.Add(Me.gender)
         Me.GroupBox1.Controls.Add(Me.TextBox6)
         Me.GroupBox1.Controls.Add(Me.ListBox1)
         Me.GroupBox1.Controls.Add(Me.TextBox5)
@@ -146,13 +146,13 @@ Partial Class stu_edit
         Me.Button1.Text = "Add This Course"
         Me.Button1.UseVisualStyleBackColor = True
         '
-        'ComboBox1
+        'gender
         '
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(158, 81)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(270, 28)
-        Me.ComboBox1.TabIndex = 15
+        Me.gender.FormattingEnabled = True
+        Me.gender.Location = New System.Drawing.Point(158, 81)
+        Me.gender.Name = "gender"
+        Me.gender.Size = New System.Drawing.Size(270, 28)
+        Me.gender.TabIndex = 15
         '
         'TextBox6
         '
@@ -436,7 +436,7 @@ Partial Class stu_edit
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents Label8 As System.Windows.Forms.Label
     Friend WithEvents Label7 As System.Windows.Forms.Label
-    Friend WithEvents ComboBox1 As System.Windows.Forms.ComboBox
+    Friend WithEvents gender As System.Windows.Forms.ComboBox
     Friend WithEvents TextBox6 As System.Windows.Forms.TextBox
     Friend WithEvents ListBox1 As System.Windows.Forms.ListBox
     Friend WithEvents TextBox5 As System.Windows.Forms.TextBox

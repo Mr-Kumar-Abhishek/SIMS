@@ -20,6 +20,11 @@ Public Class stu_edit
         While (dr.Read)
             stname.Text = dr.GetValue(0)
         End While
+        cm = New OleDbCommand("select gender from student where user = '" + stcode.Text + "'", cn)
+        dr = cm.ExecuteReader
+        While (dr.Read)
+            gender.Text = dr.GetValue(0)
+        End While
     End Sub
 
     Private Sub stu_edit_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
