@@ -23,6 +23,7 @@ Partial Class stu_edit
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.stcode = New System.Windows.Forms.ComboBox()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.ComboBox2 = New System.Windows.Forms.ComboBox()
         Me.Button3 = New System.Windows.Forms.Button()
@@ -48,21 +49,20 @@ Partial Class stu_edit
         Me.Label12 = New System.Windows.Forms.Label()
         Me.Label13 = New System.Windows.Forms.Label()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
-        Me.TextBox7 = New System.Windows.Forms.TextBox()
-        Me.TextBox8 = New System.Windows.Forms.TextBox()
-        Me.TextBox9 = New System.Windows.Forms.TextBox()
-        Me.TextBox10 = New System.Windows.Forms.TextBox()
-        Me.Button4 = New System.Windows.Forms.Button()
-        Me.Button5 = New System.Windows.Forms.Button()
         Me.Label14 = New System.Windows.Forms.Label()
-        Me.ComboBox3 = New System.Windows.Forms.ComboBox()
+        Me.Button5 = New System.Windows.Forms.Button()
+        Me.Button4 = New System.Windows.Forms.Button()
+        Me.TextBox10 = New System.Windows.Forms.TextBox()
+        Me.TextBox9 = New System.Windows.Forms.TextBox()
+        Me.TextBox8 = New System.Windows.Forms.TextBox()
+        Me.TextBox7 = New System.Windows.Forms.TextBox()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.SuspendLayout()
         '
         'GroupBox1
         '
-        Me.GroupBox1.Controls.Add(Me.ComboBox3)
+        Me.GroupBox1.Controls.Add(Me.stcode)
         Me.GroupBox1.Controls.Add(Me.Label9)
         Me.GroupBox1.Controls.Add(Me.ComboBox2)
         Me.GroupBox1.Controls.Add(Me.Button3)
@@ -91,6 +91,14 @@ Partial Class stu_edit
         Me.GroupBox1.TabIndex = 0
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Basic Details"
+        '
+        'stcode
+        '
+        Me.stcode.FormattingEnabled = True
+        Me.stcode.Location = New System.Drawing.Point(158, 29)
+        Me.stcode.Name = "stcode"
+        Me.stcode.Size = New System.Drawing.Size(270, 28)
+        Me.stcode.TabIndex = 21
         '
         'Label9
         '
@@ -343,52 +351,6 @@ Partial Class stu_edit
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Course Details"
         '
-        'TextBox7
-        '
-        Me.TextBox7.Location = New System.Drawing.Point(188, 59)
-        Me.TextBox7.Name = "TextBox7"
-        Me.TextBox7.Size = New System.Drawing.Size(228, 28)
-        Me.TextBox7.TabIndex = 15
-        '
-        'TextBox8
-        '
-        Me.TextBox8.Location = New System.Drawing.Point(188, 114)
-        Me.TextBox8.Name = "TextBox8"
-        Me.TextBox8.Size = New System.Drawing.Size(228, 28)
-        Me.TextBox8.TabIndex = 16
-        '
-        'TextBox9
-        '
-        Me.TextBox9.Location = New System.Drawing.Point(585, 59)
-        Me.TextBox9.Name = "TextBox9"
-        Me.TextBox9.Size = New System.Drawing.Size(228, 28)
-        Me.TextBox9.TabIndex = 17
-        '
-        'TextBox10
-        '
-        Me.TextBox10.Location = New System.Drawing.Point(585, 117)
-        Me.TextBox10.Name = "TextBox10"
-        Me.TextBox10.Size = New System.Drawing.Size(228, 28)
-        Me.TextBox10.TabIndex = 18
-        '
-        'Button4
-        '
-        Me.Button4.Location = New System.Drawing.Point(294, 196)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(134, 23)
-        Me.Button4.TabIndex = 19
-        Me.Button4.Text = "Okay"
-        Me.Button4.UseVisualStyleBackColor = True
-        '
-        'Button5
-        '
-        Me.Button5.Location = New System.Drawing.Point(479, 196)
-        Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(134, 23)
-        Me.Button5.TabIndex = 20
-        Me.Button5.Text = "Cancle"
-        Me.Button5.UseVisualStyleBackColor = True
-        '
         'Label14
         '
         Me.Label14.AutoSize = True
@@ -400,20 +362,58 @@ Partial Class stu_edit
         Me.Label14.TabIndex = 21
         Me.Label14.Text = "Module details"
         '
-        'ComboBox3
+        'Button5
         '
-        Me.ComboBox3.FormattingEnabled = True
-        Me.ComboBox3.Location = New System.Drawing.Point(158, 29)
-        Me.ComboBox3.Name = "ComboBox3"
-        Me.ComboBox3.Size = New System.Drawing.Size(270, 28)
-        Me.ComboBox3.TabIndex = 21
+        Me.Button5.Location = New System.Drawing.Point(479, 196)
+        Me.Button5.Name = "Button5"
+        Me.Button5.Size = New System.Drawing.Size(134, 23)
+        Me.Button5.TabIndex = 20
+        Me.Button5.Text = "Cancle"
+        Me.Button5.UseVisualStyleBackColor = True
+        '
+        'Button4
+        '
+        Me.Button4.Location = New System.Drawing.Point(294, 196)
+        Me.Button4.Name = "Button4"
+        Me.Button4.Size = New System.Drawing.Size(134, 23)
+        Me.Button4.TabIndex = 19
+        Me.Button4.Text = "Okay"
+        Me.Button4.UseVisualStyleBackColor = True
+        '
+        'TextBox10
+        '
+        Me.TextBox10.Location = New System.Drawing.Point(585, 117)
+        Me.TextBox10.Name = "TextBox10"
+        Me.TextBox10.Size = New System.Drawing.Size(228, 28)
+        Me.TextBox10.TabIndex = 18
+        '
+        'TextBox9
+        '
+        Me.TextBox9.Location = New System.Drawing.Point(585, 59)
+        Me.TextBox9.Name = "TextBox9"
+        Me.TextBox9.Size = New System.Drawing.Size(228, 28)
+        Me.TextBox9.TabIndex = 17
+        '
+        'TextBox8
+        '
+        Me.TextBox8.Location = New System.Drawing.Point(188, 114)
+        Me.TextBox8.Name = "TextBox8"
+        Me.TextBox8.Size = New System.Drawing.Size(228, 28)
+        Me.TextBox8.TabIndex = 16
+        '
+        'TextBox7
+        '
+        Me.TextBox7.Location = New System.Drawing.Point(188, 59)
+        Me.TextBox7.Name = "TextBox7"
+        Me.TextBox7.Size = New System.Drawing.Size(228, 28)
+        Me.TextBox7.TabIndex = 15
         '
         'stu_edit
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.PapayaWhip
-        Me.ClientSize = New System.Drawing.Size(1027, 644)
+        Me.ClientSize = New System.Drawing.Size(1020, 644)
         Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.GroupBox1)
         Me.Font = New System.Drawing.Font("Segoe Script", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -460,5 +460,5 @@ Partial Class stu_edit
     Friend WithEvents Label14 As System.Windows.Forms.Label
     Friend WithEvents Button5 As System.Windows.Forms.Button
     Friend WithEvents Button4 As System.Windows.Forms.Button
-    Friend WithEvents ComboBox3 As System.Windows.Forms.ComboBox
+    Friend WithEvents stcode As System.Windows.Forms.ComboBox
 End Class
