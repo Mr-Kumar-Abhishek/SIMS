@@ -35,7 +35,7 @@ Partial Class stu_edit
         Me.TextBox5 = New System.Windows.Forms.TextBox()
         Me.tele = New System.Windows.Forms.TextBox()
         Me.stname = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.add = New System.Windows.Forms.TextBox()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
@@ -74,7 +74,7 @@ Partial Class stu_edit
         Me.GroupBox1.Controls.Add(Me.TextBox5)
         Me.GroupBox1.Controls.Add(Me.tele)
         Me.GroupBox1.Controls.Add(Me.stname)
-        Me.GroupBox1.Controls.Add(Me.TextBox2)
+        Me.GroupBox1.Controls.Add(Me.add)
         Me.GroupBox1.Controls.Add(Me.Label8)
         Me.GroupBox1.Controls.Add(Me.Label7)
         Me.GroupBox1.Controls.Add(Me.Label6)
@@ -191,13 +191,13 @@ Partial Class stu_edit
         Me.stname.Size = New System.Drawing.Size(270, 28)
         Me.stname.TabIndex = 10
         '
-        'TextBox2
+        'add
         '
-        Me.TextBox2.Location = New System.Drawing.Point(158, 129)
-        Me.TextBox2.Multiline = True
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(270, 65)
-        Me.TextBox2.TabIndex = 9
+        Me.add.Location = New System.Drawing.Point(158, 129)
+        Me.add.Multiline = True
+        Me.add.Name = "add"
+        Me.add.Size = New System.Drawing.Size(270, 65)
+        Me.add.TabIndex = 9
         '
         'Label8
         '
@@ -442,7 +442,7 @@ Partial Class stu_edit
     Friend WithEvents TextBox5 As System.Windows.Forms.TextBox
     Friend WithEvents tele As System.Windows.Forms.TextBox
     Friend WithEvents stname As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
+    Friend WithEvents add As System.Windows.Forms.TextBox
     Friend WithEvents Button3 As System.Windows.Forms.Button
     Friend WithEvents Button2 As System.Windows.Forms.Button
     Friend WithEvents Button1 As System.Windows.Forms.Button
