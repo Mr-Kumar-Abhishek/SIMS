@@ -32,7 +32,7 @@ Partial Class stu_edit
         Me.gender = New System.Windows.Forms.ComboBox()
         Me.TextBox6 = New System.Windows.Forms.TextBox()
         Me.ListBox1 = New System.Windows.Forms.ListBox()
-        Me.TextBox5 = New System.Windows.Forms.TextBox()
+        Me.dob = New System.Windows.Forms.TextBox()
         Me.tele = New System.Windows.Forms.TextBox()
         Me.stname = New System.Windows.Forms.TextBox()
         Me.add = New System.Windows.Forms.TextBox()
@@ -71,7 +71,7 @@ Partial Class stu_edit
         Me.GroupBox1.Controls.Add(Me.gender)
         Me.GroupBox1.Controls.Add(Me.TextBox6)
         Me.GroupBox1.Controls.Add(Me.ListBox1)
-        Me.GroupBox1.Controls.Add(Me.TextBox5)
+        Me.GroupBox1.Controls.Add(Me.dob)
         Me.GroupBox1.Controls.Add(Me.tele)
         Me.GroupBox1.Controls.Add(Me.stname)
         Me.GroupBox1.Controls.Add(Me.add)
@@ -170,12 +170,12 @@ Partial Class stu_edit
         Me.ListBox1.Size = New System.Drawing.Size(270, 44)
         Me.ListBox1.TabIndex = 13
         '
-        'TextBox5
+        'dob
         '
-        Me.TextBox5.Location = New System.Drawing.Point(709, 129)
-        Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(270, 28)
-        Me.TextBox5.TabIndex = 12
+        Me.dob.Location = New System.Drawing.Point(709, 129)
+        Me.dob.Name = "dob"
+        Me.dob.Size = New System.Drawing.Size(270, 28)
+        Me.dob.TabIndex = 12
         '
         'tele
         '
@@ -439,7 +439,7 @@ Partial Class stu_edit
     Friend WithEvents gender As System.Windows.Forms.ComboBox
     Friend WithEvents TextBox6 As System.Windows.Forms.TextBox
     Friend WithEvents ListBox1 As System.Windows.Forms.ListBox
-    Friend WithEvents TextBox5 As System.Windows.Forms.TextBox
+    Friend WithEvents dob As System.Windows.Forms.TextBox
     Friend WithEvents tele As System.Windows.Forms.TextBox
     Friend WithEvents stname As System.Windows.Forms.TextBox
     Friend WithEvents add As System.Windows.Forms.TextBox
