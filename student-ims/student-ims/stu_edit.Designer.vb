@@ -24,14 +24,9 @@ Partial Class stu_edit
     Private Sub InitializeComponent()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.stcode = New System.Windows.Forms.ComboBox()
-        Me.Label9 = New System.Windows.Forms.Label()
-        Me.ComboBox2 = New System.Windows.Forms.ComboBox()
-        Me.Button3 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
-        Me.Button1 = New System.Windows.Forms.Button()
         Me.gender = New System.Windows.Forms.ComboBox()
         Me.TextBox6 = New System.Windows.Forms.TextBox()
-        Me.ListBox1 = New System.Windows.Forms.ListBox()
         Me.dob = New System.Windows.Forms.TextBox()
         Me.tele = New System.Windows.Forms.TextBox()
         Me.stname = New System.Windows.Forms.TextBox()
@@ -56,21 +51,18 @@ Partial Class stu_edit
         Me.TextBox9 = New System.Windows.Forms.TextBox()
         Me.TextBox8 = New System.Windows.Forms.TextBox()
         Me.TextBox7 = New System.Windows.Forms.TextBox()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.SuspendLayout()
         '
         'GroupBox1
         '
+        Me.GroupBox1.Controls.Add(Me.TextBox1)
         Me.GroupBox1.Controls.Add(Me.stcode)
-        Me.GroupBox1.Controls.Add(Me.Label9)
-        Me.GroupBox1.Controls.Add(Me.ComboBox2)
-        Me.GroupBox1.Controls.Add(Me.Button3)
         Me.GroupBox1.Controls.Add(Me.Button2)
-        Me.GroupBox1.Controls.Add(Me.Button1)
         Me.GroupBox1.Controls.Add(Me.gender)
         Me.GroupBox1.Controls.Add(Me.TextBox6)
-        Me.GroupBox1.Controls.Add(Me.ListBox1)
         Me.GroupBox1.Controls.Add(Me.dob)
         Me.GroupBox1.Controls.Add(Me.tele)
         Me.GroupBox1.Controls.Add(Me.stname)
@@ -100,51 +92,14 @@ Partial Class stu_edit
         Me.stcode.Size = New System.Drawing.Size(270, 28)
         Me.stcode.TabIndex = 21
         '
-        'Label9
-        '
-        Me.Label9.AutoSize = True
-        Me.Label9.Font = New System.Drawing.Font("Segoe Script", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label9.Location = New System.Drawing.Point(556, 232)
-        Me.Label9.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(87, 20)
-        Me.Label9.TabIndex = 20
-        Me.Label9.Text = "Add course"
-        '
-        'ComboBox2
-        '
-        Me.ComboBox2.FormattingEnabled = True
-        Me.ComboBox2.Location = New System.Drawing.Point(709, 229)
-        Me.ComboBox2.Name = "ComboBox2"
-        Me.ComboBox2.Size = New System.Drawing.Size(270, 28)
-        Me.ComboBox2.TabIndex = 19
-        '
-        'Button3
-        '
-        Me.Button3.Location = New System.Drawing.Point(298, 280)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(134, 23)
-        Me.Button3.TabIndex = 18
-        Me.Button3.Text = "Edit Course"
-        Me.Button3.UseVisualStyleBackColor = True
-        '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(158, 280)
+        Me.Button2.Location = New System.Drawing.Point(757, 234)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(134, 23)
         Me.Button2.TabIndex = 17
         Me.Button2.Text = "Delete Course"
         Me.Button2.UseVisualStyleBackColor = True
-        '
-        'Button1
-        '
-        Me.Button1.Location = New System.Drawing.Point(733, 280)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(207, 23)
-        Me.Button1.TabIndex = 16
-        Me.Button1.Text = "Add This Course"
-        Me.Button1.UseVisualStyleBackColor = True
         '
         'gender
         '
@@ -160,15 +115,6 @@ Partial Class stu_edit
         Me.TextBox6.Name = "TextBox6"
         Me.TextBox6.Size = New System.Drawing.Size(270, 28)
         Me.TextBox6.TabIndex = 14
-        '
-        'ListBox1
-        '
-        Me.ListBox1.FormattingEnabled = True
-        Me.ListBox1.ItemHeight = 20
-        Me.ListBox1.Location = New System.Drawing.Point(158, 219)
-        Me.ListBox1.Name = "ListBox1"
-        Me.ListBox1.Size = New System.Drawing.Size(270, 44)
-        Me.ListBox1.TabIndex = 13
         '
         'dob
         '
@@ -206,9 +152,9 @@ Partial Class stu_edit
         Me.Label8.Location = New System.Drawing.Point(17, 219)
         Me.Label8.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(76, 20)
+        Me.Label8.Size = New System.Drawing.Size(53, 20)
         Me.Label8.TabIndex = 7
-        Me.Label8.Text = "In courses"
+        Me.Label8.Text = "course"
         '
         'Label7
         '
@@ -408,6 +354,13 @@ Partial Class stu_edit
         Me.TextBox7.Size = New System.Drawing.Size(228, 28)
         Me.TextBox7.TabIndex = 15
         '
+        'TextBox1
+        '
+        Me.TextBox1.Location = New System.Drawing.Point(158, 218)
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(270, 28)
+        Me.TextBox1.TabIndex = 22
+        '
         'stu_edit
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
@@ -438,16 +391,11 @@ Partial Class stu_edit
     Friend WithEvents Label7 As System.Windows.Forms.Label
     Friend WithEvents gender As System.Windows.Forms.ComboBox
     Friend WithEvents TextBox6 As System.Windows.Forms.TextBox
-    Friend WithEvents ListBox1 As System.Windows.Forms.ListBox
     Friend WithEvents dob As System.Windows.Forms.TextBox
     Friend WithEvents tele As System.Windows.Forms.TextBox
     Friend WithEvents stname As System.Windows.Forms.TextBox
     Friend WithEvents add As System.Windows.Forms.TextBox
-    Friend WithEvents Button3 As System.Windows.Forms.Button
     Friend WithEvents Button2 As System.Windows.Forms.Button
-    Friend WithEvents Button1 As System.Windows.Forms.Button
-    Friend WithEvents Label9 As System.Windows.Forms.Label
-    Friend WithEvents ComboBox2 As System.Windows.Forms.ComboBox
     Friend WithEvents Label10 As System.Windows.Forms.Label
     Friend WithEvents Label11 As System.Windows.Forms.Label
     Friend WithEvents Label12 As System.Windows.Forms.Label
@@ -461,4 +409,5 @@ Partial Class stu_edit
     Friend WithEvents Button5 As System.Windows.Forms.Button
     Friend WithEvents Button4 As System.Windows.Forms.Button
     Friend WithEvents stcode As System.Windows.Forms.ComboBox
+    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
 End Class

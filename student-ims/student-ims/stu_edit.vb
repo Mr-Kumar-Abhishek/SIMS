@@ -40,6 +40,7 @@ Public Class stu_edit
         While (dr.Read)
             dob.Text = dr.GetValue(0)
         End While
+        cm = New OleDbCommand("select 
     End Sub
 
     Private Sub stu_edit_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
