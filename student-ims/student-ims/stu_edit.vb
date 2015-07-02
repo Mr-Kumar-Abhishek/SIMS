@@ -55,6 +55,11 @@ Public Class stu_edit
         While (dr.Read)
             stdate.Text = dr.GetValue(0)
         End While
+        cm = New OleDbCommand("select enddate from student where user = '" + stcode.Text + "'", cn)
+        dr = cm.ExecuteReader
+        While (dr.Read)
+            endate.Text = dr.GetValue(0)
+        End While
 
     End Sub
 
