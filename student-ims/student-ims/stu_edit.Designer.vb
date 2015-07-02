@@ -52,6 +52,7 @@ Partial Class stu_edit
         Me.stdate = New System.Windows.Forms.TextBox()
         Me.crcd = New System.Windows.Forms.TextBox()
         Me.crc = New System.Windows.Forms.TextBox()
+        Me.modbox = New System.Windows.Forms.CheckedListBox()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.SuspendLayout()
@@ -279,6 +280,7 @@ Partial Class stu_edit
         '
         'GroupBox2
         '
+        Me.GroupBox2.Controls.Add(Me.modbox)
         Me.GroupBox2.Controls.Add(Me.Label14)
         Me.GroupBox2.Controls.Add(Me.Button5)
         Me.GroupBox2.Controls.Add(Me.Button4)
@@ -301,7 +303,7 @@ Partial Class stu_edit
         '
         Me.Label14.AutoSize = True
         Me.Label14.Font = New System.Drawing.Font("Segoe Script", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label14.Location = New System.Drawing.Point(854, 38)
+        Me.Label14.Location = New System.Drawing.Point(841, 24)
         Me.Label14.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label14.Name = "Label14"
         Me.Label14.Size = New System.Drawing.Size(111, 20)
@@ -361,6 +363,14 @@ Partial Class stu_edit
         Me.crc.Size = New System.Drawing.Size(270, 28)
         Me.crc.TabIndex = 22
         '
+        'modbox
+        '
+        Me.modbox.FormattingEnabled = True
+        Me.modbox.Location = New System.Drawing.Point(845, 61)
+        Me.modbox.Name = "modbox"
+        Me.modbox.Size = New System.Drawing.Size(120, 119)
+        Me.modbox.TabIndex = 22
+        '
         'stu_edit
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
@@ -410,4 +420,5 @@ Partial Class stu_edit
     Friend WithEvents Button4 As System.Windows.Forms.Button
     Friend WithEvents stcode As System.Windows.Forms.ComboBox
     Friend WithEvents crc As System.Windows.Forms.TextBox
+    Friend WithEvents modbox As System.Windows.Forms.CheckedListBox
 End Class
