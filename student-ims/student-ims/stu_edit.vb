@@ -43,7 +43,7 @@ Public Class stu_edit
         cm = New OleDbCommand("select coursecode from student where user = '" + stcode.Text + "'", cn)
         dr = cm.ExecuteReader
         While (dr.Read)
-            crc.Text = dr.GetValue(0)
+            crcd.Text = crc.Text = dr.GetValue(0)
         End While
         cm = New OleDbCommand("select qualification from student where user = '" + stcode.Text + "'", cn)
         dr = cm.ExecuteReader
@@ -65,6 +65,7 @@ Public Class stu_edit
         While (dr.Read)
             crf.Text = dr.GetValue(0)
         End While
+
     End Sub
 
     Private Sub stu_edit_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
