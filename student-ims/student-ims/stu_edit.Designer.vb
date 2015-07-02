@@ -47,10 +47,10 @@ Partial Class stu_edit
         Me.Label14 = New System.Windows.Forms.Label()
         Me.Button5 = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
-        Me.TextBox10 = New System.Windows.Forms.TextBox()
-        Me.TextBox9 = New System.Windows.Forms.TextBox()
-        Me.TextBox8 = New System.Windows.Forms.TextBox()
-        Me.TextBox7 = New System.Windows.Forms.TextBox()
+        Me.endate = New System.Windows.Forms.TextBox()
+        Me.crf = New System.Windows.Forms.TextBox()
+        Me.stdate = New System.Windows.Forms.TextBox()
+        Me.crcd = New System.Windows.Forms.TextBox()
         Me.crc = New System.Windows.Forms.TextBox()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
@@ -282,10 +282,10 @@ Partial Class stu_edit
         Me.GroupBox2.Controls.Add(Me.Label14)
         Me.GroupBox2.Controls.Add(Me.Button5)
         Me.GroupBox2.Controls.Add(Me.Button4)
-        Me.GroupBox2.Controls.Add(Me.TextBox10)
-        Me.GroupBox2.Controls.Add(Me.TextBox9)
-        Me.GroupBox2.Controls.Add(Me.TextBox8)
-        Me.GroupBox2.Controls.Add(Me.TextBox7)
+        Me.GroupBox2.Controls.Add(Me.endate)
+        Me.GroupBox2.Controls.Add(Me.crf)
+        Me.GroupBox2.Controls.Add(Me.stdate)
+        Me.GroupBox2.Controls.Add(Me.crcd)
         Me.GroupBox2.Controls.Add(Me.Label13)
         Me.GroupBox2.Controls.Add(Me.Label12)
         Me.GroupBox2.Controls.Add(Me.Label11)
@@ -326,33 +326,33 @@ Partial Class stu_edit
         Me.Button4.Text = "Okay"
         Me.Button4.UseVisualStyleBackColor = True
         '
-        'TextBox10
+        'endate
         '
-        Me.TextBox10.Location = New System.Drawing.Point(585, 117)
-        Me.TextBox10.Name = "TextBox10"
-        Me.TextBox10.Size = New System.Drawing.Size(228, 28)
-        Me.TextBox10.TabIndex = 18
+        Me.endate.Location = New System.Drawing.Point(585, 117)
+        Me.endate.Name = "endate"
+        Me.endate.Size = New System.Drawing.Size(228, 28)
+        Me.endate.TabIndex = 18
         '
-        'TextBox9
+        'crf
         '
-        Me.TextBox9.Location = New System.Drawing.Point(585, 59)
-        Me.TextBox9.Name = "TextBox9"
-        Me.TextBox9.Size = New System.Drawing.Size(228, 28)
-        Me.TextBox9.TabIndex = 17
+        Me.crf.Location = New System.Drawing.Point(585, 59)
+        Me.crf.Name = "crf"
+        Me.crf.Size = New System.Drawing.Size(228, 28)
+        Me.crf.TabIndex = 17
         '
-        'TextBox8
+        'stdate
         '
-        Me.TextBox8.Location = New System.Drawing.Point(188, 114)
-        Me.TextBox8.Name = "TextBox8"
-        Me.TextBox8.Size = New System.Drawing.Size(228, 28)
-        Me.TextBox8.TabIndex = 16
+        Me.stdate.Location = New System.Drawing.Point(188, 114)
+        Me.stdate.Name = "stdate"
+        Me.stdate.Size = New System.Drawing.Size(228, 28)
+        Me.stdate.TabIndex = 16
         '
-        'TextBox7
+        'crcd
         '
-        Me.TextBox7.Location = New System.Drawing.Point(188, 59)
-        Me.TextBox7.Name = "TextBox7"
-        Me.TextBox7.Size = New System.Drawing.Size(228, 28)
-        Me.TextBox7.TabIndex = 15
+        Me.crcd.Location = New System.Drawing.Point(188, 59)
+        Me.crcd.Name = "crcd"
+        Me.crcd.Size = New System.Drawing.Size(228, 28)
+        Me.crcd.TabIndex = 15
         '
         'crc
         '
@@ -401,10 +401,10 @@ Partial Class stu_edit
     Friend WithEvents Label12 As System.Windows.Forms.Label
     Friend WithEvents Label13 As System.Windows.Forms.Label
     Friend WithEvents GroupBox2 As System.Windows.Forms.GroupBox
-    Friend WithEvents TextBox10 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox9 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox8 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox7 As System.Windows.Forms.TextBox
+    Friend WithEvents endate As System.Windows.Forms.TextBox
+    Friend WithEvents crf As System.Windows.Forms.TextBox
+    Friend WithEvents stdate As System.Windows.Forms.TextBox
+    Friend WithEvents crcd As System.Windows.Forms.TextBox
     Friend WithEvents Label14 As System.Windows.Forms.Label
     Friend WithEvents Button5 As System.Windows.Forms.Button
     Friend WithEvents Button4 As System.Windows.Forms.Button
