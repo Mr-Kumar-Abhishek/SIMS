@@ -14,6 +14,7 @@ Public Class stu_edit
         End If
     End Sub
     Private Sub ComboBox3_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles stcode.SelectedIndexChanged
+        modbox.Items.Clear()
         concheck()
         cm = New OleDbCommand("select sname from student where user = '" + stcode.Text + "'", cn)
         dr = cm.ExecuteReader
@@ -43,7 +44,7 @@ Public Class stu_edit
         cm = New OleDbCommand("select coursecode from student where user = '" + stcode.Text + "'", cn)
         dr = cm.ExecuteReader
         While (dr.Read)
-            crcd.Text = crc.Text = dr.GetValue(0)
+            crc.Text = dr.GetValue(0)
         End While
         cm = New OleDbCommand("select qualification from student where user = '" + stcode.Text + "'", cn)
         dr = cm.ExecuteReader
@@ -65,7 +66,11 @@ Public Class stu_edit
         While (dr.Read)
             crf.Text = dr.GetValue(0)
         End While
-
+        cm = New OleDbCommand("select moduleid from modulo where coursecode = '" + crc.Text + "'", cn)
+        dr = cm.ExecuteReader
+        While (dr.Read)
+            modbox.Items.Add(dr.GetValue(0))
+        End While
     End Sub
 
     Private Sub stu_edit_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
