@@ -33,7 +33,7 @@ Partial Class stu_edit
         Me.TextBox6 = New System.Windows.Forms.TextBox()
         Me.ListBox1 = New System.Windows.Forms.ListBox()
         Me.TextBox5 = New System.Windows.Forms.TextBox()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
+        Me.tele = New System.Windows.Forms.TextBox()
         Me.stname = New System.Windows.Forms.TextBox()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.Label8 = New System.Windows.Forms.Label()
@@ -72,7 +72,7 @@ Partial Class stu_edit
         Me.GroupBox1.Controls.Add(Me.TextBox6)
         Me.GroupBox1.Controls.Add(Me.ListBox1)
         Me.GroupBox1.Controls.Add(Me.TextBox5)
-        Me.GroupBox1.Controls.Add(Me.TextBox4)
+        Me.GroupBox1.Controls.Add(Me.tele)
         Me.GroupBox1.Controls.Add(Me.stname)
         Me.GroupBox1.Controls.Add(Me.TextBox2)
         Me.GroupBox1.Controls.Add(Me.Label8)
@@ -177,12 +177,12 @@ Partial Class stu_edit
         Me.TextBox5.Size = New System.Drawing.Size(270, 28)
         Me.TextBox5.TabIndex = 12
         '
-        'TextBox4
+        'tele
         '
-        Me.TextBox4.Location = New System.Drawing.Point(709, 81)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(270, 28)
-        Me.TextBox4.TabIndex = 11
+        Me.tele.Location = New System.Drawing.Point(709, 81)
+        Me.tele.Name = "tele"
+        Me.tele.Size = New System.Drawing.Size(270, 28)
+        Me.tele.TabIndex = 11
         '
         'stname
         '
@@ -440,7 +440,7 @@ Partial Class stu_edit
     Friend WithEvents TextBox6 As System.Windows.Forms.TextBox
     Friend WithEvents ListBox1 As System.Windows.Forms.ListBox
     Friend WithEvents TextBox5 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox4 As System.Windows.Forms.TextBox
+    Friend WithEvents tele As System.Windows.Forms.TextBox
     Friend WithEvents stname As System.Windows.Forms.TextBox
     Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
     Friend WithEvents Button3 As System.Windows.Forms.Button
