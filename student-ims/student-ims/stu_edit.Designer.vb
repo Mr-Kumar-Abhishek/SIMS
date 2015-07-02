@@ -26,7 +26,7 @@ Partial Class stu_edit
         Me.stcode = New System.Windows.Forms.ComboBox()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.gender = New System.Windows.Forms.ComboBox()
-        Me.TextBox6 = New System.Windows.Forms.TextBox()
+        Me.qual = New System.Windows.Forms.TextBox()
         Me.dob = New System.Windows.Forms.TextBox()
         Me.tele = New System.Windows.Forms.TextBox()
         Me.stname = New System.Windows.Forms.TextBox()
@@ -51,18 +51,18 @@ Partial Class stu_edit
         Me.TextBox9 = New System.Windows.Forms.TextBox()
         Me.TextBox8 = New System.Windows.Forms.TextBox()
         Me.TextBox7 = New System.Windows.Forms.TextBox()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.crc = New System.Windows.Forms.TextBox()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.SuspendLayout()
         '
         'GroupBox1
         '
-        Me.GroupBox1.Controls.Add(Me.TextBox1)
+        Me.GroupBox1.Controls.Add(Me.crc)
         Me.GroupBox1.Controls.Add(Me.stcode)
         Me.GroupBox1.Controls.Add(Me.Button2)
         Me.GroupBox1.Controls.Add(Me.gender)
-        Me.GroupBox1.Controls.Add(Me.TextBox6)
+        Me.GroupBox1.Controls.Add(Me.qual)
         Me.GroupBox1.Controls.Add(Me.dob)
         Me.GroupBox1.Controls.Add(Me.tele)
         Me.GroupBox1.Controls.Add(Me.stname)
@@ -109,12 +109,12 @@ Partial Class stu_edit
         Me.gender.Size = New System.Drawing.Size(270, 28)
         Me.gender.TabIndex = 15
         '
-        'TextBox6
+        'qual
         '
-        Me.TextBox6.Location = New System.Drawing.Point(709, 183)
-        Me.TextBox6.Name = "TextBox6"
-        Me.TextBox6.Size = New System.Drawing.Size(270, 28)
-        Me.TextBox6.TabIndex = 14
+        Me.qual.Location = New System.Drawing.Point(709, 183)
+        Me.qual.Name = "qual"
+        Me.qual.Size = New System.Drawing.Size(270, 28)
+        Me.qual.TabIndex = 14
         '
         'dob
         '
@@ -354,12 +354,12 @@ Partial Class stu_edit
         Me.TextBox7.Size = New System.Drawing.Size(228, 28)
         Me.TextBox7.TabIndex = 15
         '
-        'TextBox1
+        'crc
         '
-        Me.TextBox1.Location = New System.Drawing.Point(158, 218)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(270, 28)
-        Me.TextBox1.TabIndex = 22
+        Me.crc.Location = New System.Drawing.Point(158, 218)
+        Me.crc.Name = "crc"
+        Me.crc.Size = New System.Drawing.Size(270, 28)
+        Me.crc.TabIndex = 22
         '
         'stu_edit
         '
@@ -390,7 +390,7 @@ Partial Class stu_edit
     Friend WithEvents Label8 As System.Windows.Forms.Label
     Friend WithEvents Label7 As System.Windows.Forms.Label
     Friend WithEvents gender As System.Windows.Forms.ComboBox
-    Friend WithEvents TextBox6 As System.Windows.Forms.TextBox
+    Friend WithEvents qual As System.Windows.Forms.TextBox
     Friend WithEvents dob As System.Windows.Forms.TextBox
     Friend WithEvents tele As System.Windows.Forms.TextBox
     Friend WithEvents stname As System.Windows.Forms.TextBox
@@ -409,5 +409,5 @@ Partial Class stu_edit
     Friend WithEvents Button5 As System.Windows.Forms.Button
     Friend WithEvents Button4 As System.Windows.Forms.Button
     Friend WithEvents stcode As System.Windows.Forms.ComboBox
-    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
+    Friend WithEvents crc As System.Windows.Forms.TextBox
 End Class
