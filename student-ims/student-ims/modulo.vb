@@ -16,6 +16,7 @@ Public Class modulo
 
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles nxtbtn.Click
         pages = pages + 1
+        MsgBox(pages)
         If pages = course.nom.Value Then
             nxtbtn.Text = "submit"
             clearing()
