@@ -17,16 +17,17 @@ Public Class modulo
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles nxtbtn.Click
         pages = pages + 1
         MsgBox(pages)
-        If pages = course.nom.Value Then
+        If pages = course.nom.Value - 1 Then
             nxtbtn.Text = "submit"
             clearing()
-        ElseIf pages > course.nom.Value Then
+        ElseIf pages > course.nom.Value - 1 Then
             MsgBox("Got all " & pages & " inputs")
             Me.Close()
         Else
             cn = c.getcon()
             cm = New OleDbCommand("insert into modulo values ('" + modid.Text + "', '" + crc.Text + "', '" + modname.Text + "', '" + moddesc.Text + "')", cn)
             cm.ExecuteNonQuery()
+            cn.Close()
             clearing()
         End If
     End Sub
