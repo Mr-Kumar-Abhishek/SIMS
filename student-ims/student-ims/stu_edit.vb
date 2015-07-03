@@ -45,6 +45,7 @@ Public Class stu_edit
         dr = cm.ExecuteReader
         While (dr.Read)
             crc.Text = dr.GetValue(0)
+            crcd.Text = crc.Text
         End While
         cm = New OleDbCommand("select qualification from student where user = '" + stcode.Text + "'", cn)
         dr = cm.ExecuteReader
