@@ -41,7 +41,7 @@ Public Class modulo
                 'cn = c.getcon()
                 'cm = New OleDbCommand("insert into modulo values ('" + modid.Text + "', '" + crc.Text + "', '" + modname.Text + "', '" + moddesc.Text + "')", cn)
                 'cm.ExecuteNonQuery()
-                'cn.Close()
+            'cn.Close()
                 moduleid(pages - 1) = modid.Text
                 coursecode(pages - 1) = crc.Text
                 modulename(pages - 1) = modname.Text
