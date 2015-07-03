@@ -7,12 +7,6 @@ Public Class course
     Dim c As New conn
     Dim cnt As Integer
 
-
-
-    Private Sub course_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-
-    End Sub
-
     Private Sub clearing()
         crc.Text = ""
         crn.Text = ""
