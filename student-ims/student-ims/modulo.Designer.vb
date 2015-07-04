@@ -31,7 +31,6 @@ Partial Class modulo
         Me.Label4 = New System.Windows.Forms.Label()
         Me.moddesc = New System.Windows.Forms.TextBox()
         Me.nxtbtn = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
@@ -110,15 +109,6 @@ Partial Class modulo
         Me.nxtbtn.Text = "next >>"
         Me.nxtbtn.UseVisualStyleBackColor = True
         '
-        'Button2
-        '
-        Me.Button2.Location = New System.Drawing.Point(210, 340)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(113, 21)
-        Me.Button2.TabIndex = 9
-        Me.Button2.Text = "<< back"
-        Me.Button2.UseVisualStyleBackColor = True
-        '
         'Button3
         '
         Me.Button3.Location = New System.Drawing.Point(479, 340)
@@ -134,7 +124,6 @@ Partial Class modulo
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(617, 373)
         Me.Controls.Add(Me.Button3)
-        Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.nxtbtn)
         Me.Controls.Add(Me.moddesc)
         Me.Controls.Add(Me.Label4)
@@ -159,6 +148,5 @@ Partial Class modulo
     Friend WithEvents Label4 As System.Windows.Forms.Label
     Friend WithEvents moddesc As System.Windows.Forms.TextBox
     Friend WithEvents nxtbtn As System.Windows.Forms.Button
-    Friend WithEvents Button2 As System.Windows.Forms.Button
     Friend WithEvents Button3 As System.Windows.Forms.Button
 End Class
