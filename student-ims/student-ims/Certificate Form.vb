@@ -31,9 +31,11 @@ Public Class Certificate_Form
     End Sub
 
     Private Sub stcode_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles stcode.SelectedIndexChanged
+        modbox.Items.Clear()
         If Not cn.State = ConnectionState.Open Then
             cn.Open()
         End If
+
         cm = New OleDbCommand("select sname from student where user = '" + stcode.Text + "'", cn)
         dr = cm.ExecuteReader
         While (dr.Read)
