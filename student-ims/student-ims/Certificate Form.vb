@@ -58,15 +58,24 @@ Public Class Certificate_Form
         Dim pdf As PdfDocument = New PdfDocument
         Dim pdfPage As PdfPage = pdf.AddPage
         Dim graph As XGraphics = XGraphics.FromPdfPage(pdfPage)
-        Dim myfont As XFont = New XFont("Verdana", 15, XFontStyle.Bold)  '//you can set any font size, and style
+        Dim myfont As XFont = New XFont("Verdana", 13, XFontStyle.Bold)  '//you can set any font size, and style
         Dim stitle As String
         stitle = "Certificate of " & stname.Text
         pdf.Info.Title = stitle
         Dim textline As String
-        textline = "NAME: " & stname.Text
-        graph.DrawString(textline, myfont, XBrushes.Black, New XRect(50, 245, pdfPage.Width.Point, pdfPage.Height.Point), XStringFormats.TopLeft)       '//width from left 50 pixels, height from top 245 pixels
-        textline = "Roll No." & stcode.Text
-        graph.DrawString(textline, myfont, XBrushes.Black, New XRect(50, 350, pdfPage.Width.Point, pdfPage.Height.Point), XStringFormats.TopLeft)       '//width from left 50 pixels, height from top 245 pixels
+        textline = "This to certify that Mr./Ms./Mrs." & stname.Text
+
+        'textline = "NAME: " & stname.Text
+        graph.DrawString(textline, myfont, XBrushes.Black, New XRect(30, 245, pdfPage.Width.Point, pdfPage.Height.Point), XStringFormats.TopLeft)       '//width from left 50 pixels, height from top 245 pixels
+        textline = "has successfully completed the course on " & crc.Text & " "
+        graph.DrawString(textline, myfont, XBrushes.Black, New XRect(30, 260, pdfPage.Width.Point, pdfPage.Height.Point), XStringFormats.TopLeft)
+        textline = stname.Text & " in " & grade.Text & " grade."
+        graph.DrawString(textline, myfont, XBrushes.Black, New XRect(30, 275, pdfPage.Width.Point, pdfPage.Height.Point), XStringFormats.TopLeft)
+        textline = "NB: Fair >= 50; Good >= 60; Very Good >= 70; Excellent >= 80;"
+        myfont = New XFont("Verdana", 10, XFontStyle.Bold)
+        graph.DrawString(textline, myfont, XBrushes.Black, New XRect(30, 295, pdfPage.Width.Point, pdfPage.Height.Point), XStringFormats.TopLeft)
+        'textline = "Roll No." & stcode.Text
+        'graph.DrawString(textline, myfont, XBrushes.Black, New XRect(50, 350, pdfPage.Width.Point, pdfPage.Height.Point), XStringFormats.TopLeft)       '//width from left 50 pixels, height from top 245 pixels
         'graph.DrawString("sname :", myfont, XBrushes.Black, New XRect(120, 245, pdfPage.Width.Point, pdfPage.Height.Point), XStringFormats.TopLeft)       '//width from left 120 pixels, height from top 245 pixels
         Dim path As String
         path = Application.StartupPath & "/name.pdf"
