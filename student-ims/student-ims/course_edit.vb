@@ -26,6 +26,18 @@ Public Class course_edit
     End Sub
 
     Private Sub crc_TextChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles crc.TextChanged
+        If Not cn.State = ConnectionState.Open Then
+            cn = c.getcon()
+        End If
+        cm = New OleDbCommand("select coursename from course where coursecode = '" + crc.Text + "'", cn)
+        dr = cm.ExecuteReader
+        While (dr.Read)
+            crn.Text = dr.GetValue(0)
+        End While
+        cn.Close()
+    End Sub
 
+    Private Sub crc_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles crc.SelectedIndexChanged
+        
     End Sub
 End Class
