@@ -12,7 +12,7 @@ Public Class course
         crn.Text = ""
         tf.Text = ""
         dur.Value = 0
-        nom.Value = 0
+        'nom.Value = 0
     End Sub
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles save.Click
         If Not cn.State = ConnectionState.Open Then
@@ -24,8 +24,9 @@ Public Class course
         If dr.HasRows Then
             MsgBox("Sorry the course code already exists")
         End If
-        cm = New OleDbCommand("insert into course values('" + crc.Text + "','" + crn.Text + "', '" + tf.Text + "', '" + nom.Text + "', '" + dur.Text + "')", cn)
+        cm = New OleDbCommand("insert into course values('" + crc.Text + "','" + crn.Text + "', '" + tf.Text + "', ' comming soon ', '" + dur.Text + "')", cn)
         cm.ExecuteNonQuery()
+        MsgBox("New course " & crc.Text & "has been added.")
         clearing()
         'clearing the module wizard functionality to expedite the release
         'If Not cn.State = ConnectionState.Open Then
@@ -40,7 +41,7 @@ Public Class course
         'If cnt <> 0 Then
         'modulo.Show()
         'End If
-        'cn.Close()
+        cn.Close()
     End Sub
 
     Private Sub crc_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles crc.TextChanged
