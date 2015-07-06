@@ -25,6 +25,7 @@ Partial Class course_edit
         Me.cancel = New System.Windows.Forms.Button()
         Me.save = New System.Windows.Forms.Button()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.crc = New System.Windows.Forms.ComboBox()
         Me.dur = New System.Windows.Forms.NumericUpDown()
         Me.tf = New System.Windows.Forms.TextBox()
         Me.Label5 = New System.Windows.Forms.Label()
@@ -32,7 +33,6 @@ Partial Class course_edit
         Me.crn = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.crc = New System.Windows.Forms.ComboBox()
         Me.GroupBox1.SuspendLayout()
         CType(Me.dur, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -77,17 +77,25 @@ Partial Class course_edit
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Edit Course"
         '
+        'crc
+        '
+        Me.crc.FormattingEnabled = True
+        Me.crc.Location = New System.Drawing.Point(59, 87)
+        Me.crc.Name = "crc"
+        Me.crc.Size = New System.Drawing.Size(161, 28)
+        Me.crc.TabIndex = 13
+        '
         'dur
         '
         Me.dur.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.dur.Location = New System.Drawing.Point(229, 170)
+        Me.dur.Location = New System.Drawing.Point(249, 165)
         Me.dur.Name = "dur"
         Me.dur.Size = New System.Drawing.Size(213, 22)
         Me.dur.TabIndex = 9
         '
         'tf
         '
-        Me.tf.Location = New System.Drawing.Point(42, 164)
+        Me.tf.Location = New System.Drawing.Point(62, 159)
         Me.tf.Name = "tf"
         Me.tf.Size = New System.Drawing.Size(100, 28)
         Me.tf.TabIndex = 7
@@ -96,7 +104,7 @@ Partial Class course_edit
         '
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Segoe Script", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(225, 131)
+        Me.Label5.Location = New System.Drawing.Point(251, 131)
         Me.Label5.Name = "Label5"
         Me.Label5.Size = New System.Drawing.Size(134, 20)
         Me.Label5.TabIndex = 6
@@ -106,7 +114,7 @@ Partial Class course_edit
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Segoe Script", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(35, 131)
+        Me.Label3.Location = New System.Drawing.Point(61, 131)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(74, 20)
         Me.Label3.TabIndex = 4
@@ -114,7 +122,7 @@ Partial Class course_edit
         '
         'crn
         '
-        Me.crn.Location = New System.Drawing.Point(229, 92)
+        Me.crn.Location = New System.Drawing.Point(249, 87)
         Me.crn.Name = "crn"
         Me.crn.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
         Me.crn.Size = New System.Drawing.Size(213, 28)
@@ -124,7 +132,7 @@ Partial Class course_edit
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Segoe Script", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(219, 64)
+        Me.Label2.Location = New System.Drawing.Point(245, 64)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(100, 20)
         Me.Label2.TabIndex = 1
@@ -134,24 +142,17 @@ Partial Class course_edit
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Segoe Script", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(32, 64)
+        Me.Label1.Location = New System.Drawing.Point(58, 64)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(95, 20)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Course Code"
         '
-        'crc
-        '
-        Me.crc.FormattingEnabled = True
-        Me.crc.Location = New System.Drawing.Point(39, 92)
-        Me.crc.Name = "crc"
-        Me.crc.Size = New System.Drawing.Size(161, 28)
-        Me.crc.TabIndex = 13
-        '
         'course_edit
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.BlanchedAlmond
         Me.ClientSize = New System.Drawing.Size(542, 370)
         Me.Controls.Add(Me.GroupBox1)
         Me.Name = "course_edit"

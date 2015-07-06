@@ -24,4 +24,8 @@ Public Class course_edit
         End While
         cn.Close()
     End Sub
+
+    Private Sub crc_TextChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles crc.TextChanged
+
+    End Sub
 End Class
