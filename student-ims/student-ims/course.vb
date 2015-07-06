@@ -26,20 +26,21 @@ Public Class course
         End If
         cm = New OleDbCommand("insert into course values('" + crc.Text + "','" + crn.Text + "', '" + tf.Text + "', '" + nom.Text + "', '" + dur.Text + "')", cn)
         cm.ExecuteNonQuery()
-        'clearing()
-        If Not cn.State = ConnectionState.Open Then
-            cn = c.getcon()
-        End If
-        cm1 = New OleDbCommand("select count(moduleid) from modulo where coursecode= '" + crc.Text + "'", cn)
-        dr1 = cm1.ExecuteReader
-        While dr1.Read
-            cnt = CInt(dr1.GetValue(0))
-        End While
-        cnt = nom.Value - cnt
-        If cnt <> 0 Then
-            modulo.Show()
-        End If
-        cn.Close()
+        clearing()
+        'clearing the module wizard functionality to expedite the release
+        'If Not cn.State = ConnectionState.Open Then
+        'cn = c.getcon()
+        'End If
+        'cm1 = New OleDbCommand("select count(moduleid) from modulo where coursecode= '" + crc.Text + "'", cn)
+        'dr1 = cm1.ExecuteReader
+        'While dr1.Read
+        'cnt = CInt(dr1.GetValue(0))
+        'End While
+        'cnt = nom.Value - cnt
+        'If cnt <> 0 Then
+        'modulo.Show()
+        'End If
+        'cn.Close()
     End Sub
 
     Private Sub crc_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles crc.TextChanged
