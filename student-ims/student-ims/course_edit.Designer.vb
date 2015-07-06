@@ -32,7 +32,7 @@ Partial Class course_edit
         Me.crn = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.crc = New System.Windows.Forms.ComboBox()
         Me.GroupBox1.SuspendLayout()
         CType(Me.dur, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -59,7 +59,7 @@ Partial Class course_edit
         '
         'GroupBox1
         '
-        Me.GroupBox1.Controls.Add(Me.ComboBox1)
+        Me.GroupBox1.Controls.Add(Me.crc)
         Me.GroupBox1.Controls.Add(Me.cancel)
         Me.GroupBox1.Controls.Add(Me.save)
         Me.GroupBox1.Controls.Add(Me.dur)
@@ -140,13 +140,13 @@ Partial Class course_edit
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Course Code"
         '
-        'ComboBox1
+        'crc
         '
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(39, 92)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(161, 28)
-        Me.ComboBox1.TabIndex = 13
+        Me.crc.FormattingEnabled = True
+        Me.crc.Location = New System.Drawing.Point(39, 92)
+        Me.crc.Name = "crc"
+        Me.crc.Size = New System.Drawing.Size(161, 28)
+        Me.crc.TabIndex = 13
         '
         'course_edit
         '
@@ -165,7 +165,7 @@ Partial Class course_edit
     Friend WithEvents cancel As System.Windows.Forms.Button
     Friend WithEvents save As System.Windows.Forms.Button
     Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
-    Friend WithEvents ComboBox1 As System.Windows.Forms.ComboBox
+    Friend WithEvents crc As System.Windows.Forms.ComboBox
     Friend WithEvents dur As System.Windows.Forms.NumericUpDown
     Friend WithEvents tf As System.Windows.Forms.TextBox
     Friend WithEvents Label5 As System.Windows.Forms.Label

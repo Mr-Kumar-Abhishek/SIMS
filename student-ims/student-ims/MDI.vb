@@ -39,4 +39,8 @@
     Private Sub CertificatesToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles CertificatesToolStripMenuItem.Click
         Certificate_Form.Show()
     End Sub
+
+    Private Sub NewToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles NewToolStripMenuItem.Click
+        course_edit.Show()
+    End Sub
 End Class
