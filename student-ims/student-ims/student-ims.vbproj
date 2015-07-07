@@ -93,6 +93,12 @@
     <Compile Include="Addmission_Form.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Add_mod.Designer.vb">
+      <DependentUpon>Add_mod.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Add_mod.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Certificate Form.Designer.vb">
       <DependentUpon>Certificate Form.vb</DependentUpon>
     </Compile>
@@ -204,6 +210,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Addmission_Form.resx">
       <DependentUpon>Addmission_Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add_mod.resx">
+      <DependentUpon>Add_mod.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Certificate Form.resx">
       <DependentUpon>Certificate Form.vb</DependentUpon>
