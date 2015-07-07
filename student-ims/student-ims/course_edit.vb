@@ -54,4 +54,15 @@ Public Class course_edit
     Private Sub cancel_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cancel.Click
         Me.Hide()
     End Sub
+
+    Private Sub save_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles save.Click
+        If Not cn.State = ConnectionState.Open Then
+            cn = c.getcon()
+        End If
+        cm = New OleDbCommand("update course set coursename = '" + crn.Text + "', totalfees = '" + tf.Text + "', duration = '" + dur.Value.ToString() + "' where coursecode = '" + crc.Text + "'", cn)
+        cm.ExecuteNonQuery()
+        cn.Close()
+        MsgBox("Course details updated")
+        clearing()
+    End Sub
 End Class
