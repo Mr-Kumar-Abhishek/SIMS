@@ -66,9 +66,9 @@ Partial Class Course_delete
         'delete
         '
         Me.delete.Font = New System.Drawing.Font("Segoe Script", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.delete.Location = New System.Drawing.Point(170, 240)
+        Me.delete.Location = New System.Drawing.Point(174, 250)
         Me.delete.Name = "delete"
-        Me.delete.Size = New System.Drawing.Size(156, 38)
+        Me.delete.Size = New System.Drawing.Size(152, 33)
         Me.delete.TabIndex = 12
         Me.delete.Text = "Delete This !"
         Me.delete.UseVisualStyleBackColor = True
@@ -147,7 +147,7 @@ Partial Class Course_delete
         Me.ClientSize = New System.Drawing.Size(524, 357)
         Me.Controls.Add(Me.GroupBox1)
         Me.Name = "Course_delete"
-        Me.Text = "Course_delete"
+        Me.Text = "Delete Course"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         CType(Me.dur, System.ComponentModel.ISupportInitialize).EndInit()
