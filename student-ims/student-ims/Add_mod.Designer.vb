@@ -25,7 +25,7 @@ Partial Class Add_mod
         Me.ListBox1 = New System.Windows.Forms.ListBox()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.nxtbtn = New System.Windows.Forms.Button()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.crc = New System.Windows.Forms.ComboBox()
         Me.moddesc = New System.Windows.Forms.TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.modname = New System.Windows.Forms.TextBox()
@@ -63,13 +63,13 @@ Partial Class Add_mod
         Me.nxtbtn.Text = "save"
         Me.nxtbtn.UseVisualStyleBackColor = True
         '
-        'ComboBox1
+        'crc
         '
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(151, 35)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(192, 21)
-        Me.ComboBox1.TabIndex = 26
+        Me.crc.FormattingEnabled = True
+        Me.crc.Location = New System.Drawing.Point(151, 35)
+        Me.crc.Name = "crc"
+        Me.crc.Size = New System.Drawing.Size(192, 21)
+        Me.crc.TabIndex = 26
         '
         'moddesc
         '
@@ -159,7 +159,7 @@ Partial Class Add_mod
         Me.Controls.Add(Me.ListBox1)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.nxtbtn)
-        Me.Controls.Add(Me.ComboBox1)
+        Me.Controls.Add(Me.crc)
         Me.Controls.Add(Me.moddesc)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.modname)
@@ -174,7 +174,7 @@ Partial Class Add_mod
     Friend WithEvents ListBox1 As System.Windows.Forms.ListBox
     Friend WithEvents Button3 As System.Windows.Forms.Button
     Friend WithEvents nxtbtn As System.Windows.Forms.Button
-    Friend WithEvents ComboBox1 As System.Windows.Forms.ComboBox
+    Friend WithEvents crc As System.Windows.Forms.ComboBox
     Friend WithEvents moddesc As System.Windows.Forms.TextBox
     Friend WithEvents Label4 As System.Windows.Forms.Label
     Friend WithEvents modname As System.Windows.Forms.TextBox
