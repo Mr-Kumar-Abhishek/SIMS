@@ -7,14 +7,29 @@ Public Class Course_delete
     Dim c As New conn
     Dim cnt As Integer
 
-    Private Sub Course_delete_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-        cn = c.getcon()
+    Private Sub clearing()
+        crc.Text = ""
+        crn.Text = ""
+        tf.Text = ""
+        dur.Value = 0
+        'nom.Value = 0
+    End Sub
+
+    Private Sub repopulate()
+        crc.Items.Clear()
+        If Not cn.State = ConnectionState.Open Then
+            cn = c.getcon()
+        End If
         cm = New OleDbCommand("select coursecode from course", cn)
         dr = cm.ExecuteReader
         While (dr.Read)
             crc.Items.Add(dr.GetValue(0))
         End While
         cn.Close()
+    End Sub
+    Private Sub Course_delete_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+        cn = c.getcon()
+        repopulate()
     End Sub
 
     Private Sub crc_TextChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles crc.TextChanged
@@ -38,4 +53,19 @@ Public Class Course_delete
         End While
         cn.Close()
     End Sub
+
+    Private Sub delete_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles delete.Click
+        Dim deleted As String = crc.Text
+        If Not cn.State = ConnectionState.Open Then
+            cn = c.getcon()
+        End If
+        cm = New OleDbCommand("delete from course where coursecode = '" + crc.Text + "'", cn)
+        cm.ExecuteNonQuery()
+        cn.Close()
+        clearing()
+        repopulate()
+        MsgBox("The course " + deleted + " has been deleted.")
+    End Sub
+
+ 
 End Class
