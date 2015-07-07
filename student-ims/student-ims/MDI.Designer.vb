@@ -167,7 +167,7 @@ Partial Class MDI
         '
         'ModulesToolStripMenuItem
         '
-        Me.ModulesToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.EditToolStripMenuItem2, Me.AddToolStripMenuItem1, Me.VIewToolStripMenuItem3, Me.DeleteToolStripMenuItem2})
+        Me.ModulesToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AddToolStripMenuItem1, Me.EditToolStripMenuItem2, Me.VIewToolStripMenuItem3, Me.DeleteToolStripMenuItem2})
         Me.ModulesToolStripMenuItem.Name = "ModulesToolStripMenuItem"
         Me.ModulesToolStripMenuItem.Size = New System.Drawing.Size(65, 20)
         Me.ModulesToolStripMenuItem.Text = "Modules"
@@ -181,7 +181,7 @@ Partial Class MDI
         'AddToolStripMenuItem1
         '
         Me.AddToolStripMenuItem1.Name = "AddToolStripMenuItem1"
-        Me.AddToolStripMenuItem1.Size = New System.Drawing.Size(107, 22)
+        Me.AddToolStripMenuItem1.Size = New System.Drawing.Size(152, 22)
         Me.AddToolStripMenuItem1.Text = "&Add"
         '
         'VIewToolStripMenuItem3
