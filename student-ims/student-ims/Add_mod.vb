@@ -6,6 +6,7 @@ Public Class Add_mod
     Dim dr As OleDbDataReader
     Dim c As New conn
     Dim cnt As Integer
+
     Private Sub Add_mod_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         cn = c.getcon()
         cm = New OleDbCommand("select coursecode from course", cn)
@@ -16,39 +17,17 @@ Public Class Add_mod
         cn.Close()
     End Sub
 
-    Private Sub moddesc_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles moddesc.TextChanged
 
-    End Sub
-
-    Private Sub modname_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles modname.TextChanged
-
-    End Sub
-
-    Private Sub Label1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label1.Click
-
-    End Sub
-
-    Private Sub Label4_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label4.Click
-
-    End Sub
-
-    Private Sub nxtbtn_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles nxtbtn.Click
-
-    End Sub
-
-    Private Sub Button3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button3.Click
-
-    End Sub
-
-    Private Sub ListBox1_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ListBox1.SelectedIndexChanged
-
-    End Sub
-
-    Private Sub ComboBox1_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles crc.SelectedIndexChanged
-
-    End Sub
-
-    Private Sub Label3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label3.Click
-
+    Private Sub crc_TextChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles crc.TextChanged
+        AvailMod.Items.Clear()
+        If Not cn.State = ConnectionState.Open Then
+            cn = c.getcon()
+        End If
+        cm = New OleDbCommand("select moduleid from modulo where coursecode = '" + crc.Text + "'", cn)
+        dr = cm.ExecuteReader
+        While (dr.Read)
+            AvailMod.Items.Add(dr.GetValue(0))
+        End While
+        cn.Close()
     End Sub
 End Class

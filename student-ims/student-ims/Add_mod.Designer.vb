@@ -22,7 +22,7 @@ Partial Class Add_mod
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.ListBox1 = New System.Windows.Forms.ListBox()
+        Me.AvailMod = New System.Windows.Forms.ListBox()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.nxtbtn = New System.Windows.Forms.Button()
         Me.crc = New System.Windows.Forms.ComboBox()
@@ -37,13 +37,13 @@ Partial Class Add_mod
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.SuspendLayout()
         '
-        'ListBox1
+        'AvailMod
         '
-        Me.ListBox1.FormattingEnabled = True
-        Me.ListBox1.Location = New System.Drawing.Point(151, 113)
-        Me.ListBox1.Name = "ListBox1"
-        Me.ListBox1.Size = New System.Drawing.Size(192, 121)
-        Me.ListBox1.TabIndex = 29
+        Me.AvailMod.FormattingEnabled = True
+        Me.AvailMod.Location = New System.Drawing.Point(151, 113)
+        Me.AvailMod.Name = "AvailMod"
+        Me.AvailMod.Size = New System.Drawing.Size(192, 121)
+        Me.AvailMod.TabIndex = 29
         '
         'Button3
         '
@@ -156,7 +156,7 @@ Partial Class Add_mod
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label5)
-        Me.Controls.Add(Me.ListBox1)
+        Me.Controls.Add(Me.AvailMod)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.nxtbtn)
         Me.Controls.Add(Me.crc)
@@ -171,7 +171,7 @@ Partial Class Add_mod
         Me.PerformLayout()
 
     End Sub
-    Friend WithEvents ListBox1 As System.Windows.Forms.ListBox
+    Friend WithEvents AvailMod As System.Windows.Forms.ListBox
     Friend WithEvents Button3 As System.Windows.Forms.Button
     Friend WithEvents nxtbtn As System.Windows.Forms.Button
     Friend WithEvents crc As System.Windows.Forms.ComboBox
