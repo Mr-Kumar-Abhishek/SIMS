@@ -50,4 +50,8 @@ Public Class course_edit
     Private Sub crc_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles crc.SelectedIndexChanged
         
     End Sub
+
+    Private Sub cancel_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cancel.Click
+        Me.Hide()
+    End Sub
 End Class
