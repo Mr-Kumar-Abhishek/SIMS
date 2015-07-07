@@ -7,4 +7,7 @@ Public Class course_view
     Dim c As New conn
     Dim cnt As Integer
 
+    Private Sub cancel_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cancel.Click
+        Me.Hide()
+    End Sub
 End Class
