@@ -53,7 +53,7 @@ Partial Class Course_delete
         Me.GroupBox1.Size = New System.Drawing.Size(486, 307)
         Me.GroupBox1.TabIndex = 4
         Me.GroupBox1.TabStop = False
-        Me.GroupBox1.Text = "View Course"
+        Me.GroupBox1.Text = "Delete Course"
         '
         'crc
         '
