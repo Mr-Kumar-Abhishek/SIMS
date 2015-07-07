@@ -75,6 +75,7 @@ Partial Class course_view
         '
         'dur
         '
+        Me.dur.Enabled = False
         Me.dur.Font = New System.Drawing.Font("Arial", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.dur.Location = New System.Drawing.Point(249, 165)
         Me.dur.Name = "dur"
@@ -83,6 +84,7 @@ Partial Class course_view
         '
         'tf
         '
+        Me.tf.Enabled = False
         Me.tf.Location = New System.Drawing.Point(62, 159)
         Me.tf.Name = "tf"
         Me.tf.Size = New System.Drawing.Size(100, 28)
@@ -110,6 +112,7 @@ Partial Class course_view
         '
         'crn
         '
+        Me.crn.Enabled = False
         Me.crn.Location = New System.Drawing.Point(249, 87)
         Me.crn.Name = "crn"
         Me.crn.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
