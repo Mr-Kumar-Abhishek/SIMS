@@ -37,4 +37,20 @@ Public Class delete_mod
         cn.Close()
     End Sub
 
+    Private Sub AvailMod_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles AvailMod.SelectedIndexChanged
+        If Not cn.State = ConnectionState.Open Then
+            cn = c.getcon()
+        End If
+        cm = New OleDbCommand("select module_name from modulo where moduleid = '" & AvailMod.Text & "'", cn)
+        dr = cm.ExecuteReader
+        While (dr.Read)
+            modname.Text = dr.GetValue(0)
+        End While
+        cm = New OleDbCommand("select module_desc from modulo where moduleid = '" & AvailMod.Text & "'", cn)
+        dr = cm.ExecuteReader
+        While (dr.Read)
+            moddesc.Text = dr.GetValue(0)
+        End While
+        cn.Close()
+    End Sub
 End Class
