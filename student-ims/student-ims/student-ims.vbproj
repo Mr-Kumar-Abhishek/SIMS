@@ -206,6 +206,12 @@
     <Compile Include="Stu_view.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="view_mod.Designer.vb">
+      <DependentUpon>view_mod.vb</DependentUpon>
+    </Compile>
+    <Compile Include="view_mod.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Addmission_Form.resx">
@@ -264,6 +270,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Stu_view.resx">
       <DependentUpon>Stu_view.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view_mod.resx">
+      <DependentUpon>view_mod.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

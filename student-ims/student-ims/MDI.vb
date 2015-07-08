@@ -55,4 +55,8 @@
     Private Sub AddToolStripMenuItem1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles AddToolStripMenuItem1.Click
         Add_mod.Show()
     End Sub
+
+    Private Sub VIewToolStripMenuItem3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles VIewToolStripMenuItem3.Click
+        view_mod.Show()
+    End Sub
 End Class
