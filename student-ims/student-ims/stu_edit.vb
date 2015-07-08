@@ -82,7 +82,6 @@ Public Class stu_edit
         While (dr.Read)
             stcode.Items.Add(dr.GetValue(0))
         End While
-
         cn.Close()
     End Sub
 End Class
