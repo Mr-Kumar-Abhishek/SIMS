@@ -18,14 +18,8 @@ Public Class Add_mod
         End While
         cn.Close()
     End Sub
-    Private Sub Add_mod_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-        cn = c.getcon()
-        clearing()
-        repopulate()
-    End Sub
 
-
-    Private Sub crc_TextChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles crc.TextChanged
+    Private Sub redisplay()
         AvailMod.Items.Clear()
         If Not cn.State = ConnectionState.Open Then
             cn = c.getcon()
@@ -36,6 +30,16 @@ Public Class Add_mod
             AvailMod.Items.Add(dr.GetValue(0))
         End While
         cn.Close()
+    End Sub
+    Private Sub Add_mod_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+        cn = c.getcon()
+        clearing()
+        repopulate()
+    End Sub
+
+
+    Private Sub crc_TextChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles crc.TextChanged
+        redisplay()
     End Sub
 
     Private Sub clearing()
@@ -54,6 +58,11 @@ Public Class Add_mod
         cm = New OleDbCommand("insert into modulo values('" & modid.Text & "', '" & crc.Text & "', '" & modname.Text & "', '" & moddesc.Text & "')", cn)
         cm.ExecuteNonQuery()
         MsgBox("Module: " & modid.Text & " has been added in course " & crc.Text & "")
+        clearing()
+        redisplay()
+    End Sub
 
+    Private Sub Button3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button3.Click
+        Me.Hide()
     End Sub
 End Class
