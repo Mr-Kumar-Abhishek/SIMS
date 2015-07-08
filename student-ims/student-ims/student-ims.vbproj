@@ -130,6 +130,12 @@
     <Compile Include="course_view.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="delete_mod.Designer.vb">
+      <DependentUpon>delete_mod.vb</DependentUpon>
+    </Compile>
+    <Compile Include="delete_mod.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Edit_modulo.Designer.vb">
       <DependentUpon>Edit_modulo.vb</DependentUpon>
     </Compile>
@@ -234,6 +240,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="course_view.resx">
       <DependentUpon>course_view.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="delete_mod.resx">
+      <DependentUpon>delete_mod.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Edit_modulo.resx">
       <DependentUpon>Edit_modulo.vb</DependentUpon>
