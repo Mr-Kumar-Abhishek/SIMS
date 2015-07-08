@@ -24,9 +24,9 @@ Public Class course
         If dr.HasRows Then
             MsgBox("Sorry the course code already exists")
         End If
-        cm = New OleDbCommand("insert into course values('" + crc.Text + "','" + crn.Text + "', '" + tf.Text + "', ' comming soon ', '" + dur.Text + "')", cn)
+        cm = New OleDbCommand("insert into course values('" + crc.Text + "', " & tf.Text & ", '" + crn.Text + "', '" + dur.Value.ToString() + "')", cn)
         cm.ExecuteNonQuery()
-        MsgBox("New course " & crc.Text & "has been added.")
+        MsgBox("New course " & crc.Text & " has been added.")
         clearing()
         'clearing the module wizard functionality to expedite the release
         'If Not cn.State = ConnectionState.Open Then
@@ -52,5 +52,9 @@ Public Class course
             MsgBox("Sorry the course code already exists")
         End If
         cn.Close()
+    End Sub
+
+    Private Sub course_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+
     End Sub
 End Class
