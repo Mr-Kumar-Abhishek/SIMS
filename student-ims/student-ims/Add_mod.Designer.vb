@@ -24,7 +24,7 @@ Partial Class Add_mod
     Private Sub InitializeComponent()
         Me.AvailMod = New System.Windows.Forms.ListBox()
         Me.Button3 = New System.Windows.Forms.Button()
-        Me.nxtbtn = New System.Windows.Forms.Button()
+        Me.Addbtn = New System.Windows.Forms.Button()
         Me.crc = New System.Windows.Forms.ComboBox()
         Me.moddesc = New System.Windows.Forms.TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
@@ -59,14 +59,14 @@ Partial Class Add_mod
         Me.Button3.Text = "cancel"
         Me.Button3.UseVisualStyleBackColor = True
         '
-        'nxtbtn
+        'Addbtn
         '
-        Me.nxtbtn.Location = New System.Drawing.Point(128, 266)
-        Me.nxtbtn.Name = "nxtbtn"
-        Me.nxtbtn.Size = New System.Drawing.Size(113, 21)
-        Me.nxtbtn.TabIndex = 27
-        Me.nxtbtn.Text = "Add"
-        Me.nxtbtn.UseVisualStyleBackColor = True
+        Me.Addbtn.Location = New System.Drawing.Point(128, 266)
+        Me.Addbtn.Name = "Addbtn"
+        Me.Addbtn.Size = New System.Drawing.Size(113, 21)
+        Me.Addbtn.TabIndex = 27
+        Me.Addbtn.Text = "Add"
+        Me.Addbtn.UseVisualStyleBackColor = True
         '
         'crc
         '
@@ -169,7 +169,7 @@ Partial Class Add_mod
         '
         Me.GroupBox2.Controls.Add(Me.clrmod)
         Me.GroupBox2.Controls.Add(Me.modid)
-        Me.GroupBox2.Controls.Add(Me.nxtbtn)
+        Me.GroupBox2.Controls.Add(Me.Addbtn)
         Me.GroupBox2.Controls.Add(Me.Label3)
         Me.GroupBox2.Controls.Add(Me.Label1)
         Me.GroupBox2.Controls.Add(Me.modname)
@@ -212,7 +212,7 @@ Partial Class Add_mod
     End Sub
     Friend WithEvents AvailMod As System.Windows.Forms.ListBox
     Friend WithEvents Button3 As System.Windows.Forms.Button
-    Friend WithEvents nxtbtn As System.Windows.Forms.Button
+    Friend WithEvents Addbtn As System.Windows.Forms.Button
     Friend WithEvents crc As System.Windows.Forms.ComboBox
     Friend WithEvents moddesc As System.Windows.Forms.TextBox
     Friend WithEvents Label4 As System.Windows.Forms.Label

@@ -7,14 +7,21 @@ Public Class Add_mod
     Dim c As New conn
     Dim cnt As Integer
 
-    Private Sub Add_mod_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-        cn = c.getcon()
+    Private Sub repopulate()
+        If Not cn.State = ConnectionState.Open Then
+            cn = c.getcon()
+        End If
         cm = New OleDbCommand("select coursecode from course", cn)
         dr = cm.ExecuteReader
         While (dr.Read)
             crc.Items.Add(dr.GetValue(0))
         End While
         cn.Close()
+    End Sub
+    Private Sub Add_mod_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+        cn = c.getcon()
+        clearing()
+        repopulate()
     End Sub
 
 
@@ -38,5 +45,15 @@ Public Class Add_mod
     End Sub
     Private Sub clrmod_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles clrmod.Click
         clearing()
+    End Sub
+
+    Private Sub Addbtn_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Addbtn.Click
+        If Not cn.State = ConnectionState.Open Then
+            cn = c.getcon()
+        End If
+        cm = New OleDbCommand("insert into modulo values('" & modid.Text & "', '" & crc.Text & "', '" & modname.Text & "', '" & moddesc.Text & "')", cn)
+        cm.ExecuteNonQuery()
+        MsgBox("Module: " & modid.Text & " has been added in course " & crc.Text & "")
+
     End Sub
 End Class
