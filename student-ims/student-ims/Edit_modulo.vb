@@ -54,6 +54,16 @@ Public Class Edit_modulo
         End While
         cn.Close()
     End Sub
+
+    Private Sub save_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles save.Click
+        If Not cn.State = ConnectionState.Open Then
+            cn = c.getcon()
+        End If
+        cm = New OleDbCommand("update modulo set module_name = '" + modname.Text + "', module_desc = '" + moddesc.Text + "' where moduleid = '" + AvailMod.SelectedItem + "'", cn)
+        cm.ExecuteNonQuery()
+        MsgBox("Module: " + AvailMod.SelectedItem + " was updated.")
+        cn.Close()
+    End Sub
 End Class
 
 
