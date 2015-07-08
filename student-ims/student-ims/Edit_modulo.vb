@@ -64,6 +64,10 @@ Public Class Edit_modulo
         MsgBox("Module: " + AvailMod.SelectedItem + " was updated.")
         cn.Close()
     End Sub
+
+    Private Sub Button3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button3.Click
+        Me.Hide()
+    End Sub
 End Class
 
 
