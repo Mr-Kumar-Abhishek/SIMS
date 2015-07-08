@@ -36,7 +36,7 @@ Partial Class Addmission_Form
         Me.Label11 = New System.Windows.Forms.Label()
         Me.crf = New System.Windows.Forms.TextBox()
         Me.Label10 = New System.Windows.Forms.Label()
-        Me.crc = New System.Windows.Forms.TextBox()
+        Me.crn = New System.Windows.Forms.TextBox()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.gender = New System.Windows.Forms.ComboBox()
@@ -62,7 +62,7 @@ Partial Class Addmission_Form
         '
         'MonthCalendar1
         '
-        Me.MonthCalendar1.Location = New System.Drawing.Point(491, 147)
+        Me.MonthCalendar1.Location = New System.Drawing.Point(512, 198)
         Me.MonthCalendar1.Name = "MonthCalendar1"
         Me.MonthCalendar1.TabIndex = 12
         Me.MonthCalendar1.Visible = False
@@ -81,7 +81,7 @@ Partial Class Addmission_Form
         Me.GroupBox1.Controls.Add(Me.Label11)
         Me.GroupBox1.Controls.Add(Me.crf)
         Me.GroupBox1.Controls.Add(Me.Label10)
-        Me.GroupBox1.Controls.Add(Me.crc)
+        Me.GroupBox1.Controls.Add(Me.crn)
         Me.GroupBox1.Controls.Add(Me.Label9)
         Me.GroupBox1.Font = New System.Drawing.Font("Segoe Script", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox1.Location = New System.Drawing.Point(13, 399)
@@ -94,7 +94,7 @@ Partial Class Addmission_Form
         '
         'MonthCalendar3
         '
-        Me.MonthCalendar3.Location = New System.Drawing.Point(341, 154)
+        Me.MonthCalendar3.Location = New System.Drawing.Point(366, 154)
         Me.MonthCalendar3.Name = "MonthCalendar3"
         Me.MonthCalendar3.TabIndex = 13
         Me.MonthCalendar3.Visible = False
@@ -118,7 +118,7 @@ Partial Class Addmission_Form
         '
         'MonthCalendar2
         '
-        Me.MonthCalendar2.Location = New System.Drawing.Point(81, 154)
+        Me.MonthCalendar2.Location = New System.Drawing.Point(83, 157)
         Me.MonthCalendar2.Name = "MonthCalendar2"
         Me.MonthCalendar2.TabIndex = 12
         Me.MonthCalendar2.Visible = False
@@ -192,23 +192,23 @@ Partial Class Addmission_Form
         Me.Label10.TabIndex = 2
         Me.Label10.Text = "Course Fees :"
         '
-        'crc
+        'crn
         '
-        Me.crc.Enabled = False
-        Me.crc.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.crc.Location = New System.Drawing.Point(137, 58)
-        Me.crc.Name = "crc"
-        Me.crc.Size = New System.Drawing.Size(109, 20)
-        Me.crc.TabIndex = 1
+        Me.crn.Enabled = False
+        Me.crn.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.crn.Location = New System.Drawing.Point(137, 58)
+        Me.crn.Name = "crn"
+        Me.crn.Size = New System.Drawing.Size(109, 20)
+        Me.crn.TabIndex = 1
         '
         'Label9
         '
         Me.Label9.AutoSize = True
         Me.Label9.Location = New System.Drawing.Point(10, 58)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(104, 20)
+        Me.Label9.Size = New System.Drawing.Size(109, 20)
         Me.Label9.TabIndex = 0
-        Me.Label9.Text = "Course Code :"
+        Me.Label9.Text = "Course Name :"
         '
         'Label5
         '
@@ -427,7 +427,7 @@ Partial Class Addmission_Form
     Friend WithEvents Label11 As System.Windows.Forms.Label
     Friend WithEvents crf As System.Windows.Forms.TextBox
     Friend WithEvents Label10 As System.Windows.Forms.Label
-    Friend WithEvents crc As System.Windows.Forms.TextBox
+    Friend WithEvents crn As System.Windows.Forms.TextBox
     Friend WithEvents Label9 As System.Windows.Forms.Label
     Friend WithEvents MonthCalendar3 As System.Windows.Forms.MonthCalendar
     Friend WithEvents MonthCalendar2 As System.Windows.Forms.MonthCalendar

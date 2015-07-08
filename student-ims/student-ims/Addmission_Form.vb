@@ -20,7 +20,7 @@ Public Class Addmission_Form
         dob.clear()
         qual.clear()
         coursedp.Text = ""
-        crc.clear()
+        crn.clear()
         crf.clear()
         stdate.clear()
         endate.clear()
@@ -62,7 +62,7 @@ Public Class Addmission_Form
         If Not cn.State = ConnectionState.Open Then
             cn.Open()
         End If
-        cm = New OleDbCommand("insert into student values('" + stdcode.Text + "', '" + stdname.Text + "', '" + gender.Text + "', '" + tele.Text + "', '" + add.Text + "', '" + dob.Text + "' , '" + qual.Text + "', '" + crc.Text + "', '" + stdate.Text + "', '" + endate.Text + "', 'comming soon', '" + crf.Text + "')", cn)
+        cm = New OleDbCommand("insert into student values('" + stdcode.Text + "', '" + stdname.Text + "', '" + gender.Text + "', '" + tele.Text + "', '" + add.Text + "', '" + dob.Text + "' , '" + qual.Text + "', '" + crn.Text + "', '" + stdate.Text + "', '" + endate.Text + "', 'comming soon', '" + crf.Text + "')", cn)
         cm.ExecuteNonQuery()
         Dim itemchecked As Object
         For Each itemchecked In modbox.CheckedItems
@@ -89,7 +89,7 @@ Public Class Addmission_Form
         If Not cn.State = ConnectionState.Open Then
             cn.Open()
         End If
-        cm = New OleDbCommand("select coursename from course", cn)
+        cm = New OleDbCommand("select coursecode from course", cn)
         dr = cm.ExecuteReader
         While (dr.Read)
             coursedp.Items.Add(dr.GetValue(0))
@@ -102,17 +102,17 @@ Public Class Addmission_Form
         If Not cn.State = ConnectionState.Open Then
             cn.Open()
         End If
-        cm = New OleDbCommand("select coursecode from course where coursename = '" + coursedp.SelectedItem + "'", cn)
+        cm = New OleDbCommand("select coursename from course where coursecode = '" + coursedp.SelectedItem + "'", cn)
         dr = cm.ExecuteReader
         While (dr.Read)
-            crc.Text = dr.GetValue(0)
+            crn.Text = dr.GetValue(0)
         End While
         cm = New OleDbCommand("select totalfees from course where coursename = '" + coursedp.SelectedItem + "'", cn)
         dr = cm.ExecuteReader
         While (dr.Read)
             crf.Text = dr.GetValue(0)
         End While
-        cm = New OleDbCommand("select moduleid from modulo where coursecode = '" + crc.Text + "'", cn)
+        cm = New OleDbCommand("select moduleid from modulo where coursecode = '" + crn.Text + "'", cn)
         dr = cm.ExecuteReader
         While (dr.Read)
             modbox.Items.Add(dr.GetValue(0))
