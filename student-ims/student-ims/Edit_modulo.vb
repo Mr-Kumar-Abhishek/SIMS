@@ -24,4 +24,17 @@ Public Class Edit_modulo
         cn = c.getcon()
         repopulate()
     End Sub
+
+    Private Sub crc_TextChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles crc.TextChanged
+        AvailMod.Items.Clear()
+        If Not cn.State = ConnectionState.Open Then
+            cn = c.getcon()
+        End If
+        cm = New OleDbCommand("select moduleid from modulo where coursecode = '" + crc.Text + "'", cn)
+        dr = cm.ExecuteReader
+        While (dr.Read)
+            AvailMod.Items.Add(dr.GetValue(0))
+        End While
+        cn.Close()
+    End Sub
 End Class
