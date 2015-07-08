@@ -112,7 +112,7 @@ Public Class Addmission_Form
         While (dr.Read)
             crf.Text = dr.GetValue(0)
         End While
-        cm = New OleDbCommand("select moduleid from modulo where coursecode = '" + crn.Text + "'", cn)
+        cm = New OleDbCommand("select moduleid from modulo where coursecode = '" + coursedp.SelectedItem + "'", cn)
         dr = cm.ExecuteReader
         While (dr.Read)
             modbox.Items.Add(dr.GetValue(0))
