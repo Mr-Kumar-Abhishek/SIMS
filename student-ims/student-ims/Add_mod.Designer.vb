@@ -34,9 +34,10 @@ Partial Class Add_mod
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.modid = New System.Windows.Forms.TextBox()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.clrmod = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.SuspendLayout()
@@ -46,12 +47,12 @@ Partial Class Add_mod
         Me.AvailMod.FormattingEnabled = True
         Me.AvailMod.Location = New System.Drawing.Point(148, 127)
         Me.AvailMod.Name = "AvailMod"
-        Me.AvailMod.Size = New System.Drawing.Size(192, 121)
+        Me.AvailMod.Size = New System.Drawing.Size(192, 160)
         Me.AvailMod.TabIndex = 29
         '
         'Button3
         '
-        Me.Button3.Location = New System.Drawing.Point(429, 315)
+        Me.Button3.Location = New System.Drawing.Point(681, 335)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(113, 21)
         Me.Button3.TabIndex = 28
@@ -60,11 +61,11 @@ Partial Class Add_mod
         '
         'nxtbtn
         '
-        Me.nxtbtn.Location = New System.Drawing.Point(286, 315)
+        Me.nxtbtn.Location = New System.Drawing.Point(128, 266)
         Me.nxtbtn.Name = "nxtbtn"
         Me.nxtbtn.Size = New System.Drawing.Size(113, 21)
         Me.nxtbtn.TabIndex = 27
-        Me.nxtbtn.Text = "save"
+        Me.nxtbtn.Text = "Add"
         Me.nxtbtn.UseVisualStyleBackColor = True
         '
         'crc
@@ -144,12 +145,12 @@ Partial Class Add_mod
         Me.Label6.TabIndex = 32
         Me.Label6.Text = "Available Modues"
         '
-        'TextBox1
+        'modid
         '
-        Me.TextBox1.Location = New System.Drawing.Point(128, 32)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(231, 20)
-        Me.TextBox1.TabIndex = 33
+        Me.modid.Location = New System.Drawing.Point(128, 32)
+        Me.modid.Name = "modid"
+        Me.modid.Size = New System.Drawing.Size(231, 20)
+        Me.modid.TabIndex = 33
         '
         'GroupBox1
         '
@@ -159,14 +160,16 @@ Partial Class Add_mod
         Me.GroupBox1.Controls.Add(Me.Label5)
         Me.GroupBox1.Location = New System.Drawing.Point(12, 12)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(393, 283)
+        Me.GroupBox1.Size = New System.Drawing.Size(393, 304)
         Me.GroupBox1.TabIndex = 34
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Select Course"
         '
         'GroupBox2
         '
-        Me.GroupBox2.Controls.Add(Me.TextBox1)
+        Me.GroupBox2.Controls.Add(Me.clrmod)
+        Me.GroupBox2.Controls.Add(Me.modid)
+        Me.GroupBox2.Controls.Add(Me.nxtbtn)
         Me.GroupBox2.Controls.Add(Me.Label3)
         Me.GroupBox2.Controls.Add(Me.Label1)
         Me.GroupBox2.Controls.Add(Me.modname)
@@ -174,10 +177,19 @@ Partial Class Add_mod
         Me.GroupBox2.Controls.Add(Me.moddesc)
         Me.GroupBox2.Location = New System.Drawing.Point(421, 12)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(407, 283)
+        Me.GroupBox2.Size = New System.Drawing.Size(407, 304)
         Me.GroupBox2.TabIndex = 35
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Add Modules"
+        '
+        'clrmod
+        '
+        Me.clrmod.Location = New System.Drawing.Point(260, 266)
+        Me.clrmod.Name = "clrmod"
+        Me.clrmod.Size = New System.Drawing.Size(113, 21)
+        Me.clrmod.TabIndex = 34
+        Me.clrmod.Text = "clear"
+        Me.clrmod.UseVisualStyleBackColor = True
         '
         'Add_mod
         '
@@ -185,7 +197,6 @@ Partial Class Add_mod
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(844, 368)
         Me.Controls.Add(Me.Button3)
-        Me.Controls.Add(Me.nxtbtn)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.GroupBox2)
@@ -211,7 +222,8 @@ Partial Class Add_mod
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents Label5 As System.Windows.Forms.Label
     Friend WithEvents Label6 As System.Windows.Forms.Label
-    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
+    Friend WithEvents modid As System.Windows.Forms.TextBox
     Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
     Friend WithEvents GroupBox2 As System.Windows.Forms.GroupBox
+    Friend WithEvents clrmod As System.Windows.Forms.Button
 End Class

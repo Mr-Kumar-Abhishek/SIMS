@@ -30,4 +30,13 @@ Public Class Add_mod
         End While
         cn.Close()
     End Sub
+
+    Private Sub clearing()
+        modid.Text = ""
+        moddesc.Text = ""
+        modname.Text = ""
+    End Sub
+    Private Sub clrmod_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles clrmod.Click
+        clearing()
+    End Sub
 End Class
