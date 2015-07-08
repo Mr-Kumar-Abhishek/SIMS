@@ -28,10 +28,10 @@ Partial Class Edit_modulo
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.crc = New System.Windows.Forms.ComboBox()
         Me.Button3 = New System.Windows.Forms.Button()
-        Me.nxtbtn = New System.Windows.Forms.Button()
-        Me.ListBox1 = New System.Windows.Forms.ListBox()
+        Me.save = New System.Windows.Forms.Button()
+        Me.AvailMod = New System.Windows.Forms.ListBox()
         Me.SuspendLayout()
         '
         'moddesc
@@ -85,13 +85,13 @@ Partial Class Edit_modulo
         Me.Label1.TabIndex = 9
         Me.Label1.Text = "module ID"
         '
-        'ComboBox1
+        'crc
         '
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(123, 40)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(192, 21)
-        Me.ComboBox1.TabIndex = 16
+        Me.crc.FormattingEnabled = True
+        Me.crc.Location = New System.Drawing.Point(123, 40)
+        Me.crc.Name = "crc"
+        Me.crc.Size = New System.Drawing.Size(192, 21)
+        Me.crc.TabIndex = 16
         '
         'Button3
         '
@@ -102,32 +102,32 @@ Partial Class Edit_modulo
         Me.Button3.Text = "cancel"
         Me.Button3.UseVisualStyleBackColor = True
         '
-        'nxtbtn
+        'save
         '
-        Me.nxtbtn.Location = New System.Drawing.Point(224, 232)
-        Me.nxtbtn.Name = "nxtbtn"
-        Me.nxtbtn.Size = New System.Drawing.Size(113, 21)
-        Me.nxtbtn.TabIndex = 18
-        Me.nxtbtn.Text = "save"
-        Me.nxtbtn.UseVisualStyleBackColor = True
+        Me.save.Location = New System.Drawing.Point(224, 232)
+        Me.save.Name = "save"
+        Me.save.Size = New System.Drawing.Size(113, 21)
+        Me.save.TabIndex = 18
+        Me.save.Text = "update"
+        Me.save.UseVisualStyleBackColor = True
         '
-        'ListBox1
+        'AvailMod
         '
-        Me.ListBox1.FormattingEnabled = True
-        Me.ListBox1.Location = New System.Drawing.Point(448, 40)
-        Me.ListBox1.Name = "ListBox1"
-        Me.ListBox1.Size = New System.Drawing.Size(222, 56)
-        Me.ListBox1.TabIndex = 20
+        Me.AvailMod.FormattingEnabled = True
+        Me.AvailMod.Location = New System.Drawing.Point(448, 40)
+        Me.AvailMod.Name = "AvailMod"
+        Me.AvailMod.Size = New System.Drawing.Size(222, 56)
+        Me.AvailMod.TabIndex = 20
         '
         'Edit_modulo
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(691, 289)
-        Me.Controls.Add(Me.ListBox1)
+        Me.Controls.Add(Me.AvailMod)
         Me.Controls.Add(Me.Button3)
-        Me.Controls.Add(Me.nxtbtn)
-        Me.Controls.Add(Me.ComboBox1)
+        Me.Controls.Add(Me.save)
+        Me.Controls.Add(Me.crc)
         Me.Controls.Add(Me.moddesc)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.modname)
@@ -146,8 +146,8 @@ Partial Class Edit_modulo
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents Label1 As System.Windows.Forms.Label
-    Friend WithEvents ComboBox1 As System.Windows.Forms.ComboBox
+    Friend WithEvents crc As System.Windows.Forms.ComboBox
     Friend WithEvents Button3 As System.Windows.Forms.Button
-    Friend WithEvents nxtbtn As System.Windows.Forms.Button
-    Friend WithEvents ListBox1 As System.Windows.Forms.ListBox
+    Friend WithEvents save As System.Windows.Forms.Button
+    Friend WithEvents AvailMod As System.Windows.Forms.ListBox
 End Class
