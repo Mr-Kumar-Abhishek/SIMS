@@ -7,6 +7,10 @@ Public Class delete_mod
     Dim c As New conn
     Dim cnt As Integer
 
+    Private Sub clearing()
+        modname.Text = ""
+        moddesc.Text = ""
+    End Sub
     Private Sub repopulate()
         If Not cn.State = ConnectionState.Open Then
             cn = c.getcon()
@@ -24,7 +28,7 @@ Public Class delete_mod
         repopulate()
     End Sub
 
-    Private Sub crc_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles crc.SelectedIndexChanged
+    Private Sub Available_mods()
         AvailMod.Items.Clear()
         If Not cn.State = ConnectionState.Open Then
             cn = c.getcon()
@@ -35,6 +39,9 @@ Public Class delete_mod
             AvailMod.Items.Add(dr.GetValue(0))
         End While
         cn.Close()
+    End Sub
+    Private Sub crc_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles crc.SelectedIndexChanged
+        Available_mods()
     End Sub
 
     Private Sub AvailMod_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles AvailMod.SelectedIndexChanged
@@ -52,5 +59,17 @@ Public Class delete_mod
             moddesc.Text = dr.GetValue(0)
         End While
         cn.Close()
+    End Sub
+
+    Private Sub deletion_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles deletion.Click
+        If Not cn.State = ConnectionState.Open Then
+            cn = c.getcon()
+        End If
+        cm = New OleDbCommand("delete from modulo where moduleid = '" + AvailMod.SelectedItem + "'", cn)
+        cm.ExecuteNonQuery()
+        MsgBox("Module: " + AvailMod.SelectedItem + " has been deleted.")
+        cn.Close()
+        Available_mods()
+        clearing()
     End Sub
 End Class
