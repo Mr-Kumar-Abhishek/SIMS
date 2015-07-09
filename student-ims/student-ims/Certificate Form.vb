@@ -66,7 +66,7 @@ Public Class Certificate_Form
         pdf.Info.Title = stitle
         graph.DrawImage(image, 250, 50, 100, 50)
         Dim textline As String
-        textline = "This to certify that Mr./Ms./Mrs." & stname.Text
+        textline = "This to certify that Mr./Ms./Mrs. " & stname.Text
 
         'textline = "NAME: " & stname.Text
         graph.DrawString(textline, myfont, XBrushes.Black, New XRect(30, 145, pdfPage.Width.Point, pdfPage.Height.Point), XStringFormats.TopLeft)       '//width from left 50 pixels, height from top 245 pixels

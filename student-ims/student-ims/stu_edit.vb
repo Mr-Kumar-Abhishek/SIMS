@@ -72,6 +72,17 @@ Public Class stu_edit
         While (dr.Read)
             modbox.Items.Add(dr.GetValue(0))
         End While
+        cm = New OleDbCommand("select moduleid from stmod where user = '" + stcode.Text + "'", cn)
+        dr = cm.ExecuteReader
+        While (dr.Read)
+            Dim modtaken As String = dr.GetValue(0)
+            For i As Integer = 0 To modbox.Items.Count - 1
+                modbox.SelectedIndex = i
+                If modbox.SelectedItem = dr.GetValue(0) Then
+                    modbox.SetItemChecked(i, True)
+                End If
+            Next
+        End While
     End Sub
 
     Private Sub stu_edit_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
