@@ -42,9 +42,13 @@ Public Class Marks_Details
         dr.Close()
         cm = New OleDbCommand("select moduleid,marks from marks where user = '" + stcode.Text + "'", cn)
         Dim da As New OleDbDataAdapter(cm)
-        Dim list As New DataTable
-        da.Fill(list)
-        DataGridView1.DataSource = list
+        ' Dim list As New DataTable
+        Dim ds As DataSet
+        ds = New DataSet
+        da.Fill(ds, "marks")
+
+        Me.DataGridView1.DataSource = ds.Tables("marks")
+        'DataGridView1.DataSource = list
         cn.Close()
     End Sub
 
@@ -59,5 +63,24 @@ Public Class Marks_Details
             stname.Text = dr.GetValue(0)
         End While
         cn.Close()
+    End Sub
+
+    Private Sub editing_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles editing.Click
+        If (DataGridView1.SelectedRows.Count >= 0) Then
+            TextBox1.Text = DataGridView1.SelectedRows(0).Cells(1).Value
+        End If
+    End Sub
+
+    Private Sub DataGridView1_CellClick(ByVal sender As Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles DataGridView1.CellClick
+
+    End Sub
+
+    Private Sub DataGridView1_CellContentClick(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles DataGridView1.CellContentClick
+        
+
+    End Sub
+
+    Private Sub DataGridView1_SelectionChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles DataGridView1.SelectionChanged
+ 
     End Sub
 End Class

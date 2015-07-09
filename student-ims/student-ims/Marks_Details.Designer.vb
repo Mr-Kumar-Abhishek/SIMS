@@ -30,6 +30,9 @@ Partial Class Marks_Details
         Me.DataGridView1 = New System.Windows.Forms.DataGridView()
         Me.stname = New System.Windows.Forms.TextBox()
         Me.stcode = New System.Windows.Forms.ComboBox()
+        Me.editing = New System.Windows.Forms.Button()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.Label4 = New System.Windows.Forms.Label()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -73,7 +76,7 @@ Partial Class Marks_Details
         'Button1
         '
         Me.Button1.Font = New System.Drawing.Font("Segoe Script", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(121, 232)
+        Me.Button1.Location = New System.Drawing.Point(552, 342)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(82, 35)
         Me.Button1.TabIndex = 6
@@ -82,7 +85,10 @@ Partial Class Marks_Details
         '
         'DataGridView1
         '
+        Me.DataGridView1.AllowUserToAddRows = False
+        Me.DataGridView1.AllowUserToDeleteRows = False
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.DataGridView1.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically
         Me.DataGridView1.Location = New System.Drawing.Point(394, 60)
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.Size = New System.Drawing.Size(240, 150)
@@ -103,11 +109,40 @@ Partial Class Marks_Details
         Me.stcode.Size = New System.Drawing.Size(196, 21)
         Me.stcode.TabIndex = 8
         '
+        'editing
+        '
+        Me.editing.Location = New System.Drawing.Point(394, 228)
+        Me.editing.Name = "editing"
+        Me.editing.Size = New System.Drawing.Size(75, 35)
+        Me.editing.TabIndex = 9
+        Me.editing.Text = "edit"
+        Me.editing.UseVisualStyleBackColor = True
+        '
+        'TextBox1
+        '
+        Me.TextBox1.Location = New System.Drawing.Point(163, 263)
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.Size = New System.Drawing.Size(100, 20)
+        Me.TextBox1.TabIndex = 10
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Font = New System.Drawing.Font("Segoe Script", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Location = New System.Drawing.Point(42, 263)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(50, 20)
+        Me.Label4.TabIndex = 11
+        Me.Label4.Text = "marks"
+        '
         'Marks_Details
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(646, 301)
+        Me.ClientSize = New System.Drawing.Size(646, 389)
+        Me.Controls.Add(Me.Label4)
+        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.editing)
         Me.Controls.Add(Me.stcode)
         Me.Controls.Add(Me.DataGridView1)
         Me.Controls.Add(Me.Button1)
@@ -131,4 +166,7 @@ Partial Class Marks_Details
     Friend WithEvents DataGridView1 As System.Windows.Forms.DataGridView
     Friend WithEvents stname As System.Windows.Forms.TextBox
     Friend WithEvents stcode As System.Windows.Forms.ComboBox
+    Friend WithEvents editing As System.Windows.Forms.Button
+    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
+    Friend WithEvents Label4 As System.Windows.Forms.Label
 End Class
