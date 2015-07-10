@@ -47,56 +47,21 @@ Public Class stu_edit
     Private Sub ComboBox3_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles stcode.SelectedIndexChanged
         modbox.Items.Clear()
         concheck()
-        cm = New OleDbCommand("select sname from student where user = '" + stcode.Text + "'", cn)
+        cm = New OleDbCommand("select sname, gender, telephone ,address , DOB, coursecode, qualification, Startdate, Enddate, coursefees from student where user = '" + stcode.Text + "'", cn)
         dr = cm.ExecuteReader
         While (dr.Read)
             stname.Text = dr.GetValue(0)
-        End While
-        cm = New OleDbCommand("select gender from student where user = '" + stcode.Text + "'", cn)
-        dr = cm.ExecuteReader
-        While (dr.Read)
-            gender.Text = dr.GetValue(0)
-        End While
-        cm = New OleDbCommand("select telephone from student where user = '" + stcode.Text + "'", cn)
-        dr = cm.ExecuteReader
-        While (dr.Read)
-            tele.Text = dr.GetValue(0)
-        End While
-        cm = New OleDbCommand("select address from student where user = '" + stcode.Text + "'", cn)
-        dr = cm.ExecuteReader
-        While (dr.Read)
-            add.Text = dr.GetValue(0)
-        End While
-        cm = New OleDbCommand("select DOB from student where user = '" + stcode.Text + "'", cn)
-        dr = cm.ExecuteReader
-        While (dr.Read)
-            dob.Text = dr.GetValue(0)
-        End While
-        cm = New OleDbCommand("select coursecode from student where user = '" + stcode.Text + "'", cn)
-        dr = cm.ExecuteReader
-        While (dr.Read)
-            crc.Text = dr.GetValue(0)
-            crcd.Text = crc.Text
-        End While
-        cm = New OleDbCommand("select qualification from student where user = '" + stcode.Text + "'", cn)
-        dr = cm.ExecuteReader
-        While (dr.Read)
-            qual.Text =  dr.GetValue(0)
-        End While
-        cm = New OleDbCommand("select Startdate from student where user = '" + stcode.Text + "'", cn)
-        dr = cm.ExecuteReader
-        While (dr.Read)
-            stdate.Text = dr.GetValue(0)
-        End While
-        cm = New OleDbCommand("select Enddate from student where user = '" + stcode.Text + "'", cn)
-        dr = cm.ExecuteReader
-        While (dr.Read)
-            endate.Text = dr.GetValue(0)
-        End While
-        cm = New OleDbCommand("select coursefees from student where user = '" + stcode.Text + "'", cn)
-        dr = cm.ExecuteReader
-        While (dr.Read)
-            crf.Text = dr.GetValue(0)
+            gender.Text = dr.GetValue(1)
+            tele.Text = dr.GetValue(2)
+            add.Text = dr.GetValue(3)
+            dob.Text = dr.GetValue(4)
+            crc.Text = dr.GetValue(5)
+            crcd.Text = dr.GetValue(5)
+            qual.Text = dr.GetValue(6)
+            stdate.Text = dr.GetValue(7)
+            endate.Text = dr.GetValue(8)
+            crf.Text = dr.GetValue(9)
+
         End While
         cm = New OleDbCommand("select moduleid from modulo where coursecode = '" + crc.Text + "'", cn)
         dr = cm.ExecuteReader

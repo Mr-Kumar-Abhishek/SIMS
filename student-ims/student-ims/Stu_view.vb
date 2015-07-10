@@ -52,6 +52,7 @@ Public Class Stu_view
     End Sub
 
     Private Sub Stu_view_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+        cn = c.getcon()
         repopulate()
     End Sub
 End Class
