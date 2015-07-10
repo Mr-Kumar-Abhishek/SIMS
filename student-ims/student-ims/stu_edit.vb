@@ -98,6 +98,27 @@ Public Class stu_edit
             errbox()
         End Try
 
+        For Each itemchecked In modbox.CheckedItems
+            cm = New OleDbCommand("select moduleid from stmod where user = '" + crc.Text + "' and moduleid = '" + itemchecked + "'", cn)
+            Try
+                dr = cm.ExecuteReader
+                If (dr.HasRows) Then
+                    dr.Close()
+                    'intended to left blank
+                Else
+                    dr.Close()
+                    cm = New OleDbCommand("insert into stmod value('" + itemchecked + "', '" + stcode.Text + "')", cn)
+                    Try
+                        cm.ExecuteNonQuery()
+                    Catch ex As Exception
+                        errbox()
+                    End Try
+                End If
+            Catch ex As Exception
+                errbox()
+            End Try
+        Next
+
     End Sub
 
     Private Sub deletion_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles deletion.Click
