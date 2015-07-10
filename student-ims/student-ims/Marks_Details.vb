@@ -68,19 +68,8 @@ Public Class Marks_Details
     Private Sub editing_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles editing.Click
         If (DataGridView1.SelectedRows.Count >= 0) Then
             TextBox1.Text = DataGridView1.SelectedRows(0).Cells(1).Value
+            TextBox2.Text = DataGridView1.SelectedRows(0).Cells(0).Value
         End If
     End Sub
 
-    Private Sub DataGridView1_CellClick(ByVal sender As Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles DataGridView1.CellClick
-
-    End Sub
-
-    Private Sub DataGridView1_CellContentClick(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DataGridViewCellEventArgs) Handles DataGridView1.CellContentClick
-        
-
-    End Sub
-
-    Private Sub DataGridView1_SelectionChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles DataGridView1.SelectionChanged
- 
-    End Sub
 End Class
