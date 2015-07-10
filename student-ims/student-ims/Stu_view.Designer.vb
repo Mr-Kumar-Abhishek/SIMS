@@ -23,6 +23,7 @@ Partial Class Stu_view
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.crc = New System.Windows.Forms.TextBox()
         Me.stcode = New System.Windows.Forms.ComboBox()
         Me.gender = New System.Windows.Forms.ComboBox()
         Me.qual = New System.Windows.Forms.TextBox()
@@ -39,6 +40,9 @@ Partial Class Stu_view
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.Label12 = New System.Windows.Forms.Label()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.modbox = New System.Windows.Forms.CheckedListBox()
         Me.Label14 = New System.Windows.Forms.Label()
         Me.cancel = New System.Windows.Forms.Button()
         Me.okay = New System.Windows.Forms.Button()
@@ -48,10 +52,6 @@ Partial Class Stu_view
         Me.crcd = New System.Windows.Forms.TextBox()
         Me.Label11 = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
-        Me.crc = New System.Windows.Forms.TextBox()
-        Me.modbox = New System.Windows.Forms.CheckedListBox()
-        Me.Label9 = New System.Windows.Forms.Label()
-        Me.Label12 = New System.Windows.Forms.Label()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.SuspendLayout()
@@ -83,6 +83,14 @@ Partial Class Stu_view
         Me.GroupBox1.TabIndex = 1
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Basic Details"
+        '
+        'crc
+        '
+        Me.crc.Enabled = False
+        Me.crc.Location = New System.Drawing.Point(709, 241)
+        Me.crc.Name = "crc"
+        Me.crc.Size = New System.Drawing.Size(270, 28)
+        Me.crc.TabIndex = 21
         '
         'stcode
         '
@@ -252,6 +260,37 @@ Partial Class Stu_view
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Course Details"
         '
+        'Label12
+        '
+        Me.Label12.AutoSize = True
+        Me.Label12.Font = New System.Drawing.Font("Segoe Script", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label12.Location = New System.Drawing.Point(472, 148)
+        Me.Label12.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label12.Name = "Label12"
+        Me.Label12.Size = New System.Drawing.Size(99, 20)
+        Me.Label12.TabIndex = 33
+        Me.Label12.Text = "Ending Date"
+        '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.Font = New System.Drawing.Font("Segoe Script", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label9.Location = New System.Drawing.Point(472, 90)
+        Me.Label9.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(87, 20)
+        Me.Label9.TabIndex = 32
+        Me.Label9.Text = "Course Fees"
+        '
+        'modbox
+        '
+        Me.modbox.Enabled = False
+        Me.modbox.FormattingEnabled = True
+        Me.modbox.Location = New System.Drawing.Point(855, 87)
+        Me.modbox.Name = "modbox"
+        Me.modbox.Size = New System.Drawing.Size(120, 119)
+        Me.modbox.TabIndex = 31
+        '
         'Label14
         '
         Me.Label14.AutoSize = True
@@ -334,45 +373,6 @@ Partial Class Stu_view
         Me.Label10.Size = New System.Drawing.Size(95, 20)
         Me.Label10.TabIndex = 22
         Me.Label10.Text = "Course Code"
-        '
-        'crc
-        '
-        Me.crc.Enabled = False
-        Me.crc.Location = New System.Drawing.Point(709, 241)
-        Me.crc.Name = "crc"
-        Me.crc.Size = New System.Drawing.Size(270, 28)
-        Me.crc.TabIndex = 21
-        '
-        'modbox
-        '
-        Me.modbox.Enabled = False
-        Me.modbox.FormattingEnabled = True
-        Me.modbox.Location = New System.Drawing.Point(855, 87)
-        Me.modbox.Name = "modbox"
-        Me.modbox.Size = New System.Drawing.Size(120, 119)
-        Me.modbox.TabIndex = 31
-        '
-        'Label9
-        '
-        Me.Label9.AutoSize = True
-        Me.Label9.Font = New System.Drawing.Font("Segoe Script", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label9.Location = New System.Drawing.Point(472, 90)
-        Me.Label9.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(87, 20)
-        Me.Label9.TabIndex = 32
-        Me.Label9.Text = "Course Fees"
-        '
-        'Label12
-        '
-        Me.Label12.AutoSize = True
-        Me.Label12.Font = New System.Drawing.Font("Segoe Script", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label12.Location = New System.Drawing.Point(472, 148)
-        Me.Label12.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(99, 20)
-        Me.Label12.TabIndex = 33
-        Me.Label12.Text = "Ending Date"
         '
         'Stu_view
         '
