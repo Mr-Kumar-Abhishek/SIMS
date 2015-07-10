@@ -23,13 +23,13 @@ Partial Class Stu_view
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.ComboBox2 = New System.Windows.Forms.ComboBox()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
-        Me.TextBox6 = New System.Windows.Forms.TextBox()
-        Me.TextBox5 = New System.Windows.Forms.TextBox()
-        Me.TextBox4 = New System.Windows.Forms.TextBox()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.stcode = New System.Windows.Forms.ComboBox()
+        Me.gender = New System.Windows.Forms.ComboBox()
+        Me.qual = New System.Windows.Forms.TextBox()
+        Me.dob = New System.Windows.Forms.TextBox()
+        Me.tele = New System.Windows.Forms.TextBox()
+        Me.stname = New System.Windows.Forms.TextBox()
+        Me.add = New System.Windows.Forms.TextBox()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
@@ -40,15 +40,18 @@ Partial Class Stu_view
         Me.Label1 = New System.Windows.Forms.Label()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
         Me.Label14 = New System.Windows.Forms.Label()
-        Me.Button5 = New System.Windows.Forms.Button()
-        Me.Button4 = New System.Windows.Forms.Button()
-        Me.TextBox10 = New System.Windows.Forms.TextBox()
-        Me.TextBox9 = New System.Windows.Forms.TextBox()
-        Me.TextBox8 = New System.Windows.Forms.TextBox()
-        Me.TextBox7 = New System.Windows.Forms.TextBox()
+        Me.cancel = New System.Windows.Forms.Button()
+        Me.okay = New System.Windows.Forms.Button()
+        Me.endate = New System.Windows.Forms.TextBox()
+        Me.crf = New System.Windows.Forms.TextBox()
+        Me.stdate = New System.Windows.Forms.TextBox()
+        Me.crcd = New System.Windows.Forms.TextBox()
         Me.Label11 = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.crc = New System.Windows.Forms.TextBox()
+        Me.modbox = New System.Windows.Forms.CheckedListBox()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.Label12 = New System.Windows.Forms.Label()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.SuspendLayout()
@@ -56,13 +59,13 @@ Partial Class Stu_view
         'GroupBox1
         '
         Me.GroupBox1.Controls.Add(Me.crc)
-        Me.GroupBox1.Controls.Add(Me.ComboBox2)
-        Me.GroupBox1.Controls.Add(Me.ComboBox1)
-        Me.GroupBox1.Controls.Add(Me.TextBox6)
-        Me.GroupBox1.Controls.Add(Me.TextBox5)
-        Me.GroupBox1.Controls.Add(Me.TextBox4)
-        Me.GroupBox1.Controls.Add(Me.TextBox3)
-        Me.GroupBox1.Controls.Add(Me.TextBox2)
+        Me.GroupBox1.Controls.Add(Me.stcode)
+        Me.GroupBox1.Controls.Add(Me.gender)
+        Me.GroupBox1.Controls.Add(Me.qual)
+        Me.GroupBox1.Controls.Add(Me.dob)
+        Me.GroupBox1.Controls.Add(Me.tele)
+        Me.GroupBox1.Controls.Add(Me.stname)
+        Me.GroupBox1.Controls.Add(Me.add)
         Me.GroupBox1.Controls.Add(Me.Label8)
         Me.GroupBox1.Controls.Add(Me.Label7)
         Me.GroupBox1.Controls.Add(Me.Label6)
@@ -81,63 +84,63 @@ Partial Class Stu_view
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Basic Details"
         '
-        'ComboBox2
+        'stcode
         '
-        Me.ComboBox2.FormattingEnabled = True
-        Me.ComboBox2.Location = New System.Drawing.Point(158, 29)
-        Me.ComboBox2.Name = "ComboBox2"
-        Me.ComboBox2.Size = New System.Drawing.Size(270, 28)
-        Me.ComboBox2.TabIndex = 20
+        Me.stcode.FormattingEnabled = True
+        Me.stcode.Location = New System.Drawing.Point(158, 29)
+        Me.stcode.Name = "stcode"
+        Me.stcode.Size = New System.Drawing.Size(270, 28)
+        Me.stcode.TabIndex = 20
         '
-        'ComboBox1
+        'gender
         '
-        Me.ComboBox1.Enabled = False
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(158, 81)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(270, 28)
-        Me.ComboBox1.TabIndex = 15
+        Me.gender.Enabled = False
+        Me.gender.FormattingEnabled = True
+        Me.gender.Location = New System.Drawing.Point(158, 81)
+        Me.gender.Name = "gender"
+        Me.gender.Size = New System.Drawing.Size(270, 28)
+        Me.gender.TabIndex = 15
         '
-        'TextBox6
+        'qual
         '
-        Me.TextBox6.Enabled = False
-        Me.TextBox6.Location = New System.Drawing.Point(709, 188)
-        Me.TextBox6.Name = "TextBox6"
-        Me.TextBox6.Size = New System.Drawing.Size(270, 28)
-        Me.TextBox6.TabIndex = 14
+        Me.qual.Enabled = False
+        Me.qual.Location = New System.Drawing.Point(709, 188)
+        Me.qual.Name = "qual"
+        Me.qual.Size = New System.Drawing.Size(270, 28)
+        Me.qual.TabIndex = 14
         '
-        'TextBox5
+        'dob
         '
-        Me.TextBox5.Enabled = False
-        Me.TextBox5.Location = New System.Drawing.Point(709, 129)
-        Me.TextBox5.Name = "TextBox5"
-        Me.TextBox5.Size = New System.Drawing.Size(270, 28)
-        Me.TextBox5.TabIndex = 12
+        Me.dob.Enabled = False
+        Me.dob.Location = New System.Drawing.Point(709, 129)
+        Me.dob.Name = "dob"
+        Me.dob.Size = New System.Drawing.Size(270, 28)
+        Me.dob.TabIndex = 12
         '
-        'TextBox4
+        'tele
         '
-        Me.TextBox4.Enabled = False
-        Me.TextBox4.Location = New System.Drawing.Point(709, 81)
-        Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(270, 28)
-        Me.TextBox4.TabIndex = 11
+        Me.tele.Enabled = False
+        Me.tele.Location = New System.Drawing.Point(709, 81)
+        Me.tele.Name = "tele"
+        Me.tele.Size = New System.Drawing.Size(270, 28)
+        Me.tele.TabIndex = 11
         '
-        'TextBox3
+        'stname
         '
-        Me.TextBox3.Enabled = False
-        Me.TextBox3.Location = New System.Drawing.Point(709, 38)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(270, 28)
-        Me.TextBox3.TabIndex = 10
+        Me.stname.Enabled = False
+        Me.stname.Location = New System.Drawing.Point(709, 38)
+        Me.stname.Name = "stname"
+        Me.stname.Size = New System.Drawing.Size(270, 28)
+        Me.stname.TabIndex = 10
         '
-        'TextBox2
+        'add
         '
-        Me.TextBox2.Enabled = False
-        Me.TextBox2.Location = New System.Drawing.Point(158, 129)
-        Me.TextBox2.Multiline = True
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(270, 132)
-        Me.TextBox2.TabIndex = 9
+        Me.add.Enabled = False
+        Me.add.Location = New System.Drawing.Point(158, 129)
+        Me.add.Multiline = True
+        Me.add.Name = "add"
+        Me.add.Size = New System.Drawing.Size(270, 132)
+        Me.add.TabIndex = 9
         '
         'Label8
         '
@@ -229,13 +232,16 @@ Partial Class Stu_view
         '
         'GroupBox2
         '
+        Me.GroupBox2.Controls.Add(Me.Label12)
+        Me.GroupBox2.Controls.Add(Me.Label9)
+        Me.GroupBox2.Controls.Add(Me.modbox)
         Me.GroupBox2.Controls.Add(Me.Label14)
-        Me.GroupBox2.Controls.Add(Me.Button5)
-        Me.GroupBox2.Controls.Add(Me.Button4)
-        Me.GroupBox2.Controls.Add(Me.TextBox10)
-        Me.GroupBox2.Controls.Add(Me.TextBox9)
-        Me.GroupBox2.Controls.Add(Me.TextBox8)
-        Me.GroupBox2.Controls.Add(Me.TextBox7)
+        Me.GroupBox2.Controls.Add(Me.cancel)
+        Me.GroupBox2.Controls.Add(Me.okay)
+        Me.GroupBox2.Controls.Add(Me.endate)
+        Me.GroupBox2.Controls.Add(Me.crf)
+        Me.GroupBox2.Controls.Add(Me.stdate)
+        Me.GroupBox2.Controls.Add(Me.crcd)
         Me.GroupBox2.Controls.Add(Me.Label11)
         Me.GroupBox2.Controls.Add(Me.Label10)
         Me.GroupBox2.Font = New System.Drawing.Font("Segoe Script", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -250,62 +256,62 @@ Partial Class Stu_view
         '
         Me.Label14.AutoSize = True
         Me.Label14.Font = New System.Drawing.Font("Segoe Script", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label14.Location = New System.Drawing.Point(851, 66)
+        Me.Label14.Location = New System.Drawing.Point(851, 39)
         Me.Label14.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label14.Name = "Label14"
         Me.Label14.Size = New System.Drawing.Size(111, 20)
         Me.Label14.TabIndex = 30
         Me.Label14.Text = "Module details"
         '
-        'Button5
+        'cancel
         '
-        Me.Button5.Location = New System.Drawing.Point(476, 224)
-        Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(134, 23)
-        Me.Button5.TabIndex = 29
-        Me.Button5.Text = "Cancle"
-        Me.Button5.UseVisualStyleBackColor = True
+        Me.cancel.Location = New System.Drawing.Point(476, 224)
+        Me.cancel.Name = "cancel"
+        Me.cancel.Size = New System.Drawing.Size(134, 23)
+        Me.cancel.TabIndex = 29
+        Me.cancel.Text = "Cancel"
+        Me.cancel.UseVisualStyleBackColor = True
         '
-        'Button4
+        'okay
         '
-        Me.Button4.Location = New System.Drawing.Point(291, 224)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(134, 23)
-        Me.Button4.TabIndex = 28
-        Me.Button4.Text = "Okay"
-        Me.Button4.UseVisualStyleBackColor = True
+        Me.okay.Location = New System.Drawing.Point(291, 224)
+        Me.okay.Name = "okay"
+        Me.okay.Size = New System.Drawing.Size(134, 23)
+        Me.okay.TabIndex = 28
+        Me.okay.Text = "Okay"
+        Me.okay.UseVisualStyleBackColor = True
         '
-        'TextBox10
+        'endate
         '
-        Me.TextBox10.Enabled = False
-        Me.TextBox10.Location = New System.Drawing.Point(582, 145)
-        Me.TextBox10.Name = "TextBox10"
-        Me.TextBox10.Size = New System.Drawing.Size(228, 28)
-        Me.TextBox10.TabIndex = 27
+        Me.endate.Enabled = False
+        Me.endate.Location = New System.Drawing.Point(582, 145)
+        Me.endate.Name = "endate"
+        Me.endate.Size = New System.Drawing.Size(228, 28)
+        Me.endate.TabIndex = 27
         '
-        'TextBox9
+        'crf
         '
-        Me.TextBox9.Enabled = False
-        Me.TextBox9.Location = New System.Drawing.Point(582, 87)
-        Me.TextBox9.Name = "TextBox9"
-        Me.TextBox9.Size = New System.Drawing.Size(228, 28)
-        Me.TextBox9.TabIndex = 26
+        Me.crf.Enabled = False
+        Me.crf.Location = New System.Drawing.Point(582, 87)
+        Me.crf.Name = "crf"
+        Me.crf.Size = New System.Drawing.Size(228, 28)
+        Me.crf.TabIndex = 26
         '
-        'TextBox8
+        'stdate
         '
-        Me.TextBox8.Enabled = False
-        Me.TextBox8.Location = New System.Drawing.Point(185, 142)
-        Me.TextBox8.Name = "TextBox8"
-        Me.TextBox8.Size = New System.Drawing.Size(228, 28)
-        Me.TextBox8.TabIndex = 25
+        Me.stdate.Enabled = False
+        Me.stdate.Location = New System.Drawing.Point(185, 142)
+        Me.stdate.Name = "stdate"
+        Me.stdate.Size = New System.Drawing.Size(228, 28)
+        Me.stdate.TabIndex = 25
         '
-        'TextBox7
+        'crcd
         '
-        Me.TextBox7.Enabled = False
-        Me.TextBox7.Location = New System.Drawing.Point(185, 87)
-        Me.TextBox7.Name = "TextBox7"
-        Me.TextBox7.Size = New System.Drawing.Size(228, 28)
-        Me.TextBox7.TabIndex = 24
+        Me.crcd.Enabled = False
+        Me.crcd.Location = New System.Drawing.Point(185, 87)
+        Me.crcd.Name = "crcd"
+        Me.crcd.Size = New System.Drawing.Size(228, 28)
+        Me.crcd.TabIndex = 24
         '
         'Label11
         '
@@ -331,10 +337,42 @@ Partial Class Stu_view
         '
         'crc
         '
+        Me.crc.Enabled = False
         Me.crc.Location = New System.Drawing.Point(709, 241)
         Me.crc.Name = "crc"
         Me.crc.Size = New System.Drawing.Size(270, 28)
         Me.crc.TabIndex = 21
+        '
+        'modbox
+        '
+        Me.modbox.Enabled = False
+        Me.modbox.FormattingEnabled = True
+        Me.modbox.Location = New System.Drawing.Point(855, 87)
+        Me.modbox.Name = "modbox"
+        Me.modbox.Size = New System.Drawing.Size(120, 119)
+        Me.modbox.TabIndex = 31
+        '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.Font = New System.Drawing.Font("Segoe Script", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label9.Location = New System.Drawing.Point(472, 90)
+        Me.Label9.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(87, 20)
+        Me.Label9.TabIndex = 32
+        Me.Label9.Text = "Course Fees"
+        '
+        'Label12
+        '
+        Me.Label12.AutoSize = True
+        Me.Label12.Font = New System.Drawing.Font("Segoe Script", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label12.Location = New System.Drawing.Point(472, 148)
+        Me.Label12.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label12.Name = "Label12"
+        Me.Label12.Size = New System.Drawing.Size(99, 20)
+        Me.Label12.TabIndex = 33
+        Me.Label12.Text = "Ending Date"
         '
         'Stu_view
         '
@@ -346,6 +384,7 @@ Partial Class Stu_view
         Me.Controls.Add(Me.GroupBox1)
         Me.Name = "Stu_view"
         Me.Text = "Student Details"
+        Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         Me.GroupBox2.ResumeLayout(False)
@@ -354,12 +393,12 @@ Partial Class Stu_view
 
     End Sub
     Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
-    Friend WithEvents ComboBox1 As System.Windows.Forms.ComboBox
-    Friend WithEvents TextBox6 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox5 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox4 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox3 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
+    Friend WithEvents gender As System.Windows.Forms.ComboBox
+    Friend WithEvents qual As System.Windows.Forms.TextBox
+    Friend WithEvents dob As System.Windows.Forms.TextBox
+    Friend WithEvents tele As System.Windows.Forms.TextBox
+    Friend WithEvents stname As System.Windows.Forms.TextBox
+    Friend WithEvents add As System.Windows.Forms.TextBox
     Friend WithEvents Label8 As System.Windows.Forms.Label
     Friend WithEvents Label7 As System.Windows.Forms.Label
     Friend WithEvents Label6 As System.Windows.Forms.Label
@@ -368,16 +407,19 @@ Partial Class Stu_view
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents Label1 As System.Windows.Forms.Label
-    Friend WithEvents ComboBox2 As System.Windows.Forms.ComboBox
+    Friend WithEvents stcode As System.Windows.Forms.ComboBox
     Friend WithEvents GroupBox2 As System.Windows.Forms.GroupBox
     Friend WithEvents Label14 As System.Windows.Forms.Label
-    Friend WithEvents Button5 As System.Windows.Forms.Button
-    Friend WithEvents Button4 As System.Windows.Forms.Button
-    Friend WithEvents TextBox10 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox9 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox8 As System.Windows.Forms.TextBox
-    Friend WithEvents TextBox7 As System.Windows.Forms.TextBox
+    Friend WithEvents cancel As System.Windows.Forms.Button
+    Friend WithEvents okay As System.Windows.Forms.Button
+    Friend WithEvents endate As System.Windows.Forms.TextBox
+    Friend WithEvents crf As System.Windows.Forms.TextBox
+    Friend WithEvents stdate As System.Windows.Forms.TextBox
+    Friend WithEvents crcd As System.Windows.Forms.TextBox
     Friend WithEvents Label11 As System.Windows.Forms.Label
     Friend WithEvents Label10 As System.Windows.Forms.Label
     Friend WithEvents crc As System.Windows.Forms.TextBox
+    Friend WithEvents modbox As System.Windows.Forms.CheckedListBox
+    Friend WithEvents Label12 As System.Windows.Forms.Label
+    Friend WithEvents Label9 As System.Windows.Forms.Label
 End Class
