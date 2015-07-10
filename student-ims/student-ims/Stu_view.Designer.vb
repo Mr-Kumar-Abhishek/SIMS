@@ -48,14 +48,14 @@ Partial Class Stu_view
         Me.TextBox7 = New System.Windows.Forms.TextBox()
         Me.Label11 = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.crc = New System.Windows.Forms.TextBox()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.SuspendLayout()
         '
         'GroupBox1
         '
-        Me.GroupBox1.Controls.Add(Me.TextBox1)
+        Me.GroupBox1.Controls.Add(Me.crc)
         Me.GroupBox1.Controls.Add(Me.ComboBox2)
         Me.GroupBox1.Controls.Add(Me.ComboBox1)
         Me.GroupBox1.Controls.Add(Me.TextBox6)
@@ -83,7 +83,6 @@ Partial Class Stu_view
         '
         'ComboBox2
         '
-        Me.ComboBox2.Enabled = False
         Me.ComboBox2.FormattingEnabled = True
         Me.ComboBox2.Location = New System.Drawing.Point(158, 29)
         Me.ComboBox2.Name = "ComboBox2"
@@ -330,13 +329,12 @@ Partial Class Stu_view
         Me.Label10.TabIndex = 22
         Me.Label10.Text = "Course Code"
         '
-        'TextBox1
+        'crc
         '
-        Me.TextBox1.Enabled = False
-        Me.TextBox1.Location = New System.Drawing.Point(709, 241)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(270, 28)
-        Me.TextBox1.TabIndex = 21
+        Me.crc.Location = New System.Drawing.Point(709, 241)
+        Me.crc.Name = "crc"
+        Me.crc.Size = New System.Drawing.Size(270, 28)
+        Me.crc.TabIndex = 21
         '
         'Stu_view
         '
@@ -381,5 +379,5 @@ Partial Class Stu_view
     Friend WithEvents TextBox7 As System.Windows.Forms.TextBox
     Friend WithEvents Label11 As System.Windows.Forms.Label
     Friend WithEvents Label10 As System.Windows.Forms.Label
-    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
+    Friend WithEvents crc As System.Windows.Forms.TextBox
 End Class
