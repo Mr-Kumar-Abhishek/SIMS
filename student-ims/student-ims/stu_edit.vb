@@ -52,12 +52,12 @@ Public Class stu_edit
         While (dr.Read)
             qual.Text =  dr.GetValue(0)
         End While
-        cm = New OleDbCommand("select startdate from student where user = '" + stcode.Text + "'", cn)
+        cm = New OleDbCommand("select Startdate from student where user = '" + stcode.Text + "'", cn)
         dr = cm.ExecuteReader
         While (dr.Read)
             stdate.Text = dr.GetValue(0)
         End While
-        cm = New OleDbCommand("select enddate from student where user = '" + stcode.Text + "'", cn)
+        cm = New OleDbCommand("select Enddate from student where user = '" + stcode.Text + "'", cn)
         dr = cm.ExecuteReader
         While (dr.Read)
             endate.Text = dr.GetValue(0)
@@ -89,10 +89,27 @@ Public Class stu_edit
         cn = c.getcon()
         concheck()
         cm = New OleDbCommand("select user from student", cn)
-        dr = cm.ExecuteReader
-        While (dr.Read)
-            stcode.Items.Add(dr.GetValue(0))
-        End While
+        Try
+            dr = cm.ExecuteReader
+            While (dr.Read)
+                stcode.Items.Add(dr.GetValue(0))
+            End While
+        Catch ex As Exception
+        
+            MsgBox("Error occured when connecting with the database", MsgBoxStyle.Critical)
+        End Try
         cn.Close()
+    End Sub
+
+    Private Sub Button4_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button4.Click
+        concheck()
+        cm = New OleDbCommand("update student set sname = '" + stname.Text + "', gender = '" + gender.Text + "', telephone = '" + tele.Text + "', address = '" + add.Text + "', DOB = '" + dob.Text + "', qualification = '" + qual.Text + "', coursecode = '" + crc.Text + "', Startdate = '" + stdate.Text + "', Enddate = '" + endate.Text + "', coursefees = '" + crf.Text + "' where user = '" + stcode.Text + "'", cn)
+        Try
+            cm.ExecuteNonQuery()
+            MsgBox("Student data has been updated.")
+        Catch ex As Exception
+            MsgBox("Error occured when connecting with the database ", MsgBoxStyle.Critical)
+        End Try
+
     End Sub
 End Class
