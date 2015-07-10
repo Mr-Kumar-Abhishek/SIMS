@@ -79,6 +79,7 @@ Public Class stu_edit
                 End If
             Next
         End While
+        cn.Close()
     End Sub
 
     Private Sub stu_edit_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
