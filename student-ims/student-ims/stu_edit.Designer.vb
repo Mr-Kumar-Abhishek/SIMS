@@ -23,8 +23,8 @@ Partial Class stu_edit
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.crc = New System.Windows.Forms.TextBox()
         Me.stcode = New System.Windows.Forms.ComboBox()
-        Me.Button2 = New System.Windows.Forms.Button()
         Me.gender = New System.Windows.Forms.ComboBox()
         Me.qual = New System.Windows.Forms.TextBox()
         Me.dob = New System.Windows.Forms.TextBox()
@@ -44,6 +44,7 @@ Partial Class stu_edit
         Me.Label12 = New System.Windows.Forms.Label()
         Me.Label13 = New System.Windows.Forms.Label()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.modbox = New System.Windows.Forms.CheckedListBox()
         Me.Label14 = New System.Windows.Forms.Label()
         Me.Button5 = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
@@ -51,8 +52,6 @@ Partial Class stu_edit
         Me.crf = New System.Windows.Forms.TextBox()
         Me.stdate = New System.Windows.Forms.TextBox()
         Me.crcd = New System.Windows.Forms.TextBox()
-        Me.crc = New System.Windows.Forms.TextBox()
-        Me.modbox = New System.Windows.Forms.CheckedListBox()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.SuspendLayout()
@@ -61,7 +60,6 @@ Partial Class stu_edit
         '
         Me.GroupBox1.Controls.Add(Me.crc)
         Me.GroupBox1.Controls.Add(Me.stcode)
-        Me.GroupBox1.Controls.Add(Me.Button2)
         Me.GroupBox1.Controls.Add(Me.gender)
         Me.GroupBox1.Controls.Add(Me.qual)
         Me.GroupBox1.Controls.Add(Me.dob)
@@ -85,6 +83,13 @@ Partial Class stu_edit
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Basic Details"
         '
+        'crc
+        '
+        Me.crc.Location = New System.Drawing.Point(158, 218)
+        Me.crc.Name = "crc"
+        Me.crc.Size = New System.Drawing.Size(270, 28)
+        Me.crc.TabIndex = 22
+        '
         'stcode
         '
         Me.stcode.FormattingEnabled = True
@@ -92,15 +97,6 @@ Partial Class stu_edit
         Me.stcode.Name = "stcode"
         Me.stcode.Size = New System.Drawing.Size(270, 28)
         Me.stcode.TabIndex = 21
-        '
-        'Button2
-        '
-        Me.Button2.Location = New System.Drawing.Point(757, 234)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(134, 23)
-        Me.Button2.TabIndex = 17
-        Me.Button2.Text = "Delete Course"
-        Me.Button2.UseVisualStyleBackColor = True
         '
         'gender
         '
@@ -299,6 +295,14 @@ Partial Class stu_edit
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Course Details"
         '
+        'modbox
+        '
+        Me.modbox.FormattingEnabled = True
+        Me.modbox.Location = New System.Drawing.Point(845, 61)
+        Me.modbox.Name = "modbox"
+        Me.modbox.Size = New System.Drawing.Size(120, 119)
+        Me.modbox.TabIndex = 22
+        '
         'Label14
         '
         Me.Label14.AutoSize = True
@@ -356,21 +360,6 @@ Partial Class stu_edit
         Me.crcd.Size = New System.Drawing.Size(228, 28)
         Me.crcd.TabIndex = 15
         '
-        'crc
-        '
-        Me.crc.Location = New System.Drawing.Point(158, 218)
-        Me.crc.Name = "crc"
-        Me.crc.Size = New System.Drawing.Size(270, 28)
-        Me.crc.TabIndex = 22
-        '
-        'modbox
-        '
-        Me.modbox.FormattingEnabled = True
-        Me.modbox.Location = New System.Drawing.Point(845, 61)
-        Me.modbox.Name = "modbox"
-        Me.modbox.Size = New System.Drawing.Size(120, 119)
-        Me.modbox.TabIndex = 22
-        '
         'stu_edit
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
@@ -405,7 +394,6 @@ Partial Class stu_edit
     Friend WithEvents tele As System.Windows.Forms.TextBox
     Friend WithEvents stname As System.Windows.Forms.TextBox
     Friend WithEvents add As System.Windows.Forms.TextBox
-    Friend WithEvents Button2 As System.Windows.Forms.Button
     Friend WithEvents Label10 As System.Windows.Forms.Label
     Friend WithEvents Label11 As System.Windows.Forms.Label
     Friend WithEvents Label12 As System.Windows.Forms.Label
