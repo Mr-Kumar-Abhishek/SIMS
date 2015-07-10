@@ -33,12 +33,25 @@ Public Class Stu_view
         End If
     End Sub
 
+    Private Sub repopulate()
+        concheck()
+        cm = New OleDbCommand("select user from student", cn)
+        Try
+            dr = cm.ExecuteReader
+            While (dr.Read)
+                stcode.Items.Add(dr.GetValue(0))
+            End While
+        Catch ex As Exception
+            errbox()
+        End Try
+        cn.Close()
+    End Sub
+
     Private Sub CheckedListBox1_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles modbox.SelectedIndexChanged
 
     End Sub
 
     Private Sub Stu_view_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-        cn = c.getcon
-        cn.Close()
+        repopulate()
     End Sub
 End Class
