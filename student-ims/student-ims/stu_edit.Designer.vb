@@ -85,7 +85,7 @@ Partial Class stu_edit
         '
         'crc
         '
-        Me.crc.Location = New System.Drawing.Point(158, 218)
+        Me.crc.Location = New System.Drawing.Point(711, 236)
         Me.crc.Name = "crc"
         Me.crc.Size = New System.Drawing.Size(270, 28)
         Me.crc.TabIndex = 22
@@ -139,14 +139,14 @@ Partial Class stu_edit
         Me.add.Location = New System.Drawing.Point(158, 129)
         Me.add.Multiline = True
         Me.add.Name = "add"
-        Me.add.Size = New System.Drawing.Size(270, 65)
+        Me.add.Size = New System.Drawing.Size(270, 135)
         Me.add.TabIndex = 9
         '
         'Label8
         '
         Me.Label8.AutoSize = True
         Me.Label8.Font = New System.Drawing.Font("Segoe Script", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(17, 219)
+        Me.Label8.Location = New System.Drawing.Point(560, 236)
         Me.Label8.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label8.Name = "Label8"
         Me.Label8.Size = New System.Drawing.Size(53, 20)
