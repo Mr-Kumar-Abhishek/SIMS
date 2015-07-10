@@ -44,6 +44,7 @@ Partial Class MDI
         Me.HelpToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AboutToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.LicenseToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -170,7 +171,7 @@ Partial Class MDI
         '
         'HelpToolStripMenuItem
         '
-        Me.HelpToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AboutToolStripMenuItem})
+        Me.HelpToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AboutToolStripMenuItem, Me.LicenseToolStripMenuItem})
         Me.HelpToolStripMenuItem.Name = "HelpToolStripMenuItem"
         Me.HelpToolStripMenuItem.Size = New System.Drawing.Size(44, 20)
         Me.HelpToolStripMenuItem.Text = "Help"
@@ -178,7 +179,7 @@ Partial Class MDI
         'AboutToolStripMenuItem
         '
         Me.AboutToolStripMenuItem.Name = "AboutToolStripMenuItem"
-        Me.AboutToolStripMenuItem.Size = New System.Drawing.Size(107, 22)
+        Me.AboutToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
         Me.AboutToolStripMenuItem.Text = "&About"
         '
         'ExitToolStripMenuItem
@@ -186,6 +187,12 @@ Partial Class MDI
         Me.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem"
         Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(37, 20)
         Me.ExitToolStripMenuItem.Text = "Exit"
+        '
+        'LicenseToolStripMenuItem
+        '
+        Me.LicenseToolStripMenuItem.Name = "LicenseToolStripMenuItem"
+        Me.LicenseToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.LicenseToolStripMenuItem.Text = "License"
         '
         'MDI
         '
@@ -226,4 +233,5 @@ Partial Class MDI
     Friend WithEvents PaymentsToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents MarksToolStripMenuItem1 As System.Windows.Forms.ToolStripMenuItem
     Friend WithEvents CertificatesToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents LicenseToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
 End Class
