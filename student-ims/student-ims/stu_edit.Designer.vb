@@ -47,11 +47,12 @@ Partial Class stu_edit
         Me.modbox = New System.Windows.Forms.CheckedListBox()
         Me.Label14 = New System.Windows.Forms.Label()
         Me.Button5 = New System.Windows.Forms.Button()
-        Me.Button4 = New System.Windows.Forms.Button()
+        Me.save = New System.Windows.Forms.Button()
         Me.endate = New System.Windows.Forms.TextBox()
         Me.crf = New System.Windows.Forms.TextBox()
         Me.stdate = New System.Windows.Forms.TextBox()
         Me.crcd = New System.Windows.Forms.TextBox()
+        Me.deletion = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.SuspendLayout()
@@ -276,10 +277,11 @@ Partial Class stu_edit
         '
         'GroupBox2
         '
+        Me.GroupBox2.Controls.Add(Me.deletion)
         Me.GroupBox2.Controls.Add(Me.modbox)
         Me.GroupBox2.Controls.Add(Me.Label14)
         Me.GroupBox2.Controls.Add(Me.Button5)
-        Me.GroupBox2.Controls.Add(Me.Button4)
+        Me.GroupBox2.Controls.Add(Me.save)
         Me.GroupBox2.Controls.Add(Me.endate)
         Me.GroupBox2.Controls.Add(Me.crf)
         Me.GroupBox2.Controls.Add(Me.stdate)
@@ -316,21 +318,21 @@ Partial Class stu_edit
         '
         'Button5
         '
-        Me.Button5.Location = New System.Drawing.Point(479, 196)
+        Me.Button5.Location = New System.Drawing.Point(564, 196)
         Me.Button5.Name = "Button5"
         Me.Button5.Size = New System.Drawing.Size(134, 23)
         Me.Button5.TabIndex = 20
         Me.Button5.Text = "Cancle"
         Me.Button5.UseVisualStyleBackColor = True
         '
-        'Button4
+        'save
         '
-        Me.Button4.Location = New System.Drawing.Point(294, 196)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(134, 23)
-        Me.Button4.TabIndex = 19
-        Me.Button4.Text = "Okay"
-        Me.Button4.UseVisualStyleBackColor = True
+        Me.save.Location = New System.Drawing.Point(220, 196)
+        Me.save.Name = "save"
+        Me.save.Size = New System.Drawing.Size(134, 23)
+        Me.save.TabIndex = 19
+        Me.save.Text = "update"
+        Me.save.UseVisualStyleBackColor = True
         '
         'endate
         '
@@ -360,6 +362,15 @@ Partial Class stu_edit
         Me.crcd.Size = New System.Drawing.Size(228, 28)
         Me.crcd.TabIndex = 15
         '
+        'deletion
+        '
+        Me.deletion.Location = New System.Drawing.Point(392, 196)
+        Me.deletion.Name = "deletion"
+        Me.deletion.Size = New System.Drawing.Size(134, 23)
+        Me.deletion.TabIndex = 23
+        Me.deletion.Text = "delete"
+        Me.deletion.UseVisualStyleBackColor = True
+        '
         'stu_edit
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
@@ -371,7 +382,8 @@ Partial Class stu_edit
         Me.Font = New System.Drawing.Font("Segoe Script", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Name = "stu_edit"
-        Me.Text = "Edit Student Details"
+        Me.Text = "Edit  or delete student Details"
+        Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         Me.GroupBox2.ResumeLayout(False)
@@ -405,8 +417,9 @@ Partial Class stu_edit
     Friend WithEvents crcd As System.Windows.Forms.TextBox
     Friend WithEvents Label14 As System.Windows.Forms.Label
     Friend WithEvents Button5 As System.Windows.Forms.Button
-    Friend WithEvents Button4 As System.Windows.Forms.Button
+    Friend WithEvents save As System.Windows.Forms.Button
     Friend WithEvents stcode As System.Windows.Forms.ComboBox
     Friend WithEvents crc As System.Windows.Forms.TextBox
     Friend WithEvents modbox As System.Windows.Forms.CheckedListBox
+    Friend WithEvents deletion As System.Windows.Forms.Button
 End Class

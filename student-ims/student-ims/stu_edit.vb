@@ -8,6 +8,37 @@ Public Class stu_edit
     Dim da As OleDbDataAdapter
     Dim ds As DataSet
 
+    Private Sub clearing()
+        stcode.Items.Clear()
+        stname.Text = ""
+        gender.Text = ""
+        qual.Text = ""
+        add.Text = ""
+        dob.Text = ""
+        tele.Text = ""
+        crc.Text = ""
+        stdate.Text = ""
+        endate.Text = ""
+        crcd.Text = ""
+        crf.Text = ""
+    End Sub
+
+    Private Sub repopulate()
+        concheck()
+        cm = New OleDbCommand("select user from student", cn)
+        Try
+            dr = cm.ExecuteReader
+            While (dr.Read)
+                stcode.Items.Add(dr.GetValue(0))
+            End While
+        Catch ex As Exception
+            errbox()
+        End Try
+        cn.Close()
+    End Sub
+    Private Sub errbox()
+        MsgBox("Error occured when connecting with the database", MsgBoxStyle.Critical)
+    End Sub
     Private Sub concheck()
         If Not cn.State = ConnectionState.Open Then
             cn.Open()
@@ -87,29 +118,32 @@ Public Class stu_edit
 
     Private Sub stu_edit_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         cn = c.getcon()
-        concheck()
-        cm = New OleDbCommand("select user from student", cn)
-        Try
-            dr = cm.ExecuteReader
-            While (dr.Read)
-                stcode.Items.Add(dr.GetValue(0))
-            End While
-        Catch ex As Exception
-        
-            MsgBox("Error occured when connecting with the database", MsgBoxStyle.Critical)
-        End Try
-        cn.Close()
+        clearing()
+        repopulate()
     End Sub
 
-    Private Sub Button4_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button4.Click
+    Private Sub Button4_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles save.Click
         concheck()
         cm = New OleDbCommand("update student set sname = '" + stname.Text + "', gender = '" + gender.Text + "', telephone = '" + tele.Text + "', address = '" + add.Text + "', DOB = '" + dob.Text + "', qualification = '" + qual.Text + "', coursecode = '" + crc.Text + "', Startdate = '" + stdate.Text + "', Enddate = '" + endate.Text + "', coursefees = '" + crf.Text + "' where user = '" + stcode.Text + "'", cn)
         Try
             cm.ExecuteNonQuery()
             MsgBox("Student data has been updated.")
         Catch ex As Exception
-            MsgBox("Error occured when connecting with the database ", MsgBoxStyle.Critical)
+            errbox()
         End Try
 
+    End Sub
+
+    Private Sub deletion_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles deletion.Click
+        concheck()
+        cm = New OleDbCommand("delete from student where user = '" + stcode.Text + "'", cn)
+        Try
+            cm.ExecuteNonQuery()
+        Catch ex As Exception
+            errbox()
+        End Try
+        cn.Close()
+        clearing()
+        repopulate()
     End Sub
 End Class
