@@ -196,7 +196,7 @@ Partial Class MDI
         Me.IsMdiContainer = True
         Me.MainMenuStrip = Me.MenuStrip1
         Me.Name = "MDI"
-        Me.Text = "MDI"
+        Me.Text = "Student Information Management System"
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.MenuStrip1.ResumeLayout(False)
         Me.MenuStrip1.PerformLayout()
