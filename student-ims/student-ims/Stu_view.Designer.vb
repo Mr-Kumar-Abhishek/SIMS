@@ -45,7 +45,6 @@ Partial Class Stu_view
         Me.modbox = New System.Windows.Forms.CheckedListBox()
         Me.Label14 = New System.Windows.Forms.Label()
         Me.cancel = New System.Windows.Forms.Button()
-        Me.okay = New System.Windows.Forms.Button()
         Me.endate = New System.Windows.Forms.TextBox()
         Me.crf = New System.Windows.Forms.TextBox()
         Me.stdate = New System.Windows.Forms.TextBox()
@@ -245,7 +244,6 @@ Partial Class Stu_view
         Me.GroupBox2.Controls.Add(Me.modbox)
         Me.GroupBox2.Controls.Add(Me.Label14)
         Me.GroupBox2.Controls.Add(Me.cancel)
-        Me.GroupBox2.Controls.Add(Me.okay)
         Me.GroupBox2.Controls.Add(Me.endate)
         Me.GroupBox2.Controls.Add(Me.crf)
         Me.GroupBox2.Controls.Add(Me.stdate)
@@ -304,21 +302,12 @@ Partial Class Stu_view
         '
         'cancel
         '
-        Me.cancel.Location = New System.Drawing.Point(476, 224)
+        Me.cancel.Location = New System.Drawing.Point(362, 229)
         Me.cancel.Name = "cancel"
         Me.cancel.Size = New System.Drawing.Size(134, 23)
         Me.cancel.TabIndex = 29
-        Me.cancel.Text = "Cancel"
+        Me.cancel.Text = "okay"
         Me.cancel.UseVisualStyleBackColor = True
-        '
-        'okay
-        '
-        Me.okay.Location = New System.Drawing.Point(291, 224)
-        Me.okay.Name = "okay"
-        Me.okay.Size = New System.Drawing.Size(134, 23)
-        Me.okay.TabIndex = 28
-        Me.okay.Text = "Okay"
-        Me.okay.UseVisualStyleBackColor = True
         '
         'endate
         '
@@ -411,7 +400,6 @@ Partial Class Stu_view
     Friend WithEvents GroupBox2 As System.Windows.Forms.GroupBox
     Friend WithEvents Label14 As System.Windows.Forms.Label
     Friend WithEvents cancel As System.Windows.Forms.Button
-    Friend WithEvents okay As System.Windows.Forms.Button
     Friend WithEvents endate As System.Windows.Forms.TextBox
     Friend WithEvents crf As System.Windows.Forms.TextBox
     Friend WithEvents stdate As System.Windows.Forms.TextBox

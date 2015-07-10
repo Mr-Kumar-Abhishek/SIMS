@@ -48,11 +48,6 @@ Public Class Stu_view
     End Sub
 
 
-    Private Sub Stu_view_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-        cn = c.getcon()
-        repopulate()
-    End Sub
-
     Private Sub stcode_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles stcode.SelectedIndexChanged
         modbox.Items.Clear()
         concheck()
@@ -97,14 +92,4 @@ Public Class Stu_view
         repopulate()
     End Sub
 
-    Private Sub Button4_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles save.Click
-        concheck()
-        cm = New OleDbCommand("update student set sname = '" + stname.Text + "', gender = '" + gender.Text + "', telephone = '" + tele.Text + "', address = '" + add.Text + "', DOB = '" + dob.Text + "', qualification = '" + qual.Text + "', coursecode = '" + crc.Text + "', Startdate = '" + stdate.Text + "', Enddate = '" + endate.Text + "', coursefees = '" + crf.Text + "' where user = '" + stcode.Text + "'", cn)
-        Try
-            cm.ExecuteNonQuery()
-            MsgBox("Student data has been updated.")
-        Catch ex As Exception
-            errbox()
-        End Try
-    End Sub
 End Class
