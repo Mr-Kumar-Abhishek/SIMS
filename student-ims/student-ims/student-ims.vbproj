@@ -161,12 +161,6 @@
     <Compile Include="MDI.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="modulo.Designer.vb">
-      <DependentUpon>modulo.vb</DependentUpon>
-    </Compile>
-    <Compile Include="modulo.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -249,9 +243,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MDI.resx">
       <DependentUpon>MDI.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="modulo.resx">
-      <DependentUpon>modulo.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
