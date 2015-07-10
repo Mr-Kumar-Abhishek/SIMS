@@ -23,6 +23,10 @@ Public Class Stu_view
         crf.Text = ""
     End Sub
 
+    Private Sub errbox()
+        MsgBox("Error occured when connecting with the database", MsgBoxStyle.Critical)
+    End Sub
+
     Private Sub CheckedListBox1_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles modbox.SelectedIndexChanged
 
     End Sub
