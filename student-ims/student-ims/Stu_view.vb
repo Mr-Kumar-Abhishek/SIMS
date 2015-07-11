@@ -23,10 +23,6 @@ Public Class Stu_view
         crf.Text = ""
     End Sub
 
-    Private Sub errbox()
-        MsgBox("Error occured when connecting with the database", MsgBoxStyle.Critical)
-    End Sub
-
     Private Sub concheck()
         If Not cn.State = ConnectionState.Open Then
             cn.Open()
@@ -42,7 +38,7 @@ Public Class Stu_view
                 stcode.Items.Add(dr.GetValue(0))
             End While
         Catch ex As Exception
-            errbox()
+            c.errboxy()
         End Try
         cn.Close()
     End Sub

@@ -32,12 +32,9 @@ Public Class stu_edit
                 stcode.Items.Add(dr.GetValue(0))
             End While
         Catch ex As Exception
-            errbox()
+            c.errboxy()
         End Try
         cn.Close()
-    End Sub
-    Private Sub errbox()
-        MsgBox("Error occured when connecting with the database", MsgBoxStyle.Critical)
     End Sub
     Private Sub concheck()
         If Not cn.State = ConnectionState.Open Then
@@ -95,7 +92,7 @@ Public Class stu_edit
             cm.ExecuteNonQuery()
             MsgBox("Student data has been updated.")
         Catch ex As Exception
-            errbox()
+            c.errboxy()
         End Try
 
         For Each itemchecked In modbox.CheckedItems
@@ -111,11 +108,11 @@ Public Class stu_edit
                     Try
                         cm.ExecuteNonQuery()
                     Catch ex As Exception
-                        errbox()
+                        c.errboxy()
                     End Try
                 End If
             Catch ex As Exception
-                errbox()
+                c.errboxy()
             End Try
         Next
     End Sub
@@ -126,7 +123,7 @@ Public Class stu_edit
         Try
             cm.ExecuteNonQuery()
         Catch ex As Exception
-            errbox()
+            c.errboxy()
         End Try
         cn.Close()
         clearing()
