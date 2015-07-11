@@ -118,7 +118,6 @@ Public Class stu_edit
                 errbox()
             End Try
         Next
-
     End Sub
 
     Private Sub deletion_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles deletion.Click

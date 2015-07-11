@@ -107,7 +107,7 @@ Public Class Addmission_Form
         While (dr.Read)
             crn.Text = dr.GetValue(0)
         End While
-        cm = New OleDbCommand("select totalfees from course where coursename = '" + coursedp.SelectedItem + "'", cn)
+        cm = New OleDbCommand("select totalfees from course where coursecode = '" + coursedp.SelectedItem + "'", cn)
         dr = cm.ExecuteReader
         While (dr.Read)
             crf.Text = dr.GetValue(0)

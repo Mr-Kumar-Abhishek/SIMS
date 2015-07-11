@@ -62,13 +62,14 @@ Partial Class Addmission_Form
         '
         'MonthCalendar1
         '
-        Me.MonthCalendar1.Location = New System.Drawing.Point(512, 198)
+        Me.MonthCalendar1.Location = New System.Drawing.Point(463, -73)
         Me.MonthCalendar1.Name = "MonthCalendar1"
         Me.MonthCalendar1.TabIndex = 12
         Me.MonthCalendar1.Visible = False
         '
         'GroupBox1
         '
+        Me.GroupBox1.Controls.Add(Me.MonthCalendar1)
         Me.GroupBox1.Controls.Add(Me.MonthCalendar3)
         Me.GroupBox1.Controls.Add(Me.modbox)
         Me.GroupBox1.Controls.Add(Me.cancel)
@@ -94,7 +95,7 @@ Partial Class Addmission_Form
         '
         'MonthCalendar3
         '
-        Me.MonthCalendar3.Location = New System.Drawing.Point(366, 154)
+        Me.MonthCalendar3.Location = New System.Drawing.Point(355, 154)
         Me.MonthCalendar3.Name = "MonthCalendar3"
         Me.MonthCalendar3.TabIndex = 13
         Me.MonthCalendar3.Visible = False
@@ -118,7 +119,7 @@ Partial Class Addmission_Form
         '
         'MonthCalendar2
         '
-        Me.MonthCalendar2.Location = New System.Drawing.Point(83, 157)
+        Me.MonthCalendar2.Location = New System.Drawing.Point(88, 163)
         Me.MonthCalendar2.Name = "MonthCalendar2"
         Me.MonthCalendar2.TabIndex = 12
         Me.MonthCalendar2.Visible = False
@@ -354,7 +355,6 @@ Partial Class Addmission_Form
         '
         'Panel1
         '
-        Me.Panel1.Controls.Add(Me.MonthCalendar1)
         Me.Panel1.Controls.Add(Me.coursedp)
         Me.Panel1.Controls.Add(Me.Label4)
         Me.Panel1.Controls.Add(Me.Button1)
@@ -389,7 +389,7 @@ Partial Class Addmission_Form
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(783, 750)
+        Me.ClientSize = New System.Drawing.Size(783, 742)
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.GroupBox1)
         Me.Name = "Addmission_Form"
