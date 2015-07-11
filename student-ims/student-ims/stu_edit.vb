@@ -94,9 +94,9 @@ Public Class stu_edit
         Catch ex As Exception
             c.errboxy()
         End Try
-
+        'addition statement
         For Each itemchecked In modbox.CheckedItems
-            cm = New OleDbCommand("select moduleid from stmod where user = '" + crc.Text + "' and moduleid = '" + itemchecked + "'", cn)
+            cm = New OleDbCommand("select moduleid from stmod where user = '" + stcode.Text + "' and moduleid = '" + itemchecked + "'", cn)
             Try
                 dr = cm.ExecuteReader
                 If (dr.HasRows) Then
@@ -104,7 +104,7 @@ Public Class stu_edit
                     'intended to left blank
                 Else
                     dr.Close()
-                    cm = New OleDbCommand("insert into stmod value('" + itemchecked + "', '" + stcode.Text + "')", cn)
+                    cm = New OleDbCommand("insert into stmod values('" + itemchecked + "', '" + stcode.Text + "')", cn)
                     Try
                         cm.ExecuteNonQuery()
                     Catch ex As Exception
@@ -114,6 +114,27 @@ Public Class stu_edit
             Catch ex As Exception
                 c.errboxy()
             End Try
+        Next
+        For i As Integer = 0 To modbox.Items.Count - 1
+            modbox.SelectedIndex = i
+            If modbox.GetItemCheckState(i) = False Then
+
+                cm = New OleDbCommand("select * from stmod where moduleid = '" + modbox.SelectedItem + "' and user = '" + stcode.Text + "'", cn)
+                Try
+                    dr = cm.ExecuteReader
+                    If dr.HasRows Then
+                        dr.Close()
+                        cm = New OleDbCommand("delete from stmod where moduleid = '" + modbox.SelectedItem + "' and user = '" + stcode.Text + "'", cn)
+                        Try
+                            cm.ExecuteNonQuery()
+                        Catch ex As Exception
+                            c.errboxy()
+                        End Try
+                    End If
+                Catch ex As Exception
+                    c.errboxy()
+                End Try
+            End If
         Next
     End Sub
 
