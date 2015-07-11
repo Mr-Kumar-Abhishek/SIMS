@@ -62,7 +62,7 @@ Partial Class Addmission_Form
         '
         'MonthCalendar1
         '
-        Me.MonthCalendar1.Location = New System.Drawing.Point(479, -84)
+        Me.MonthCalendar1.Location = New System.Drawing.Point(102, 125)
         Me.MonthCalendar1.Name = "MonthCalendar1"
         Me.MonthCalendar1.TabIndex = 12
         Me.MonthCalendar1.Visible = False
@@ -94,7 +94,7 @@ Partial Class Addmission_Form
         '
         'MonthCalendar3
         '
-        Me.MonthCalendar3.Location = New System.Drawing.Point(355, 145)
+        Me.MonthCalendar3.Location = New System.Drawing.Point(367, 125)
         Me.MonthCalendar3.Name = "MonthCalendar3"
         Me.MonthCalendar3.TabIndex = 13
         Me.MonthCalendar3.Visible = False
@@ -118,7 +118,7 @@ Partial Class Addmission_Form
         '
         'MonthCalendar2
         '
-        Me.MonthCalendar2.Location = New System.Drawing.Point(275, 326)
+        Me.MonthCalendar2.Location = New System.Drawing.Point(487, 169)
         Me.MonthCalendar2.Name = "MonthCalendar2"
         Me.MonthCalendar2.TabIndex = 12
         Me.MonthCalendar2.Visible = False
@@ -240,7 +240,7 @@ Partial Class Addmission_Form
         '
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Segoe Script", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(414, 118)
+        Me.Label6.Location = New System.Drawing.Point(410, 137)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(109, 20)
         Me.Label6.TabIndex = 10
@@ -256,7 +256,7 @@ Partial Class Addmission_Form
         '
         'dob
         '
-        Me.dob.Location = New System.Drawing.Point(527, 118)
+        Me.dob.Location = New System.Drawing.Point(527, 137)
         Me.dob.Name = "dob"
         Me.dob.Size = New System.Drawing.Size(136, 20)
         Me.dob.TabIndex = 11

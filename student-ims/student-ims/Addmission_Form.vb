@@ -125,7 +125,6 @@ Public Class Addmission_Form
         Catch ex As Exception
             c.errboxy()
         End Try
-        
         cm = New OleDbCommand("select moduleid from modulo where coursecode = '" + coursedp.SelectedItem + "'", cn)
         Try
             dr = cm.ExecuteReader
