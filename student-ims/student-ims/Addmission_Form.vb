@@ -63,12 +63,23 @@ Public Class Addmission_Form
             cn.Open()
         End If
         cm = New OleDbCommand("insert into student values('" + stdcode.Text + "', '" + stdname.Text + "', '" + gender.Text + "', '" + tele.Text + "', '" + add.Text + "', '" + dob.Text + "' , '" + qual.Text + "', '" + crn.Text + "', '" + stdate.Text + "', '" + endate.Text + "', 'comming soon', '" + crf.Text + "')", cn)
-        cm.ExecuteNonQuery()
+        Try
+            cm.ExecuteNonQuery()
+        Catch ex As Exception
+            c.errboxy()
+        End Try
+
         Dim itemchecked As Object
         For Each itemchecked In modbox.CheckedItems
             cm = New OleDbCommand("insert into stmod values('" + itemchecked.ToString + "', '" + stdcode.Text + "')", cn)
-            cm.ExecuteNonQuery()
+            Try
+                cm.ExecuteNonQuery()
+            Catch ex As Exception
+                c.errboxy()
+            End Try
+
         Next
+
         cn.Close()
         MsgBox("Data has been added succesfully")
         cleaning()
@@ -126,7 +137,6 @@ Public Class Addmission_Form
         Catch ex As Exception
             c.errboxy()
         End Try
-
         cn.Close()
     End Sub
 
