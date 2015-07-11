@@ -90,10 +90,14 @@ Public Class Addmission_Form
             cn.Open()
         End If
         cm = New OleDbCommand("select coursecode from course", cn)
-        dr = cm.ExecuteReader
-        While (dr.Read)
-            coursedp.Items.Add(dr.GetValue(0))
-        End While
+        Try
+            dr = cm.ExecuteReader
+            While (dr.Read)
+                coursedp.Items.Add(dr.GetValue(0))
+            End While
+        Catch ex As Exception
+            c.errboxy()
+        End Try
         cn.Close()
     End Sub
 
@@ -102,16 +106,17 @@ Public Class Addmission_Form
         If Not cn.State = ConnectionState.Open Then
             cn.Open()
         End If
-        cm = New OleDbCommand("select coursename from course where coursecode = '" + coursedp.SelectedItem + "'", cn)
-        dr = cm.ExecuteReader
-        While (dr.Read)
-            crn.Text = dr.GetValue(0)
-        End While
-        cm = New OleDbCommand("select totalfees from course where coursecode = '" + coursedp.SelectedItem + "'", cn)
-        dr = cm.ExecuteReader
-        While (dr.Read)
-            crf.Text = dr.GetValue(0)
-        End While
+        cm = New OleDbCommand("select coursename,totalfees from course where coursecode = '" + coursedp.SelectedItem + "'", cn)
+        Try
+            dr = cm.ExecuteReader
+            While (dr.Read)
+                crn.Text = dr.GetValue(0)
+                crf.Text = dr.GetValue(1)
+            End While
+        Catch ex As Exception
+            c.errboxy()
+        End Try
+        
         cm = New OleDbCommand("select moduleid from modulo where coursecode = '" + coursedp.SelectedItem + "'", cn)
         dr = cm.ExecuteReader
         While (dr.Read)

@@ -6,4 +6,7 @@ Public Class conn
         cn.Open()
         Return cn
     End Function
+    Public Sub errboxy()
+        MsgBox("Error occured when connecting with the database", MsgBoxStyle.Critical)
+    End Sub
 End Class
