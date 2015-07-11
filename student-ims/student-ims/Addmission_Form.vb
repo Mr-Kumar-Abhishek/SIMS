@@ -118,10 +118,15 @@ Public Class Addmission_Form
         End Try
         
         cm = New OleDbCommand("select moduleid from modulo where coursecode = '" + coursedp.SelectedItem + "'", cn)
-        dr = cm.ExecuteReader
-        While (dr.Read)
-            modbox.Items.Add(dr.GetValue(0))
-        End While
+        Try
+            dr = cm.ExecuteReader
+            While (dr.Read)
+                modbox.Items.Add(dr.GetValue(0))
+            End While
+        Catch ex As Exception
+            c.errboxy()
+        End Try
+
         cn.Close()
     End Sub
 

@@ -46,7 +46,6 @@ Public Class Marks_Details
         Dim ds As DataSet
         ds = New DataSet
         da.Fill(ds, "marks")
-
         Me.DataGridView1.DataSource = ds.Tables("marks")
         'DataGridView1.DataSource = list
         cn.Close()
