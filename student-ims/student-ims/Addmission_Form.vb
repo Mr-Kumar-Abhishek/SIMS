@@ -62,7 +62,7 @@ Public Class Addmission_Form
         If Not cn.State = ConnectionState.Open Then
             cn.Open()
         End If
-        cm = New OleDbCommand("insert into student values('" + stdcode.Text + "', '" + stdname.Text + "', '" + gender.Text + "', '" + tele.Text + "', '" + add.Text + "', '" + dob.Text + "' , '" + qual.Text + "', '" + crn.Text + "', '" + stdate.Text + "', '" + endate.Text + "', 'comming soon', '" + crf.Text + "')", cn)
+        cm = New OleDbCommand("insert into student values('" + stdcode.Text + "', '" + stdname.Text + "', '" + gender.Text + "', '" + tele.Text + "', '" + add.Text + "', '" + dob.Text + "' , '" + qual.Text + "', '" + coursedp.Text + "', '" + stdate.Text + "', '" + endate.Text + "', 'comming soon', '" + crf.Text + "')", cn)
         Try
             cm.ExecuteNonQuery()
         Catch ex As Exception
@@ -71,15 +71,13 @@ Public Class Addmission_Form
 
         Dim itemchecked As Object
         For Each itemchecked In modbox.CheckedItems
-            cm = New OleDbCommand("insert into stmod values('" + itemchecked.ToString + "', '" + stdcode.Text + "')", cn)
+            cm = New OleDbCommand("INSERT INTO stmod VALUES ('" + itemchecked.ToString + "', '" + stdcode.Text + "',0)", cn)
             Try
                 cm.ExecuteNonQuery()
             Catch ex As Exception
                 c.errboxy()
             End Try
-
         Next
-
         cn.Close()
         MsgBox("Data has been added succesfully")
         cleaning()
@@ -143,4 +141,5 @@ Public Class Addmission_Form
     Private Sub cancel_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cancel.Click
         Me.Close()
     End Sub
+
 End Class

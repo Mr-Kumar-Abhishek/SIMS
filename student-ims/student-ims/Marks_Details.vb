@@ -40,13 +40,13 @@ Public Class Marks_Details
             crc.Text = dr.GetValue(0)
         End While
         dr.Close()
-        cm = New OleDbCommand("select moduleid,marks from marks where user = '" + stcode.Text + "'", cn)
+        cm = New OleDbCommand("select moduleid,marks from stmod where user = '" + stcode.Text + "'", cn)
         Dim da As New OleDbDataAdapter(cm)
         ' Dim list As New DataTable
         Dim ds As DataSet
         ds = New DataSet
-        da.Fill(ds, "marks")
-        Me.DataGridView1.DataSource = ds.Tables("marks")
+        da.Fill(ds, "stmod")
+        Me.DataGridView1.DataSource = ds.Tables("stmod")
         'DataGridView1.DataSource = list
         cn.Close()
     End Sub
