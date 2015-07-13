@@ -71,13 +71,18 @@ Public Class Stu_view
         cm = New OleDbCommand("select moduleid from stmod where user = '" + stcode.Text + "'", cn)
         dr = cm.ExecuteReader
         While (dr.Read)
-            Dim modtaken As String = dr.GetValue(0)
-            For i As Integer = 0 To modbox.Items.Count - 1
-                modbox.SelectedIndex = i
-                If modbox.SelectedItem = dr.GetValue(0) Then
-                    modbox.SetItemChecked(i, True)
-                End If
-            Next
+            Try
+                Dim modtaken As String = dr.GetValue(0)
+                For i As Integer = 0 To modbox.Items.Count - 1
+                    modbox.SelectedIndex = i
+                    If modbox.SelectedItem = dr.GetValue(0) Then
+                        modbox.SetItemChecked(i, True)
+                    End If
+                Next
+            Catch ex As Exception
+                MsgBox("This student is not selected in any modules", MsgBoxStyle.Exclamation, "Important")
+            End Try
+            
         End While
         cn.Close()
     End Sub
