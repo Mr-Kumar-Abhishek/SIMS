@@ -27,7 +27,6 @@ Partial Class Addmission_Form
         Me.MonthCalendar3 = New System.Windows.Forms.MonthCalendar()
         Me.modbox = New System.Windows.Forms.CheckedListBox()
         Me.cancel = New System.Windows.Forms.Button()
-        Me.MonthCalendar2 = New System.Windows.Forms.MonthCalendar()
         Me.ok = New System.Windows.Forms.Button()
         Me.Label13 = New System.Windows.Forms.Label()
         Me.endate = New System.Windows.Forms.TextBox()
@@ -38,6 +37,7 @@ Partial Class Addmission_Form
         Me.Label10 = New System.Windows.Forms.Label()
         Me.crn = New System.Windows.Forms.TextBox()
         Me.Label9 = New System.Windows.Forms.Label()
+        Me.MonthCalendar2 = New System.Windows.Forms.MonthCalendar()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.gender = New System.Windows.Forms.ComboBox()
         Me.tele = New System.Windows.Forms.TextBox()
@@ -62,15 +62,15 @@ Partial Class Addmission_Form
         '
         'MonthCalendar1
         '
-        Me.MonthCalendar1.Location = New System.Drawing.Point(102, 125)
+        Me.MonthCalendar1.Location = New System.Drawing.Point(491, 152)
         Me.MonthCalendar1.Name = "MonthCalendar1"
         Me.MonthCalendar1.TabIndex = 12
         Me.MonthCalendar1.Visible = False
         '
         'GroupBox1
         '
-        Me.GroupBox1.Controls.Add(Me.MonthCalendar1)
         Me.GroupBox1.Controls.Add(Me.MonthCalendar3)
+        Me.GroupBox1.Controls.Add(Me.MonthCalendar2)
         Me.GroupBox1.Controls.Add(Me.modbox)
         Me.GroupBox1.Controls.Add(Me.cancel)
         Me.GroupBox1.Controls.Add(Me.ok)
@@ -94,7 +94,7 @@ Partial Class Addmission_Form
         '
         'MonthCalendar3
         '
-        Me.MonthCalendar3.Location = New System.Drawing.Point(367, 125)
+        Me.MonthCalendar3.Location = New System.Drawing.Point(341, 87)
         Me.MonthCalendar3.Name = "MonthCalendar3"
         Me.MonthCalendar3.TabIndex = 13
         Me.MonthCalendar3.Visible = False
@@ -115,13 +115,6 @@ Partial Class Addmission_Form
         Me.cancel.TabIndex = 11
         Me.cancel.Text = "Cancel"
         Me.cancel.UseVisualStyleBackColor = True
-        '
-        'MonthCalendar2
-        '
-        Me.MonthCalendar2.Location = New System.Drawing.Point(487, 169)
-        Me.MonthCalendar2.Name = "MonthCalendar2"
-        Me.MonthCalendar2.TabIndex = 12
-        Me.MonthCalendar2.Visible = False
         '
         'ok
         '
@@ -209,6 +202,13 @@ Partial Class Addmission_Form
         Me.Label9.Size = New System.Drawing.Size(109, 20)
         Me.Label9.TabIndex = 0
         Me.Label9.Text = "Course Name :"
+        '
+        'MonthCalendar2
+        '
+        Me.MonthCalendar2.Location = New System.Drawing.Point(56, 87)
+        Me.MonthCalendar2.Name = "MonthCalendar2"
+        Me.MonthCalendar2.TabIndex = 12
+        Me.MonthCalendar2.Visible = False
         '
         'Label5
         '
@@ -354,9 +354,9 @@ Partial Class Addmission_Form
         '
         'Panel1
         '
+        Me.Panel1.Controls.Add(Me.MonthCalendar1)
         Me.Panel1.Controls.Add(Me.coursedp)
         Me.Panel1.Controls.Add(Me.Label4)
-        Me.Panel1.Controls.Add(Me.MonthCalendar2)
         Me.Panel1.Controls.Add(Me.Button1)
         Me.Panel1.Controls.Add(Me.Label1)
         Me.Panel1.Controls.Add(Me.qual)

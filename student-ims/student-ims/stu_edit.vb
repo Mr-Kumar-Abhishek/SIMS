@@ -158,4 +158,42 @@ Public Class stu_edit
     Private Sub Button5_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button5.Click
         Me.Hide()
     End Sub
+
+    Private Sub dob_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles dob.Click
+        MonthCalendar1.Show()
+    End Sub
+
+    Private Sub MonthCalendar1_DateChanged(ByVal sender As Object, ByVal e As System.Windows.Forms.DateRangeEventArgs) Handles MonthCalendar1.DateChanged
+        dob.Text = MonthCalendar1.SelectionStart.Date
+    End Sub
+
+    Private Sub MonthCalendar1_MouseLeave(ByVal sender As Object, ByVal e As System.EventArgs) Handles MonthCalendar1.MouseLeave
+        MonthCalendar1.Hide()
+    End Sub
+
+    Private Sub stdate_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles stdate.Click
+        MonthCalendar2.Show()
+    End Sub
+
+    Private Sub MonthCalendar2_DateChanged(ByVal sender As Object, ByVal e As System.Windows.Forms.DateRangeEventArgs) Handles MonthCalendar2.DateChanged
+        stdate.Text = MonthCalendar2.SelectionStart.Date
+    End Sub
+
+
+    Private Sub MonthCalendar2_MouseLeave(ByVal sender As Object, ByVal e As System.EventArgs) Handles MonthCalendar2.MouseLeave
+        MonthCalendar2.Hide()
+    End Sub
+
+    Private Sub endate_Click(ByVal sender As Object, ByVal e As System.EventArgs) Handles endate.Click
+        MonthCalendar3.Show()
+    End Sub
+
+
+    Private Sub MonthCalendar3_DateChanged(ByVal sender As System.Object, ByVal e As System.Windows.Forms.DateRangeEventArgs) Handles MonthCalendar3.DateChanged
+        endate.Text = MonthCalendar3.SelectionStart.Date
+    End Sub
+
+    Private Sub MonthCalendar3_MouseLeave(ByVal sender As Object, ByVal e As System.EventArgs) Handles MonthCalendar3.MouseLeave
+        MonthCalendar3.Hide()
+    End Sub
 End Class

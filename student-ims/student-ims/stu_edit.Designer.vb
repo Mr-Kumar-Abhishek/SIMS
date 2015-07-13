@@ -23,6 +23,7 @@ Partial Class stu_edit
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.MonthCalendar1 = New System.Windows.Forms.MonthCalendar()
         Me.crc = New System.Windows.Forms.TextBox()
         Me.stcode = New System.Windows.Forms.ComboBox()
         Me.gender = New System.Windows.Forms.ComboBox()
@@ -44,6 +45,9 @@ Partial Class stu_edit
         Me.Label12 = New System.Windows.Forms.Label()
         Me.Label13 = New System.Windows.Forms.Label()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.MonthCalendar3 = New System.Windows.Forms.MonthCalendar()
+        Me.MonthCalendar2 = New System.Windows.Forms.MonthCalendar()
+        Me.deletion = New System.Windows.Forms.Button()
         Me.modbox = New System.Windows.Forms.CheckedListBox()
         Me.Label14 = New System.Windows.Forms.Label()
         Me.Button5 = New System.Windows.Forms.Button()
@@ -52,13 +56,13 @@ Partial Class stu_edit
         Me.crf = New System.Windows.Forms.TextBox()
         Me.stdate = New System.Windows.Forms.TextBox()
         Me.crcd = New System.Windows.Forms.TextBox()
-        Me.deletion = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.SuspendLayout()
         '
         'GroupBox1
         '
+        Me.GroupBox1.Controls.Add(Me.MonthCalendar1)
         Me.GroupBox1.Controls.Add(Me.crc)
         Me.GroupBox1.Controls.Add(Me.stcode)
         Me.GroupBox1.Controls.Add(Me.gender)
@@ -83,6 +87,13 @@ Partial Class stu_edit
         Me.GroupBox1.TabIndex = 0
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Basic Details"
+        '
+        'MonthCalendar1
+        '
+        Me.MonthCalendar1.Location = New System.Drawing.Point(725, 151)
+        Me.MonthCalendar1.Name = "MonthCalendar1"
+        Me.MonthCalendar1.TabIndex = 23
+        Me.MonthCalendar1.Visible = False
         '
         'crc
         '
@@ -277,6 +288,8 @@ Partial Class stu_edit
         '
         'GroupBox2
         '
+        Me.GroupBox2.Controls.Add(Me.MonthCalendar3)
+        Me.GroupBox2.Controls.Add(Me.MonthCalendar2)
         Me.GroupBox2.Controls.Add(Me.deletion)
         Me.GroupBox2.Controls.Add(Me.modbox)
         Me.GroupBox2.Controls.Add(Me.Label14)
@@ -296,6 +309,29 @@ Partial Class stu_edit
         Me.GroupBox2.TabIndex = 1
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Course Details"
+        '
+        'MonthCalendar3
+        '
+        Me.MonthCalendar3.Location = New System.Drawing.Point(586, 76)
+        Me.MonthCalendar3.Name = "MonthCalendar3"
+        Me.MonthCalendar3.TabIndex = 25
+        Me.MonthCalendar3.Visible = False
+        '
+        'MonthCalendar2
+        '
+        Me.MonthCalendar2.Location = New System.Drawing.Point(189, 76)
+        Me.MonthCalendar2.Name = "MonthCalendar2"
+        Me.MonthCalendar2.TabIndex = 24
+        Me.MonthCalendar2.Visible = False
+        '
+        'deletion
+        '
+        Me.deletion.Location = New System.Drawing.Point(392, 196)
+        Me.deletion.Name = "deletion"
+        Me.deletion.Size = New System.Drawing.Size(134, 23)
+        Me.deletion.TabIndex = 23
+        Me.deletion.Text = "delete"
+        Me.deletion.UseVisualStyleBackColor = True
         '
         'modbox
         '
@@ -362,15 +398,6 @@ Partial Class stu_edit
         Me.crcd.Size = New System.Drawing.Size(228, 28)
         Me.crcd.TabIndex = 15
         '
-        'deletion
-        '
-        Me.deletion.Location = New System.Drawing.Point(392, 196)
-        Me.deletion.Name = "deletion"
-        Me.deletion.Size = New System.Drawing.Size(134, 23)
-        Me.deletion.TabIndex = 23
-        Me.deletion.Text = "delete"
-        Me.deletion.UseVisualStyleBackColor = True
-        '
         'stu_edit
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(9.0!, 20.0!)
@@ -422,4 +449,7 @@ Partial Class stu_edit
     Friend WithEvents crc As System.Windows.Forms.TextBox
     Friend WithEvents modbox As System.Windows.Forms.CheckedListBox
     Friend WithEvents deletion As System.Windows.Forms.Button
+    Friend WithEvents MonthCalendar1 As System.Windows.Forms.MonthCalendar
+    Friend WithEvents MonthCalendar2 As System.Windows.Forms.MonthCalendar
+    Friend WithEvents MonthCalendar3 As System.Windows.Forms.MonthCalendar
 End Class
