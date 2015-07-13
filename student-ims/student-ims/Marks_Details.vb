@@ -22,8 +22,7 @@ Public Class Marks_Details
         cn.Close()
     End Sub
 
-
-    Private Sub stcode_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles stcode.SelectedIndexChanged
+    Private Sub refreshgrid()
         If Not cn.State = ConnectionState.Open Then
             cn.Open()
         End If
@@ -51,6 +50,10 @@ Public Class Marks_Details
         cn.Close()
     End Sub
 
+    Private Sub stcode_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles stcode.SelectedIndexChanged
+        refreshgrid()
+    End Sub
+
     Private Sub stcode_TextChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles stcode.TextChanged
         If Not cn.State = ConnectionState.Open Then
             cn.Open()
@@ -73,5 +76,9 @@ Public Class Marks_Details
 
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
         Me.Close()
+    End Sub
+
+    Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
+
     End Sub
 End Class
