@@ -31,7 +31,7 @@ Partial Class Marks_Details
         Me.stname = New System.Windows.Forms.TextBox()
         Me.stcode = New System.Windows.Forms.ComboBox()
         Me.editing = New System.Windows.Forms.Button()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.marks = New System.Windows.Forms.TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.save = New System.Windows.Forms.Button()
         Me.Label5 = New System.Windows.Forms.Label()
@@ -122,12 +122,12 @@ Partial Class Marks_Details
         Me.editing.Text = "edit this !"
         Me.editing.UseVisualStyleBackColor = True
         '
-        'TextBox1
+        'marks
         '
-        Me.TextBox1.Location = New System.Drawing.Point(154, 269)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(97, 20)
-        Me.TextBox1.TabIndex = 10
+        Me.marks.Location = New System.Drawing.Point(154, 269)
+        Me.marks.Name = "marks"
+        Me.marks.Size = New System.Drawing.Size(97, 20)
+        Me.marks.TabIndex = 10
         '
         'Label4
         '
@@ -176,7 +176,7 @@ Partial Class Marks_Details
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.save)
         Me.Controls.Add(Me.Label4)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.marks)
         Me.Controls.Add(Me.editing)
         Me.Controls.Add(Me.stcode)
         Me.Controls.Add(Me.DataGridView1)
@@ -202,7 +202,7 @@ Partial Class Marks_Details
     Friend WithEvents stname As System.Windows.Forms.TextBox
     Friend WithEvents stcode As System.Windows.Forms.ComboBox
     Friend WithEvents editing As System.Windows.Forms.Button
-    Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
+    Friend WithEvents marks As System.Windows.Forms.TextBox
     Friend WithEvents Label4 As System.Windows.Forms.Label
     Friend WithEvents save As System.Windows.Forms.Button
     Friend WithEvents Label5 As System.Windows.Forms.Label

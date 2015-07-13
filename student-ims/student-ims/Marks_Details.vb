@@ -71,8 +71,13 @@ Public Class Marks_Details
 
     Private Sub editing_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles editing.Click
         If (DataGridView1.SelectedRows.Count >= 0) Then
-            TextBox1.Text = DataGridView1.SelectedRows(0).Cells(1).Value
-            TextBox2.Text = DataGridView1.SelectedRows(0).Cells(0).Value
+            Try
+                marks.Text = DataGridView1.SelectedRows(0).Cells(1).Value
+                TextBox2.Text = DataGridView1.SelectedRows(0).Cells(0).Value
+            Catch ex As Exception
+                MsgBox("select cell properly.", MsgBoxStyle.Exclamation, "Info")
+            End Try
+
         End If
     End Sub
 
@@ -81,6 +86,14 @@ Public Class Marks_Details
     End Sub
 
     Private Sub save_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles save.Click
-
+        concheck()
+        cm = New OleDbCommand("update stmod set marks = '" + marks.Text + "' where user = '" + stcode.Text + "'", cn)
+        Try
+            cm.ExecuteNonQuery()
+        Catch ex As Exception
+            c.errboxy()
+        End Try
+        cn.Close()
+        refreshgrid()
     End Sub
 End Class
