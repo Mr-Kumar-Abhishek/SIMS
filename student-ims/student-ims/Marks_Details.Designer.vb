@@ -33,7 +33,7 @@ Partial Class Marks_Details
         Me.editing = New System.Windows.Forms.Button()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.Button2 = New System.Windows.Forms.Button()
+        Me.save = New System.Windows.Forms.Button()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -139,15 +139,15 @@ Partial Class Marks_Details
         Me.Label4.TabIndex = 11
         Me.Label4.Text = "Selected marks"
         '
-        'Button2
+        'save
         '
-        Me.Button2.Font = New System.Drawing.Font("Segoe Script", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.Location = New System.Drawing.Point(269, 267)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(121, 24)
-        Me.Button2.TabIndex = 12
-        Me.Button2.Text = "Save"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.save.Font = New System.Drawing.Font("Segoe Script", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.save.Location = New System.Drawing.Point(269, 267)
+        Me.save.Name = "save"
+        Me.save.Size = New System.Drawing.Size(121, 24)
+        Me.save.TabIndex = 12
+        Me.save.Text = "Save"
+        Me.save.UseVisualStyleBackColor = True
         '
         'Label5
         '
@@ -174,7 +174,7 @@ Partial Class Marks_Details
         Me.ClientSize = New System.Drawing.Size(652, 343)
         Me.Controls.Add(Me.TextBox2)
         Me.Controls.Add(Me.Label5)
-        Me.Controls.Add(Me.Button2)
+        Me.Controls.Add(Me.save)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.editing)
@@ -204,7 +204,7 @@ Partial Class Marks_Details
     Friend WithEvents editing As System.Windows.Forms.Button
     Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
     Friend WithEvents Label4 As System.Windows.Forms.Label
-    Friend WithEvents Button2 As System.Windows.Forms.Button
+    Friend WithEvents save As System.Windows.Forms.Button
     Friend WithEvents Label5 As System.Windows.Forms.Label
     Friend WithEvents TextBox2 As System.Windows.Forms.TextBox
 End Class

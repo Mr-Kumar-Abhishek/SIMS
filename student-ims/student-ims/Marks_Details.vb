@@ -8,6 +8,12 @@ Public Class Marks_Details
     Dim list As DataTable
     Dim da As OleDbDataAdapter
 
+
+    Private Sub concheck()
+        If Not cn.State = ConnectionState.Open Then
+            cn.Open()
+        End If
+    End Sub
     Private Sub Marks_Details_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         cn = c.getcon()
         If Not cn.State = ConnectionState.Open Then
@@ -23,9 +29,7 @@ Public Class Marks_Details
     End Sub
 
     Private Sub refreshgrid()
-        If Not cn.State = ConnectionState.Open Then
-            cn.Open()
-        End If
+        concheck()
         cm = New OleDbCommand("select sname from student where user='" + stcode.Text + "'", cn)
         dr = cm.ExecuteReader
         stname.Text = ""
@@ -55,9 +59,7 @@ Public Class Marks_Details
     End Sub
 
     Private Sub stcode_TextChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles stcode.TextChanged
-        If Not cn.State = ConnectionState.Open Then
-            cn.Open()
-        End If
+        concheck()
         cm = New OleDbCommand("select sname from student where user='" + stcode.Text + "'", cn)
         dr = cm.ExecuteReader
         stname.Text = ""
@@ -78,7 +80,7 @@ Public Class Marks_Details
         Me.Close()
     End Sub
 
-    Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
+    Private Sub save_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles save.Click
 
     End Sub
 End Class
