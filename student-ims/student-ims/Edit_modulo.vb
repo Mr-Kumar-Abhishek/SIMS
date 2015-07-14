@@ -7,6 +7,10 @@ Public Class Edit_modulo
     Dim c As New conn
     Dim cnt As Integer
 
+    Private Sub clearing()
+        modname.Text = ""
+        moddesc.Text = ""
+    End Sub
 
     Private Sub repopulate()
         If Not cn.State = ConnectionState.Open Then
@@ -36,6 +40,7 @@ Public Class Edit_modulo
             AvailMod.Items.Add(dr.GetValue(0))
         End While
         cn.Close()
+        clearing()
     End Sub
 
     Private Sub AvailMod_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles AvailMod.SelectedIndexChanged
@@ -67,14 +72,6 @@ Public Class Edit_modulo
 
     Private Sub Button3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button3.Click
         Me.Hide()
-    End Sub
-
-    Private Sub crc_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles crc.SelectedIndexChanged
-
-    End Sub
-
-    Private Sub modname_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles modname.TextChanged
-
     End Sub
 End Class
 

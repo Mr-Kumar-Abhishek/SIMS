@@ -21,6 +21,10 @@ Public Class view_mod
         cn = c.getcon()
         repopulate()
     End Sub
+    Private Sub clearing()
+        modname.Text = ""
+        moddesc.Text = ""
+    End Sub
 
 
 
@@ -35,6 +39,7 @@ Public Class view_mod
             AvailMod.Items.Add(dr.GetValue(0))
         End While
         cn.Close()
+        clearing()
     End Sub
 
     Private Sub Button3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button3.Click
