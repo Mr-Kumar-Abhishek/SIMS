@@ -41,6 +41,15 @@ Partial Class Payment_Details
         Me.Button2 = New System.Windows.Forms.Button()
         Me.stcode = New System.Windows.Forms.ComboBox()
         Me.Button3 = New System.Windows.Forms.Button()
+        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.Button4 = New System.Windows.Forms.Button()
+        Me.Label11 = New System.Windows.Forms.Label()
+        Me.amount = New System.Windows.Forms.TextBox()
+        Me.paydate = New System.Windows.Forms.TextBox()
+        Me.Label10 = New System.Windows.Forms.Label()
+        Me.Label9 = New System.Windows.Forms.Label()
+        Me.cashmemo = New System.Windows.Forms.TextBox()
+        Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
         'Label1
@@ -175,7 +184,7 @@ Partial Class Payment_Details
         'Button1
         '
         Me.Button1.Font = New System.Drawing.Font("Segoe Script", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(250, 331)
+        Me.Button1.Location = New System.Drawing.Point(277, 478)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(101, 32)
         Me.Button1.TabIndex = 16
@@ -185,7 +194,7 @@ Partial Class Payment_Details
         'Button2
         '
         Me.Button2.Font = New System.Drawing.Font("Segoe Script", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.Location = New System.Drawing.Point(381, 331)
+        Me.Button2.Location = New System.Drawing.Point(404, 478)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(101, 32)
         Me.Button2.TabIndex = 17
@@ -202,18 +211,98 @@ Partial Class Payment_Details
         '
         'Button3
         '
-        Me.Button3.Location = New System.Drawing.Point(649, 290)
+        Me.Button3.Font = New System.Drawing.Font("Segoe Script", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button3.Location = New System.Drawing.Point(457, 290)
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(86, 23)
+        Me.Button3.Size = New System.Drawing.Size(302, 28)
         Me.Button3.TabIndex = 19
         Me.Button3.Text = "Add Amount"
         Me.Button3.UseVisualStyleBackColor = True
+        '
+        'GroupBox1
+        '
+        Me.GroupBox1.Controls.Add(Me.Button4)
+        Me.GroupBox1.Controls.Add(Me.Label11)
+        Me.GroupBox1.Controls.Add(Me.amount)
+        Me.GroupBox1.Controls.Add(Me.paydate)
+        Me.GroupBox1.Controls.Add(Me.Label10)
+        Me.GroupBox1.Controls.Add(Me.Label9)
+        Me.GroupBox1.Controls.Add(Me.cashmemo)
+        Me.GroupBox1.Font = New System.Drawing.Font("Segoe Script", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.GroupBox1.Location = New System.Drawing.Point(31, 345)
+        Me.GroupBox1.Name = "GroupBox1"
+        Me.GroupBox1.Size = New System.Drawing.Size(728, 115)
+        Me.GroupBox1.TabIndex = 20
+        Me.GroupBox1.TabStop = False
+        Me.GroupBox1.Text = "Make Payment"
+        '
+        'Button4
+        '
+        Me.Button4.Font = New System.Drawing.Font("Segoe Script", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button4.Location = New System.Drawing.Point(436, 77)
+        Me.Button4.Name = "Button4"
+        Me.Button4.Size = New System.Drawing.Size(268, 26)
+        Me.Button4.TabIndex = 21
+        Me.Button4.Text = "Pay"
+        Me.Button4.UseVisualStyleBackColor = True
+        '
+        'Label11
+        '
+        Me.Label11.AutoSize = True
+        Me.Label11.Font = New System.Drawing.Font("Segoe Script", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label11.Location = New System.Drawing.Point(432, 36)
+        Me.Label11.Name = "Label11"
+        Me.Label11.Size = New System.Drawing.Size(112, 20)
+        Me.Label11.TabIndex = 20
+        Me.Label11.Text = "Enter Amount"
+        '
+        'amount
+        '
+        Me.amount.Location = New System.Drawing.Point(568, 36)
+        Me.amount.Name = "amount"
+        Me.amount.Size = New System.Drawing.Size(136, 28)
+        Me.amount.TabIndex = 19
+        '
+        'paydate
+        '
+        Me.paydate.Location = New System.Drawing.Point(184, 77)
+        Me.paydate.Name = "paydate"
+        Me.paydate.Size = New System.Drawing.Size(136, 28)
+        Me.paydate.TabIndex = 18
+        '
+        'Label10
+        '
+        Me.Label10.AutoSize = True
+        Me.Label10.Font = New System.Drawing.Font("Segoe Script", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label10.Location = New System.Drawing.Point(16, 77)
+        Me.Label10.Name = "Label10"
+        Me.Label10.Size = New System.Drawing.Size(136, 20)
+        Me.Label10.TabIndex = 17
+        Me.Label10.Text = "Date of Payment :"
+        '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.Font = New System.Drawing.Font("Segoe Script", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label9.Location = New System.Drawing.Point(16, 36)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(122, 20)
+        Me.Label9.TabIndex = 16
+        Me.Label9.Text = "Cash Memo No. :"
+        '
+        'cashmemo
+        '
+        Me.cashmemo.Location = New System.Drawing.Point(184, 36)
+        Me.cashmemo.Name = "cashmemo"
+        Me.cashmemo.Size = New System.Drawing.Size(136, 28)
+        Me.cashmemo.TabIndex = 15
         '
         'Payment_Details
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(789, 395)
+        Me.ClientSize = New System.Drawing.Size(789, 530)
+        Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.stcode)
         Me.Controls.Add(Me.Button2)
@@ -233,9 +322,12 @@ Partial Class Payment_Details
         Me.Controls.Add(Me.crc)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
         Me.Name = "Payment_Details"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Payment_Details"
+        Me.GroupBox1.ResumeLayout(False)
+        Me.GroupBox1.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -259,4 +351,12 @@ Partial Class Payment_Details
     Friend WithEvents Button2 As System.Windows.Forms.Button
     Friend WithEvents stcode As System.Windows.Forms.ComboBox
     Friend WithEvents Button3 As System.Windows.Forms.Button
+    Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
+    Friend WithEvents amount As System.Windows.Forms.TextBox
+    Friend WithEvents paydate As System.Windows.Forms.TextBox
+    Friend WithEvents Label10 As System.Windows.Forms.Label
+    Friend WithEvents Label9 As System.Windows.Forms.Label
+    Friend WithEvents cashmemo As System.Windows.Forms.TextBox
+    Friend WithEvents Button4 As System.Windows.Forms.Button
+    Friend WithEvents Label11 As System.Windows.Forms.Label
 End Class

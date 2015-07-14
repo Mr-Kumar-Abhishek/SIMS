@@ -17,6 +17,8 @@ Public Class Payment_Details
         amtrmn.Text = ""
     End Sub
     Private Sub Payment_Details_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+        GroupBox1.Hide()
+        Me.Height = 380
         Me.BackColor = Color.Beige
         clearing()
         cn = c.getcon()
@@ -31,7 +33,7 @@ Public Class Payment_Details
         cn.Close()
     End Sub
 
-    Private Sub stcode_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles stcode.SelectedIndexChanged
+    Private Sub reloadpay()
         If Not cn.State = ConnectionState.Open Then
             cn.Open()
         End If
@@ -87,11 +89,42 @@ Public Class Payment_Details
         cn.Close()
     End Sub
 
+
     Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
         Me.Hide()
     End Sub
 
     Private Sub Payment_Details_Shown(ByVal sender As Object, ByVal e As System.EventArgs) Handles Me.Shown
         clearing()
+    End Sub
+
+    Private Sub Label8_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label8.Click
+
+    End Sub
+
+    Private Sub Button3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button3.Click
+        Me.Height = 570
+        GroupBox1.Show()
+    End Sub
+
+    Private Sub Button4_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button4.Click
+        If Not cn.State = ConnectionState.Open Then
+            cn.Open()
+        End If
+        cm = New OleDbCommand("insert into stpay values('" + stcode.Text + "', '" + paydate.Text + "', '" + cashmemo.Text + "', '" + amount.Text + "')", cn)
+        Try
+            cm.ExecuteNonQuery()
+        Catch ex As Exception
+            c.errboxy()
+        End Try
+        reloadpay()
+    End Sub
+
+    Private Sub stcode_TextChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles stcode.TextChanged
+        reloadpay()
+    End Sub
+
+    Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
+        Me.Hide()
     End Sub
 End Class
