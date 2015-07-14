@@ -92,6 +92,7 @@ Partial Class login
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
         Me.Name = "login"
         Me.Text = "login"
         Me.ResumeLayout(False)
