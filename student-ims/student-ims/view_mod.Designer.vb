@@ -36,16 +36,17 @@ Partial Class view_mod
         'AvailMod
         '
         Me.AvailMod.FormattingEnabled = True
-        Me.AvailMod.Location = New System.Drawing.Point(458, 76)
+        Me.AvailMod.Location = New System.Drawing.Point(477, 76)
         Me.AvailMod.Name = "AvailMod"
-        Me.AvailMod.Size = New System.Drawing.Size(222, 56)
+        Me.AvailMod.Size = New System.Drawing.Size(231, 56)
         Me.AvailMod.TabIndex = 28
         '
         'Button3
         '
+        Me.Button3.Font = New System.Drawing.Font("Segoe Script", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button3.Location = New System.Drawing.Point(322, 261)
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(113, 21)
+        Me.Button3.Size = New System.Drawing.Size(113, 27)
         Me.Button3.TabIndex = 27
         Me.Button3.Text = "okay"
         Me.Button3.UseVisualStyleBackColor = True
@@ -53,14 +54,15 @@ Partial Class view_mod
         'crc
         '
         Me.crc.FormattingEnabled = True
-        Me.crc.Location = New System.Drawing.Point(133, 76)
+        Me.crc.Location = New System.Drawing.Point(151, 76)
         Me.crc.Name = "crc"
         Me.crc.Size = New System.Drawing.Size(192, 21)
         Me.crc.TabIndex = 25
         '
         'moddesc
         '
-        Me.moddesc.Location = New System.Drawing.Point(458, 157)
+        Me.moddesc.Enabled = False
+        Me.moddesc.Location = New System.Drawing.Point(477, 157)
         Me.moddesc.Multiline = True
         Me.moddesc.Name = "moddesc"
         Me.moddesc.Size = New System.Drawing.Size(231, 60)
@@ -68,7 +70,8 @@ Partial Class view_mod
         '
         'modname
         '
-        Me.modname.Location = New System.Drawing.Point(133, 154)
+        Me.modname.Enabled = False
+        Me.modname.Location = New System.Drawing.Point(151, 154)
         Me.modname.Name = "modname"
         Me.modname.Size = New System.Drawing.Size(192, 20)
         Me.modname.TabIndex = 23
@@ -76,36 +79,40 @@ Partial Class view_mod
         'Label3
         '
         Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Segoe Script", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.Location = New System.Drawing.Point(41, 154)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(73, 13)
+        Me.Label3.Size = New System.Drawing.Size(104, 20)
         Me.Label3.TabIndex = 22
         Me.Label3.Text = "Module Name"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Segoe Script", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.Location = New System.Drawing.Point(38, 76)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(54, 13)
+        Me.Label2.Size = New System.Drawing.Size(76, 20)
         Me.Label2.TabIndex = 21
         Me.Label2.Text = "Course ID"
         '
         'Label4
         '
         Me.Label4.AutoSize = True
+        Me.Label4.Font = New System.Drawing.Font("Segoe Script", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.Location = New System.Drawing.Point(380, 163)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(58, 26)
+        Me.Label4.Size = New System.Drawing.Size(88, 40)
         Me.Label4.TabIndex = 39
         Me.Label4.Text = "module" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "description"
         '
         'Label1
         '
         Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Segoe Script", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.Location = New System.Drawing.Point(380, 79)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(55, 13)
+        Me.Label1.Size = New System.Drawing.Size(80, 20)
         Me.Label1.TabIndex = 38
         Me.Label1.Text = "module ID"
         '
@@ -113,6 +120,7 @@ Partial Class view_mod
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.Beige
         Me.ClientSize = New System.Drawing.Size(720, 322)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label1)
