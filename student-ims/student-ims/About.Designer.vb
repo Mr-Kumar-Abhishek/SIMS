@@ -67,6 +67,7 @@ Partial Class About
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Button1)
         Me.Font = New System.Drawing.Font("Segoe Script", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
         Me.Margin = New System.Windows.Forms.Padding(4, 5, 4, 5)
         Me.Name = "About"
         Me.Text = "About"
