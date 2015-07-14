@@ -45,25 +45,28 @@ Partial Class Add_mod
         'AvailMod
         '
         Me.AvailMod.FormattingEnabled = True
-        Me.AvailMod.Location = New System.Drawing.Point(148, 127)
+        Me.AvailMod.ItemHeight = 20
+        Me.AvailMod.Location = New System.Drawing.Point(170, 130)
         Me.AvailMod.Name = "AvailMod"
-        Me.AvailMod.Size = New System.Drawing.Size(192, 160)
+        Me.AvailMod.Size = New System.Drawing.Size(192, 144)
         Me.AvailMod.TabIndex = 29
         '
         'Button3
         '
-        Me.Button3.Location = New System.Drawing.Point(681, 335)
+        Me.Button3.Font = New System.Drawing.Font("Segoe Script", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button3.Location = New System.Drawing.Point(681, 322)
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(113, 21)
+        Me.Button3.Size = New System.Drawing.Size(113, 34)
         Me.Button3.TabIndex = 28
         Me.Button3.Text = "cancel"
         Me.Button3.UseVisualStyleBackColor = True
         '
         'Addbtn
         '
-        Me.Addbtn.Location = New System.Drawing.Point(128, 266)
+        Me.Addbtn.Font = New System.Drawing.Font("Segoe Script", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Addbtn.Location = New System.Drawing.Point(128, 257)
         Me.Addbtn.Name = "Addbtn"
-        Me.Addbtn.Size = New System.Drawing.Size(113, 21)
+        Me.Addbtn.Size = New System.Drawing.Size(113, 30)
         Me.Addbtn.TabIndex = 27
         Me.Addbtn.Text = "Add"
         Me.Addbtn.UseVisualStyleBackColor = True
@@ -71,14 +74,14 @@ Partial Class Add_mod
         'crc
         '
         Me.crc.FormattingEnabled = True
-        Me.crc.Location = New System.Drawing.Point(148, 49)
+        Me.crc.Location = New System.Drawing.Point(170, 49)
         Me.crc.Name = "crc"
-        Me.crc.Size = New System.Drawing.Size(192, 21)
+        Me.crc.Size = New System.Drawing.Size(192, 28)
         Me.crc.TabIndex = 26
         '
         'moddesc
         '
-        Me.moddesc.Location = New System.Drawing.Point(128, 171)
+        Me.moddesc.Location = New System.Drawing.Point(158, 171)
         Me.moddesc.Multiline = True
         Me.moddesc.Name = "moddesc"
         Me.moddesc.Size = New System.Drawing.Size(231, 60)
@@ -87,17 +90,18 @@ Partial Class Add_mod
         'Label4
         '
         Me.Label4.AutoSize = True
+        Me.Label4.Font = New System.Drawing.Font("Segoe Script", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.Location = New System.Drawing.Point(48, 174)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(58, 26)
+        Me.Label4.Size = New System.Drawing.Size(88, 40)
         Me.Label4.TabIndex = 24
         Me.Label4.Text = "module" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "description"
         '
         'modname
         '
-        Me.modname.Location = New System.Drawing.Point(128, 106)
+        Me.modname.Location = New System.Drawing.Point(158, 106)
         Me.modname.Name = "modname"
-        Me.modname.Size = New System.Drawing.Size(231, 20)
+        Me.modname.Size = New System.Drawing.Size(231, 28)
         Me.modname.TabIndex = 23
         '
         'Label2
@@ -112,44 +116,48 @@ Partial Class Add_mod
         'Label1
         '
         Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Segoe Script", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.Location = New System.Drawing.Point(48, 32)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(55, 13)
+        Me.Label1.Size = New System.Drawing.Size(80, 20)
         Me.Label1.TabIndex = 21
         Me.Label1.Text = "module ID"
         '
         'Label3
         '
         Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Segoe Script", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.Location = New System.Drawing.Point(48, 106)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(73, 13)
+        Me.Label3.Size = New System.Drawing.Size(104, 20)
         Me.Label3.TabIndex = 31
         Me.Label3.Text = "Module Name"
         '
         'Label5
         '
         Me.Label5.AutoSize = True
+        Me.Label5.Font = New System.Drawing.Font("Segoe Script", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.Location = New System.Drawing.Point(34, 49)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(54, 13)
+        Me.Label5.Size = New System.Drawing.Size(76, 20)
         Me.Label5.TabIndex = 30
         Me.Label5.Text = "Course ID"
         '
         'Label6
         '
         Me.Label6.AutoSize = True
+        Me.Label6.Font = New System.Drawing.Font("Segoe Script", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label6.Location = New System.Drawing.Point(34, 130)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(91, 13)
+        Me.Label6.Size = New System.Drawing.Size(130, 20)
         Me.Label6.TabIndex = 32
         Me.Label6.Text = "Available Modues"
         '
         'modid
         '
-        Me.modid.Location = New System.Drawing.Point(128, 32)
+        Me.modid.Location = New System.Drawing.Point(158, 32)
         Me.modid.Name = "modid"
-        Me.modid.Size = New System.Drawing.Size(231, 20)
+        Me.modid.Size = New System.Drawing.Size(231, 28)
         Me.modid.TabIndex = 33
         '
         'GroupBox1
@@ -158,6 +166,7 @@ Partial Class Add_mod
         Me.GroupBox1.Controls.Add(Me.Label6)
         Me.GroupBox1.Controls.Add(Me.AvailMod)
         Me.GroupBox1.Controls.Add(Me.Label5)
+        Me.GroupBox1.Font = New System.Drawing.Font("Segoe Script", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox1.Location = New System.Drawing.Point(12, 12)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Size = New System.Drawing.Size(393, 304)
@@ -175,6 +184,7 @@ Partial Class Add_mod
         Me.GroupBox2.Controls.Add(Me.modname)
         Me.GroupBox2.Controls.Add(Me.Label4)
         Me.GroupBox2.Controls.Add(Me.moddesc)
+        Me.GroupBox2.Font = New System.Drawing.Font("Segoe Script", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox2.Location = New System.Drawing.Point(421, 12)
         Me.GroupBox2.Name = "GroupBox2"
         Me.GroupBox2.Size = New System.Drawing.Size(407, 304)
@@ -184,9 +194,10 @@ Partial Class Add_mod
         '
         'clrmod
         '
-        Me.clrmod.Location = New System.Drawing.Point(260, 266)
+        Me.clrmod.Font = New System.Drawing.Font("Segoe Script", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.clrmod.Location = New System.Drawing.Point(260, 257)
         Me.clrmod.Name = "clrmod"
-        Me.clrmod.Size = New System.Drawing.Size(113, 21)
+        Me.clrmod.Size = New System.Drawing.Size(113, 30)
         Me.clrmod.TabIndex = 34
         Me.clrmod.Text = "clear"
         Me.clrmod.UseVisualStyleBackColor = True
@@ -195,6 +206,7 @@ Partial Class Add_mod
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.AntiqueWhite
         Me.ClientSize = New System.Drawing.Size(844, 368)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Label2)
