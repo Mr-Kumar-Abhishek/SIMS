@@ -60,10 +60,6 @@
         view_mod.Show()
     End Sub
 
-    Private Sub DeleteToolStripMenuItem2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles DeleteToolStripMenuItem2.Click
-        delete_mod.Show()
-    End Sub
-
     Private Sub DeleteToolStripMenuItem1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)
 
     End Sub

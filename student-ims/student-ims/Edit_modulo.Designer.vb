@@ -32,6 +32,7 @@ Partial Class Edit_modulo
         Me.Button3 = New System.Windows.Forms.Button()
         Me.save = New System.Windows.Forms.Button()
         Me.AvailMod = New System.Windows.Forms.ListBox()
+        Me.deletion = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'moddesc
@@ -100,7 +101,7 @@ Partial Class Edit_modulo
         'Button3
         '
         Me.Button3.Font = New System.Drawing.Font("Segoe Script", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button3.Location = New System.Drawing.Point(359, 232)
+        Me.Button3.Location = New System.Drawing.Point(442, 232)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(113, 35)
         Me.Button3.TabIndex = 19
@@ -110,7 +111,7 @@ Partial Class Edit_modulo
         'save
         '
         Me.save.Font = New System.Drawing.Font("Segoe Script", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.save.Location = New System.Drawing.Point(224, 232)
+        Me.save.Location = New System.Drawing.Point(167, 232)
         Me.save.Name = "save"
         Me.save.Size = New System.Drawing.Size(113, 35)
         Me.save.TabIndex = 18
@@ -125,12 +126,23 @@ Partial Class Edit_modulo
         Me.AvailMod.Size = New System.Drawing.Size(222, 56)
         Me.AvailMod.TabIndex = 20
         '
+        'deletion
+        '
+        Me.deletion.Font = New System.Drawing.Font("Segoe Script", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.deletion.Location = New System.Drawing.Point(309, 232)
+        Me.deletion.Name = "deletion"
+        Me.deletion.Size = New System.Drawing.Size(113, 35)
+        Me.deletion.TabIndex = 21
+        Me.deletion.Text = "delete"
+        Me.deletion.UseVisualStyleBackColor = True
+        '
         'Edit_modulo
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.PeachPuff
         Me.ClientSize = New System.Drawing.Size(691, 289)
+        Me.Controls.Add(Me.deletion)
         Me.Controls.Add(Me.AvailMod)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.save)
@@ -157,4 +169,5 @@ Partial Class Edit_modulo
     Friend WithEvents Button3 As System.Windows.Forms.Button
     Friend WithEvents save As System.Windows.Forms.Button
     Friend WithEvents AvailMod As System.Windows.Forms.ListBox
+    Friend WithEvents deletion As System.Windows.Forms.Button
 End Class

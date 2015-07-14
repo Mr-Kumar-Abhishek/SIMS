@@ -29,7 +29,7 @@ Public Class Edit_modulo
         repopulate()
     End Sub
 
-    Private Sub crc_TextChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles crc.TextChanged
+    Private Sub Available_mods()
         AvailMod.Items.Clear()
         If Not cn.State = ConnectionState.Open Then
             cn = c.getcon()
@@ -40,6 +40,10 @@ Public Class Edit_modulo
             AvailMod.Items.Add(dr.GetValue(0))
         End While
         cn.Close()
+    End Sub
+
+    Private Sub crc_TextChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles crc.TextChanged
+        Available_mods()
         clearing()
     End Sub
 
@@ -72,6 +76,22 @@ Public Class Edit_modulo
 
     Private Sub Button3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button3.Click
         Me.Hide()
+    End Sub
+
+    Private Sub deletion_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles deletion.Click
+        If Not cn.State = ConnectionState.Open Then
+            cn = c.getcon()
+        End If
+        cm = New OleDbCommand("delete from modulo where moduleid = '" + AvailMod.SelectedItem + "'", cn)
+        cm.ExecuteNonQuery()
+        MsgBox("Module: " + AvailMod.SelectedItem + " has been deleted.")
+        cn.Close()
+        Available_mods()
+        clearing()
+    End Sub
+
+    Private Sub crc_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles crc.SelectedIndexChanged
+
     End Sub
 End Class
 
