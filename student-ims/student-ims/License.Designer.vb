@@ -53,6 +53,7 @@ Partial Class License
         Me.ClientSize = New System.Drawing.Size(509, 379)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.TextBox1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
         Me.Name = "License"
         Me.Text = "License"
         Me.ResumeLayout(False)
