@@ -54,7 +54,7 @@ Partial Class Edit_modulo
         '
         'modname
         '
-        Me.modname.Location = New System.Drawing.Point(123, 118)
+        Me.modname.Location = New System.Drawing.Point(135, 118)
         Me.modname.Name = "modname"
         Me.modname.Size = New System.Drawing.Size(192, 20)
         Me.modname.TabIndex = 13
@@ -92,7 +92,7 @@ Partial Class Edit_modulo
         'crc
         '
         Me.crc.FormattingEnabled = True
-        Me.crc.Location = New System.Drawing.Point(123, 40)
+        Me.crc.Location = New System.Drawing.Point(135, 40)
         Me.crc.Name = "crc"
         Me.crc.Size = New System.Drawing.Size(192, 21)
         Me.crc.TabIndex = 16
