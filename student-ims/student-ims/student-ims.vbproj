@@ -99,6 +99,12 @@
     <Compile Include="Addmission_Form.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Addmission_Form2.Designer.vb">
+      <DependentUpon>Addmission_Form2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Addmission_Form2.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Add_mod.Designer.vb">
       <DependentUpon>Add_mod.vb</DependentUpon>
     </Compile>
@@ -225,6 +231,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Addmission_Form.resx">
       <DependentUpon>Addmission_Form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Addmission_Form2.resx">
+      <DependentUpon>Addmission_Form2.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Add_mod.resx">
       <DependentUpon>Add_mod.vb</DependentUpon>

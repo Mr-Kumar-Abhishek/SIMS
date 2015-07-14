@@ -25,6 +25,7 @@ Partial Class Addmission_Form
         Me.MonthCalendar1 = New System.Windows.Forms.MonthCalendar()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.MonthCalendar3 = New System.Windows.Forms.MonthCalendar()
+        Me.MonthCalendar2 = New System.Windows.Forms.MonthCalendar()
         Me.modbox = New System.Windows.Forms.CheckedListBox()
         Me.cancel = New System.Windows.Forms.Button()
         Me.ok = New System.Windows.Forms.Button()
@@ -37,7 +38,6 @@ Partial Class Addmission_Form
         Me.Label10 = New System.Windows.Forms.Label()
         Me.crn = New System.Windows.Forms.TextBox()
         Me.Label9 = New System.Windows.Forms.Label()
-        Me.MonthCalendar2 = New System.Windows.Forms.MonthCalendar()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.gender = New System.Windows.Forms.ComboBox()
         Me.tele = New System.Windows.Forms.TextBox()
@@ -84,9 +84,9 @@ Partial Class Addmission_Form
         Me.GroupBox1.Controls.Add(Me.crn)
         Me.GroupBox1.Controls.Add(Me.Label9)
         Me.GroupBox1.Font = New System.Drawing.Font("Segoe Script", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.GroupBox1.Location = New System.Drawing.Point(13, 399)
+        Me.GroupBox1.Location = New System.Drawing.Point(16, 399)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(758, 345)
+        Me.GroupBox1.Size = New System.Drawing.Size(758, 284)
         Me.GroupBox1.TabIndex = 19
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Course Details"
@@ -98,6 +98,13 @@ Partial Class Addmission_Form
         Me.MonthCalendar3.Name = "MonthCalendar3"
         Me.MonthCalendar3.TabIndex = 13
         Me.MonthCalendar3.Visible = False
+        '
+        'MonthCalendar2
+        '
+        Me.MonthCalendar2.Location = New System.Drawing.Point(56, 87)
+        Me.MonthCalendar2.Name = "MonthCalendar2"
+        Me.MonthCalendar2.TabIndex = 12
+        Me.MonthCalendar2.Visible = False
         '
         'modbox
         '
@@ -202,13 +209,6 @@ Partial Class Addmission_Form
         Me.Label9.Size = New System.Drawing.Size(109, 20)
         Me.Label9.TabIndex = 0
         Me.Label9.Text = "Course Name :"
-        '
-        'MonthCalendar2
-        '
-        Me.MonthCalendar2.Location = New System.Drawing.Point(56, 87)
-        Me.MonthCalendar2.Name = "MonthCalendar2"
-        Me.MonthCalendar2.TabIndex = 12
-        Me.MonthCalendar2.Visible = False
         '
         'Label5
         '
@@ -390,8 +390,8 @@ Partial Class Addmission_Form
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(783, 742)
-        Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.GroupBox1)
+        Me.Controls.Add(Me.Panel1)
         Me.Name = "Addmission_Form"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Addmission_Form"

@@ -21,4 +21,8 @@ Public Class login
             MsgBox("please check your username or password", vbOK, "error")
         End If
     End Sub
+
+    Private Sub login_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+        unamebox.Select()
+    End Sub
 End Class

@@ -85,7 +85,7 @@ Public Class Addmission_Form
 
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
         GroupBox1.Show()
-        Me.Width = 785
+        ' Me.Width = 785
         Me.Height = 750
     End Sub
 
@@ -141,4 +141,7 @@ Public Class Addmission_Form
         Me.Close()
     End Sub
 
+    Private Sub Panel1_Paint(ByVal sender As System.Object, ByVal e As System.Windows.Forms.PaintEventArgs) Handles Panel1.Paint
+
+    End Sub
 End Class

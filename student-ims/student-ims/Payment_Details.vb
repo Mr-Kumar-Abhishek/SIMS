@@ -118,6 +118,8 @@ Public Class Payment_Details
             c.errboxy()
         End Try
         reloadpay()
+        cn.Close()
+
     End Sub
 
     Private Sub stcode_TextChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles stcode.TextChanged
