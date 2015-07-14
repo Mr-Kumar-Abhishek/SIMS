@@ -45,15 +45,16 @@ Partial Class Edit_modulo
         'Label4
         '
         Me.Label4.AutoSize = True
+        Me.Label4.Font = New System.Drawing.Font("Segoe Script", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.Location = New System.Drawing.Point(356, 124)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(58, 26)
+        Me.Label4.Size = New System.Drawing.Size(88, 40)
         Me.Label4.TabIndex = 14
         Me.Label4.Text = "module" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "description"
         '
         'modname
         '
-        Me.modname.Location = New System.Drawing.Point(123, 118)
+        Me.modname.Location = New System.Drawing.Point(145, 118)
         Me.modname.Name = "modname"
         Me.modname.Size = New System.Drawing.Size(192, 20)
         Me.modname.TabIndex = 13
@@ -61,52 +62,57 @@ Partial Class Edit_modulo
         'Label3
         '
         Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Segoe Script", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.Location = New System.Drawing.Point(31, 118)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(73, 13)
+        Me.Label3.Size = New System.Drawing.Size(104, 20)
         Me.Label3.TabIndex = 12
         Me.Label3.Text = "Module Name"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Segoe Script", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.Location = New System.Drawing.Point(28, 40)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(54, 13)
+        Me.Label2.Size = New System.Drawing.Size(76, 20)
         Me.Label2.TabIndex = 10
         Me.Label2.Text = "Course ID"
         '
         'Label1
         '
         Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Segoe Script", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.Location = New System.Drawing.Point(356, 40)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(55, 13)
+        Me.Label1.Size = New System.Drawing.Size(80, 20)
         Me.Label1.TabIndex = 9
         Me.Label1.Text = "module ID"
         '
         'crc
         '
         Me.crc.FormattingEnabled = True
-        Me.crc.Location = New System.Drawing.Point(123, 40)
+        Me.crc.Location = New System.Drawing.Point(145, 40)
         Me.crc.Name = "crc"
         Me.crc.Size = New System.Drawing.Size(192, 21)
         Me.crc.TabIndex = 16
         '
         'Button3
         '
+        Me.Button3.Font = New System.Drawing.Font("Segoe Script", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button3.Location = New System.Drawing.Point(359, 232)
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(113, 21)
+        Me.Button3.Size = New System.Drawing.Size(113, 35)
         Me.Button3.TabIndex = 19
         Me.Button3.Text = "cancel"
         Me.Button3.UseVisualStyleBackColor = True
         '
         'save
         '
+        Me.save.Font = New System.Drawing.Font("Segoe Script", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.save.Location = New System.Drawing.Point(224, 232)
         Me.save.Name = "save"
-        Me.save.Size = New System.Drawing.Size(113, 21)
+        Me.save.Size = New System.Drawing.Size(113, 35)
         Me.save.TabIndex = 18
         Me.save.Text = "update"
         Me.save.UseVisualStyleBackColor = True
@@ -116,13 +122,14 @@ Partial Class Edit_modulo
         Me.AvailMod.FormattingEnabled = True
         Me.AvailMod.Location = New System.Drawing.Point(448, 40)
         Me.AvailMod.Name = "AvailMod"
-        Me.AvailMod.Size = New System.Drawing.Size(222, 56)
+        Me.AvailMod.Size = New System.Drawing.Size(231, 56)
         Me.AvailMod.TabIndex = 20
         '
         'Edit_modulo
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.PeachPuff
         Me.ClientSize = New System.Drawing.Size(691, 289)
         Me.Controls.Add(Me.AvailMod)
         Me.Controls.Add(Me.Button3)
