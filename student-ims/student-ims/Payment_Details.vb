@@ -16,6 +16,12 @@ Public Class Payment_Details
         dop.Text = ""
         amtrmn.Text = ""
     End Sub
+
+    Private Sub payer_clear()
+        cashmemo.Text = ""
+        paydate.Text = ""
+        amount.Text = ""
+    End Sub
     Private Sub Payment_Details_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         GroupBox1.Hide()
         Me.Height = 380
@@ -118,8 +124,8 @@ Public Class Payment_Details
             c.errboxy()
         End Try
         reloadpay()
+        payer_clear()
         cn.Close()
-
     End Sub
 
     Private Sub stcode_TextChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles stcode.TextChanged
