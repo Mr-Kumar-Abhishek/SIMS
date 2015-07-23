@@ -302,7 +302,7 @@ Partial Class Stu_view
         '
         'cancel
         '
-        Me.cancel.Location = New System.Drawing.Point(362, 229)
+        Me.cancel.Location = New System.Drawing.Point(425, 234)
         Me.cancel.Name = "cancel"
         Me.cancel.Size = New System.Drawing.Size(134, 23)
         Me.cancel.TabIndex = 29
