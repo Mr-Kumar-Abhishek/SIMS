@@ -74,6 +74,7 @@ Partial Class Payment_Details
         '
         'crc
         '
+        Me.crc.Enabled = False
         Me.crc.Location = New System.Drawing.Point(623, 36)
         Me.crc.Name = "crc"
         Me.crc.Size = New System.Drawing.Size(136, 20)
@@ -91,6 +92,7 @@ Partial Class Payment_Details
         '
         'stname
         '
+        Me.stname.Enabled = False
         Me.stname.Location = New System.Drawing.Point(215, 107)
         Me.stname.Name = "stname"
         Me.stname.Size = New System.Drawing.Size(213, 20)
@@ -118,6 +120,7 @@ Partial Class Payment_Details
         '
         'tfees
         '
+        Me.tfees.Enabled = False
         Me.tfees.Location = New System.Drawing.Point(215, 176)
         Me.tfees.Name = "tfees"
         Me.tfees.Size = New System.Drawing.Size(136, 20)
@@ -125,6 +128,7 @@ Partial Class Payment_Details
         '
         'dep
         '
+        Me.dep.Enabled = False
         Me.dep.Location = New System.Drawing.Point(623, 107)
         Me.dep.Name = "dep"
         Me.dep.Size = New System.Drawing.Size(136, 20)
@@ -162,6 +166,7 @@ Partial Class Payment_Details
         '
         'dop
         '
+        Me.dop.Enabled = False
         Me.dop.Location = New System.Drawing.Point(623, 176)
         Me.dop.Name = "dop"
         Me.dop.Size = New System.Drawing.Size(136, 20)
@@ -169,6 +174,7 @@ Partial Class Payment_Details
         '
         'cmn
         '
+        Me.cmn.Enabled = False
         Me.cmn.Location = New System.Drawing.Point(215, 252)
         Me.cmn.Name = "cmn"
         Me.cmn.Size = New System.Drawing.Size(136, 20)
@@ -176,6 +182,7 @@ Partial Class Payment_Details
         '
         'amtrmn
         '
+        Me.amtrmn.Enabled = False
         Me.amtrmn.Location = New System.Drawing.Point(623, 252)
         Me.amtrmn.Name = "amtrmn"
         Me.amtrmn.Size = New System.Drawing.Size(136, 20)
