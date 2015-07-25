@@ -14,7 +14,7 @@ Public Class login
         dr = cm.ExecuteReader
         If dr.HasRows Then
             While (dr.Read)
-                Form1.Show()
+                splash.Show()
                 Me.Hide()
             End While
         Else
