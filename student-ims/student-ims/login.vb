@@ -18,7 +18,7 @@ Public Class login
                 Me.Hide()
             End While
         Else
-            MsgBox("please check your username or password", vbOK, "error")
+            MsgBox("please check your username or password", MsgBoxStyle.AbortRetryIgnore, "error")
         End If
     End Sub
 
