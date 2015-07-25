@@ -115,8 +115,8 @@ Partial Class MDI
         'PaymentsToolStripMenuItem
         '
         Me.PaymentsToolStripMenuItem.Name = "PaymentsToolStripMenuItem"
-        Me.PaymentsToolStripMenuItem.Size = New System.Drawing.Size(138, 22)
-        Me.PaymentsToolStripMenuItem.Text = "Payments"
+        Me.PaymentsToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.PaymentsToolStripMenuItem.Text = "&Payments"
         '
         'ExamToolStripMenuItem
         '
@@ -128,14 +128,14 @@ Partial Class MDI
         'MarksToolStripMenuItem1
         '
         Me.MarksToolStripMenuItem1.Name = "MarksToolStripMenuItem1"
-        Me.MarksToolStripMenuItem1.Size = New System.Drawing.Size(133, 22)
-        Me.MarksToolStripMenuItem1.Text = "Marks"
+        Me.MarksToolStripMenuItem1.Size = New System.Drawing.Size(152, 22)
+        Me.MarksToolStripMenuItem1.Text = "&Marks"
         '
         'CertificatesToolStripMenuItem
         '
         Me.CertificatesToolStripMenuItem.Name = "CertificatesToolStripMenuItem"
-        Me.CertificatesToolStripMenuItem.Size = New System.Drawing.Size(133, 22)
-        Me.CertificatesToolStripMenuItem.Text = "Certificates"
+        Me.CertificatesToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.CertificatesToolStripMenuItem.Text = "&Certificates"
         '
         'ModulesToolStripMenuItem
         '
@@ -154,13 +154,13 @@ Partial Class MDI
         '
         Me.EditToolStripMenuItem2.Name = "EditToolStripMenuItem2"
         Me.EditToolStripMenuItem2.Size = New System.Drawing.Size(152, 22)
-        Me.EditToolStripMenuItem2.Text = "&Edit / Delete"
+        Me.EditToolStripMenuItem2.Text = "&Edit / &Delete"
         '
         'VIewToolStripMenuItem3
         '
         Me.VIewToolStripMenuItem3.Name = "VIewToolStripMenuItem3"
         Me.VIewToolStripMenuItem3.Size = New System.Drawing.Size(152, 22)
-        Me.VIewToolStripMenuItem3.Text = "&VIew"
+        Me.VIewToolStripMenuItem3.Text = "&View"
         '
         'HelpToolStripMenuItem
         '
@@ -178,8 +178,8 @@ Partial Class MDI
         'LicenseToolStripMenuItem
         '
         Me.LicenseToolStripMenuItem.Name = "LicenseToolStripMenuItem"
-        Me.LicenseToolStripMenuItem.Size = New System.Drawing.Size(113, 22)
-        Me.LicenseToolStripMenuItem.Text = "License"
+        Me.LicenseToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.LicenseToolStripMenuItem.Text = "&License"
         '
         'ExitToolStripMenuItem
         '
