@@ -200,12 +200,6 @@
     <Compile Include="Payment_Details.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="pay_add.Designer.vb">
-      <DependentUpon>pay_add.vb</DependentUpon>
-    </Compile>
-    <Compile Include="pay_add.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="stu_edit.Designer.vb">
       <DependentUpon>stu_edit.vb</DependentUpon>
     </Compile>
@@ -279,9 +273,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Payment_Details.resx">
       <DependentUpon>Payment_Details.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="pay_add.resx">
-      <DependentUpon>pay_add.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="stu_edit.resx">
       <DependentUpon>stu_edit.vb</DependentUpon>
