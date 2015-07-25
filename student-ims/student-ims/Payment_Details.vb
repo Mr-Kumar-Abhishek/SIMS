@@ -24,6 +24,7 @@ Public Class Payment_Details
     End Sub
     Private Sub Payment_Details_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         GroupBox1.Hide()
+        MonthCalendar1.Hide()
         Me.Height = 380
         Me.BackColor = Color.Beige
         clearing()
@@ -109,7 +110,7 @@ Public Class Payment_Details
     End Sub
 
     Private Sub Button3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button3.Click
-        Me.Height = 570
+        Me.Height = 630
         GroupBox1.Show()
     End Sub
 
@@ -134,5 +135,18 @@ Public Class Payment_Details
 
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
         Me.Hide()
+    End Sub
+
+    Private Sub paydate_MouseClick(ByVal sender As Object, ByVal e As System.Windows.Forms.MouseEventArgs) Handles paydate.MouseClick
+        MonthCalendar1.Show()
+    End Sub
+
+    Private Sub MonthCalendar1_DateChanged(ByVal sender As Object, ByVal e As System.Windows.Forms.DateRangeEventArgs) Handles MonthCalendar1.DateChanged
+        paydate.Text = MonthCalendar1.SelectionStart.Date
+    End Sub
+
+
+    Private Sub MonthCalendar1_MouseLeave(ByVal sender As Object, ByVal e As System.EventArgs) Handles MonthCalendar1.MouseLeave
+        MonthCalendar1.Hide()
     End Sub
 End Class
