@@ -82,7 +82,7 @@ Public Class Stu_view
             Catch ex As Exception
                 MsgBox("This student is not selected in any modules", MsgBoxStyle.Exclamation, "Important")
             End Try
-            
+
         End While
         cn.Close()
     End Sub
