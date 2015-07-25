@@ -101,23 +101,23 @@ Public Class stu_edit
         'addition statement
         For Each itemchecked In modbox.CheckedItems
             cm = New OleDbCommand("select moduleid from stmod where user = '" + stcode.Text + "' and moduleid = '" + itemchecked + "'", cn)
-            'Try
-            dr = cm.ExecuteReader
-            If (dr.HasRows) Then
-                dr.Close()
-                'intended to left blank
-            Else
-                dr.Close()
-                cm = New OleDbCommand("insert into stmod values('" + itemchecked + "', '" + stcode.Text + "', 0)", cn)
-                'Try
-                cm.ExecuteNonQuery()
-                'Catch ex As Exception
-                'c.errboxy()
-                'End Try
-            End If
-            'Catch ex As Exception
-            'c.errboxy()
-            'End Try
+            Try
+                dr = cm.ExecuteReader
+                If (dr.HasRows) Then
+                    dr.Close()
+                    'intended to left blank
+                Else
+                    dr.Close()
+                    cm = New OleDbCommand("insert into stmod values('" + itemchecked + "', '" + stcode.Text + "', 0)", cn)
+                    Try
+                        cm.ExecuteNonQuery()
+                    Catch ex As Exception
+                        c.errboxy()
+                    End Try
+                End If
+            Catch ex As Exception
+                c.errboxy()
+            End Try
         Next
         For i As Integer = 0 To modbox.Items.Count - 1
             modbox.SelectedIndex = i
