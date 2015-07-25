@@ -158,7 +158,7 @@ Partial Class course_edit
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
         Me.Name = "course_edit"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "course_edit"
+        Me.Text = "Edit course"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         CType(Me.dur, System.ComponentModel.ISupportInitialize).EndInit()

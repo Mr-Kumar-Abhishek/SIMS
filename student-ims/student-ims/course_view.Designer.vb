@@ -149,7 +149,7 @@ Partial Class course_view
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
         Me.Name = "course_view"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "course_view"
+        Me.Text = "View Course"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         CType(Me.dur, System.ComponentModel.ISupportInitialize).EndInit()
