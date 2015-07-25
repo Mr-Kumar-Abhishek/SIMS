@@ -65,8 +65,4 @@ Public Class mod_add
     Private Sub Button3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button3.Click
         Me.Hide()
     End Sub
-
-    Private Sub modname_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles modname.TextChanged
-
-    End Sub
 End Class

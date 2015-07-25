@@ -90,9 +90,6 @@ Public Class mod_edit
         clearing()
     End Sub
 
-    Private Sub crc_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles crc.SelectedIndexChanged
-
-    End Sub
 End Class
 
 
