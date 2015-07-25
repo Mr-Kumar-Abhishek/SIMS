@@ -13,7 +13,7 @@
     End Sub
 
     Private Sub AddToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles AddToolStripMenuItem.Click
-        Addmission_Form2.Show()
+        Addmission_Form.Show()
     End Sub
 
     Private Sub EditToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles EditToolStripMenuItem.Click

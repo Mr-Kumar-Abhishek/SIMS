@@ -1,7 +1,7 @@
 ﻿
 Imports System.Data.OleDb
 
-Public Class Addmission_Form2
+Public Class Addmission_Form
     Dim c As New conn
     Dim cn As OleDbConnection
     Dim cm As OleDbCommand
