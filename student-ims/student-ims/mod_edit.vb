@@ -1,6 +1,6 @@
 ﻿Imports System.Data.OleDb
 
-Public Class Edit_modulo
+Public Class mod_edit
     Dim cn As OleDbConnection
     Dim cm As OleDbCommand
     Dim dr As OleDbDataReader

@@ -9,11 +9,11 @@
     End Sub
 
     Private Sub OpenToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles OpenToolStripMenuItem.Click
-        course.Show()
+        course_add.Show()
     End Sub
 
     Private Sub AddToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles AddToolStripMenuItem.Click
-        Addmission_Form.Show()
+        stu_add.Show()
     End Sub
 
     Private Sub EditToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles EditToolStripMenuItem.Click
@@ -25,7 +25,7 @@
     End Sub
 
     Private Sub EditToolStripMenuItem2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles EditToolStripMenuItem2.Click
-        Edit_modulo.Show()
+        mod_edit.Show()
     End Sub
 
     Private Sub PaymentsToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PaymentsToolStripMenuItem.Click
@@ -53,11 +53,11 @@
     End Sub
 
     Private Sub AddToolStripMenuItem1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles AddToolStripMenuItem1.Click
-        Add_mod.Show()
+        mod_add.Show()
     End Sub
 
     Private Sub VIewToolStripMenuItem3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles VIewToolStripMenuItem3.Click
-        view_mod.Show()
+        mod_view.Show()
     End Sub
 
     Private Sub DeleteToolStripMenuItem1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs)

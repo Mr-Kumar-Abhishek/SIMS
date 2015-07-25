@@ -1,6 +1,6 @@
 ﻿Imports System.Data.OleDb
 
-Public Class course
+Public Class course_add
     Dim cn As OleDbConnection
     Dim cm, cm1 As OleDbCommand
     Dim dr, dr1 As OleDbDataReader

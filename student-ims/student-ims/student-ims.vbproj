@@ -93,35 +93,35 @@
     <Compile Include="About.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Addmission_Form.Designer.vb">
-      <DependentUpon>Addmission_Form.vb</DependentUpon>
+    <Compile Include="stu_add.Designer.vb">
+      <DependentUpon>stu_add.vb</DependentUpon>
     </Compile>
-    <Compile Include="Addmission_Form.vb">
+    <Compile Include="stu_add.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Add_mod.Designer.vb">
-      <DependentUpon>Add_mod.vb</DependentUpon>
+    <Compile Include="mod_add.Designer.vb">
+      <DependentUpon>mod_add.vb</DependentUpon>
     </Compile>
-    <Compile Include="Add_mod.vb">
+    <Compile Include="mod_add.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Certificate Form.Designer.vb">
-      <DependentUpon>Certificate Form.vb</DependentUpon>
+    <Compile Include="certificate_form.Designer.vb">
+      <DependentUpon>certificate_form.vb</DependentUpon>
     </Compile>
-    <Compile Include="Certificate Form.vb">
+    <Compile Include="certificate_form.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="conn.vb" />
-    <Compile Include="course.Designer.vb">
-      <DependentUpon>course.vb</DependentUpon>
+    <Compile Include="course_add.Designer.vb">
+      <DependentUpon>course_add.vb</DependentUpon>
     </Compile>
-    <Compile Include="course.vb">
+    <Compile Include="course_add.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Course_delete.Designer.vb">
-      <DependentUpon>Course_delete.vb</DependentUpon>
+    <Compile Include="course_delete.Designer.vb">
+      <DependentUpon>course_delete.vb</DependentUpon>
     </Compile>
-    <Compile Include="Course_delete.vb">
+    <Compile Include="course_delete.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="course_edit.Designer.vb">
@@ -136,10 +136,10 @@
     <Compile Include="course_view.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Edit_modulo.Designer.vb">
-      <DependentUpon>Edit_modulo.vb</DependentUpon>
+    <Compile Include="mod_edit.Designer.vb">
+      <DependentUpon>mod_edit.vb</DependentUpon>
     </Compile>
-    <Compile Include="Edit_modulo.vb">
+    <Compile Include="mod_edit.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="splash.vb">
@@ -200,16 +200,16 @@
     <Compile Include="stu_edit.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Stu_view.Designer.vb">
-      <DependentUpon>Stu_view.vb</DependentUpon>
+    <Compile Include="stu_view.Designer.vb">
+      <DependentUpon>stu_view.vb</DependentUpon>
     </Compile>
-    <Compile Include="Stu_view.vb">
+    <Compile Include="stu_view.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="view_mod.Designer.vb">
-      <DependentUpon>view_mod.vb</DependentUpon>
+    <Compile Include="mod_view.Designer.vb">
+      <DependentUpon>mod_view.vb</DependentUpon>
     </Compile>
-    <Compile Include="view_mod.vb">
+    <Compile Include="mod_view.vb">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>
@@ -217,20 +217,20 @@
     <EmbeddedResource Include="About.resx">
       <DependentUpon>About.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Addmission_Form.resx">
-      <DependentUpon>Addmission_Form.vb</DependentUpon>
+    <EmbeddedResource Include="stu_add.resx">
+      <DependentUpon>stu_add.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Add_mod.resx">
-      <DependentUpon>Add_mod.vb</DependentUpon>
+    <EmbeddedResource Include="mod_add.resx">
+      <DependentUpon>mod_add.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Certificate Form.resx">
-      <DependentUpon>Certificate Form.vb</DependentUpon>
+    <EmbeddedResource Include="certificate_form.resx">
+      <DependentUpon>certificate_form.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="course.resx">
-      <DependentUpon>course.vb</DependentUpon>
+    <EmbeddedResource Include="course_add.resx">
+      <DependentUpon>course_add.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Course_delete.resx">
-      <DependentUpon>Course_delete.vb</DependentUpon>
+    <EmbeddedResource Include="course_delete.resx">
+      <DependentUpon>course_delete.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="course_edit.resx">
       <DependentUpon>course_edit.vb</DependentUpon>
@@ -238,8 +238,8 @@
     <EmbeddedResource Include="course_view.resx">
       <DependentUpon>course_view.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Edit_modulo.resx">
-      <DependentUpon>Edit_modulo.vb</DependentUpon>
+    <EmbeddedResource Include="mod_edit.resx">
+      <DependentUpon>mod_edit.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="splash.resx">
       <DependentUpon>splash.vb</DependentUpon>
@@ -268,11 +268,11 @@
     <EmbeddedResource Include="stu_edit.resx">
       <DependentUpon>stu_edit.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Stu_view.resx">
-      <DependentUpon>Stu_view.vb</DependentUpon>
+    <EmbeddedResource Include="stu_view.resx">
+      <DependentUpon>stu_view.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="view_mod.resx">
-      <DependentUpon>view_mod.vb</DependentUpon>
+    <EmbeddedResource Include="mod_view.resx">
+      <DependentUpon>mod_view.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

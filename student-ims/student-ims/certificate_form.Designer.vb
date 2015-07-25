@@ -186,7 +186,7 @@ Partial Class Certificate_Form
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
         Me.Name = "Certificate_Form"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Certificate_Form"
+        Me.Text = "Generate Certificate"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

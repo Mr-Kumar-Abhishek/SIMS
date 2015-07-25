@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Addmission_Form
+Partial Class stu_add
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -385,7 +385,7 @@ Partial Class Addmission_Form
         Me.Label9.TabIndex = 0
         Me.Label9.Text = "Course Name :"
         '
-        'Addmission_Form2
+        'Addmission_Form
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -393,9 +393,9 @@ Partial Class Addmission_Form
         Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.GroupBox1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
-        Me.Name = "Addmission_Form2"
+        Me.Name = "Addmission_Form"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "Addmission_Form2"
+        Me.Text = "Student Admission"
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
         Me.GroupBox1.ResumeLayout(False)
