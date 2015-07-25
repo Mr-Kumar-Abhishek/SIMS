@@ -123,9 +123,9 @@ Partial Class Certificate_Form
         'Button1
         '
         Me.Button1.Font = New System.Drawing.Font("Segoe Print", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(215, 269)
+        Me.Button1.Location = New System.Drawing.Point(91, 269)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(101, 73)
+        Me.Button1.Size = New System.Drawing.Size(199, 39)
         Me.Button1.TabIndex = 18
         Me.Button1.Text = "Issue Certificate"
         Me.Button1.UseVisualStyleBackColor = True
@@ -133,9 +133,9 @@ Partial Class Certificate_Form
         'Button2
         '
         Me.Button2.Font = New System.Drawing.Font("Segoe Print", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.Location = New System.Drawing.Point(317, 269)
+        Me.Button2.Location = New System.Drawing.Point(357, 269)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(93, 73)
+        Me.Button2.Size = New System.Drawing.Size(180, 39)
         Me.Button2.TabIndex = 19
         Me.Button2.Text = "Cancel"
         Me.Button2.UseVisualStyleBackColor = True
@@ -146,7 +146,7 @@ Partial Class Certificate_Form
         Me.modbox.FormattingEnabled = True
         Me.modbox.Location = New System.Drawing.Point(397, 110)
         Me.modbox.Name = "modbox"
-        Me.modbox.Size = New System.Drawing.Size(211, 43)
+        Me.modbox.Size = New System.Drawing.Size(226, 43)
         Me.modbox.TabIndex = 20
         '
         'stcode
@@ -168,7 +168,7 @@ Partial Class Certificate_Form
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(635, 468)
+        Me.ClientSize = New System.Drawing.Size(635, 337)
         Me.Controls.Add(Me.crc)
         Me.Controls.Add(Me.stcode)
         Me.Controls.Add(Me.modbox)
@@ -183,7 +183,9 @@ Partial Class Certificate_Form
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
         Me.Name = "Certificate_Form"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Certificate_Form"
         Me.ResumeLayout(False)
         Me.PerformLayout()

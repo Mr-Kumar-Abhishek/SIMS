@@ -146,7 +146,9 @@ Partial Class Course_delete
         Me.BackColor = System.Drawing.Color.Linen
         Me.ClientSize = New System.Drawing.Size(524, 357)
         Me.Controls.Add(Me.GroupBox1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
         Me.Name = "Course_delete"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Delete Course"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()

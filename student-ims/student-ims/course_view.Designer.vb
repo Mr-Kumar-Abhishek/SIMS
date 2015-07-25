@@ -146,7 +146,9 @@ Partial Class course_view
         Me.BackColor = System.Drawing.Color.Honeydew
         Me.ClientSize = New System.Drawing.Size(552, 350)
         Me.Controls.Add(Me.GroupBox1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
         Me.Name = "course_view"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "course_view"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()

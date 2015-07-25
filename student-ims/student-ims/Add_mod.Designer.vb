@@ -212,7 +212,9 @@ Partial Class Add_mod
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.GroupBox2)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
         Me.Name = "Add_mod"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Add Modules"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()

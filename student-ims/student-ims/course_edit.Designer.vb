@@ -155,7 +155,9 @@ Partial Class course_edit
         Me.BackColor = System.Drawing.Color.BlanchedAlmond
         Me.ClientSize = New System.Drawing.Size(542, 370)
         Me.Controls.Add(Me.GroupBox1)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
         Me.Name = "course_edit"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "course_edit"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()

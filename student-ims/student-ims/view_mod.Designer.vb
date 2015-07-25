@@ -131,7 +131,9 @@ Partial Class view_mod
         Me.Controls.Add(Me.modname)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
         Me.Name = "view_mod"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "view modules"
         Me.ResumeLayout(False)
         Me.PerformLayout()

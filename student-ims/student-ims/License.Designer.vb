@@ -55,6 +55,7 @@ Partial Class License
         Me.Controls.Add(Me.TextBox1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
         Me.Name = "License"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "License"
         Me.ResumeLayout(False)
         Me.PerformLayout()
