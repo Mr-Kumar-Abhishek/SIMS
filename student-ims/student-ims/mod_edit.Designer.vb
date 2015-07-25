@@ -105,7 +105,7 @@ Partial Class mod_edit
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(113, 35)
         Me.Button3.TabIndex = 19
-        Me.Button3.Text = "cancel"
+        Me.Button3.Text = "cancle"
         Me.Button3.UseVisualStyleBackColor = True
         '
         'save
@@ -136,7 +136,7 @@ Partial Class mod_edit
         Me.deletion.Text = "delete"
         Me.deletion.UseVisualStyleBackColor = True
         '
-        'Edit_modulo
+        'mod_edit
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -154,7 +154,7 @@ Partial Class mod_edit
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
-        Me.Name = "Edit_modulo"
+        Me.Name = "mod_edit"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Edit Modules"
         Me.ResumeLayout(False)

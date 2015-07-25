@@ -58,7 +58,7 @@ Partial Class mod_add
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(113, 34)
         Me.Button3.TabIndex = 28
-        Me.Button3.Text = "cancel"
+        Me.Button3.Text = "cancle"
         Me.Button3.UseVisualStyleBackColor = True
         '
         'Addbtn
@@ -202,7 +202,7 @@ Partial Class mod_add
         Me.clrmod.Text = "clear"
         Me.clrmod.UseVisualStyleBackColor = True
         '
-        'Add_mod
+        'mod_add
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
@@ -213,7 +213,7 @@ Partial Class mod_add
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.GroupBox2)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow
-        Me.Name = "Add_mod"
+        Me.Name = "mod_add"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Add Modules"
         Me.GroupBox1.ResumeLayout(False)
