@@ -28,19 +28,6 @@ Public Class course_add
         cm.ExecuteNonQuery()
         MsgBox("New course " & crc.Text & " has been added.")
         clearing()
-        'clearing the module wizard functionality to expedite the release
-        'If Not cn.State = ConnectionState.Open Then
-        'cn = c.getcon()
-        'End If
-        'cm1 = New OleDbCommand("select count(moduleid) from modulo where coursecode= '" + crc.Text + "'", cn)
-        'dr1 = cm1.ExecuteReader
-        'While dr1.Read
-        'cnt = CInt(dr1.GetValue(0))
-        'End While
-        'cnt = nom.Value - cnt
-        'If cnt <> 0 Then
-        'modulo.Show()
-        'End If
         cn.Close()
     End Sub
 
