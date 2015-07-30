@@ -9,17 +9,21 @@ Public Class login
 
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
         cn = c.getcon()
-
         cm = New OleDbCommand("select user,pass from login where user='" + unamebox.Text + "' and pass='" + passbox.Text + "'", cn)
-        dr = cm.ExecuteReader
-        If dr.HasRows Then
-            While (dr.Read)
-                splash.Show()
-                Me.Hide()
-            End While
-        Else
-            MsgBox("please check your username or password", MsgBoxStyle.Exclamation, "error")
-        End If
+        Try
+            dr = cm.ExecuteReader
+            If dr.HasRows Then
+                While (dr.Read)
+                    splash.Show()
+                    Me.Hide()
+                End While
+            Else
+                MsgBox("please check your username or password", MsgBoxStyle.Exclamation, "error")
+            End If
+        Catch ex As Exception
+            c.errboxy()
+        End Try
+        
     End Sub
 
     Private Sub login_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
