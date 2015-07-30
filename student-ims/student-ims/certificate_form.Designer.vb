@@ -27,7 +27,6 @@ Partial Class Certificate_Form
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.grade = New System.Windows.Forms.TextBox()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.marks = New System.Windows.Forms.TextBox()
         Me.Label6 = New System.Windows.Forms.Label()
@@ -36,6 +35,7 @@ Partial Class Certificate_Form
         Me.modbox = New System.Windows.Forms.ListBox()
         Me.stcode = New System.Windows.Forms.ComboBox()
         Me.crc = New System.Windows.Forms.TextBox()
+        Me.grade = New System.Windows.Forms.ComboBox()
         Me.SuspendLayout()
         '
         'stname
@@ -85,13 +85,6 @@ Partial Class Certificate_Form
         Me.Label4.Size = New System.Drawing.Size(116, 20)
         Me.Label4.TabIndex = 12
         Me.Label4.Text = "Module Taken :"
-        '
-        'grade
-        '
-        Me.grade.Location = New System.Drawing.Point(397, 179)
-        Me.grade.Name = "grade"
-        Me.grade.Size = New System.Drawing.Size(100, 20)
-        Me.grade.TabIndex = 15
         '
         'Label5
         '
@@ -166,11 +159,21 @@ Partial Class Certificate_Form
         Me.crc.Size = New System.Drawing.Size(100, 20)
         Me.crc.TabIndex = 22
         '
+        'grade
+        '
+        Me.grade.FormattingEnabled = True
+        Me.grade.Items.AddRange(New Object() {"fair", "good", "very good", "excellent"})
+        Me.grade.Location = New System.Drawing.Point(397, 179)
+        Me.grade.Name = "grade"
+        Me.grade.Size = New System.Drawing.Size(121, 21)
+        Me.grade.TabIndex = 23
+        '
         'Certificate_Form
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(635, 337)
+        Me.Controls.Add(Me.grade)
         Me.Controls.Add(Me.crc)
         Me.Controls.Add(Me.stcode)
         Me.Controls.Add(Me.modbox)
@@ -178,7 +181,6 @@ Partial Class Certificate_Form
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.marks)
         Me.Controls.Add(Me.Label6)
-        Me.Controls.Add(Me.grade)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.stname)
@@ -198,7 +200,6 @@ Partial Class Certificate_Form
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents Label4 As System.Windows.Forms.Label
-    Friend WithEvents grade As System.Windows.Forms.TextBox
     Friend WithEvents Label5 As System.Windows.Forms.Label
     Friend WithEvents marks As System.Windows.Forms.TextBox
     Friend WithEvents Label6 As System.Windows.Forms.Label
@@ -207,4 +208,5 @@ Partial Class Certificate_Form
     Friend WithEvents modbox As System.Windows.Forms.ListBox
     Friend WithEvents stcode As System.Windows.Forms.ComboBox
     Friend WithEvents crc As System.Windows.Forms.TextBox
+    Friend WithEvents grade As System.Windows.Forms.ComboBox
 End Class

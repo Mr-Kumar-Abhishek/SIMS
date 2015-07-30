@@ -84,8 +84,13 @@ Public Class Certificate_Form
         'graph.DrawString(textline, myfont, XBrushes.Black, New XRect(50, 350, pdfPage.Width.Point, pdfPage.Height.Point), XStringFormats.TopLeft)       '//width from left 50 pixels, height from top 245 pixels
         'graph.DrawString("sname :", myfont, XBrushes.Black, New XRect(120, 245, pdfPage.Width.Point, pdfPage.Height.Point), XStringFormats.TopLeft)       '//width from left 120 pixels, height from top 245 pixels
         Dim path As String
-        path = Application.StartupPath & "/name.pdf"
-        pdf.Save(path)
-        Process.Start(path)
+        path = Application.StartupPath & "/" & stcode.Text & ".pdf"
+        Try
+            pdf.Save(path)
+            Process.Start(path)
+        Catch ex As Exception
+            MsgBox("The file is being used by another process", MsgBoxStyle.Critical, "Uh oh !")
+        End Try
+        
     End Sub
 End Class
