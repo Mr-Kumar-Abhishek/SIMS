@@ -12,7 +12,6 @@ Public Class course_add
         crn.Text = ""
         tf.Text = ""
         dur.Value = 0
-        'nom.Value = 0
     End Sub
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles save.Click
         If Not cn.State = ConnectionState.Open Then
