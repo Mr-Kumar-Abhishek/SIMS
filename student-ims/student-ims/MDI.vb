@@ -48,10 +48,6 @@
         course_view.Show()
     End Sub
 
-    Private Sub DeleteToolStripMenuItem_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles DeleteToolStripMenuItem.Click
-        Course_delete.Show()
-    End Sub
-
     Private Sub AddToolStripMenuItem1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles AddToolStripMenuItem1.Click
         mod_add.Show()
     End Sub

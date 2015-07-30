@@ -118,12 +118,6 @@
     <Compile Include="course_add.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="course_delete.Designer.vb">
-      <DependentUpon>course_delete.vb</DependentUpon>
-    </Compile>
-    <Compile Include="course_delete.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="course_edit.Designer.vb">
       <DependentUpon>course_edit.vb</DependentUpon>
     </Compile>
@@ -228,9 +222,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="course_add.resx">
       <DependentUpon>course_add.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="course_delete.resx">
-      <DependentUpon>course_delete.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="course_edit.resx">
       <DependentUpon>course_edit.vb</DependentUpon>
