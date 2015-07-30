@@ -159,6 +159,7 @@ Partial Class Certificate_Form
         '
         'crc
         '
+        Me.crc.Enabled = False
         Me.crc.Location = New System.Drawing.Point(145, 109)
         Me.crc.Name = "crc"
         Me.crc.Size = New System.Drawing.Size(100, 20)
