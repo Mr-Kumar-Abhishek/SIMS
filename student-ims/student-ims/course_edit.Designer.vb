@@ -33,6 +33,7 @@ Partial Class course_edit
         Me.crn = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.delete = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
         CType(Me.dur, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -40,7 +41,7 @@ Partial Class course_edit
         'cancel
         '
         Me.cancel.Font = New System.Drawing.Font("Segoe Script", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.cancel.Location = New System.Drawing.Point(249, 258)
+        Me.cancel.Location = New System.Drawing.Point(315, 258)
         Me.cancel.Name = "cancel"
         Me.cancel.Size = New System.Drawing.Size(94, 38)
         Me.cancel.TabIndex = 12
@@ -50,7 +51,7 @@ Partial Class course_edit
         'save
         '
         Me.save.Font = New System.Drawing.Font("Segoe Script", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.save.Location = New System.Drawing.Point(122, 258)
+        Me.save.Location = New System.Drawing.Point(95, 258)
         Me.save.Name = "save"
         Me.save.Size = New System.Drawing.Size(90, 38)
         Me.save.TabIndex = 10
@@ -59,6 +60,7 @@ Partial Class course_edit
         '
         'GroupBox1
         '
+        Me.GroupBox1.Controls.Add(Me.delete)
         Me.GroupBox1.Controls.Add(Me.crc)
         Me.GroupBox1.Controls.Add(Me.cancel)
         Me.GroupBox1.Controls.Add(Me.save)
@@ -148,6 +150,16 @@ Partial Class course_edit
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Course Code"
         '
+        'delete
+        '
+        Me.delete.Font = New System.Drawing.Font("Segoe Script", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.delete.Location = New System.Drawing.Point(204, 258)
+        Me.delete.Name = "delete"
+        Me.delete.Size = New System.Drawing.Size(94, 38)
+        Me.delete.TabIndex = 14
+        Me.delete.Text = "Delete"
+        Me.delete.UseVisualStyleBackColor = True
+        '
         'course_edit
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -176,4 +188,5 @@ Partial Class course_edit
     Friend WithEvents crn As System.Windows.Forms.TextBox
     Friend WithEvents Label2 As System.Windows.Forms.Label
     Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents delete As System.Windows.Forms.Button
 End Class

@@ -27,7 +27,6 @@ Public Class course_edit
         End While
         cn.Close()
     End Sub
-
     Private Sub course_edit_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         cn = c.getcon()
         repopulate()
@@ -60,5 +59,18 @@ Public Class course_edit
         cn.Close()
         MsgBox("Course details updated")
         clearing()
+    End Sub
+
+    Private Sub delete_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles delete.Click
+        Dim deleted As String = crc.Text
+        If Not cn.State = ConnectionState.Open Then
+            cn = c.getcon()
+        End If
+        cm = New OleDbCommand("delete from course where coursecode = '" + crc.Text + "'", cn)
+        cm.ExecuteNonQuery()
+        cn.Close()
+        clearing()
+        repopulate()
+        MsgBox("The course " + deleted + " has been deleted.")
     End Sub
 End Class
