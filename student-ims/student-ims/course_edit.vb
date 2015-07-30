@@ -15,14 +15,22 @@ Public Class course_edit
         'nom.Value = 0
     End Sub
 
-    Private Sub course_edit_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-        cn = c.getcon()
+    Private Sub repopulate()
+        crc.Items.Clear()
+        If Not cn.State = ConnectionState.Open Then
+            cn = c.getcon()
+        End If
         cm = New OleDbCommand("select coursecode from course", cn)
         dr = cm.ExecuteReader
         While (dr.Read)
             crc.Items.Add(dr.GetValue(0))
         End While
         cn.Close()
+    End Sub
+
+    Private Sub course_edit_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+        cn = c.getcon()
+        repopulate()
     End Sub
 
     Private Sub crc_TextChanged(ByVal sender As Object, ByVal e As System.EventArgs) Handles crc.TextChanged
