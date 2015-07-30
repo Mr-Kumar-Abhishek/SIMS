@@ -17,7 +17,6 @@ Public Class course_add
         If Not cn.State = ConnectionState.Open Then
             cn = c.getcon()
         End If
-
         cm = New OleDbCommand("select * from course where coursecode = '" + crc.Text + "'", cn)
         dr = cm.ExecuteReader
         If dr.HasRows Then
