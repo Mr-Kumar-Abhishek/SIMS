@@ -47,6 +47,13 @@ Public Class Certificate_Form
         While (dr.Read)
             modbox.Items.Add(dr.GetValue(0))
         End While
+        Dim tot_marks As Integer = 0
+        cm = New OleDbCommand("select marks from stmod where user = '" + stcode.Text + "'", cn)
+        dr = cm.ExecuteReader
+        While (dr.Read)
+            tot_marks = dr.GetValue(0) + tot_marks
+        End While
+        marks.Text = tot_marks
         cn.Close()
     End Sub
 

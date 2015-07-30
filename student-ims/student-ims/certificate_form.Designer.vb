@@ -29,7 +29,7 @@ Partial Class Certificate_Form
         Me.Label4 = New System.Windows.Forms.Label()
         Me.grade = New System.Windows.Forms.TextBox()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.TextBox6 = New System.Windows.Forms.TextBox()
+        Me.marks = New System.Windows.Forms.TextBox()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
@@ -103,12 +103,13 @@ Partial Class Certificate_Form
         Me.Label5.TabIndex = 14
         Me.Label5.Text = "Grade :"
         '
-        'TextBox6
+        'marks
         '
-        Me.TextBox6.Location = New System.Drawing.Point(145, 179)
-        Me.TextBox6.Name = "TextBox6"
-        Me.TextBox6.Size = New System.Drawing.Size(100, 20)
-        Me.TextBox6.TabIndex = 17
+        Me.marks.Enabled = False
+        Me.marks.Location = New System.Drawing.Point(145, 179)
+        Me.marks.Name = "marks"
+        Me.marks.Size = New System.Drawing.Size(100, 20)
+        Me.marks.TabIndex = 17
         '
         'Label6
         '
@@ -175,7 +176,7 @@ Partial Class Certificate_Form
         Me.Controls.Add(Me.modbox)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.TextBox6)
+        Me.Controls.Add(Me.marks)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.grade)
         Me.Controls.Add(Me.Label5)
@@ -199,7 +200,7 @@ Partial Class Certificate_Form
     Friend WithEvents Label4 As System.Windows.Forms.Label
     Friend WithEvents grade As System.Windows.Forms.TextBox
     Friend WithEvents Label5 As System.Windows.Forms.Label
-    Friend WithEvents TextBox6 As System.Windows.Forms.TextBox
+    Friend WithEvents marks As System.Windows.Forms.TextBox
     Friend WithEvents Label6 As System.Windows.Forms.Label
     Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents Button2 As System.Windows.Forms.Button
