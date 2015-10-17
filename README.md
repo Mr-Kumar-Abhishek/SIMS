@@ -1,7 +1,7 @@
 # Student information Management system #
 
 This project for making a simple student information management system , the release would be in MSIL format
-or .exe binary format so , .net framework is requireed to run this application (atleast till version 4)
+or .exe binary format so , .net framework is required to run this application (atleast till version 4)
 
 ### What is this repository for? ###
 
