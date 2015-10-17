@@ -20,7 +20,7 @@ and personal details.
 
 ### Contribution guidelines ###
 
-* Work Flow: svn flow (till I figure out how to manage MS binaries in git)
+* Work Flow: svn flow (till I get on a microsoft system)
 * Writing tests
 * Code review
 
