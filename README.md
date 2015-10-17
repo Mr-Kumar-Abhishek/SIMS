@@ -1,4 +1,4 @@
-# Student information Management system #
+# Student Information Management system #
 
 This project for making a simple student information management system , the release would be in MSIL format
 or .exe binary format so , .net framework is required to run this application (atleast till version 4)
