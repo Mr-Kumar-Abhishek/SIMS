@@ -1,5 +1,7 @@
 # Student Information Management system #
 
+[![Build status](https://ci.appveyor.com/api/projects/status/vedj7pp46brllcu5/branch/master?svg=true)](https://ci.appveyor.com/project/Mr-Kumar-Abhishek/sims/branch/master)
+
 This project for making a simple student information management system , the release would be in CIL format
 or .exe binary format so , .net framework is required to run this application (atleast till version 4)
 
